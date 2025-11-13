@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sortBin' to reach function 'main'?",
+    "Is it impossible for function 'main' to reach function 'sortBin'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'insSortHome'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<SIZE' be skipped entirely?",
+    "Is the loop with condition 'i<SIZE' always executed?",
+    "Can the loop with condition 'i<SIZE' be skipped entirely?",
+    "Is the loop with condition 'i<SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'f (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 25)' remain in use at the end of function 'activitySelector'?",
+    "Is variable 'lastFinish' live at the end of function 'activitySelector'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(f[j]<f[j-1]){' unreachable?",
+    "Is this statement not dead: “temp=s[i];”?"
+  ]
+}

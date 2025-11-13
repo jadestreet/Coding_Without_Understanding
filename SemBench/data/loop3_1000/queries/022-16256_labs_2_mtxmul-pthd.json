@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'slave' to reach function 'init_array'?",
+    "Is there a call path from function 'print_array' to function 'printf'?",
+    "Is it impossible for function 'slave' to reach function 'sysconf'?",
+    "Is there a call path from function 'main' to function 'sysconf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'j < N' is never executed?",
+    "Is the loop with condition 'j < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 7)' used after its definition?",
+    "Does the value assigned to 'b (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 12)' remain in use at the end of function 'init_array'?",
+    "Is variable 'j (line 12)' live at the end of function 'init_array'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int j, k;' unreachable?",
+    "Can the program actually reach the statement: “int nprocs = sysconf(_SC_NPROCESSORS_ONLN);”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'putchar'?",
+    "Is it impossible for function 'putchar' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 3 && *p >= '0' && *p <= '7'' be skipped entirely?",
+    "Is the loop with condition 'i < 3 && *p >= '0' && *p <= '7'' always executed?",
+    "Can the loop with condition 'p && *p == '-'' be skipped entirely?",
+    "Is the loop with condition 'p && *p == '-'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 3 && *p >= '0' && *p <= '7'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p && *p == '-'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'argv (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'p' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (i = 0; i < 3 && *p >= '0' && *p <= '7'; ++i)' unreachable?",
+    "Can the program actually reach the statement: “case '\\\\': break;”?"
+  ]
+}

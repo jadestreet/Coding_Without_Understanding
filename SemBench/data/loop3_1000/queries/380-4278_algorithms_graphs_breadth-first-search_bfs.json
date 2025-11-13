@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'displayGraph' to reach function 'test2'?",
+    "Is it impossible for function 'displayGraph' to reach function 'newQueue'?",
+    "Can function 'test3' eventually call function 'printf'?",
+    "Is there a call path from function 'test3' to function 'destroyGraph'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < g->V' be skipped entirely?",
+    "Is the loop with condition 'i < g->V' always executed?",
+    "Can the loop with condition 'i < g->V' be skipped entirely?",
+    "Is the loop with condition 'i < g->V' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < g->V' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < g->V' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'data (line 6)' used after its definition?",
+    "Does the value assigned to 'n (line 16)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'n' remain in use at the end of function 'newNode'?",
+    "Does variable 'q (line 23)' remain in use at the end of function 'newQueue'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (j = 0; j < g->V; ++j)' unreachable?",
+    "Can the program actually reach the statement: “while (q->head != NULL)”?"
+  ]
+}

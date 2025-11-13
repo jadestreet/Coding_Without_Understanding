@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'func1' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'func1'?",
+    "Is there a call path from function 'func2' to function 'printf'?",
+    "Is it impossible for function 'func2' to reach function 'func1'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<2' is never executed?",
+    "Is the loop with condition 'i<2' always executed?",
+    "Is it possible that the loop with condition 'flag[1]==1 && turn==1' is never executed?",
+    "Is the loop with condition 'flag[1]==1 && turn==1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'flag[1]==1 && turn==1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'flag (line 5)' affect subsequent computations?",
+    "Is variable 'turn (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'tid1' remain in use at the end of function 'main'?",
+    "Does variable 'tid2' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int turn=0;' be considered dead code?",
+    "Can the program actually reach the statement: “while(flag[1]==1 && turn==1);”?"
+  ]
+}

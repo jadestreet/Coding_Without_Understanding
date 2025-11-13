@@ -1,0 +1,102 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void mergeSort(int *, int, int);
+void merge(int *, int, int, int);
+enum Tur { sirali = 1, ters_sirali = 2, rastgele = 3 };
+int boyut = 100000;
+enum Tur tur = ters_sirali;
+unsigned long long int toplam_degisim=0, toplam_karsilastirma = 0;
+void diziYaz(int * dizi){
+    int l;
+    for( l = 0; l < boyut; l++){
+        printf("%d,", dizi[l]);
+    }
+}
+int * diziOlustur(int boyut, enum Tur tip){
+    int *dizi;
+    int i;
+    dizi = (int *) malloc( sizeof(int) * boyut );
+    if(tip  == 1){
+        for( i=0; i < boyut; i++ ){
+            dizi[i] = i;
+        }
+    }else if(tip == 2){
+        for( i=0; i < boyut; i++ ){
+            dizi[i] = boyut -i -1;
+        }
+    }else{
+        srand(time(NULL)); 
+        for(i=0; i < boyut; i++ ){
+            dizi[i] = (rand() % boyut);
+        }
+    }
+    return dizi;
+}
+void mergeSort(int * dizi, int start, int end){
+    if(start < end){
+        int middle = start + (end-start) / 2;
+        mergeSort(dizi, start, middle);
+        mergeSort(dizi, middle+1, end);
+        merge(dizi, start, middle, end);
+    }
+}
+void merge(int * dizi, int start, int middle, int end)
+{
+    int i, j, k;
+    int sub1 = middle - start + 1;
+    int sub2 =  end - middle;
+    int *L, *R;
+    L = (int *) malloc(sizeof(int) * sub1);
+    R = (int *) malloc(sizeof(int) * sub2);
+    for (i = 0; i < sub1; i++)
+        L[i] = dizi[start + i];
+    for (j = 0; j < sub2; j++)
+        R[j] = dizi[middle + 1+ j];
+    i = 0;
+    j = 0;
+    k = start;
+    while (i < sub1 && j < sub2)
+    {
+        toplam_karsilastirma++;
+        if (L[i] <= R[j])
+        {
+            dizi[k] = L[i];
+            i++;
+            toplam_degisim++;
+        }
+        else 
+        {
+            dizi[k] = R[j];
+            j++;
+            toplam_degisim++;
+        }
+        k++;
+    }
+    while (i < sub1)
+    {
+        dizi[k] = L[i];
+        i++;
+        k++;
+    }
+    while (j < sub2)
+    {
+        dizi[k] = R[j];
+        j++;
+        k++;
+    }
+    free(L);
+    free(R);
+}
+int main(){
+    int * dizi = diziOlustur(boyut, tur);
+    time_t baslangic, bitis;
+    double toplam_sure;
+    time(&baslangic);
+    mergeSort(dizi, 0, boyut-1);
+    time(&bitis);
+    toplam_sure = difftime(bitis, baslangic);
+    printf("----------------\n%d elemanli dizi %llu karsilastirma ve %llu degistirme ile siralandi, %.2f saniye surdu.\n----------------\n",
+           boyut, toplam_karsilastirma, toplam_degisim, toplam_sure);
+    return 1;
+}

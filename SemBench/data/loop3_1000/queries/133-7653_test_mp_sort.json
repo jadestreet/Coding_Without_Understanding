@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'sort'?",
+    "Is it impossible for function 'rand' to reach function 'printf'?",
+    "Is it impossible for function 'rand' to reach function 'main'?",
+    "Can function 'main' eventually call function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Can the loop with condition 'j < 10' be skipped entirely?",
+    "Is the loop with condition 'j < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'A (line 3)' used after its definition?",
+    "Is variable 'i (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 5)' remain in use at the end of function 'sort'?",
+    "Is variable 'A (line 3)' live at the end of function 'sort'?"
+  ],
+  "dead_code": [
+    "Can the statement 'A[i] = (float)((int)(rand() * 1000) / 100);' be considered dead code?",
+    "Is this statement not dead: “for(j = i; j < 10; j++)”?"
+  ]
+}

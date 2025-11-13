@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'iz < lz' is never executed?",
+    "Is the loop with condition 'iz < lz' always executed?",
+    "Is it possible that the loop with condition 'iy < ly' is never executed?",
+    "Is the loop with condition 'iy < ly' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'iz < lz' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'iy < ly' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array_t (line 18)' affect subsequent computations?",
+    "Is variable 'array_x (line 19)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'ix' live at the end of function 'main'?",
+    "Does variable 'it' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '#pragma xmp align array_y[iz][iy][ix][it] with ty(it,ix,iy,iz)' be considered dead code?",
+    "Can the program actually reach the statement: “for(iy = 0; iy < ly; iy++){”?"
+  ]
+}

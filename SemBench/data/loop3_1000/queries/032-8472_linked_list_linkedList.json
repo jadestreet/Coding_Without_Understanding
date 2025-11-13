@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'search' to reach function 'deleteLast'?",
+    "Is it impossible for function 'traverse' to reach function 'insertResult'?",
+    "Can function 'insertResult' eventually call function 'printf'?",
+    "Can function 'getNewNode' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'temp->next != NULL && i < pos-1' is never executed?",
+    "Is the loop with condition 'temp->next != NULL && i < pos-1' always executed?",
+    "Can the loop with condition 'temp->next != NULL' be skipped entirely?",
+    "Is the loop with condition 'temp->next != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'temp->next != NULL && i < pos-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'temp->next != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'd (line 4)' affect subsequent computations?",
+    "Is variable 'data (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'nw_node (line 8)' live at the end of function 'getNewNode'?",
+    "Is variable 'data (line 7)' live at the end of function 'getNewNode'?"
+  ],
+  "dead_code": [
+    "Is the statement 'res = addFront(&start, newNode);' unreachable?",
+    "Is this statement not dead: “return addAtPos(start, nw_node, 0);”?"
+  ]
+}

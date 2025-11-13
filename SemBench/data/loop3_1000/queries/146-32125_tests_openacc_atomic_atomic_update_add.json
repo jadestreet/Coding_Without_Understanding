@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'test_float'?",
+    "Is it impossible for function 'test_basic' to reach function 'test_int'?",
+    "Can function 'main' eventually call function 'test_basic'?",
+    "Is it impossible for function 'test_unsignedlong' to reach function 'test_long'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'sum_4' remain in use at the end of function 'test_basic'?",
+    "Is variable 'i (line 6)' live at the end of function 'test_basic'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(sums[i] != (N*(N-1)/2 + 10*N)){' unreachable?",
+    "Is this statement not dead: “return 1;”?"
+  ]
+}

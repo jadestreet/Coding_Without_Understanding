@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'mergeSort' to reach function 'rand'?",
+    "Is it impossible for function 'merge' to reach function 'printf'?",
+    "Is there a call path from function 'imprime' to function 'printf'?",
+    "Can function 'preenche' eventually call function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<tamanho' be skipped entirely?",
+    "Is the loop with condition 'i<tamanho' always executed?",
+    "Can the loop with condition 'i < TAM' be skipped entirely?",
+    "Is the loop with condition 'i < TAM' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<tamanho' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < TAM' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'comeco (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'tamanho (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'vetor (line 7)' live at the end of function 'main'?",
+    "Is variable 'tamanho (line 7)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void merge (int *V, int inicio, int meio, int fim);' be considered dead code?",
+    "Is this statement not dead: “printf(\"%d-\",vetor[i]);”?"
+  ]
+}

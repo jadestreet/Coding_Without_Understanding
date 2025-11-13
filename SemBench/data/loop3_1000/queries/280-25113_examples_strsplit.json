@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'strsplit5'?",
+    "Is there a call path from function 'strsplit7' to function 'strdup'?",
+    "Is it impossible for function 'strsplit7' to reach function 'strsplit1'?",
+    "Can function 'main' eventually call function 'strtok'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '' is never executed?",
+    "Is the loop with condition '' always executed?",
+    "Can the loop with condition '' be skipped entirely?",
+    "Is the loop with condition '' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'string (line 3)' affect subsequent computations?",
+    "Is variable 'string (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'sep (line 4)' live at the end of function 'strsplit1'?",
+    "Is variable 'string (line 3)' live at the end of function 'strsplit1'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"%s\\n\\n\", string);' unreachable?",
+    "Can the program actually reach the statement: “char string[] = \"Hello World\";”?"
+  ]
+}

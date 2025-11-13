@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'bubble_sort' to reach function 'enhanced_bubble_sort'?",
+    "Can function 'main' eventually call function 'troca'?",
+    "Is it impossible for function 'bubble_r' to reach function 'test_sorting'?",
+    "Can function 'test_sorting' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < count' be skipped entirely?",
+    "Is the loop with condition 'i < count' always executed?",
+    "Is it possible that the loop with condition 'j < count - 1' is never executed?",
+    "Is the loop with condition 'j < count - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < count - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 3)' affect subsequent computations?",
+    "Is variable 'b (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 4)' live at the end of function 'troca'?",
+    "Is variable 'j (line 4)' live at the end of function 'troca'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void test_sorting(int *numbers, int count, compare_cb cmp) {' be considered dead code?",
+    "Can the program actually reach the statement: “if(cmp(numbers[j], numbers[j+1]) > 0) {”?"
+  ]
+}

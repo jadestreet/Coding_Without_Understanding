@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'init_by_array' to reach function 'genrand_real3'?",
+    "Is it impossible for function 'genrand_int32' to reach function 'init_by_array'?",
+    "Is there a call path from function 'init_by_array' to function 'init_genrand'?",
+    "Can function 'genrand_real2' eventually call function 'genrand_int32'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'mti<N' is never executed?",
+    "Is the loop with condition 'mti<N' always executed?",
+    "Can the loop with condition 'k' be skipped entirely?",
+    "Is the loop with condition 'k' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'mti<N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'mt (line 7)' used after its definition?",
+    "Does the value assigned to 'mti (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 's' remain in use at the end of function 'init_genrand'?",
+    "Does variable 'key_length' remain in use at the end of function 'init_by_array'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (j>=key_length) j=0;' be considered dead code?",
+    "Is this statement not dead: “k = (N>key_length ? N : key_length);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'getsum'?",
+    "Is it impossible for function 'getsum' to reach function 'matprint'?",
+    "Is it impossible for function 'matprint' to reach function 'fill_mdm'?",
+    "Is there a call path from function 'main' to function 'matprint'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<ROW' be skipped entirely?",
+    "Is the loop with condition 'i<ROW' always executed?",
+    "Is it possible that the loop with condition 'j<COL' is never executed?",
+    "Is the loop with condition 'j<COL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<ROW' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<COL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'M (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'mdm (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'fill_mdm'?",
+    "Is variable 'sum (line 7)' live at the end of function 'fill_mdm'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void fill_mdm()\t{' be considered dead code?",
+    "Can the program actually reach the statement: “for(j=0;j<COL;j++)\t{”?"
+  ]
+}

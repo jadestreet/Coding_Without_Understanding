@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'HeapAdjust'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'HeapSort'?",
+    "Is it impossible for function 'HeapAdjust' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i>=0' be skipped entirely?",
+    "Is the loop with condition 'i>=0' always executed?",
+    "Can the loop with condition 'i>0' be skipped entirely?",
+    "Is the loop with condition 'i>0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i>=0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i>0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 2)' live at the end of function 'HeapAdjust'?",
+    "Is variable 'nTemp' live at the end of function 'HeapAdjust'?"
+  ],
+  "dead_code": [
+    "Can the statement 'array[i]=array[0]^array[i];' be considered dead code?",
+    "Is this statement not dead: “void HeapSort(int array[],int length)”?"
+  ]
+}

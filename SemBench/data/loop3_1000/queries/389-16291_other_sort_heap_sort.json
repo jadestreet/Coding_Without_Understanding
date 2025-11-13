@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'heap_sort'?",
+    "Is it impossible for function 'heap_adjust' to reach function 'heap_sort'?",
+    "Is it impossible for function 'printf' to reach function 'heap_sort'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<=high' is never executed?",
+    "Is the loop with condition 'i<=high' always executed?",
+    "Is it possible that the loop with condition 'i>=0' is never executed?",
+    "Is the loop with condition 'i>=0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=high' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i>=0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 2)' used after its definition?",
+    "Is variable 'low (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'high' remain in use at the end of function 'heap_adjust'?",
+    "Does variable 'i (line 5)' remain in use at the end of function 'heap_adjust'?"
+  ],
+  "dead_code": [
+    "Can the statement 'a[0] = a[i];' be considered dead code?",
+    "Is this statement not dead: “for (int i=(a_len-1)/2; i>=0; i--)”?"
+  ]
+}

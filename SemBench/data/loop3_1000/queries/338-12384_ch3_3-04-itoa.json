@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'itoa' to function 'reverse'?",
+    "Can function 'main' eventually call function 'strlen'?",
+    "Is it impossible for function 'printf' to reach function 'strlen'?",
+    "Is it impossible for function 'strlen' to reach function 'itoa'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= mid' be skipped entirely?",
+    "Is the loop with condition 'i <= mid' always executed?",
+    "Can the loop with condition '(n /= 10' be skipped entirely?",
+    "Is the loop with condition '(n /= 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= mid' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(n /= 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'str (line 4)' used after its definition?",
+    "Is variable 'i (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'end' remain in use at the end of function 'reverse'?",
+    "Is variable 'i (line 6)' live at the end of function 'reverse'?"
+  ],
+  "dead_code": [
+    "Can the statement 'str[i++] = n % 10 + '0';' be considered dead code?",
+    "Is this statement not dead: “int i, sign;”?"
+  ]
+}

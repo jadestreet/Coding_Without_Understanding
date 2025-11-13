@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'print_array'?",
+    "Can function 'main' eventually call function 'print_array'?",
+    "Is there a call path from function 'print_array' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<len' be skipped entirely?",
+    "Is the loop with condition 'i<len' always executed?",
+    "Is it possible that the loop with condition 'i<len' is never executed?",
+    "Is the loop with condition 'i<len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'len (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'print_array'?",
+    "Is variable 'p' live at the end of function 'print_array'?"
+  ],
+  "dead_code": [
+    "Is the statement 'j = j-1 ;' unreachable?",
+    "Is this statement not dead: “int g[11] = {6,4,2,15,68,8,6,2,7,0,3};”?"
+  ]
+}

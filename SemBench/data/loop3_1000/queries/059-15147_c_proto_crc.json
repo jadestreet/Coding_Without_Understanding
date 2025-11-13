@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'test' eventually call function 'ComputeCrc'?",
+    "Is there a call path from function 'main' to function 'ComputeCrc'?",
+    "Is it impossible for function 'UpdateCrc' to reach function 'main'?",
+    "Is it impossible for function 'UpdateCrc' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<len' be skipped entirely?",
+    "Is the loop with condition 'i<len' always executed?",
+    "Is it possible that the loop with condition '--len' is never executed?",
+    "Is the loop with condition '--len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '--len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'data (line 4)' used after its definition?",
+    "Is variable 'pwCrc (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'data (line 4)' remain in use at the end of function 'UpdateCrc'?",
+    "Does variable 'pwCrc' remain in use at the end of function 'UpdateCrc'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"buf %s:\", id);' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

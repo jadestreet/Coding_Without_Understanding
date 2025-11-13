@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'memset'?",
+    "Is it impossible for function 'memset' to reach function 'strlen'?",
+    "Is it impossible for function 'free' to reach function '__assert_fail'?",
+    "Can function 'longestCommonPrefix' eventually call function 'strlen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'index < len' be skipped entirely?",
+    "Is the loop with condition 'index < len' always executed?",
+    "Is it possible that the loop with condition 'common_prefix_index < min_len' is never executed?",
+    "Is the loop with condition 'common_prefix_index < min_len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'index < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'common_prefix_index < min_len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'strs (line 6)' affect subsequent computations?",
+    "Is variable 'len (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'longestCommonPrefix'?",
+    "Is variable 'index' live at the end of function 'longestCommonPrefix'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int len5 = sizeof(list5)/sizeof(char*);' unreachable?",
+    "Is this statement not dead: “if (!common_prefix) {”?"
+  ]
+}

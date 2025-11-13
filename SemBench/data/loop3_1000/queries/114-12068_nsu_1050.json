@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'is_sym_num'?",
+    "Can function 'main' eventually call function 'is_sym_num'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < MEDIAN' is never executed?",
+    "Is the loop with condition 'i < MEDIAN' always executed?",
+    "Can the loop with condition 'i > j' be skipped entirely?",
+    "Is the loop with condition 'i > j' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < MEDIAN' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i > j' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 4)' used after its definition?",
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 5)' live at the end of function 'is_sym_num'?",
+    "Is variable 'a' live at the end of function 'is_sym_num'?"
+  ],
+  "dead_code": [
+    "Can the statement 'j++;' be considered dead code?",
+    "Is this statement not dead: “break;”?"
+  ]
+}

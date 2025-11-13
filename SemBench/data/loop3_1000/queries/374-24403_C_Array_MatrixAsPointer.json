@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'matriz_ponteiro'?",
+    "Is it impossible for function 'malloc' to reach function 'matriz_ponteiro'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is there a call path from function 'matriz_ponteiro' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'lin < linhas' is never executed?",
+    "Is the loop with condition 'lin < linhas' always executed?",
+    "Can the loop with condition 'col < colunas' be skipped entirely?",
+    "Is the loop with condition 'col < colunas' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'lin < linhas' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'col < colunas' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'mtr (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'linhas (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'col (line 7)' live at the end of function 'matriz_ponteiro'?",
+    "Does variable 'colunas' remain in use at the end of function 'matriz_ponteiro'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int main () {' unreachable?",
+    "Is this statement not dead: “for (int col = 0; col < COLUNA; col++) mtr[lin][col] = cont++;”?"
+  ]
+}

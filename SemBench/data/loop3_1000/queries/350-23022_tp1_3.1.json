@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'printf'?",
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'malloc'?",
+    "Is there a call path from function 'f' to function 'sleep'?",
+    "Can function 'main' eventually call function 'destroyThreadParameter'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<SIZE' is never executed?",
+    "Is the loop with condition 'i<SIZE' always executed?",
+    "Can the loop with condition 'i<SIZE' be skipped entirely?",
+    "Is the loop with condition 'i<SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'p (line 12)' used after its definition?",
+    "Is variable 'p (line 13)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 12)' live at the end of function 'initThreadParameter'?",
+    "Is variable 'p (line 12)' live at the end of function 'destroyThreadParameter'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"I'm done working, i'm waiting for my slow brothers\\n\");' unreachable?",
+    "Can the program actually reach the statement: “while(!c->doneCreating){”?"
+  ]
+}

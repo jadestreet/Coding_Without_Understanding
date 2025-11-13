@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'printStr'?",
+    "Is it impossible for function 'printStr' to reach function 'main'?",
+    "Can function 'main' eventually call function 'catStr'?",
+    "Can function 'printStr' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition ''\\0'!=str[i]' be skipped entirely?",
+    "Is the loop with condition ''\\0'!=str[i]' always executed?",
+    "Can the loop with condition 'i<len2' be skipped entirely?",
+    "Is the loop with condition 'i<len2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition ''\\0'!=str[i]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<len2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 2)' affect subsequent computations?",
+    "Is variable 'i (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 3)' remain in use at the end of function 'lenStr'?",
+    "Does variable 'str (line 2)' remain in use at the end of function 'lenStr'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"\\ncombined length is %d\\nAfter combination:%s\",lenStr(str1),str1);' unreachable?",
+    "Can the program actually reach the statement: “return i;”?"
+  ]
+}

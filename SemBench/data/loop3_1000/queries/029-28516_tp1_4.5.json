@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'init_thread_data' to reach function 'free'?",
+    "Is it impossible for function 'f3' to reach function 'f1'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'destroy_thread_data'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<THREAD_NUMBER' is never executed?",
+    "Is the loop with condition 'i<THREAD_NUMBER' always executed?",
+    "Can the loop with condition 'i<NUMBER_OF_AREA' be skipped entirely?",
+    "Is the loop with condition 'i<NUMBER_OF_AREA' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<THREAD_NUMBER' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUMBER_OF_AREA' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'p (line 17)' affect subsequent computations?",
+    "Does the value assigned to 'p (line 19)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 17)' live at the end of function 'init_thread_data'?",
+    "Is variable 'p (line 17)' live at the end of function 'destroy_thread_data'?"
+  ],
+  "dead_code": [
+    "Is the statement 'struct thread_data* param;' unreachable?",
+    "Can the program actually reach the statement: “size_t my_function_number=3;”?"
+  ]
+}

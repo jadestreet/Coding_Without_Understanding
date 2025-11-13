@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'print_array' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'print_array' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < count' is never executed?",
+    "Is the loop with condition 'i < count' always executed?",
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'count (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 4)' remain in use at the end of function 'print_array'?",
+    "Does variable 'count' remain in use at the end of function 'print_array'?"
+  ],
+  "dead_code": [
+    "Can the statement 'my_array[9] = temp;' be considered dead code?",
+    "Is this statement not dead: “printf(\"\\n\\n\");”?"
+  ]
+}

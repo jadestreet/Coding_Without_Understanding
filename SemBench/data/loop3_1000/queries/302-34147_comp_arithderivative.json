@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'primegen' to reach function 'main'?",
+    "Is it impossible for function 'arithderivative' to reach function 'primegen'?",
+    "Is there a call path from function 'main' to function 'arithderivative'?",
+    "Is there a call path from function 'main' to function 'primegen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<n' is never executed?",
+    "Is the loop with condition 'i<n' always executed?",
+    "Can the loop with condition 'j<n' be skipped entirely?",
+    "Is the loop with condition 'j<n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 3)' used after its definition?",
+    "Is variable 'n (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 4)' live at the end of function 'arithderivative'?",
+    "Is variable 'sum' live at the end of function 'arithderivative'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int primegen(int a[], int n){' unreachable?",
+    "Can the program actually reach the statement: “a[1]=3;”?"
+  ]
+}

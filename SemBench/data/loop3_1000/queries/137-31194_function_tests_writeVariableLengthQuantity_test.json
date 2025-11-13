@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'writeVariableLengthQuantity'?",
+    "Is it impossible for function 'writeVariableLengthQuantity' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'writeVariableLengthQuantity'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i >= 0' is never executed?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Can the loop with condition 'i >= 0' be skipped entirely?",
+    "Is the loop with condition 'i >= 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'input (line 3)' affect subsequent computations?",
+    "Is variable 'outputPtr (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'input' remain in use at the end of function 'writeVariableLengthQuantity'?",
+    "Is variable 'outputPtr' live at the end of function 'writeVariableLengthQuantity'?"
+  ],
+  "dead_code": [
+    "Is the statement '{0x0000007F, 0x0000007F, 1},' unreachable?",
+    "Can the program actually reach the statement: “struct testCase tests[] = {{0x00000000, 0x00000000, 0},”?"
+  ]
+}

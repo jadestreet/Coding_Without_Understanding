@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'fclose' to reach function 'rand'?",
+    "Is it impossible for function 'rand' to reach function 'fclose'?",
+    "Is there a call path from function 'main' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?",
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'i (line 5)' used after its definition?",
+    "Does the value assigned to 'corr (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'corr' live at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(i=0; i<size; i++){' unreachable?",
+    "Can the program actually reach the statement: “pWEIGHT = fopen(\"seed/weight12.h\",\"w\");”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fclose' to reach function 'fopen'?",
+    "Can function 'main' eventually call function 'fclose'?",
+    "Is it impossible for function 'fprintf' to reach function 'fclose'?",
+    "Can function 'main' eventually call function 'fopen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < ROWS' is never executed?",
+    "Is the loop with condition 'i < ROWS' always executed?",
+    "Is it possible that the loop with condition 'j < COLS' is never executed?",
+    "Is the loop with condition 'j < COLS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < ROWS' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < COLS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'vals (line 6)' used after its definition?",
+    "Does the value assigned to 'i (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'vals' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (int j = 0; j < COLS; ++j)' unreachable?",
+    "Can the program actually reach the statement: “for (int i = 0; i < ROWS; ++i)”?"
+  ]
+}

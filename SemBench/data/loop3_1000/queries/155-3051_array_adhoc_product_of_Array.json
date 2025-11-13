@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?",
+    "Is it possible that the loop with condition 'i>=0' is never executed?",
+    "Is the loop with condition 'i>=0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i>=0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'size (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p' live at the end of function 'main'?",
+    "Is variable 'size' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(int i=0;i<size;++i) {' unreachable?",
+    "Is this statement not dead: “p=1;”?"
+  ]
+}

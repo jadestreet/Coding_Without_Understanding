@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'k<10' be skipped entirely?",
+    "Is the loop with condition 'k<10' always executed?",
+    "Can the loop with condition 'i<10' be skipped entirely?",
+    "Is the loop with condition 'i<10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 3)' used after its definition?",
+    "Does the value assigned to 'i (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'x' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int x[10],i,k;' unreachable?",
+    "Is this statement not dead: “for (i=1; i<10; i++)”?"
+  ]
+}

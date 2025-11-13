@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'parentnode'?",
+    "Is there a call path from function 'heapsort' to function 'leftchildnode'?",
+    "Is it impossible for function 'parentnode' to reach function 'heapsort'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i > -1' is never executed?",
+    "Is the loop with condition 'i > -1' always executed?",
+    "Can the loop with condition 'i < n0' be skipped entirely?",
+    "Is the loop with condition 'i < n0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i > -1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'f (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'result (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'new_number' live at the end of function 'add'?",
+    "Does variable 'id' remain in use at the end of function 'add'?"
+  ],
+  "dead_code": [
+    "Is the statement 'f[0] = f[n0 - i - 1];' unreachable?",
+    "Is this statement not dead: “int i = start;”?"
+  ]
+}

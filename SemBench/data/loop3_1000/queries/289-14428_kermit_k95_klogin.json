@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'usage' eventually call function 'fprintf'?",
+    "Is it impossible for function 'system' to reach function 'strlen'?",
+    "Is there a call path from function 'parsecmdline' to function 'fprintf'?",
+    "Is it impossible for function 'strlen' to reach function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<argc' is never executed?",
+    "Is the loop with condition 'i<argc' always executed?",
+    "Is it possible that the loop with condition 's != ckermitcmd && *s != '\\\\' && *s != '/'' is never executed?",
+    "Is the loop with condition 's != ckermitcmd && *s != '\\\\' && *s != '/'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 's != ckermitcmd && *s != '\\\\' && *s != '/'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'tn_port' used after its definition?",
+    "Is variable 'hostname (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 's' live at the end of function 'constructcmdline'?",
+    "Is variable 'rlogin' live at the end of function 'constructcmdline'?"
+  ],
+  "dead_code": [
+    "Is the statement 's--;' unreachable?",
+    "Can the program actually reach the statement: “i++ ;”?"
+  ]
+}

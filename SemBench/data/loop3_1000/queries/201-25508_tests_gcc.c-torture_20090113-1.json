@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'msum_i4' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'msum_i4'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'n < dim' be skipped entirely?",
+    "Is the loop with condition 'n < dim' always executed?",
+    "Is it possible that the loop with condition 'n < len' is never executed?",
+    "Is the loop with condition 'n < len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'n < dim' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n < len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'dim (line 10)' used after its definition?",
+    "Does the value assigned to 'retarray (line 13)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'msum_i4'?",
+    "Is variable 'base' live at the end of function 'msum_i4'?"
+  ],
+  "dead_code": [
+    "Can the statement '} gfc_array_i4;' be considered dead code?",
+    "Can the program actually reach the statement: “int ubound;”?"
+  ]
+}

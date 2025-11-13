@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'clock' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'clock'?",
+    "Can function 'main' eventually call function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'j < N' be skipped entirely?",
+    "Is the loop with condition 'j < N' always executed?",
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 6)' used after its definition?",
+    "Does the value assigned to 'b (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'time2' remain in use at the end of function 'main'?",
+    "Does variable 'dub_time' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'c[i][j+3] = c[i][j+3] + a[i][k] * b[k][j+3];' unreachable?",
+    "Can the program actually reach the statement: “for (i=0; i<N; i++)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is it impossible for function 'strlen' to reach function 'convert'?",
+    "Is it impossible for function 'strlen' to reach function 'printf'?",
+    "Can function 'convert' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<len' is never executed?",
+    "Is the loop with condition 'i<len' always executed?",
+    "Is it possible that the loop with condition 'i<numRows-1' is never executed?",
+    "Is the loop with condition 'i<numRows-1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<numRows-1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's (line 5)' used after its definition?",
+    "Is variable 'numRows (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'convert'?",
+    "Does variable 'x' remain in use at the end of function 'convert'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int x = i*2;' be considered dead code?",
+    "Is this statement not dead: “int m = (numRows-1)<<1;”?"
+  ]
+}

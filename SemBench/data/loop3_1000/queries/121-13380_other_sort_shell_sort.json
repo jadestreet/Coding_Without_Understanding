@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'shell_insert'?",
+    "Is there a call path from function 'shell_sort' to function 'shell_insert'?",
+    "Is it impossible for function 'shell_sort' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<a_len' be skipped entirely?",
+    "Is the loop with condition 'i<a_len' always executed?",
+    "Can the loop with condition 'j >= 0 && a[j]>tmp' be skipped entirely?",
+    "Is the loop with condition 'j >= 0 && a[j]>tmp' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<a_len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j >= 0 && a[j]>tmp' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 2)' affect subsequent computations?",
+    "Is variable 'a_len (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 4)' remain in use at the end of function 'shell_insert'?",
+    "Does variable 'a (line 2)' remain in use at the end of function 'shell_insert'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"\\n\");' unreachable?",
+    "Can the program actually reach the statement: “int tmp = a[i];”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'func_24' to reach function 'func_16'?",
+    "Is it impossible for function 'transparent_crc' to reach function 'func_6'?",
+    "Is there a call path from function 'func_24' to function 'transparent_crc'?",
+    "Can function 'func_24' eventually call function 'step_hash'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 256' is never executed?",
+    "Is the loop with condition 'i < 256' always executed?",
+    "Can the loop with condition 'j > 0' be skipped entirely?",
+    "Is the loop with condition 'j > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'print_hash_value (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'crc32_tab (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 13)' remain in use at the end of function 'crc32_gentab'?",
+    "Is variable 'poly' live at the end of function 'crc32_gentab'?"
+  ],
+  "dead_code": [
+    "Is the statement '(*l_60) = l_57;' unreachable?",
+    "Is this statement not dead: “step_hash(204);”?"
+  ]
+}

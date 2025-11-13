@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'init_crc64_table' to reach function 'printf'?",
+    "Is it impossible for function 'print_crc64_table' to reach function 'init_crc64_table'?",
+    "Is there a call path from function 'print_crc64_table' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'init_crc64_table'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 's < 4' is never executed?",
+    "Is the loop with condition 's < 4' always executed?",
+    "Is it possible that the loop with condition 'b < 256' is never executed?",
+    "Is the loop with condition 'b < 256' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 's < 4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'b < 256' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'crc64_table (line 6)' used after its definition?",
+    "Is variable 'poly64 (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'poly64' live at the end of function 'init_crc64_table'?"
+  ],
+  "dead_code": [
+    "Is the statement '#ifdef WORDS_BIGENDIAN' unreachable?",
+    "Can the program actually reach the statement: “crc64_table[s][b] = bswap_64(crc64_table[s][b]);”?"
+  ]
+}

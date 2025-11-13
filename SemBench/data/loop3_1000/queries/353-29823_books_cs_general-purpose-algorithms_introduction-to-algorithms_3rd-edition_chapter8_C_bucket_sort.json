@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'insert_sort' to reach function 'main'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'idx<DATASETSIZE' be skipped entirely?",
+    "Is the loop with condition 'idx<DATASETSIZE' always executed?",
+    "Can the loop with condition 'idx<DATASETSIZE' be skipped entirely?",
+    "Is the loop with condition 'idx<DATASETSIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'idx<DATASETSIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'idx<DATASETSIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'dValue (line 7)' affect subsequent computations?",
+    "Is variable 'pNext (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'jdx' remain in use at the end of function 'main'?",
+    "Does variable 'bArray' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'pNext = myBucket;' be considered dead code?",
+    "Is this statement not dead: “insert_sort(&(bArray[jdx].pNext),srcdata[idx]);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'bar' to reach function 'main'?",
+    "Can function 'foo' eventually call function 'printf'?",
+    "Is it impossible for function 'foo' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<SIZE' is never executed?",
+    "Is the loop with condition 'i<SIZE' always executed?",
+    "Is it possible that the loop with condition 'i<SIZE' is never executed?",
+    "Is the loop with condition 'i<SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?",
+    "Is variable 'array (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 5)' live at the end of function 'foo'?",
+    "Does variable 'array1 (line 7)' remain in use at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"%p\\n\", array);' be considered dead code?",
+    "Is this statement not dead: “void bar() {”?"
+  ]
+}

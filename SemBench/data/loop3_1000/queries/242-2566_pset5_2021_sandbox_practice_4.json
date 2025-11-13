@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'NewNode' to reach function 'ShowLinkedList'?",
+    "Is it impossible for function 'malloc' to reach function 'ShowLinkedList'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'ShowLinkedList' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= 5' is never executed?",
+    "Is the loop with condition 'i <= 5' always executed?",
+    "Can the loop with condition 'tmp != NULL' be skipped entirely?",
+    "Is the loop with condition 'tmp != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'tmp != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'value (line 9)' affect subsequent computations?",
+    "Does the value assigned to 'linked_list (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'numberList' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'node;' unreachable?",
+    "Is this statement not dead: “return tmp;”?"
+  ]
+}

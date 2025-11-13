@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'lucas' to reach function 'primes'?",
+    "Is there a call path from function 'main' to function 'lucas'?",
+    "Can function 'lucas' eventually call function 'printf'?",
+    "Is it impossible for function 'primes' to reach function 'lucas'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<=f' is never executed?",
+    "Is the loop with condition 'i<=f' always executed?",
+    "Is it possible that the loop with condition 'del<=prime/2' is never executed?",
+    "Is the loop with condition 'del<=prime/2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=f' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'del<=prime/2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'f (line 2)' affect subsequent computations?",
+    "Is variable 'f (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'lucas'?",
+    "Does variable 'prepre' remain in use at the end of function 'lucas'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (flag_prime==1)' be considered dead code?",
+    "Can the program actually reach the statement: “lucas(100);”?"
+  ]
+}

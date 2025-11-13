@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'i<5' be skipped entirely?",
+    "Is the loop with condition 'i<5' always executed?",
+    "Is it possible that the loop with condition 'j<5' is never executed?",
+    "Is the loop with condition 'j<5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'keys (line 1)' affect subsequent computations?",
+    "Is variable 'answer (line 195)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '{456,456,456,456,456},' unreachable?",
+    "Can the program actually reach the statement: “{4,4,4,4,4},”?"
+  ]
+}

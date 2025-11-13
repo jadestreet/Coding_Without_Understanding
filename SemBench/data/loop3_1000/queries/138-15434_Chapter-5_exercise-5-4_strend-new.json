@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'strend_'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'strend_' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '(*(str+lenofstr++' is never executed?",
+    "Is the loop with condition '(*(str+lenofstr++' always executed?",
+    "Can the loop with condition '(*(end+lenofend++' be skipped entirely?",
+    "Is the loop with condition '(*(end+lenofend++' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(*(str+lenofstr++' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(*(end+lenofend++' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'end (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'end' live at the end of function 'strend_'?",
+    "Does variable 'indexofstr' remain in use at the end of function 'strend_'?"
+  ],
+  "dead_code": [
+    "Can the statement 'char str1[] = \"nice to meet you, John\";' be considered dead code?",
+    "Is this statement not dead: “return 1;”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < NUM' is never executed?",
+    "Is the loop with condition 'i < NUM' always executed?",
+    "Can the loop with condition 'i < NUM-1' be skipped entirely?",
+    "Is the loop with condition 'i < NUM-1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < NUM' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < NUM-1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 5)' affect subsequent computations?",
+    "Is variable 'i (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'array' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"\\nafter shift:\\n\");' unreachable?",
+    "Is this statement not dead: “printf(\"array[%d]=%d\\n\",i,array[i]);”?"
+  ]
+}

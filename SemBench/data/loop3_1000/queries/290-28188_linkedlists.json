@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'push' to reach function 'pop'?",
+    "Is it impossible for function 'push' to reach function 'remove_last'?",
+    "Can function 'main' eventually call function 'linked_list_len'?",
+    "Can function 'main' eventually call function 'remove_last'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i > 0' be skipped entirely?",
+    "Is the loop with condition 'i > 0' always executed?",
+    "Is it possible that the loop with condition 'i < size' is never executed?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'val (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'head (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'head (line 9)' live at the end of function 'print_list'?",
+    "Is variable 'current (line 11)' live at the end of function 'print_list'?"
+  ],
+  "dead_code": [
+    "Is the statement 'retlist->next = NULL;' unreachable?",
+    "Can the program actually reach the statement: “current = current->next;”?"
+  ]
+}

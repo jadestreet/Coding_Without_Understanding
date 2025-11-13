@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'perror' to reach function 'fprintf'?",
+    "Is it impossible for function 'getc' to reach function 'fclose'?",
+    "Is there a call path from function 'wc' to function 'print'?",
+    "Is there a call path from function 'main' to function 'fopen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '(ch=getc(fp' be skipped entirely?",
+    "Is the loop with condition '(ch=getc(fp' always executed?",
+    "Can the loop with condition '(++argv' be skipped entirely?",
+    "Is the loop with condition '(++argv' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(ch=getc(fp' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(++argv' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'fname (line 4)' affect subsequent computations?",
+    "Is variable 'opt (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'fname (line 4)' live at the end of function 'print'?",
+    "Is variable 'lines (line 4)' live at the end of function 'print'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int n;' be considered dead code?",
+    "Is this statement not dead: “else if(sp) {”?"
+  ]
+}

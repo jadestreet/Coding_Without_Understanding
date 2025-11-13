@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sprintf' to reach function 'fclose'?",
+    "Is it impossible for function 'malloc' to reach function 'free'?",
+    "Can function 'main' eventually call function 'fclose'?",
+    "Is there a call path from function 'main' to function 'sprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '1' is never executed?",
+    "Is the loop with condition '1' always executed?",
+    "Can the loop with condition 'do-while' be skipped entirely?",
+    "Is the loop with condition 'do-while' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'do-while' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc (line 6)' used after its definition?",
+    "Does the value assigned to 'argv (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'filename' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fclose(nb);' unreachable?",
+    "Can the program actually reach the statement: “sprintf(filename, \"%s%s\", filearg, EXTRA_EXT);”?"
+  ]
+}

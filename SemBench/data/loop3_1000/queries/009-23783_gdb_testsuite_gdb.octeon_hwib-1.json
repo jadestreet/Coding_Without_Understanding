@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'foo'?",
+    "Is there a call path from function 'main' to function 'foo'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'j < 2' is never executed?",
+    "Is the loop with condition 'j < 2' always executed?",
+    "Can the loop with condition 'i < 2' be skipped entirely?",
+    "Is the loop with condition 'i < 2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j < 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'count (line 2)' affect subsequent computations?",
+    "Is variable 'i (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'foo'?",
+    "Is variable 'j' live at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Is the statement 'count += 2;' unreachable?",
+    "Is this statement not dead: “printf (\"The value of count is %d\\n\", count);”?"
+  ]
+}

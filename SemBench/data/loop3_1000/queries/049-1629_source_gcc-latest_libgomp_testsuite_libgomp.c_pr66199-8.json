@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'f1' to reach function 'f2'?",
+    "Is there a call path from function 'main' to function 'f4'?",
+    "Is it impossible for function 'f4' to reach function 'f3'?",
+    "Is there a call path from function 'main' to function 'f3'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'd < b' be skipped entirely?",
+    "Is the loop with condition 'd < b' always executed?",
+    "Can the loop with condition 'd < b' be skipped entirely?",
+    "Is the loop with condition 'd < b' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'd < b' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'd < b' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'u (line 2)' used after its definition?",
+    "Is variable 'v (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 5)' remain in use at the end of function 'f1'?",
+    "Does variable 'd (line 7)' remain in use at the end of function 'f1'?"
+  ],
+  "dead_code": [
+    "Is the statement '#pragma omp target map(from: d1, d2)' unreachable?",
+    "Can the program actually reach the statement: “f3 (long a1, long b1, long a2, long b2)”?"
+  ]
+}

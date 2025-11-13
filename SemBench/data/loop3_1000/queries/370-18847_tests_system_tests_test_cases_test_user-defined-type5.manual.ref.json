@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'kernel' to reach function 'printf'?",
+    "Is there a call path from function 'dump' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'kernel'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'z < N-halo_width' is never executed?",
+    "Is the loop with condition 'z < N-halo_width' always executed?",
+    "Is it possible that the loop with condition 'y < N-halo_width' is never executed?",
+    "Is the loop with condition 'y < N-halo_width' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'z < N-halo_width' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y < N-halo_width' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 5)' used after its definition?",
+    "Is variable 'y (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'halo_width' remain in use at the end of function 'kernel'?",
+    "Is variable 'g2 (line 6)' live at the end of function 'kernel'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (y = halo_width; y < N-halo_width; ++y) {' be considered dead code?",
+    "Can the program actually reach the statement: “g1[OFFSET(x+1, y, z)] + g1[OFFSET(x-1, y, z)] +”?"
+  ]
+}

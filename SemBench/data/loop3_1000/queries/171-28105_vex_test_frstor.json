@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'isFPLsbs' to reach function 'printf'?",
+    "Is there a call path from function 'show_fpustate' to function 'printf'?",
+    "Is it impossible for function 'do_fsave' to reach function 'isFPLsbs'?",
+    "Is there a call path from function 'main' to function 'show_fpustate'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 14' is never executed?",
+    "Is the loop with condition 'i < 14' always executed?",
+    "Can the loop with condition 'i < 28' be skipped entirely?",
+    "Is the loop with condition 'i < 28' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 14' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 28' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'p (line 3)' used after its definition?",
+    "Is variable 'p (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 3)' live at the end of function 'do_fsave_interesting_stuff'?",
+    "Does variable 'p (line 11)' remain in use at the end of function 'do_fsave'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"%02x \", buf[i+28]);' be considered dead code?",
+    "Can the program actually reach the statement: “q = 70; if (i == q || i == q+1) return 1;”?"
+  ]
+}

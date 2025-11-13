@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strlen' to reach function 'set_root'?",
+    "Is it impossible for function 'strtok' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'set_root'?",
+    "Is there a call path from function 'main' to function 'set_print'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < ARRAY_SIZE(s->id)' is never executed?",
+    "Is the loop with condition 'i < ARRAY_SIZE(s->id)' always executed?",
+    "Can the loop with condition 'i < ARRAY_SIZE(s->id)' be skipped entirely?",
+    "Is the loop with condition 'i < ARRAY_SIZE(s->id)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < ARRAY_SIZE(s->id)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < ARRAY_SIZE(s->id)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's (line 8)' used after its definition?",
+    "Is variable 's (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 's (line 8)' live at the end of function 'set_init'?",
+    "Is variable 's (line 15)' live at the end of function 'set_root'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fprintf(f, \"%d \", s->id[i]);' unreachable?",
+    "Can the program actually reach the statement: “size_t i;”?"
+  ]
+}

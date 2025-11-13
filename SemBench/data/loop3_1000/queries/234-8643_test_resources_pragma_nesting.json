@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 10' is never executed?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Is it possible that the loop with condition 'j < i' is never executed?",
+    "Is the loop with condition 'j < i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'j (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'j' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '#pragma critTer:11:../test/resources/nesting.c:' be considered dead code?",
+    "Is this statement not dead: “for (i = 0; i < 10; i++) {”?"
+  ]
+}

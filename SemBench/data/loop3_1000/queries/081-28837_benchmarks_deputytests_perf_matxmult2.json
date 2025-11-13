@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'mult'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Is it impossible for function 'malloc' to reach function 'mult'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<SIZE' is never executed?",
+    "Is the loop with condition 'i<SIZE' always executed?",
+    "Is it possible that the loop with condition 'j<SIZE' is never executed?",
+    "Is the loop with condition 'j<SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 9)' used after its definition?",
+    "Does the value assigned to 'b (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 10)' live at the end of function 'mult'?",
+    "Is variable 'k' live at the end of function 'mult'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for(k=0;k<SIZE;k++) {' be considered dead code?",
+    "Is this statement not dead: “#endif”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sem_init' to reach function 'main'?",
+    "Is it impossible for function 'sem_init' to reach function 'gomp_barrier_wait'?",
+    "Is there a call path from function 'gomp_barrier_wait' to function 'sem_post'?",
+    "Is there a call path from function 'gomp_barrier_destroy' to function 'pthread_mutex_destroy'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'i < 4' is never executed?",
+    "Is the loop with condition 'i < 4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'bar (line 18)' used after its definition?",
+    "Is variable 'count (line 18)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'bar (line 18)' remain in use at the end of function 'gomp_barrier_init'?",
+    "Does variable 'count (line 18)' remain in use at the end of function 'gomp_barrier_init'?"
+  ],
+  "dead_code": [
+    "Can the statement 'sem_wait (&bar->sem1);' be considered dead code?",
+    "Can the program actually reach the statement: “unsigned total;”?"
+  ]
+}

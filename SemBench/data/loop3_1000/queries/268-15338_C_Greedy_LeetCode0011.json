@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'maxArea' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'maxArea'?",
+    "Can function 'main' eventually call function 'maxArea'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < j && *i <= mMinHeight' be skipped entirely?",
+    "Is the loop with condition 'i < j && *i <= mMinHeight' always executed?",
+    "Can the loop with condition 'i < j && *j <= mMinHeight' be skipped entirely?",
+    "Is the loop with condition 'i < j && *j <= mMinHeight' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < j && *i <= mMinHeight' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < j && *j <= mMinHeight' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'height (line 2)' affect subsequent computations?",
+    "Is variable 'heightSize (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'mMinHeight' remain in use at the end of function 'maxArea'?",
+    "Does variable 'i' remain in use at the end of function 'maxArea'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (i < j && *i <= mMinHeight)' unreachable?",
+    "Is this statement not dead: “while (i < j && *j <= mMinHeight)”?"
+  ]
+}

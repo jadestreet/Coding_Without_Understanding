@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'put_pixel' to reach function 'fclose'?",
+    "Is it impossible for function 'fclose' to reach function 'int_sin'?",
+    "Is there a call path from function 'main' to function 'perror'?",
+    "Can function 'pgmyuv_save' eventually call function 'fopen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'y < height' be skipped entirely?",
+    "Is the loop with condition 'y < height' always executed?",
+    "Is it possible that the loop with condition 'x < width' is never executed?",
+    "Is the loop with condition 'x < width' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'y < height' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'x < width' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'h (line 1)' affect subsequent computations?",
+    "Is variable 'h (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'v' live at the end of function 'int_pow'?",
+    "Is variable 'p (line 6)' live at the end of function 'int_pow'?"
+  ],
+  "dead_code": [
+    "Can the statement 'b1 += b;' be considered dead code?",
+    "Can the program actually reach the statement: “#define DEFAULT_WIDTH   352”?"
+  ]
+}

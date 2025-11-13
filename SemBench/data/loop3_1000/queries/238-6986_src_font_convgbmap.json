@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'gbunicode_map_init' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'gbunicode_map_init' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'gbunicode_map_init'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'ch1 <= 0xFE' is never executed?",
+    "Is the loop with condition 'ch1 <= 0xFE' always executed?",
+    "Is it possible that the loop with condition 'ch2 <= 0xFE' is never executed?",
+    "Is the loop with condition 'ch2 <= 0xFE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'ch1 <= 0xFE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'ch2 <= 0xFE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'gbunicode_map (line 2)' affect subsequent computations?",
+    "Is variable 'my_gbunicode_map (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'my_offset' live at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'gbunicode_map[0x4175] = 0x5218; gbunicode_map[0x4176] = 0x7624;' unreachable?",
+    "Is this statement not dead: “gbunicode_map[0x743A] = 0x8249; gbunicode_map[0x743B] = 0x824B;”?"
+  ]
+}

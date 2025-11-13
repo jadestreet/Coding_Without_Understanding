@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 's_pcmpistri_4A' to reach function 'istri_0C'?",
+    "Is it impossible for function 's_fn' to reach function 'printf'?",
+    "Is there a call path from function 'istri_1A' to function 's_fn'?",
+    "Is there a call path from function 'pcmpXstrX_WRK' to function 'ctz32'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 16' is never executed?",
+    "Is the loop with condition 'i < 16' always executed?",
+    "Is it possible that the loop with condition 'i < 16' is never executed?",
+    "Is the loop with condition 'i < 16' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 16' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 16' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Is variable 'h (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'n' live at the end of function 'clz32'?",
+    "Does variable 'x (line 29)' remain in use at the end of function 'clz32'?"
+  ],
+  "dead_code": [
+    "Can the statement 'UChar* argR = (UChar*)argRV;' be considered dead code?",
+    "Can the program actually reach the statement: “\"pcmpistri $0x4A,  %%xmm2, %%xmm11\"   \"\\n\\t\"”?"
+  ]
+}

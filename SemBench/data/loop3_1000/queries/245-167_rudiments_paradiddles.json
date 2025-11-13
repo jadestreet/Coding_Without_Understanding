@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'putchar'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'putchar' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'putchar'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'w <= 2' be skipped entirely?",
+    "Is the loop with condition 'w <= 2' always executed?",
+    "Can the loop with condition 'l <= mask' be skipped entirely?",
+    "Is the loop with condition 'l <= mask' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'w <= 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'l <= mask' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'bar (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'c (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'mask' live at the end of function 'main'?",
+    "Is variable 'shift' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '} else {' be considered dead code?",
+    "Is this statement not dead: “pn++;”?"
+  ]
+}

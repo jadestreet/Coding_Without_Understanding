@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printres' to reach function 'memset'?",
+    "Can function 'main' eventually call function 'blockval'?",
+    "Is it impossible for function 'printf' to reach function 'blockval'?",
+    "Is there a call path from function 'tryi' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<GAMESIZE' be skipped entirely?",
+    "Is the loop with condition 'i<GAMESIZE' always executed?",
+    "Is it possible that the loop with condition 'i<GAMESIZE' is never executed?",
+    "Is the loop with condition 'i<GAMESIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<GAMESIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<GAMESIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'box (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 29)' remain in use at the end of function 'blockval'?",
+    "Does variable 'res' remain in use at the end of function 'blockval'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return 0;' unreachable?",
+    "Can the program actually reach the statement: “for(i=0;i<GAMESIZE;i++)”?"
+  ]
+}

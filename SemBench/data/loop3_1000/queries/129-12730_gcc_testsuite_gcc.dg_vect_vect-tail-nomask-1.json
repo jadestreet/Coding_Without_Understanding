@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'test_citer' to reach function '__builtin_abort'?",
+    "Is it impossible for function '__builtin_abort' to reach function 'test_citer'?",
+    "Is there a call path from function 'run_test' to function '__builtin_abort'?",
+    "Is there a call path from function 'main' to function 'init_data'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < SIZE' be skipped entirely?",
+    "Is the loop with condition 'i < SIZE' always executed?",
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'memptr' affect subsequent computations?",
+    "Is variable 'alignment' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 10)' live at the end of function 'test_citer'?",
+    "Is variable 'b (line 7)' live at the end of function 'test_citer'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void __attribute__((noinline))' be considered dead code?",
+    "Is this statement not dead: “int size)”?"
+  ]
+}

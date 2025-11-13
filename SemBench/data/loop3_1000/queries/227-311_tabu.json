@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sprintf' to reach function 'is_in_tabu'?",
+    "Is it impossible for function 'puts' to reach function 'compute_initial_fitness'?",
+    "Can function 'main' eventually call function 'puts'?",
+    "Is there a call path from function 'printout' to function 'sprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'tasks < end' be skipped entirely?",
+    "Is the loop with condition 'tasks < end' always executed?",
+    "Is it possible that the loop with condition 'tasks_ref < end' is never executed?",
+    "Is the loop with condition 'tasks_ref < end' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'tasks < end' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'tasks_ref < end' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'tasks_initial (line 13)' used after its definition?",
+    "Does the value assigned to 'tabu (line 29)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'end (line 32)' remain in use at the end of function 'iter_printout'?",
+    "Does variable 'start (line 33)' remain in use at the end of function 'iter_printout'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int wj;' unreachable?",
+    "Can the program actually reach the statement: “time += a->pj;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fopen' to reach function 'malloc'?",
+    "Is it impossible for function 'promedio' to reach function 'fprintf'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < size' is never executed?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'nums (line 7)' used after its definition?",
+    "Is variable 'x (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'x (line 8)' live at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'FILE *fout;' be considered dead code?",
+    "Can the program actually reach the statement: “#include <time.h>”?"
+  ]
+}

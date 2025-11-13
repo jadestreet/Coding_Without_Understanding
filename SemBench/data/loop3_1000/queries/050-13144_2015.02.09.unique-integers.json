@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'unique_integers' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'is_unique'?",
+    "Is it impossible for function 'unique_integers' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= limit' is never executed?",
+    "Is the loop with condition 'i <= limit' always executed?",
+    "Can the loop with condition 'num /= 10' be skipped entirely?",
+    "Is the loop with condition 'num /= 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= limit' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'num /= 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'num (line 2)' used after its definition?",
+    "Does the value assigned to 'flag (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'num' remain in use at the end of function 'is_unique'?",
+    "Is variable 'flag' live at the end of function 'is_unique'?"
+  ],
+  "dead_code": [
+    "Is the statement '} while (num /= 10);' unreachable?",
+    "Is this statement not dead: “unsigned unique_integers(const unsigned limit) {”?"
+  ]
+}

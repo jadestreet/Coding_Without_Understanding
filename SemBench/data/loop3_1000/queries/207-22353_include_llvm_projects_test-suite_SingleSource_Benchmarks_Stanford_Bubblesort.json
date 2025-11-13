@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'Initrand'?",
+    "Is it impossible for function 'printf' to reach function 'Bubble'?",
+    "Is there a call path from function 'Bubble' to function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= srtelements' is never executed?",
+    "Is the loop with condition 'i <= srtelements' always executed?",
+    "Is it possible that the loop with condition 'i < 100' is never executed?",
+    "Is the loop with condition 'i < 100' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= srtelements' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 100' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'value' used after its definition?",
+    "Is variable 'fixed' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 63)' live at the end of function 'bInitarr'?",
+    "Does variable 'temp' remain in use at the end of function 'bInitarr'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return( (int)seed );' be considered dead code?",
+    "Can the program actually reach the statement: “#define  quickbase \t1.92f”?"
+  ]
+}

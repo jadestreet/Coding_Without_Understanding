@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'sm_parse_headers'?",
+    "Can function 'main' eventually call function 'strlen'?",
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Is there a call path from function 'main' to function 'memcpy'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'r < end' be skipped entirely?",
+    "Is the loop with condition 'r < end' always executed?",
+    "Is it possible that the loop with condition 'r < end && !SEP[*r]' is never executed?",
+    "Is the loop with condition 'r < end && !SEP[*r]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'r < end' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r < end && !SEP[*r]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'SEP (line 5)' used after its definition?",
+    "Is variable 'NL (line 23)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'end' live at the end of function 'sm_parse_headers'?",
+    "Does variable 'buf' remain in use at the end of function 'sm_parse_headers'?"
+  ],
+  "dead_code": [
+    "Can the statement '0, 0, 0, 0, 0, 0, 0, 0,   0, 0, 0, 0, 0, 0, 0, 0,' be considered dead code?",
+    "Can the program actually reach the statement: “sm_parse_headers(test2, strlen(teststring2), NULL);”?"
+  ]
+}

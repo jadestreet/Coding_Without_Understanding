@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fopen' to reach function '__bswap_16'?",
+    "Is it impossible for function '__uint64_identity' to reach function 'fprintf'?",
+    "Can function 'main' eventually call function 'ferror'?",
+    "Is there a call path from function 'main' to function 'memcmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '(i < s) && (buf.copy_buffer[i] == 0)' be skipped entirely?",
+    "Is the loop with condition '(i < s) && (buf.copy_buffer[i] == 0)' always executed?",
+    "Can the loop with condition '!feof(f' be skipped entirely?",
+    "Is the loop with condition '!feof(f' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(i < s) && (buf.copy_buffer[i] == 0)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '!feof(f' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'stderr (line 15)' used after its definition?",
+    "Is variable 'buf (line 41)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable '__bsx' live at the end of function '__bswap_16'?",
+    "Is variable '__bsx' live at the end of function '__bswap_32'?"
+  ],
+  "dead_code": [
+    "Is the statement '#define CPIO_END \"TRAILER!!!\"' unreachable?",
+    "Can the program actually reach the statement: “goto end;”?"
+  ]
+}

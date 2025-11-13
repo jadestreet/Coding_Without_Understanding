@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sem_close' to reach function 'sem_init'?",
+    "Is it impossible for function 'printf' to reach function 'rand'?",
+    "Can function 'main' eventually call function 'fprintf'?",
+    "Is there a call path from function 'main' to function 'count3'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<end' be skipped entirely?",
+    "Is the loop with condition 'i<end' always executed?",
+    "Is it possible that the loop with condition 'j < numThreads' is never executed?",
+    "Is the loop with condition 'j < numThreads' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<end' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < numThreads' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'numThreads (line 8)' affect subsequent computations?",
+    "Is variable 'array (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'end' remain in use at the end of function 'count3_thread'?",
+    "Is variable 'id' live at the end of function 'count3_thread'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (array[i] == 3)' be considered dead code?",
+    "Can the program actually reach the statement: “pthread_t * threadArray;”?"
+  ]
+}

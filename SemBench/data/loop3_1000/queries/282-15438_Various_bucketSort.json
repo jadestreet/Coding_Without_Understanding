@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'bucketSort'?",
+    "Can function 'main' eventually call function 'bucketSort'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<arrLen' be skipped entirely?",
+    "Is the loop with condition 'i<arrLen' always executed?",
+    "Can the loop with condition 'i<arrLen' be skipped entirely?",
+    "Is the loop with condition 'i<arrLen' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<arrLen' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<arrLen' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'toSort (line 4)' used after its definition?",
+    "Does the value assigned to 'arrLen (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'max' live at the end of function 'bucketSort'?",
+    "Is variable 'modBy' live at the end of function 'bucketSort'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int divBy = 1;' be considered dead code?",
+    "Is this statement not dead: “bucketSort( toSort , SIZE  );”?"
+  ]
+}

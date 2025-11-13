@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'ceil' to reach function 'log10'?",
+    "Is it impossible for function 'ceil' to reach function 'free'?",
+    "Can function 'main' eventually call function 'free'?",
+    "Is there a call path from function 'main' to function 'floor'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'aux < loop' is never executed?",
+    "Is the loop with condition 'aux < loop' always executed?",
+    "Is it possible that the loop with condition 'aux < loop_y' is never executed?",
+    "Is the loop with condition 'aux < loop_y' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'aux < loop' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'aux < loop_y' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'result_x (line 6)' used after its definition?",
+    "Is variable 'result_y (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'mag_x_pow' remain in use at the end of function 'main'?",
+    "Is variable 'menorY' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if(val_x > ub_x) {' be considered dead code?",
+    "Is this statement not dead: “double magMsd_x = tempStepX/(mag_x_pow + 0.5),magMsd_y = tempStepY/(mag_y_pow + 0.5);”?"
+  ]
+}

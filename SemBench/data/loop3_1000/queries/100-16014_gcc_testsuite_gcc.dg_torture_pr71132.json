@@ -1,0 +1,17 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'c' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (; c < b; c++)' unreachable?",
+    "Can the program actually reach the statement: “*d++ = '\\0';”?"
+  ]
+}

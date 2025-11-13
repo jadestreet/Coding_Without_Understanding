@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'firstMissingPositive' to reach function 'atoi'?",
+    "Is it impossible for function 'swap' to reach function 'atoi'?",
+    "Can function 'main' eventually call function 'swap'?",
+    "Is there a call path from function 'firstMissingPositive' to function 'swap'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < numsSize' is never executed?",
+    "Is the loop with condition 'i < numsSize' always executed?",
+    "Is it possible that the loop with condition 'i < count' is never executed?",
+    "Is the loop with condition 'i < count' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < numsSize' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 3)' used after its definition?",
+    "Does the value assigned to 'b (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'b' live at the end of function 'swap'?",
+    "Is variable 'a' live at the end of function 'swap'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (nums[i] != i + 1) {' be considered dead code?",
+    "Is this statement not dead: “swap(nums + i, nums + nums[i] - 1);”?"
+  ]
+}

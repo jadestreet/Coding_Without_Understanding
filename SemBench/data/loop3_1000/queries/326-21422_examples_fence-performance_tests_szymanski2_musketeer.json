@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'thr1' to reach function 'main'?",
+    "Is it impossible for function 'thr2' to reach function 'thr1'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'flag1 (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'flag2 (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 7)' remain in use at the end of function 'thr1'?",
+    "Does variable 'arg (line 6)' remain in use at the end of function 'thr1'?"
+  ],
+  "dead_code": [
+    "Can the statement 'flag1 = 3;FENCE;' be considered dead code?",
+    "Can the program actually reach the statement: “while (flag2 != 4 ) {;}”?"
+  ]
+}

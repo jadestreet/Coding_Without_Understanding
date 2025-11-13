@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fprintf' to reach function 'memset'?",
+    "Is it impossible for function 'free' to reach function 'memset'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is there a call path from function 'main' to function 'memset'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < NB_BLOCS' be skipped entirely?",
+    "Is the loop with condition 'i < NB_BLOCS' always executed?",
+    "Is it possible that the loop with condition 'i < NB_BLOCS' is never executed?",
+    "Is the loop with condition 'i < NB_BLOCS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < NB_BLOCS' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < NB_BLOCS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ptr (line 8)' affect subsequent computations?",
+    "Is variable 'i (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Does variable 'ptr' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'memset(ptr[i], 1, 1024);' unreachable?",
+    "Can the program actually reach the statement: “for (i = 0; i < NB_BLOCS; i ++)”?"
+  ]
+}

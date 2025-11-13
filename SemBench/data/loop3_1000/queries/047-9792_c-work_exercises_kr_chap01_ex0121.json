@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'fputc'?",
+    "Is it impossible for function 'fclose' to reach function 'fputc'?",
+    "Is it impossible for function 'fgetc' to reach function 'perror'?",
+    "Can function 'main' eventually call function 'perror'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '(ch = fgetc( in )) != EOF' is never executed?",
+    "Is the loop with condition '(ch = fgetc( in )) != EOF' always executed?",
+    "Can the loop with condition 'nt > 0' be skipped entirely?",
+    "Is the loop with condition 'nt > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(ch = fgetc( in )) != EOF' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'nt > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'out' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if ( out == NULL ) {' be considered dead code?",
+    "Can the program actually reach the statement: “FILE *in, *out;”?"
+  ]
+}

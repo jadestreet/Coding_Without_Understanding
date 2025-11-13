@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strcpy' to reach function 'fgetc'?",
+    "Is it impossible for function 'strrchr' to reach function 'fclose'?",
+    "Can function 'main' eventually call function 'strrchr'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Can the loop with condition 'c != -1' be skipped entirely?",
+    "Is the loop with condition 'c != -1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'c != -1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'fo (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'fi (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'c' live at the end of function 'hexdump'?",
+    "Is variable 'n' live at the end of function 'hexdump'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (n % 16 == 15)' be considered dead code?",
+    "Is this statement not dead: “fprintf(stderr, \"usage: fontdump output.c input.dat\\n\");”?"
+  ]
+}

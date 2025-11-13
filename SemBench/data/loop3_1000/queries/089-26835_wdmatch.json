@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'ft_putchar'?",
+    "Is it impossible for function 'ft_putstr' to reach function 'ft_strlen'?",
+    "Is it impossible for function 'ft_putchar' to reach function 'ft_strlen'?",
+    "Can function 'main' eventually call function 'ft_putstr'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'str[i]' is never executed?",
+    "Is the loop with condition 'str[i]' always executed?",
+    "Can the loop with condition 'str[len]' be skipped entirely?",
+    "Is the loop with condition 'str[len]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'str[i]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'str[len]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'c (line 2)' affect subsequent computations?",
+    "Is variable 'c (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'c' remain in use at the end of function 'ft_putchar'?",
+    "Does variable 'i (line 8)' remain in use at the end of function 'ft_putstr'?"
+  ],
+  "dead_code": [
+    "Is the statement 'j++;' unreachable?",
+    "Can the program actually reach the statement: “ft_putstr(argv[1]);”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 50' be skipped entirely?",
+    "Is the loop with condition 'i < 50' always executed?",
+    "Is it possible that the loop with condition 'j > 0' is never executed?",
+    "Is the loop with condition 'j > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 50' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc' used after its definition?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'k' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (j > 0)' unreachable?",
+    "Is this statement not dead: “if (k == 1)”?"
+  ]
+}

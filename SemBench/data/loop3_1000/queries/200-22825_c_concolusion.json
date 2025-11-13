@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'input_side_conv'?",
+    "Can function 'main' eventually call function 'output_side_conv'?",
+    "Can function 'main' eventually call function 'input_side_conv'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<PUNTOS_X' is never executed?",
+    "Is the loop with condition 'i<PUNTOS_X' always executed?",
+    "Can the loop with condition 'j<PUNTOS_H' be skipped entirely?",
+    "Is the loop with condition 'j<PUNTOS_H' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<PUNTOS_X' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<PUNTOS_H' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'h (line 1)' affect subsequent computations?",
+    "Is variable 'h (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x (line 6)' remain in use at the end of function 'input_side_conv'?",
+    "Is variable 'i (line 8)' live at the end of function 'input_side_conv'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int x[PUNTOS_X] = {0,-1,-1,2,1,1};' be considered dead code?",
+    "Is this statement not dead: “for(j=0;j<PUNTOS_H;j++) {”?"
+  ]
+}

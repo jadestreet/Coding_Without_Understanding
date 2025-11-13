@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'list_addfront' to reach function 'list_sort'?",
+    "Is it impossible for function 'free' to reach function 'list_pop'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is there a call path from function 'list_addfront' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'node != NULL' be skipped entirely?",
+    "Is the loop with condition 'node != NULL' always executed?",
+    "Is it possible that the loop with condition 'node->next != NULL' is never executed?",
+    "Is the loop with condition 'node->next != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'node != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'node->next != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'v (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'next (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'lst (line 13)' remain in use at the end of function 'list_new'?",
+    "Does variable 'lst (line 13)' remain in use at the end of function 'list_delete'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"printing list of length %d and sum of %f\\n\", list_length(lst), list_sum(lst));' unreachable?",
+    "Is this statement not dead: “if (ABS(node->v - v) < 10e-20) {”?"
+  ]
+}

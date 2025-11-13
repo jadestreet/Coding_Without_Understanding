@@ -1,0 +1,20 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_abort' to reach function 'main'?",
+    "Is there a call path from function 'main' to function '__builtin_abort'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 1)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'f' remain in use at the end of function 'main'?",
+    "Is variable 'e' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (; f >= 0; f--)' unreachable?",
+    "Can the program actually reach the statement: “f = 0;”?"
+  ]
+}

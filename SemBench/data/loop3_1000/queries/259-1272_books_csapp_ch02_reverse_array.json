@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'reverse_array'?",
+    "Is there a call path from function 'main' to function 'inplace_swap'?",
+    "Is it impossible for function 'reverse_array' to reach function 'printf'?",
+    "Is it impossible for function 'inplace_swap' to reach function 'reverse_array'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'first < last' is never executed?",
+    "Is the loop with condition 'first < last' always executed?",
+    "Can the loop with condition 'i < 5' be skipped entirely?",
+    "Is the loop with condition 'i < 5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'first < last' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 2)' used after its definition?",
+    "Does the value assigned to 'y (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'x (line 2)' remain in use at the end of function 'inplace_swap'?",
+    "Does variable 'y' remain in use at the end of function 'inplace_swap'?"
+  ],
+  "dead_code": [
+    "Is the statement 'x[i] = i + 1;' unreachable?",
+    "Can the program actually reach the statement: “for (i = 0; i < 5; i++)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'fillMatrix'?",
+    "Is it impossible for function 'rand' to reach function 'fillMatrix'?",
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < MATRIX_SIZE' is never executed?",
+    "Is the loop with condition 'i < MATRIX_SIZE' always executed?",
+    "Can the loop with condition 'i < MATRIX_SIZE' be skipped entirely?",
+    "Is the loop with condition 'i < MATRIX_SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < MATRIX_SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < MATRIX_SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'm (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'threadData (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'main'?",
+    "Is variable 'aBlock' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"\\nptr: %d\\n\",l);' be considered dead code?",
+    "Can the program actually reach the statement: “double ** a;”?"
+  ]
+}

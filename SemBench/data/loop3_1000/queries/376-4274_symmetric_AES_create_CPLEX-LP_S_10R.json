@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'MixColumn' to reach function 'ShiftRows'?",
+    "Can function 'main' eventually call function 'ShiftRows'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 4' is never executed?",
+    "Is the loop with condition 'i < 4' always executed?",
+    "Is it possible that the loop with condition 'j < 4' is never executed?",
+    "Is the loop with condition 'j < 4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < 4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'j (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'a (line 6)' remain in use at the end of function 'ShiftRows'?",
+    "Is variable 'tmp' live at the end of function 'ShiftRows'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (j = 0; j < 4; j++)' unreachable?",
+    "Can the program actually reach the statement: “printf(\"x%i >= 1\\n\\n\",ROUNDS*16-1);”?"
+  ]
+}

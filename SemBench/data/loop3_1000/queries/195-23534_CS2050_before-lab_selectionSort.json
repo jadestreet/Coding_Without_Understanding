@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'selectionSort'?",
+    "Is it impossible for function 'selectionSort' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'selectionSort'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<10' is never executed?",
+    "Is the loop with condition 'i<10' always executed?",
+    "Can the loop with condition 'i<length' be skipped entirely?",
+    "Is the loop with condition 'i<length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'array (line 2)' used after its definition?",
+    "Does the value assigned to 'length (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 5)' live at the end of function 'main'?",
+    "Does variable 'array (line 2)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'array[minIndex]=temp;' unreachable?",
+    "Can the program actually reach the statement: “selectionSort(array,10);”?"
+  ]
+}

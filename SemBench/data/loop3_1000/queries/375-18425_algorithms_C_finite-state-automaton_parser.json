@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printResulFor'?",
+    "Is it impossible for function 'initAutomat' to reach function 'printf'?",
+    "Is it impossible for function 'check' to reach function 'analyze'?",
+    "Is there a call path from function 'printResulFor' to function 'puts'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'j < STATE_COUNT&&(!isFound)' is never executed?",
+    "Is the loop with condition 'j < STATE_COUNT&&(!isFound)' always executed?",
+    "Can the loop with condition 'i<STATE_COUNT' be skipped entirely?",
+    "Is the loop with condition 'i<STATE_COUNT' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j < STATE_COUNT&&(!isFound)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<STATE_COUNT' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'automat (line 9)' affect subsequent computations?",
+    "Does the value assigned to 'str (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 12)' remain in use at the end of function 'check'?",
+    "Does variable 'c (line 13)' remain in use at the end of function 'check'?"
+  ],
+  "dead_code": [
+    "Is the statement 'automat[7][5] = \":\";' unreachable?",
+    "Is this statement not dead: “initAutomat();”?"
+  ]
+}

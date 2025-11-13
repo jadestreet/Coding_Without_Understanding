@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'rand' to reach function 'print_array'?",
+    "Is it impossible for function 'generate_list' to reach function 'find_min_element_rotated'?",
+    "Can function 'main' eventually call function 'print_array'?",
+    "Is there a call path from function 'main' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'rc < k' be skipped entirely?",
+    "Is the loop with condition 'rc < k' always executed?",
+    "Is it possible that the loop with condition 'r < (sz - 1)' is never executed?",
+    "Is the loop with condition 'r < (sz - 1)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'rc < k' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r < (sz - 1)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arrayList (line 4)' used after its definition?",
+    "Does the value assigned to 'sz (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'rc' remain in use at the end of function 'rotate_left'?",
+    "Is variable 'k (line 5)' live at the end of function 'rotate_left'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int val = rand () % sz;' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__bswap_32' to reach function '__uint32_identity'?",
+    "Is it impossible for function 'pthread_spin_lock' to reach function '__uint64_identity'?",
+    "Is there a call path from function 'main' to function 'pthread_barrier_destroy'?",
+    "Can function 'thread_func' eventually call function 'pthread_spin_unlock'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i > 0' be skipped entirely?",
+    "Is the loop with condition 'i > 0' always executed?",
+    "Is it possible that the loop with condition 'i < n_threads' is never executed?",
+    "Is the loop with condition 'i < n_threads' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n_threads' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's_barrier (line 5)' affect subsequent computations?",
+    "Is variable 's_spinlock (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable '__bsx' remain in use at the end of function '__bswap_16'?",
+    "Does variable '__bsx' remain in use at the end of function '__bswap_32'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int i;' be considered dead code?",
+    "Can the program actually reach the statement: “pthread_spin_lock(&s_spinlock);”?"
+  ]
+}

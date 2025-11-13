@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'get_array'?",
+    "Is it impossible for function 'malloc' to reach function 'strlen'?",
+    "Can function 'luhn_check_sum' eventually call function 'array_sum'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < len' is never executed?",
+    "Is the loop with condition 'i < len' always executed?",
+    "Can the loop with condition 'i < len' be skipped entirely?",
+    "Is the loop with condition 'i < len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'len (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'len (line 4)' remain in use at the end of function 'get_array'?",
+    "Is variable 'arr (line 6)' live at the end of function 'get_array'?"
+  ],
+  "dead_code": [
+    "Can the statement '\"501971701010374\", \"552263411203590\"' be considered dead code?",
+    "Can the program actually reach the statement: “for (int i = 0; i < len; i++) {”?"
+  ]
+}

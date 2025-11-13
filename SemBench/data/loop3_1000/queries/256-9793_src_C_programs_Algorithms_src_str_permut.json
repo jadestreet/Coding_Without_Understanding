@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__assert_fail' to reach function 'strlen'?",
+    "Can function 'main' eventually call function 'strlen'?",
+    "Is there a call path from function '_get_last_index' to function 'strlen'?",
+    "Is it impossible for function '__assert_fail' to reach function 'print_combination'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < str_len' is never executed?",
+    "Is the loop with condition 'i < str_len' always executed?",
+    "Is it possible that the loop with condition 'p<strlen(str)' is never executed?",
+    "Is the loop with condition 'p<strlen(str)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < str_len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p<strlen(str)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'j (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'str_len (line 7)' remain in use at the end of function '_get_last_index'?",
+    "Is variable 'ind (line 10)' live at the end of function '_get_last_index'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"%c\", str[p]);' unreachable?",
+    "Can the program actually reach the statement: “if (i != j) {”?"
+  ]
+}

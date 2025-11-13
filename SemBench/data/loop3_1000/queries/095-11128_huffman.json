@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strcpy' to reach function 'new_node'?",
+    "Is it impossible for function 'encode' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'encode'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 128' be skipped entirely?",
+    "Is the loop with condition 'i < 128' always executed?",
+    "Is it possible that the loop with condition 'i < 128' is never executed?",
+    "Is the loop with condition 'i < 128' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 128' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 128' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'freq (line 5)' affect subsequent computations?",
+    "Is variable 'c (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'new_node'?",
+    "Is variable 'c (line 12)' live at the end of function 'new_node'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return n;' be considered dead code?",
+    "Is this statement not dead: “while (*s) freq[(int)*s++]++;”?"
+  ]
+}

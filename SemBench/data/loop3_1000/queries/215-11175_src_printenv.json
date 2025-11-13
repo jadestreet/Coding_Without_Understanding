@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strcmp' to reach function 'getenv'?",
+    "Is it impossible for function 'strcmp' to reach function 'putchar'?",
+    "Is there a call path from function 'main' to function 'strcmp'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'environ[i] != NULL' be skipped entirely?",
+    "Is the loop with condition 'environ[i] != NULL' always executed?",
+    "Is it possible that the loop with condition 'i < argc' is never executed?",
+    "Is the loop with condition 'i < argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'environ[i] != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'environ (line 5)' affect subsequent computations?",
+    "Is variable 'argc (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'argc' remain in use at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'fprintf(stdout, \"%s\", var);' be considered dead code?",
+    "Is this statement not dead: “if(var == NULL){”?"
+  ]
+}

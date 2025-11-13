@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'BoyerMooreSearch' to reach function 'InitSkip'?",
+    "Is it impossible for function 'puts' to reach function 'putc'?",
+    "Is there a call path from function 'main' to function 'puts'?",
+    "Is there a call path from function 'main' to function 'strlen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'alphabetLen' be skipped entirely?",
+    "Is the loop with condition 'alphabetLen' always executed?",
+    "Can the loop with condition '*patChar && i' be skipped entirely?",
+    "Is the loop with condition '*patChar && i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'alphabetLen' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*patChar && i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'pattern (line 5)' affect subsequent computations?",
+    "Is variable 'skip (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'alphabetLen' live at the end of function 'InitSkip'?",
+    "Is variable 'i' live at the end of function 'InitSkip'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while (searchChar >= searchBegin && *searchChar == *patternChar)' be considered dead code?",
+    "Is this statement not dead: “InitSkip(pattern, skip, NO_OF_CHARS, patternLen);”?"
+  ]
+}

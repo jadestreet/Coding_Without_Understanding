@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'putchar' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'putchar'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 't<n' be skipped entirely?",
+    "Is the loop with condition 't<n' always executed?",
+    "Can the loop with condition 'i>0' be skipped entirely?",
+    "Is the loop with condition 'i>0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 't<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i>0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 2)' affect subsequent computations?",
+    "Does the value assigned to 't (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 't' remain in use at the end of function 'main'?",
+    "Does variable 'max' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'show_data(data, n);' unreachable?",
+    "Can the program actually reach the statement: “int data[] = {7,2,3,5,11,6,8,4,9};”?"
+  ]
+}

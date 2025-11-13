@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'atoi'?",
+    "Is it impossible for function 'atoi' to reach function 'faktorial'?",
+    "Can function 'main' eventually call function 'atoi'?",
+    "Can function 'faktorial' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<argc' be skipped entirely?",
+    "Is the loop with condition 'i<argc' always executed?",
+    "Can the loop with condition 'i<argc' be skipped entirely?",
+    "Is the loop with condition 'i<argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arg (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'argc (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'num' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"Hasil %d! = %d\\n\", awal, result);' unreachable?",
+    "Can the program actually reach the statement: “void *faktorial(void *arg);”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'broqch_dvoiki<10' be skipped entirely?",
+    "Is the loop with condition 'broqch_dvoiki<10' always executed?",
+    "Can the loop with condition 'delitel<broqch' be skipped entirely?",
+    "Is the loop with condition 'delitel<broqch' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'broqch_dvoiki<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'delitel<broqch' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'broqch_dvoiki (line 3)' used after its definition?",
+    "Does the value assigned to 'delitel (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'broqch' remain in use at the end of function 'main'?",
+    "Does variable 'prosto' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'break;' be considered dead code?",
+    "Is this statement not dead: “while (delitel<(broqch+2)){”?"
+  ]
+}

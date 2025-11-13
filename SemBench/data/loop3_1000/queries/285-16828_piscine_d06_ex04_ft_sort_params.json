@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'ft_strcmp' to reach function 'ft_strcpy'?",
+    "Is it impossible for function 'sortn_strarray' to reach function 'main'?",
+    "Can function 'sortn_strarray' eventually call function 'ft_strcpy'?",
+    "Can function 'main' eventually call function 'ft_putchar'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 's1[i] == s2[i]' be skipped entirely?",
+    "Is the loop with condition 's1[i] == s2[i]' always executed?",
+    "Is it possible that the loop with condition '(*tmp++ = *src++' is never executed?",
+    "Is the loop with condition '(*tmp++ = *src++' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 's1[i] == s2[i]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(*tmp++ = *src++' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'c' affect subsequent computations?",
+    "Does the value assigned to 's1 (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 's2' live at the end of function 'ft_strcmp'?",
+    "Is variable 'i' live at the end of function 'ft_strcmp'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (j < size)' unreachable?",
+    "Can the program actually reach the statement: “min_index = i;”?"
+  ]
+}

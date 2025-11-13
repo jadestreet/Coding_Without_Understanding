@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'toBits' to reach function 'main'?",
+    "Is it impossible for function 'putchar' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'toDigit'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < half' be skipped entirely?",
+    "Is the loop with condition 'i < half' always executed?",
+    "Is it possible that the loop with condition 'j < i' is never executed?",
+    "Is the loop with condition 'j < i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < half' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'bits (line 2)' affect subsequent computations?",
+    "Is variable 'n (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'len' remain in use at the end of function 'main'?",
+    "Is variable 'res' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'case 2:' unreachable?",
+    "Is this statement not dead: “if (d < 30) f = 1;”?"
+  ]
+}

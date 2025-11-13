@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'execvp' to reach function 'strcmp'?",
+    "Is it impossible for function 'execvp' to reach function 'fprintf'?",
+    "Is there a call path from function 'main' to function 'fprintf'?",
+    "Can function 'main' eventually call function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < argc' is never executed?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition 'j < argc' is never executed?",
+    "Is the loop with condition 'j < argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'stderr (line 17)' used after its definition?",
+    "Is variable 'stderr (line 17)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'len' remain in use at the end of function 'main'?",
+    "Does variable 'retv' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '#endif' unreachable?",
+    "Can the program actually reach the statement: “p = (char *)malloc( len ) ;”?"
+  ]
+}

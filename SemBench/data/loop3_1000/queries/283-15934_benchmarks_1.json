@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function '__assert_fail'?",
+    "Is it impossible for function 'pthread_join' to reach function 'main'?",
+    "Is it impossible for function 't2' to reach function 't1'?",
+    "Is there a call path from function 'main' to function 'pthread_join'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<NUM' be skipped entirely?",
+    "Is the loop with condition 'i<NUM' always executed?",
+    "Can the loop with condition 'i<NUM' be skipped entirely?",
+    "Is the loop with condition 'i<NUM' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUM' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUM' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 3)' used after its definition?",
+    "Does the value assigned to 'y (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 12)' remain in use at the end of function 't1'?",
+    "Does variable 'i (line 34)' remain in use at the end of function 't2'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while ( x != 1) { }' be considered dead code?",
+    "Can the program actually reach the statement: “int y = 0;”?"
+  ]
+}

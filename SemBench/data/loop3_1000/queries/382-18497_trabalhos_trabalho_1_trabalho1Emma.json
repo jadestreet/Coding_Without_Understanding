@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'aguardarTerminoDeThreads' to reach function 'calcularFinal'?",
+    "Is it impossible for function 'rand' to reach function 'calcularFinal'?",
+    "Is there a call path from function 'calculo' to function 'pthread_mutex_lock'?",
+    "Is there a call path from function 'main' to function 'printarVetores'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < final' be skipped entirely?",
+    "Is the loop with condition 'i < final' always executed?",
+    "Is it possible that the loop with condition 'i < VECSIZE' is never executed?",
+    "Is the loop with condition 'i < VECSIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < final' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < VECSIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'valoresA (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'valoresB (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'threadAtual' live at the end of function 'calcularFinal'?",
+    "Is variable 'inicio (line 10)' live at the end of function 'calcularFinal'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(i == (VECSIZE - 1)){' unreachable?",
+    "Can the program actually reach the statement: “int final = calcularFinal(classificacaoThread, inicio);”?"
+  ]
+}

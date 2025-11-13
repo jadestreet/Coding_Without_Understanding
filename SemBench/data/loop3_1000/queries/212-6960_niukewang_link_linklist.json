@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'LinkListReverse' to reach function 'swap_node'?",
+    "Is it impossible for function 'LinkListReverse' to reach function 'create'?",
+    "Is there a call path from function 'main' to function 'swap_node'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<=n' be skipped entirely?",
+    "Is the loop with condition 'i<=n' always executed?",
+    "Is it possible that the loop with condition 'L!= NULL' is never executed?",
+    "Is the loop with condition 'L!= NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'L!= NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Is variable 'h (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'list' remain in use at the end of function 'create'?",
+    "Is variable 'p (line 10)' live at the end of function 'create'?"
+  ],
+  "dead_code": [
+    "Is the statement 'print_list( L);' unreachable?",
+    "Is this statement not dead: “void print_list(LinkList L)”?"
+  ]
+}

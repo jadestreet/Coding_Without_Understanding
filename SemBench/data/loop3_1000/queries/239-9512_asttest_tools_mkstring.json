@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fopen' to reach function 'memset'?",
+    "Is it impossible for function 'strerror' to reach function 'getopt'?",
+    "Can function 'main' eventually call function 'fclose'?",
+    "Can function 'parse_cmdline' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition 'fread(&c, sizeof(char' is never executed?",
+    "Is the loop with condition 'fread(&c, sizeof(char' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'fread(&c, sizeof(char' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'infile (line 6)' used after its definition?",
+    "Does the value assigned to 'outfile (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'opts (line 10)' live at the end of function 'mkstring'?",
+    "Is variable 'count' live at the end of function 'mkstring'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fprintf(stderr, \"Error opening file '%s' for reading: %s\\n\", opts->infile, strerror(errno));' unreachable?",
+    "Can the program actually reach the statement: “for (i = optind; i < argc; i++) {”?"
+  ]
+}

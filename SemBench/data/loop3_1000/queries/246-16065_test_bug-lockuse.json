@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'main'?",
+    "Is it impossible for function 'main' to reach function 'pthread_mutex_lock'?",
+    "Can function 'child_thread' eventually call function 'unit_work'?",
+    "Can function 'child_thread' eventually call function 'pthread_mutex_lock'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 100' is never executed?",
+    "Is the loop with condition 'i < 100' always executed?",
+    "Is it possible that the loop with condition 'i < nThreads' is never executed?",
+    "Is the loop with condition 'i < nThreads' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 100' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < nThreads' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'g_lock (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'unit_work'?",
+    "Does variable 'data' remain in use at the end of function 'child_thread'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pthread_join (waiters[i], NULL);' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function '__builtin_abort'?",
+    "Is it impossible for function 'fn2' to reach function 'main'?",
+    "Is it impossible for function 'fn1' to reach function '__builtin_abort'?",
+    "Can function 'fn2' eventually call function '__builtin_abort'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Is variable 'a (line 1)' used after its definition?",
+    "Is variable 'b (line 1)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'p' live at the end of function 'fn1'?",
+    "Does variable 'k' remain in use at the end of function 'fn2'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int' be considered dead code?",
+    "Is this statement not dead: “__attribute__((noinline, noclone)) void”?"
+  ]
+}

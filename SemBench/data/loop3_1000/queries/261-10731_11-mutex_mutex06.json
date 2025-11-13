@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'Productor' to function 'printf'?",
+    "Is it impossible for function 'atoi' to reach function 'pthread_mutex_unlock'?",
+    "Is it impossible for function 'pthread_mutex_unlock' to reach function 'atoi'?",
+    "Can function 'Productor' eventually call function 'pthread_exit'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < DATOS_A_PRODUCIR' be skipped entirely?",
+    "Is the loop with condition 'i < DATOS_A_PRODUCIR' always executed?",
+    "Can the loop with condition 'cant < MAX_BUFFER' be skipped entirely?",
+    "Is the loop with condition 'cant < MAX_BUFFER' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < DATOS_A_PRODUCIR' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'cant < MAX_BUFFER' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'mutex (line 6)' affect subsequent computations?",
+    "Is variable 'cant (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 11)' live at the end of function 'Productor'?",
+    "Is variable 'pos (line 11)' live at the end of function 'Productor'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"Termino Consumo: %d\\n\",i);' be considered dead code?",
+    "Is this statement not dead: “cant++;”?"
+  ]
+}

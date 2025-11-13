@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'shell_sort'?",
+    "Is it impossible for function 'printf' to reach function 'shell_sort'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'shell_sort' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n - gap' is never executed?",
+    "Is the loop with condition 'i < n - gap' always executed?",
+    "Is it possible that the loop with condition 'gap >= 1' is never executed?",
+    "Is the loop with condition 'gap >= 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n - gap' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'gap >= 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 3)' used after its definition?",
+    "Is variable 'n (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'gap' remain in use at the end of function 'shell_sort'?",
+    "Is variable 'i (line 5)' live at the end of function 'shell_sort'?"
+  ],
+  "dead_code": [
+    "Can the statement 'gap = gap / 2;' be considered dead code?",
+    "Is this statement not dead: “a[i] = a[i + gap];”?"
+  ]
+}

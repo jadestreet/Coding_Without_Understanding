@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'function2' to reach function 'main'?",
+    "Is it impossible for function 'function4' to reach function 'function2'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Is it possible that the loop with condition 'i < 10' is never executed?",
+    "Is the loop with condition 'i < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'state (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'function'?",
+    "Is variable 'state (line 7)' live at the end of function 'function'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (i = 0; i < 10; ++i) {' unreachable?",
+    "Can the program actually reach the statement: “case 1:;”?"
+  ]
+}

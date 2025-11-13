@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'setBoard' to reach function 'rand'?",
+    "Is it impossible for function 'clear' to reach function 'print'?",
+    "Is there a call path from function 'main' to function 'print'?",
+    "Can function 'main' eventually call function 'clear'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'x<8' be skipped entirely?",
+    "Is the loop with condition 'x<8' always executed?",
+    "Can the loop with condition 'y<8' be skipped entirely?",
+    "Is the loop with condition 'y<8' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'x<8' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y<8' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'board (line 4)' used after its definition?",
+    "Is variable 'accessibility (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x (line 6)' remain in use at the end of function 'main'?",
+    "Is variable 'm (line 14)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int xi,yi;' unreachable?",
+    "Is this statement not dead: “for(xi=0;xi<8;xi++){”?"
+  ]
+}

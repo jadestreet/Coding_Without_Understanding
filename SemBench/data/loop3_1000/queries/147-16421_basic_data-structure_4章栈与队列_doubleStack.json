@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'showStack'?",
+    "Is it impossible for function 'showStack' to reach function 'createStack'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is it impossible for function 'Pop' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'i < m' is never executed?",
+    "Is the loop with condition 'i < m' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < m' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ss (line 9)' affect subsequent computations?",
+    "Is variable 'n (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'ss (line 9)' live at the end of function 'main'?",
+    "Does variable 'n (line 9)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"%d->\", ss->data[i]);' unreachable?",
+    "Is this statement not dead: “showStack(ss);”?"
+  ]
+}

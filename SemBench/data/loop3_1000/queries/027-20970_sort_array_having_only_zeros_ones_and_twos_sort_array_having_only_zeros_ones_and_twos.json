@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sort_array_of_zeros_ones_and_twos_ver2' to reach function 'sort_array_of_zeros_ones_and_twos_ver1'?",
+    "Is it impossible for function 'memcmp' to reach function 'main'?",
+    "Can function 'main' eventually call function 'memcmp'?",
+    "Is there a call path from function 'main' to function 'sort_array_of_zeros_ones_and_twos_ver2'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < len' is never executed?",
+    "Is the loop with condition 'i < len' always executed?",
+    "Can the loop with condition 'i < zeros' be skipped entirely?",
+    "Is the loop with condition 'i < zeros' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < zeros' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'array (line 4)' used after its definition?",
+    "Does the value assigned to 'len (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'len (line 4)' live at the end of function 'sort_array_of_zeros_ones_and_twos_ver1'?",
+    "Is variable 'ones' live at the end of function 'sort_array_of_zeros_ones_and_twos_ver1'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int array_test_ver1_1[] = {2,2,2,2,1,1,1,1,0,0,0,0,0,0};' be considered dead code?",
+    "Is this statement not dead: “void sort_array_of_zeros_ones_and_twos_ver2 (int *array, int len)”?"
+  ]
+}

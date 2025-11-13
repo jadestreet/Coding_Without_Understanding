@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'sum_struct_print'?",
+    "Is it impossible for function 'init_bit_flags' to reach function 'print_student_id_shirt_color'?",
+    "Can function 'init_small_structs' eventually call function 'init_bit_flags_combo'?",
+    "Can function 'print_double_array' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'index < 120' is never executed?",
+    "Is the loop with condition 'index < 120' always executed?",
+    "Can the loop with condition 'index < 9' be skipped entirely?",
+    "Is the loop with condition 'index < 9' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'index < 120' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'index < 9' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'ch1 (line 44)' used after its definition?",
+    "Is variable 'ch2 (line 47)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'student' live at the end of function 'print_student_id_shirt_color'?",
+    "Is variable 'shirt' live at the end of function 'print_student_id_shirt_color'?"
+  ],
+  "dead_code": [
+    "Can the statement 'break;' be considered dead code?",
+    "Is this statement not dead: “printf(\"\\n\\n\");”?"
+  ]
+}

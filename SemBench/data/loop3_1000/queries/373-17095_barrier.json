@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_cond_wait' to reach function 'pthread_mutex_lock'?",
+    "Is it impossible for function 'pthread_mutex_destroy' to reach function 'free'?",
+    "Is there a call path from function 'Thread_work' to function 'fflush'?",
+    "Is there a call path from function 'Thread_work' to function 'pthread_mutex_unlock'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'thread < thread_count' is never executed?",
+    "Is the loop with condition 'thread < thread_count' always executed?",
+    "Is it possible that the loop with condition 'thread < thread_count' is never executed?",
+    "Is the loop with condition 'thread < thread_count' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'thread < thread_count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'thread < thread_count' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'thread_count (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'barrier_thread_count (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'thread' remain in use at the end of function 'main'?",
+    "Is variable 'thread_handles' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (thread = 0; thread < thread_count; thread++) {' unreachable?",
+    "Can the program actually reach the statement: “pthread_mutex_destroy(&barrier_mutex);”?"
+  ]
+}

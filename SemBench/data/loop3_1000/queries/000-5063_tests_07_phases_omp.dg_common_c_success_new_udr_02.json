@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'fprintf'?",
+    "Is it impossible for function 'fprintf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'x' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fprintf(stderr, \" x = %d\\n\", x);' unreachable?",
+    "Can the program actually reach the statement: “int omp_get_num_threads(void);”?"
+  ]
+}

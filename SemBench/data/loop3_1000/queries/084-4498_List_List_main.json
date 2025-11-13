@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'listEmpty' to reach function 'printf'?",
+    "Is it impossible for function 'listEmpty' to reach function 'locateElem'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'getElem' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < L->length' be skipped entirely?",
+    "Is the loop with condition 'i < L->length' always executed?",
+    "Can the loop with condition 'i < L.length' be skipped entirely?",
+    "Is the loop with condition 'i < L.length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < L->length' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < L.length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'L (line 15)' affect subsequent computations?",
+    "Does the value assigned to 'L (line 17)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'L (line 15)' live at the end of function 'initList'?",
+    "Is variable 'L (line 19)' live at the end of function 'listEmpty'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int listLength(SequenceList L)' unreachable?",
+    "Can the program actually reach the statement: “return FALSE;”?"
+  ]
+}

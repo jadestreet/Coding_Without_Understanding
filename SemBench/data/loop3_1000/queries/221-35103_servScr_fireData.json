@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strcpy' to reach function 'rand'?",
+    "Is it impossible for function 'fprintf' to reach function 'strcpy'?",
+    "Is there a call path from function 'main' to function 'strcpy'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'j<nQueries' be skipped entirely?",
+    "Is the loop with condition 'j<nQueries' always executed?",
+    "Is it possible that the loop with condition 'i<nSensorPerQuerie' is never executed?",
+    "Is the loop with condition 'i<nSensorPerQuerie' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j<nQueries' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<nSensorPerQuerie' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'argv (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'argc' live at the end of function 'main'?",
+    "Does variable 'i' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'fprintf(outFile, \"#!/bin/bash\\n\\n\");' be considered dead code?",
+    "Can the program actually reach the statement: “#define NUM_SENDERS 4”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'partition' to reach function 'find_smallest_diff'?",
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Is there a call path from function 'quicksort' to function 'partition'?",
+    "Can function 'find_smallest_diff' eventually call function 'free'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'c < len' be skipped entirely?",
+    "Is the loop with condition 'c < len' always executed?",
+    "Can the loop with condition 'c <= high' be skipped entirely?",
+    "Is the loop with condition 'c <= high' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'c <= high' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'ar_size (line 3)' used after its definition?",
+    "Does the value assigned to 'ar (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'len' remain in use at the end of function 'print_list'?",
+    "Is variable 'c (line 10)' live at the end of function 'print_list'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i;' unreachable?",
+    "Is this statement not dead: “if (tmp_diff < 0)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'test_VMINPD_128' to reach function 'test_VPADDB_128'?",
+    "Is it impossible for function 'test_VDIVPS_128' to reach function 'test_VXORPS_256'?",
+    "Can function 'test_VBROADCASTF128' eventually call function 'showYMM'?",
+    "Is there a call path from function 'test_VROUNDSS_0x2' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i >= 0' be skipped entirely?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Can the loop with condition 'i < sizeof(Block)' be skipped entirely?",
+    "Is the loop with condition 'i < sizeof(Block)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < sizeof(Block)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'vec (line 12)' used after its definition?",
+    "Is variable 'i (line 14)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 14)' remain in use at the end of function 'showYMM'?",
+    "Does variable 'vec' remain in use at the end of function 'showYMM'?"
+  ],
+  "dead_code": [
+    "Is the statement '\"vmovupd (%%rax), %%xmm7\")' unreachable?",
+    "Can the program actually reach the statement: “printf(\"    %016llx\\n\", block->u64);”?"
+  ]
+}

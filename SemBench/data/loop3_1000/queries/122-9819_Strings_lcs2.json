@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'pstrcmp' to function 'strcmp'?",
+    "Is it impossible for function 'lcp' to reach function 'strcat'?",
+    "Is it impossible for function 'printf' to reach function 'pstrcmp'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '(i < len1) && (i < len2)' be skipped entirely?",
+    "Is the loop with condition '(i < len1) && (i < len2)' always executed?",
+    "Can the loop with condition 'i < len1+len2' be skipped entirely?",
+    "Is the loop with condition 'i < len1+len2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(i < len1) && (i < len2)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < len1+len2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 4)' remain in use at the end of function 'pstrcmp'?",
+    "Is variable 'a (line 4)' live at the end of function 'pstrcmp'?"
+  ],
+  "dead_code": [
+    "Is the statement 'qsort(ap, len1+len2, sizeof(char *), pstrcmp);' unreachable?",
+    "Can the program actually reach the statement: “cstr = strcat(argv[1], argv[2]);”?"
+  ]
+}

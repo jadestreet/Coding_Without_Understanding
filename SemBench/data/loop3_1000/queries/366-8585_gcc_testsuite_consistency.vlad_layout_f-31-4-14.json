@@ -1,0 +1,27 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < sizeof (struct sss)' is never executed?",
+    "Is the loop with condition 'i < sizeof (struct sss)' always executed?",
+    "Is it possible that the loop with condition 'i < sizeof (struct sss)' is never executed?",
+    "Is the loop with condition 'i < sizeof (struct sss)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < sizeof (struct sss)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < sizeof (struct sss)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'u (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'u (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf (\"%x \", u.a[i]);' be considered dead code?",
+    "Is this statement not dead: “for (i = 0; i < sizeof (struct sss); i++)”?"
+  ]
+}

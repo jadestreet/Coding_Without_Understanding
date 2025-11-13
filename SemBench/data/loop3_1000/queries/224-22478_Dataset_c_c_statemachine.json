@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'OnExit' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'OnExit'?",
+    "Is there a call path from function 'TurnstileSM' to function 'OnEnter'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<4' is never executed?",
+    "Is the loop with condition 'i<4' always executed?",
+    "Can the loop with condition 'i<5' be skipped entirely?",
+    "Is the loop with condition 'i<5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'TS_State (line 5)' used after its definition?",
+    "Does the value assigned to 'State (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 't' live at the end of function 'TurnstileSM'?"
+  ],
+  "dead_code": [
+    "Can the statement 'Timeout = t;' be considered dead code?",
+    "Is this statement not dead: “Timeout--;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'rand'?",
+    "Is it impossible for function 'rand' to reach function 'main'?",
+    "Can function 'main' eventually call function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < MAX' is never executed?",
+    "Is the loop with condition 'i < MAX' always executed?",
+    "Is it possible that the loop with condition 'j < MAX' is never executed?",
+    "Is the loop with condition 'j < MAX' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < MAX' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < MAX' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'm (line 7)' affect subsequent computations?",
+    "Is variable 'i (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'j' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'srand(time(NULL));' unreachable?",
+    "Is this statement not dead: “m[i][j] = rand() % 10;”?"
+  ]
+}

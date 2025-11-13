@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'func2' to reach function 'main'?",
+    "Is it impossible for function 'func2' to reach function 'func1'?",
+    "Is there a call path from function 'main' to function 'func3'?",
+    "Can function 'func1' eventually call function 'func3'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < (N)' be skipped entirely?",
+    "Is the loop with condition 'i < (N)' always executed?",
+    "Is it possible that the loop with condition '0' is never executed?",
+    "Is the loop with condition '0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < (N)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'i (line 3)' used after its definition?",
+    "Does the value assigned to 'i (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'func2'?",
+    "Does variable 'i' remain in use at the end of function 'func1'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void' unreachable?",
+    "Is this statement not dead: “func3 (void) { }”?"
+  ]
+}

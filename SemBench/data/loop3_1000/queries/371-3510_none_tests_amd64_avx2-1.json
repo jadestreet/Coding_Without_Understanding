@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'test_VPBLENDD_256_0xD7' to reach function 'test_VPCMPEQQ_256'?",
+    "Is it impossible for function 'test_VPALIGNR_256_3of3' to reach function 'test_VPSRLD_0x05_256'?",
+    "Can function 'test_VPGATHERQQ_128_2' eventually call function 'randBlock'?",
+    "Is there a call path from function 'test_VPSLLVQ_256' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i >= 0' is never executed?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Can the loop with condition 'i < sizeof(Block)' be skipped entirely?",
+    "Is the loop with condition 'i < sizeof(Block)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < sizeof(Block)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'randArray (line 9)' used after its definition?",
+    "Is variable 'vec (line 13)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 15)' remain in use at the end of function 'showYMM'?",
+    "Does variable 'vec' remain in use at the end of function 'showYMM'?"
+  ],
+  "dead_code": [
+    "Is the statement 'GEN_test_RandM(VPSRAD_256,' unreachable?",
+    "Is this statement not dead: “\"vpminsb %%ymm6,  %%ymm8, %%ymm7\",”?"
+  ]
+}

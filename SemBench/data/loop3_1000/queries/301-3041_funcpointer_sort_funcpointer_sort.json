@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'd' to reach function 'sort'?",
+    "Is it impossible for function 'main' to reach function 'd'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'cmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<len' be skipped entirely?",
+    "Is the loop with condition 'i<len' always executed?",
+    "Can the loop with condition 'j<len' be skipped entirely?",
+    "Is the loop with condition 'j<len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ar (line 3)' affect subsequent computations?",
+    "Is variable 'len (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'sort'?",
+    "Does variable 't' remain in use at the end of function 'sort'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if(a>b) return -1;' be considered dead code?",
+    "Is this statement not dead: “char c(int a, int b){”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_attr_init' to reach function 'increment_finished_count'?",
+    "Is it impossible for function 'thread_func1' to reach function 'pthread_attr_init'?",
+    "Can function 'increment_finished_count' eventually call function 'sem_post'?",
+    "Can function 'main' eventually call function 'sem_init'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < count1 || i < count2' be skipped entirely?",
+    "Is the loop with condition 'i < count1 || i < count2' always executed?",
+    "Can the loop with condition 'i < count1' be skipped entirely?",
+    "Is the loop with condition 'i < count1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < count1 || i < count2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < count1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's_sem (line 7)' affect subsequent computations?",
+    "Does the value assigned to 's_sem (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'arg (line 12)' remain in use at the end of function 'thread_func1'?",
+    "Is variable 'arg (line 18)' live at the end of function 'thread_func2'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);' unreachable?",
+    "Can the program actually reach the statement: “int detachstate;”?"
+  ]
+}

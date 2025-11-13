@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fillocta' to reach function 'bar4'?",
+    "Is it impossible for function 'filltri' to reach function 'fillhepta'?",
+    "Is there a call path from function 'bar3' to function 'fprintf'?",
+    "Is there a call path from function 'fillsquare' to function 'memset'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 142' is never executed?",
+    "Is the loop with condition 'i < 142' always executed?",
+    "Can the loop with condition 'i<10000' be skipped entirely?",
+    "Is the loop with condition 'i<10000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 142' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<10000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'tri (line 4)' used after its definition?",
+    "Does the value assigned to 'square (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 12)' remain in use at the end of function 'filltri'?",
+    "Is variable 'c (line 19)' live at the end of function 'filltri'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int *arr=ARRS[bp];' be considered dead code?",
+    "Can the program actually reach the statement: “fillhexa();”?"
+  ]
+}

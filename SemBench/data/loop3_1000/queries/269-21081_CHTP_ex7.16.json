@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'time'?",
+    "Is it impossible for function 'shuffle' to reach function 'time'?",
+    "Is it impossible for function 'time' to reach function 'srand'?",
+    "Is there a call path from function 'main' to function 'deal'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'row<4' be skipped entirely?",
+    "Is the loop with condition 'row<4' always executed?",
+    "Can the loop with condition 'column<13' be skipped entirely?",
+    "Is the loop with condition 'column<13' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'row<4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'column<13' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'wDeck (line 4)' used after its definition?",
+    "Does the value assigned to 'wDeck (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'face' remain in use at the end of function 'main'?",
+    "Does variable 'deck' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '{ \"Ace\", \"Deuce\", \"Three\", \"Four\",' be considered dead code?",
+    "Is this statement not dead: “void swap(int *element1Ptr,int *element2ptr);”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'j<16' be skipped entirely?",
+    "Is the loop with condition 'j<16' always executed?",
+    "Is it possible that the loop with condition 'i< numCachelineUsed' is never executed?",
+    "Is the loop with condition 'i< numCachelineUsed' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j<16' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i< numCachelineUsed' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 3)' affect subsequent computations?",
+    "Is variable 'j (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'a' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'a[i*16+j]++;' be considered dead code?",
+    "Is this statement not dead: “for(i=0;i<numInt;i++)”?"
+  ]
+}

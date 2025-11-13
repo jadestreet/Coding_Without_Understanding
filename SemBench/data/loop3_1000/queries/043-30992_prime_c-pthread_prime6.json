@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'calloc' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'checkprime' to reach function 'calloc'?",
+    "Can function 'main' eventually call function 'calloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'p' be skipped entirely?",
+    "Is the loop with condition 'p' always executed?",
+    "Can the loop with condition 'm < n_max' be skipped entirely?",
+    "Is the loop with condition 'm < n_max' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'm < n_max' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'flag (line 15)' affect subsequent computations?",
+    "Does the value assigned to 'head (line 18)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 21)' live at the end of function 'checkprime'?",
+    "Is variable 'i' live at the end of function 'checkprime'?"
+  ],
+  "dead_code": [
+    "Can the statement 'pthread_join(thd[m%TMAX].th, (void *) &thd[m%TMAX].flag);' be considered dead code?",
+    "Is this statement not dead: “printf (\"I: n++      n=%li, m=%li (%li)\\n\", n, m, n-m);”?"
+  ]
+}

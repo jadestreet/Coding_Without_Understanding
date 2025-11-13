@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'func' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'func'?",
+    "Is it impossible for function 'free' to reach function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<n' be skipped entirely?",
+    "Is the loop with condition 'i<n' always executed?",
+    "Can the loop with condition '0' be skipped entirely?",
+    "Is the loop with condition '0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 3)' affect subsequent computations?",
+    "Is variable 'i (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'func'?",
+    "Is variable 'ret' live at the end of function 'func'?"
+  ],
+  "dead_code": [
+    "Is the statement 'else' unreachable?",
+    "Can the program actually reach the statement: “int *p = NULL;”?"
+  ]
+}

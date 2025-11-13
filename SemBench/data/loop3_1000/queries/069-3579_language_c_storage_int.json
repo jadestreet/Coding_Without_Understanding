@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'print_byte' eventually call function 'printf'?",
+    "Is it impossible for function 'print_bit' to reach function 'main'?",
+    "Is it impossible for function 'print_byte' to reach function 'print_bit'?",
+    "Can function 'print_bit' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'print_bytes < size' be skipped entirely?",
+    "Is the loop with condition 'print_bytes < size' always executed?",
+    "Can the loop with condition 'print_bits >= 0' be skipped entirely?",
+    "Is the loop with condition 'print_bits >= 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'print_bytes < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'print_bits >= 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'i (line 5)' used after its definition?",
+    "Does the value assigned to 'c (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'check_end'?",
+    "Is variable 'c' live at the end of function 'check_end'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return print_bytes;' unreachable?",
+    "Can the program actually reach the statement: “#endif”?"
+  ]
+}

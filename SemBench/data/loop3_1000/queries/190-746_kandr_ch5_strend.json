@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strend' to reach function 'main'?",
+    "Is it impossible for function 'strend' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'strend'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 's[i] != '\\0'' is never executed?",
+    "Is the loop with condition 's[i] != '\\0'' always executed?",
+    "Can the loop with condition 't[j] != '\\0'' be skipped entirely?",
+    "Is the loop with condition 't[j] != '\\0'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 's[i] != '\\0'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 't[j] != '\\0'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's (line 2)' used after its definition?",
+    "Does the value assigned to 't (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'res' live at the end of function 'main'?",
+    "Is variable 'argv' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (j = 0; t[j] != '\\0'; j++)' unreachable?",
+    "Can the program actually reach the statement: “;”?"
+  ]
+}

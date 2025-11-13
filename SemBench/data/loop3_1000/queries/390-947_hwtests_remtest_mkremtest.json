@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'rand' to reach function 'chooseReg'?",
+    "Is there a call path from function 'chooseRegs' to function 'chooseReg'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'chooseRegs' eventually call function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < snums' be skipped entirely?",
+    "Is the loop with condition 'i < snums' always executed?",
+    "Is it possible that the loop with condition 'j < snums' is never executed?",
+    "Is the loop with condition 'j < snums' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < snums' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < snums' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 4)' used after its definition?",
+    "Does the value assigned to 'y (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'x (line 4)' remain in use at the end of function 'myrem'?",
+    "Does variable 'y (line 4)' remain in use at the end of function 'myrem'?"
+  ],
+  "dead_code": [
+    "Is the statement 'unsigned (*func)(unsigned x, unsigned y);' unreachable?",
+    "Can the program actually reach the statement: “0x80010000,”?"
+  ]
+}

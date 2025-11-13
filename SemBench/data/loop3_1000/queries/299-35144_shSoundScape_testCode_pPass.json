@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'define' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'define'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<6' is never executed?",
+    "Is the loop with condition 'i<6' always executed?",
+    "Is it possible that the loop with condition 'i<6' is never executed?",
+    "Is the loop with condition 'i<6' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<6' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<6' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 7)' used after its definition?",
+    "Does the value assigned to 'argc' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 10)' remain in use at the end of function 'main'?",
+    "Is variable 'n (line 7)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'n[i].length = 3*i;' unreachable?",
+    "Can the program actually reach the statement: “}note;”?"
+  ]
+}

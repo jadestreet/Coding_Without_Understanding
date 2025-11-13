@@ -1,0 +1,27 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'puts' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'puts'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'x < 5' is never executed?",
+    "Is the loop with condition 'x < 5' always executed?",
+    "Can the loop with condition 'x < 5' be skipped entirely?",
+    "Is the loop with condition 'x < 5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'x < 5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'x < 5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'x (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'x (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '} while(x < 5);' unreachable?",
+    "Can the program actually reach the statement: “x = x + 1;”?"
+  ]
+}

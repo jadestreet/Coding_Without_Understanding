@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'print_byte' to reach function 'main'?",
+    "Is it impossible for function 'print_byte' to reach function 'print_bit'?",
+    "Is there a call path from function 'main' to function 'print_byte'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'print_bytes < size' be skipped entirely?",
+    "Is the loop with condition 'print_bytes < size' always executed?",
+    "Can the loop with condition 'print_bits >= 0' be skipped entirely?",
+    "Is the loop with condition 'print_bits >= 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'print_bytes < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'print_bits >= 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'addr (line 3)' used after its definition?",
+    "Does the value assigned to 'size (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'addr (line 31)' remain in use at the end of function 'print_bit'?",
+    "Is variable 'print_bytes (line 29)' live at the end of function 'print_bit'?"
+  ],
+  "dead_code": [
+    "Is the statement 'paddr++;' unreachable?",
+    "Can the program actually reach the statement: “unsigned char *paddr = (unsigned char *)addr;”?"
+  ]
+}

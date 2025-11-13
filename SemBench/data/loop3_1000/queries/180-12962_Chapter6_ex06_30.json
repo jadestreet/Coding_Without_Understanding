@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<SIZE' be skipped entirely?",
+    "Is the loop with condition 'i<SIZE' always executed?",
+    "Is it possible that the loop with condition 'i<SIZE' is never executed?",
+    "Is the loop with condition 'i<SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'array (line 5)' used after its definition?",
+    "Does the value assigned to 'i (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'j' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(i=2; i<SIZE; i++) {' unreachable?",
+    "Is this statement not dead: “if(array[j]==1 && j%i==0)”?"
+  ]
+}

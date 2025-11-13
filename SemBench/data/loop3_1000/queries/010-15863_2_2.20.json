@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'free'?",
+    "Is it impossible for function 'free' to reach function 'printf'?",
+    "Is there a call path from function 'Deletemintomax' to function 'free'?",
+    "Is there a call path from function 'main' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<20' be skipped entirely?",
+    "Is the loop with condition 'i<20' always executed?",
+    "Can the loop with condition 'p&&x>p->data' be skipped entirely?",
+    "Is the loop with condition 'p&&x>p->data' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<20' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p&&x>p->data' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'head (line 16)' used after its definition?",
+    "Is variable 'head (line 17)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'head' remain in use at the end of function 'createLinklist'?",
+    "Does variable 'list (line 20)' remain in use at the end of function 'InsertUp'?"
+  ],
+  "dead_code": [
+    "Is the statement 'else' unreachable?",
+    "Is this statement not dead: “int main(){”?"
+  ]
+}

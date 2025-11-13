@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'k<N' be skipped entirely?",
+    "Is the loop with condition 'k<N' always executed?",
+    "Can the loop with condition 'i>=0' be skipped entirely?",
+    "Is the loop with condition 'i>=0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k<N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i>=0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'k (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'k' remain in use at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"\\n\");' unreachable?",
+    "Can the program actually reach the statement: “int k,i=0,j=0;”?"
+  ]
+}

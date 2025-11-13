@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'print'?",
+    "Is it impossible for function 'printf' to reach function 'print'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'select_sort' to reach function 'print'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n - 1' is never executed?",
+    "Is the loop with condition 'i < n - 1' always executed?",
+    "Can the loop with condition 'j < n' be skipped entirely?",
+    "Is the loop with condition 'j < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n - 1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 2)' affect subsequent computations?",
+    "Is variable 'n (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'n (line 2)' remain in use at the end of function 'print'?",
+    "Is variable 'a (line 2)' live at the end of function 'print'?"
+  ],
+  "dead_code": [
+    "Is the statement 'print(a,n);' unreachable?",
+    "Can the program actually reach the statement: “int i, j, temp, min;”?"
+  ]
+}

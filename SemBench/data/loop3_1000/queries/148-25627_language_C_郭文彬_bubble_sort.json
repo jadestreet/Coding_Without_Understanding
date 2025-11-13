@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'rand' to reach function 'clock'?",
+    "Is there a call path from function 'main' to function 'rand'?",
+    "Is there a call path from function 'main' to function 'clock'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<10000' be skipped entirely?",
+    "Is the loop with condition 'i<10000' always executed?",
+    "Can the loop with condition 'j < 9999' be skipped entirely?",
+    "Is the loop with condition 'j < 9999' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < 9999' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'start (line 6)' used after its definition?",
+    "Does the value assigned to 'end (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'end' live at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'a[k] = a[k + 1];' be considered dead code?",
+    "Is this statement not dead: “for(j = 0; j < 9999; j++)”?"
+  ]
+}

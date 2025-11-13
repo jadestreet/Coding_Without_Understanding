@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'memset'?",
+    "Is it impossible for function 'memset' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= UPPER_LIMIT' is never executed?",
+    "Is the loop with condition 'i <= UPPER_LIMIT' always executed?",
+    "Is it possible that the loop with condition 'j <= UPPER_LIMIT' is never executed?",
+    "Is the loop with condition 'j <= UPPER_LIMIT' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= UPPER_LIMIT' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j <= UPPER_LIMIT' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'isPrime (line 8)' affect subsequent computations?",
+    "Is variable 'isPrime (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'isPrime[j] = NOT_PRIME;' unreachable?",
+    "Can the program actually reach the statement: “for (int j = 2 * i; j <= UPPER_LIMIT; j += i) {”?"
+  ]
+}

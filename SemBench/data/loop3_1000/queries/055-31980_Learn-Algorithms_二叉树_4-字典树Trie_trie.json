@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'trie_remove'?",
+    "Is it impossible for function 'trie_insert' to reach function 'trie_query'?",
+    "Is there a call path from function 'trie_insert' to function 'malloc'?",
+    "Is there a call path from function 'trie_insert' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < ALPHABET_SIZE' is never executed?",
+    "Is the loop with condition 'i < ALPHABET_SIZE' always executed?",
+    "Is it possible that the loop with condition 'i < 6' is never executed?",
+    "Is the loop with condition 'i < 6' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < ALPHABET_SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 6' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'trie (line 13)' affect subsequent computations?",
+    "Does the value assigned to 'trie (line 14)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 95)' remain in use at the end of function 'trie_create'?",
+    "Is variable 'trie (line 90)' live at the end of function 'trie_create'?"
+  ],
+  "dead_code": [
+    "Is the statement 'p++;' unreachable?",
+    "Is this statement not dead: “printf(\"%s 插入失败\\n\", dict[i]);”?"
+  ]
+}

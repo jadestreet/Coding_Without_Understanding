@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'list_get' to reach function 'list_remove'?",
+    "Is it impossible for function 'list_length' to reach function 'list_remove'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < index && current != NULL' be skipped entirely?",
+    "Is the loop with condition 'i < index && current != NULL' always executed?",
+    "Can the loop with condition 'i < index - 1 && current != NULL' be skipped entirely?",
+    "Is the loop with condition 'i < index - 1 && current != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < index && current != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < index - 1 && current != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'first (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'index (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'index (line 6)' remain in use at the end of function 'list_get'?",
+    "Does variable 'first (line 6)' remain in use at the end of function 'list_get'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int list_get(struct Node* first, int index) {' unreachable?",
+    "Is this statement not dead: “int length = 0;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'merge' to function 'free'?",
+    "Can function 'merge' eventually call function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'free'?",
+    "Is it impossible for function 'malloc' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'leftPostion < leftLen && rightPostion < rightLen' is never executed?",
+    "Is the loop with condition 'leftPostion < leftLen && rightPostion < rightLen' always executed?",
+    "Is it possible that the loop with condition 'leftPostion < leftLen' is never executed?",
+    "Is the loop with condition 'leftPostion < leftLen' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'leftPostion < leftLen && rightPostion < rightLen' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'leftPostion < leftLen' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'data (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'start (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 9)' live at the end of function 'main'?",
+    "Does variable 'count' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for(; i < count; i++)' be considered dead code?",
+    "Can the program actually reach the statement: “void merge(int data[], int start, int middle, int end);”?"
+  ]
+}

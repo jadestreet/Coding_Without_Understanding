@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'print_graphics'?",
+    "Is it impossible for function 'print_graphics' to reach function 'main'?",
+    "Can function 'main' eventually call function 'print_graphics'?",
+    "Is there a call path from function 'print_graphics' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'loc < X_SIZE' is never executed?",
+    "Is the loop with condition 'loc < X_SIZE' always executed?",
+    "Is it possible that the loop with condition 'y < Y_SIZE' is never executed?",
+    "Is the loop with condition 'y < Y_SIZE' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'loc < X_SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y < Y_SIZE' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'graphics (line 4)' affect subsequent computations?",
+    "Is variable 'x (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'loc' live at the end of function 'main'?",
+    "Is variable 'bit' live at the end of function 'print_graphics'?"
+  ],
+  "dead_code": [
+    "Can the statement 'unsigned int bit;' be considered dead code?",
+    "Is this statement not dead: “void print_graphics(void);”?"
+  ]
+}

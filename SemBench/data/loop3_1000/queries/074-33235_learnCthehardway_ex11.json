@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition 'i < num_states' is never executed?",
+    "Is the loop with condition 'i < num_states' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < num_states' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'argv (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'states' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '};' be considered dead code?",
+    "Can the program actually reach the statement: “i--;”?"
+  ]
+}

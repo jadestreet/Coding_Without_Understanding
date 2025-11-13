@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'my_strcmp'?",
+    "Can function 'main' eventually call function 'my_strcmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < tailleMax' be skipped entirely?",
+    "Is the loop with condition 'i < tailleMax' always executed?",
+    "Can the loop with condition 'arg1[taille1] != '\\0'' be skipped entirely?",
+    "Is the loop with condition 'arg1[taille1] != '\\0'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < tailleMax' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'arg1[taille1] != '\\0'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arg1 (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'arg2 (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'argv' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '}while(arg2[taille2] != '\\0');' be considered dead code?",
+    "Is this statement not dead: “taille1++;”?"
+  ]
+}

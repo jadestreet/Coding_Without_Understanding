@@ -1,0 +1,27 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'basename' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'basename'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'name[i] != '\\0'' be skipped entirely?",
+    "Is the loop with condition 'name[i] != '\\0'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'name[i] != '\\0'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'name (line 3)' used after its definition?",
+    "Is variable 'move (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'last_move' remain in use at the end of function 'basename'?",
+    "Does variable 'name' remain in use at the end of function 'basename'?"
+  ],
+  "dead_code": [
+    "Is the statement 'char* executable = basename(argv[counter_argv++]);' unreachable?",
+    "Can the program actually reach the statement: “printf(\"# de parametros: %d\\n\", args-1);”?"
+  ]
+}

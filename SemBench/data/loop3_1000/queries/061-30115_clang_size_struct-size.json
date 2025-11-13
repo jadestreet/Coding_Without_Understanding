@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'show_struct' to reach function 'snprintf'?",
+    "Is it impossible for function 'main' to reach function 'show_struct_D'?",
+    "Can function 'show_mem' eventually call function 'printf'?",
+    "Is there a call path from function 'show_mem' to function '__ctype_b_loc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < g' is never executed?",
+    "Is the loop with condition 'i < g' always executed?",
+    "Can the loop with condition 'k < i * ilen + ilen' be skipped entirely?",
+    "Is the loop with condition 'k < i * ilen + ilen' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < g' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k < i * ilen + ilen' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'c (line 10)' used after its definition?",
+    "Does the value assigned to 's (line 17)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'iSize' live at the end of function 'show_mem'?",
+    "Is variable 'p' live at the end of function 'show_mem'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void show_struct_D(struct D * c) {' be considered dead code?",
+    "Can the program actually reach the statement: “int d;”?"
+  ]
+}

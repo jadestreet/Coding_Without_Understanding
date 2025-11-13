@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'memset' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'isqrt'?",
+    "Is it impossible for function 'memset' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'memset'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'yv >= -50' be skipped entirely?",
+    "Is the loop with condition 'yv >= -50' always executed?",
+    "Can the loop with condition 'i < 200' be skipped entirely?",
+    "Is the loop with condition 'i < 200' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'yv >= -50' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 200' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 4)' used after its definition?",
+    "Does the value assigned to 'x (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'previous' live at the end of function 'isqrt'?",
+    "Is variable 'n' live at the end of function 'isqrt'?"
+  ],
+  "dead_code": [
+    "Is the statement 'word x = x0 + t*xv/100;' unreachable?",
+    "Is this statement not dead: “word error = bright - quantBright*10 - 5;”?"
+  ]
+}

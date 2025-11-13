@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'interpolate' to reach function 'fdiv_func'?",
+    "Is it impossible for function 'fdiv_func' to reach function 'engine'?",
+    "Is there a call path from function 'main' to function 'engine'?",
+    "Can function 'engine' eventually call function 'interpolate'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'vaf<255' is never executed?",
+    "Is the loop with condition 'vaf<255' always executed?",
+    "Is it possible that the loop with condition 'i < 50' is never executed?",
+    "Is the loop with condition 'i < 50' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'vaf<255' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 50' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'debug_val (line 16)' affect subsequent computations?",
+    "Does the value assigned to 'debug_base (line 17)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'vaf' live at the end of function 'engine'?",
+    "Is variable 'hc_count' live at the end of function 'engine'?"
+  ],
+  "dead_code": [
+    "Can the statement '{ 50, 3600, 40 },' be considered dead code?",
+    "Is this statement not dead: “#ifdef STATIC_SIZE”?"
+  ]
+}

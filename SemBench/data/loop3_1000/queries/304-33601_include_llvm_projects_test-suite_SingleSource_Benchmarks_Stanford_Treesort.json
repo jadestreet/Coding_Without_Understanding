@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'Rand' to reach function 'Checktree'?",
+    "Is it impossible for function 'Checktree' to reach function 'CreateNode'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is there a call path from function 'main' to function 'Insert'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= sortelements' be skipped entirely?",
+    "Is the loop with condition 'i <= sortelements' always executed?",
+    "Can the loop with condition 'i <= sortelements' be skipped entirely?",
+    "Is the loop with condition 'i <= sortelements' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= sortelements' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= sortelements' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'value' affect subsequent computations?",
+    "Does the value assigned to 'fixed' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 63)' live at the end of function 'tInitarr'?",
+    "Is variable 'temp' live at the end of function 'tInitarr'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int    permarray[permrange+1];' unreachable?",
+    "Can the program actually reach the statement: “if ( t->right == nil ) CreateNode(&t->right,n);”?"
+  ]
+}

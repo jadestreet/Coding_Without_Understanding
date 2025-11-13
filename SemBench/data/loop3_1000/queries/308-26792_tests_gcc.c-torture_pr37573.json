@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_memcmp' to reach function 'main'?",
+    "Can function 'main' eventually call function '__builtin_abort'?",
+    "Is it impossible for function '__builtin_memcmp' to reach function 'bar'?",
+    "Is there a call path from function 'main' to function '__builtin_memcmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 227' be skipped entirely?",
+    "Is the loop with condition 'i < 227' always executed?",
+    "Can the loop with condition 'i < 624' be skipped entirely?",
+    "Is the loop with condition 'i < 624' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 227' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 624' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'c (line 5)' used after its definition?",
+    "Is variable 's (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 's (line 8)' live at the end of function 'foo'?",
+    "Does variable 'c (line 13)' remain in use at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Is the statement 'unsigned int *c = s.c;' unreachable?",
+    "Can the program actually reach the statement: “struct S s;”?"
+  ]
+}

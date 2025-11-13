@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'setlocale'?",
+    "Is it impossible for function 'setlocale' to reach function 'free'?",
+    "Can function 'main' eventually call function 'rand'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<NUMS' be skipped entirely?",
+    "Is the loop with condition 'i<NUMS' always executed?",
+    "Can the loop with condition 'i<NUMS' be skipped entirely?",
+    "Is the loop with condition 'i<NUMS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUMS' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUMS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 14)' affect subsequent computations?",
+    "Is variable 'NA (line 15)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'NA2' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'NA[i] &= (0xff<<24);' unreachable?",
+    "Can the program actually reach the statement: “NA[i] -= 1L<<(BITS-1);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fprintf' to reach function 'printf'?",
+    "Is it impossible for function 'fprintf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'pow'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<1024' be skipped entirely?",
+    "Is the loop with condition 'i<1024' always executed?",
+    "Is it possible that the loop with condition 'A0<(1<<10)' is never executed?",
+    "Is the loop with condition 'A0<(1<<10)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<1024' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'A0<(1<<10)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?",
+    "Is variable 'cons (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'A0' live at the end of function 'main'?",
+    "Is variable 'b' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (i=0; i<1024; i++) {' be considered dead code?",
+    "Can the program actually reach the statement: “int M = (1<<23) + (u.i & ((1<<23)-1));”?"
+  ]
+}

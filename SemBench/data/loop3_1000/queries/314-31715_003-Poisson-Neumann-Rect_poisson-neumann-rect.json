@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'f' to reach function 'fprintf'?",
+    "Is it impossible for function 'fprintf' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'f'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Can the loop with condition 'j < N' be skipped entirely?",
+    "Is the loop with condition 'j < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'uh (line 9)' affect subsequent computations?",
+    "Does the value assigned to 'uh_new (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'get_index'?",
+    "Is variable 'j' live at the end of function 'get_index'?"
+  ],
+  "dead_code": [
+    "Can the statement 'uh_new[m] += uh[get_index(i, j + 1)] / 4.0;' be considered dead code?",
+    "Is this statement not dead: “for (int i = 1; i < N; ++i) {”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'strlen'?",
+    "Is it impossible for function 'calloc' to reach function 'strlen'?",
+    "Is there a call path from function 'main' to function 'PalindromeLengthPuzzle'?",
+    "Is there a call path from function 'main' to function 'calloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < length' is never executed?",
+    "Is the loop with condition 'i < length' always executed?",
+    "Can the loop with condition 'input1[length] != NULL' be skipped entirely?",
+    "Is the loop with condition 'input1[length] != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'input1[length] != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'p (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'q' live at the end of function 'lpd'?",
+    "Is variable 't' live at the end of function 'lpd'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while(input1[length] != NULL) {' unreachable?",
+    "Can the program actually reach the statement: “return lpd(str, 0, strlen(str) - 1, arr ) ;”?"
+  ]
+}

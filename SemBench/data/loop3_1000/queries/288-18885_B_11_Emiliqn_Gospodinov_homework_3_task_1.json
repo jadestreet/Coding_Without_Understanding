@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'a<123' is never executed?",
+    "Is the loop with condition 'a<123' always executed?",
+    "Is it possible that the loop with condition 'B<91' is never executed?",
+    "Is the loop with condition 'B<91' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'a<123' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'B<91' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Does variable 'B' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'i=48;' unreachable?",
+    "Can the program actually reach the statement: “while (B<91);”?"
+  ]
+}

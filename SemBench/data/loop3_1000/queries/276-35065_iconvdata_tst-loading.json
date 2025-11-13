@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'random'?",
+    "Is it impossible for function 'mtrace' to reach function 'iconv_open'?",
+    "Is there a call path from function 'main' to function 'iconv_open'?",
+    "Can function 'main' eventually call function 'srandom'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'count < nmodules' is never executed?",
+    "Is the loop with condition 'count < nmodules' always executed?",
+    "Can the loop with condition 'count--' be skipped entirely?",
+    "Is the loop with condition 'count--' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'count < nmodules' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'count--' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'modules (line 12)' affect subsequent computations?",
+    "Is variable 'modules (line 32)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'outptr' remain in use at the end of function 'main'?",
+    "Is variable 'count' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (modules[idx].state == unloaded)' be considered dead code?",
+    "Can the program actually reach the statement: “\"     all of the conversions from FROMSET to TOSET.\\n\"”?"
+  ]
+}

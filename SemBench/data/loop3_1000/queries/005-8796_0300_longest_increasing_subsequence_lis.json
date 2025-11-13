@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'printf'?",
+    "Is it impossible for function 'binary_search' to reach function 'main'?",
+    "Can function 'main' eventually call function 'atoi'?",
+    "Is there a call path from function 'lengthOfLIS' to function 'binary_search'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < numsSize' be skipped entirely?",
+    "Is the loop with condition 'i < numsSize' always executed?",
+    "Is it possible that the loop with condition 'i < argc - 1' is never executed?",
+    "Is the loop with condition 'i < argc - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < numsSize' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'nums (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'lo (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'hi' live at the end of function 'binary_search'?",
+    "Is variable 'lo' live at the end of function 'binary_search'?"
+  ],
+  "dead_code": [
+    "Can the statement 'piles++;' be considered dead code?",
+    "Is this statement not dead: “int *tops = malloc(numsSize * sizeof(int));”?"
+  ]
+}

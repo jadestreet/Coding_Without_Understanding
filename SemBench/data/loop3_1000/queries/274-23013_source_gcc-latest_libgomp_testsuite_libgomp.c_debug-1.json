@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'f3' to reach function 'main'?",
+    "Is it impossible for function 'f2' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'f7'?",
+    "Is there a call path from function 'main' to function 'f4'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'v6n < 3' be skipped entirely?",
+    "Is the loop with condition 'v6n < 3' always executed?",
+    "Is it possible that the loop with condition 'v7n < 3' is never executed?",
+    "Is the loop with condition 'v7n < 3' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'v6n < 3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'v7n < 3' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'v1i (line 4)' used after its definition?",
+    "Is variable 'v1j (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'v1m' remain in use at the end of function 'f1'?",
+    "Is variable 'v1i' live at the end of function 'f1'?"
+  ],
+  "dead_code": [
+    "Is the statement 'v4i = 8;' unreachable?",
+    "Can the program actually reach the statement: “v6l++;”?"
+  ]
+}

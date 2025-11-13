@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'insert_by_index'?",
+    "Is it impossible for function 'printf' to reach function 'reverse'?",
+    "Is it impossible for function 'remove_by_value' to reach function 'insert_by_index'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<index-1' be skipped entirely?",
+    "Is the loop with condition 'i<index-1' always executed?",
+    "Is it possible that the loop with condition 'current != NULL' is never executed?",
+    "Is the loop with condition 'current != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<index-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'node (line 4)' used after its definition?",
+    "Does the value assigned to 'val (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'node (line 4)' remain in use at the end of function 'make_node'?",
+    "Does variable 'val (line 5)' remain in use at the end of function 'make_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'insert_by_index(&test_list, 5, 4);' unreachable?",
+    "Can the program actually reach the statement: “int insert_by_index(Node **head, int val, int index) {”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'swi120' to reach function 'swi10'?",
+    "Is it impossible for function 'swi10' to reach function 'main'?",
+    "Can function 'main' eventually call function 'swi120'?",
+    "Is there a call path from function 'main' to function 'swi50'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<120' be skipped entirely?",
+    "Is the loop with condition 'i<120' always executed?",
+    "Is it possible that the loop with condition 'i<50' is never executed?",
+    "Is the loop with condition 'i<50' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<120' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<50' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'c (line 1)' used after its definition?",
+    "Is variable 'i (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 3)' remain in use at the end of function 'swi120'?",
+    "Is variable 'c (line 1)' live at the end of function 'swi120'?"
+  ],
+  "dead_code": [
+    "Is the statement 'case 7: c++; break;' unreachable?",
+    "Is this statement not dead: “case 26: c++; break;”?"
+  ]
+}

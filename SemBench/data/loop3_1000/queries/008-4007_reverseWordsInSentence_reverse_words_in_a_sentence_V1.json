@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'calloc' to reach function 'strlen'?",
+    "Is it impossible for function 'printf' to reach function 'strlen'?",
+    "Can function 'main' eventually call function 'calloc'?",
+    "Is there a call path from function 'main' to function 'realloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < lengthOfSentence' be skipped entirely?",
+    "Is the loop with condition 'i < lengthOfSentence' always executed?",
+    "Can the loop with condition 'i >= 0' be skipped entirely?",
+    "Is the loop with condition 'i >= 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < lengthOfSentence' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'sentence (line 10)' used after its definition?",
+    "Does the value assigned to 'sentence (line 11)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'sentence' live at the end of function 'main'?",
+    "Is variable 'letterCounter' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'word* words;' be considered dead code?",
+    "Can the program actually reach the statement: “typedef struct”?"
+  ]
+}

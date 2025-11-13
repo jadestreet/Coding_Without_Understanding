@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'min_dist' to reach function 'malloc'?",
+    "Is it impossible for function 'printf' to reach function 'SHROTEST_PATHS'?",
+    "Can function 'main' eventually call function 'SHROTEST_PATHS'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'C (line 4)' affect subsequent computations?",
+    "Is variable 'v (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'n (line 11)' live at the end of function 'main'?",
+    "Does variable 'i (line 14)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for(i = 1;i < n-1;i++) {' be considered dead code?",
+    "Is this statement not dead: “printf(\"\\n\");”?"
+  ]
+}

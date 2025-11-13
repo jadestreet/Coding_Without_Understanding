@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'reflect_32' to reach function 'fclose'?",
+    "Is it impossible for function 'build_crc_table' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'build_crc_table'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 32' is never executed?",
+    "Is the loop with condition 'i < 32' always executed?",
+    "Is it possible that the loop with condition 'i < 8' is never executed?",
+    "Is the loop with condition 'i < 8' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 32' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 8' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'b (line 5)' used after its definition?",
+    "Does the value assigned to 'i (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 7)' remain in use at the end of function 'reflect_32'?",
+    "Is variable 'b' live at the end of function 'reflect_32'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i,sztbl;' unreachable?",
+    "Can the program actually reach the statement: “int”?"
+  ]
+}

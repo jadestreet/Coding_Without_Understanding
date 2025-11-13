@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'getc' to reach function 'strlen'?",
+    "Is it impossible for function 'getc' to reach function 'strreplace'?",
+    "Is there a call path from function 'main' to function 'strlen'?",
+    "Is there a call path from function 'strreplace' to function 'strrep'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'p > 0' be skipped entirely?",
+    "Is the loop with condition 'p > 0' always executed?",
+    "Is it possible that the loop with condition 'p > 0' is never executed?",
+    "Is the loop with condition 'p > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'p > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'kam (line 3)' affect subsequent computations?",
+    "Is variable 'start (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'kam (line 3)' live at the end of function 'strxcpy'?",
+    "Does variable 'start (line 3)' remain in use at the end of function 'strxcpy'?"
+  ],
+  "dead_code": [
+    "Is the statement 'strrep(src, kam + p + data->l_cim, data);' unreachable?",
+    "Is this statement not dead: “int    l_cim;”?"
+  ]
+}

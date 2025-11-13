@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'displayArray'?",
+    "Is it impossible for function 'fillUpArray' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'displayArray'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Is it possible that the loop with condition 'i < size' is never executed?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 3)' affect subsequent computations?",
+    "Is variable 'size (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 's' remain in use at the end of function 'main'?",
+    "Does variable 'array' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int displayArray(int *a, int size){' be considered dead code?",
+    "Is this statement not dead: “int i;”?"
+  ]
+}

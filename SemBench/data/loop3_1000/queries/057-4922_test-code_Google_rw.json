@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_destroy' to reach function 'malloc'?",
+    "Is it impossible for function 'pthread_cond_destroy' to reach function 'pthread_cond_broadcast'?",
+    "Is there a call path from function 'reader' to function 'readlock'?",
+    "Is there a call path from function 'deletelock' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < MAXCOUNT' is never executed?",
+    "Is the loop with condition 'i < MAXCOUNT' always executed?",
+    "Is it possible that the loop with condition 'd != 0' is never executed?",
+    "Is the loop with condition 'd != 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < MAXCOUNT' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'd != 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'lock (line 19)' affect subsequent computations?",
+    "Is variable 'd (line 19)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'r4' remain in use at the end of function 'main'?",
+    "Is variable 'a4' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'a = (rwargs *)args;' be considered dead code?",
+    "Is this statement not dead: “return;”?"
+  ]
+}

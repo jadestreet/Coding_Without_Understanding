@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'bPrint'?",
+    "Can function 'bSetD' eventually call function 'printf'?",
+    "Is there a call path from function 'bMul' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'bMul'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'k<BN_MAXLEN' be skipped entirely?",
+    "Is the loop with condition 'k<BN_MAXLEN' always executed?",
+    "Can the loop with condition 'j< b.len' be skipped entirely?",
+    "Is the loop with condition 'j< b.len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k<BN_MAXLEN' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j< b.len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 9)' affect subsequent computations?",
+    "Does the value assigned to 'n (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 12)' remain in use at the end of function 'bPrint'?",
+    "Does variable 'n (line 9)' remain in use at the end of function 'bPrint'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int i,j;' be considered dead code?",
+    "Can the program actually reach the statement: “int i = n.len - 1;”?"
+  ]
+}

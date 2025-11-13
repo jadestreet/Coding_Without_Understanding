@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'BubbleSort'?",
+    "Is it impossible for function 'BubbleSort' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<n-1' be skipped entirely?",
+    "Is the loop with condition 'i<n-1' always executed?",
+    "Is it possible that the loop with condition 'j<(n-i)-1' is never executed?",
+    "Is the loop with condition 'j<(n-i)-1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<(n-i)-1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arr (line 2)' used after its definition?",
+    "Is variable 'n (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 4)' live at the end of function 'BubbleSort'?",
+    "Is variable 'arr (line 2)' live at the end of function 'BubbleSort'?"
+  ],
+  "dead_code": [
+    "Is the statement 'BubbleSort(arr, sizeof(arr)/sizeof(int));' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

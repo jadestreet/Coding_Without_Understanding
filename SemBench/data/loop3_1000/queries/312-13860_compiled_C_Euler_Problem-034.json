@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'td' to reach function 'd'?",
+    "Is it impossible for function 'tm' to reach function 'gr'?",
+    "Is there a call path from function 'main' to function 'd'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' is never executed?",
+    "Is the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' always executed?",
+    "Can the loop with condition 'j<w' be skipped entirely?",
+    "Is the loop with condition 'j<w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'h (line 1)' affect subsequent computations?",
+    "Is variable 'h (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'd'?",
+    "Does variable 'w' remain in use at the end of function 'd'?"
+  ],
+  "dead_code": [
+    "Can the statement 'sa(sp()-1LL);' be considered dead code?",
+    "Can the program actually reach the statement: “int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }”?"
+  ]
+}

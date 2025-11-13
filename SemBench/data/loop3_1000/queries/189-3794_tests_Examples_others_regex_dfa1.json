@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'atoi' to reach function 'post2nfa'?",
+    "Is it impossible for function 'freestates' to reach function 'freecache'?",
+    "Can function 'match' eventually call function 'memset'?",
+    "Can function 'main' eventually call function 'addstate'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*p' is never executed?",
+    "Is the loop with condition '*p' always executed?",
+    "Can the loop with condition 'i<l->n' be skipped entirely?",
+    "Is the loop with condition 'i<l->n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<l->n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 're (line 6)' used after its definition?",
+    "Does the value assigned to 'nalt (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 14)' live at the end of function 're2post'?",
+    "Does variable 'natom' remain in use at the end of function 're2post'?"
+  ],
+  "dead_code": [
+    "Is the statement 'State*' unreachable?",
+    "Can the program actually reach the statement: “if(nextp != NULL)”?"
+  ]
+}

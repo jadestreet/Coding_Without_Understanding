@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'keywordCompare1' to reach function 'strlen'?",
+    "Is it impossible for function 'printf' to reach function 'memcmp'?",
+    "Can function 'main' eventually call function 'memcmp'?",
+    "Is there a call path from function 'main' to function 'strlen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<NKEYWORD' is never executed?",
+    "Is the loop with condition 'i<NKEYWORD' always executed?",
+    "Is it possible that the loop with condition 'i<NKEYWORD' is never executed?",
+    "Is the loop with condition 'i<NKEYWORD' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<NKEYWORD' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<NKEYWORD' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'h (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 235)' live at the end of function 'keywordCompare1'?",
+    "Does variable 'pA (line 236)' remain in use at the end of function 'keywordCompare1'?"
+  ],
+  "dead_code": [
+    "Can the statement '{ \"DESC\",             \"TK_DESC\",         ALWAYS                 },' be considered dead code?",
+    "Is this statement not dead: “252,253,254,255”?"
+  ]
+}

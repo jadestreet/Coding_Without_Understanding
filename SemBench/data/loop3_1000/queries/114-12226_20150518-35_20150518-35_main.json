@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?",
+    "Is variable 'j (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(j = 1;j <= i-1;j++)' unreachable?",
+    "Is this statement not dead: “printf(\"\\n\");”?"
+  ]
+}

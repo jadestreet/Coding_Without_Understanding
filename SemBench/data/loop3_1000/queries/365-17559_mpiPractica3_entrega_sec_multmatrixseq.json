@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'new_matrix'?",
+    "Is it impossible for function 'free_matrix' to reach function 'print_matrix'?",
+    "Can function 'main' eventually call function 'multiply'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < size1' is never executed?",
+    "Is the loop with condition 'i < size1' always executed?",
+    "Is it possible that the loop with condition 'j < size2' is never executed?",
+    "Is the loop with condition 'j < size2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < size2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'size1 (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'size2 (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'matrix (line 4)' remain in use at the end of function 'print_matrix'?",
+    "Is variable 'size2 (line 4)' live at the end of function 'print_matrix'?"
+  ],
+  "dead_code": [
+    "Can the statement 'matrix1[i*SIZE2+j] = i;' be considered dead code?",
+    "Can the program actually reach the statement: “assert (m != NULL);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'assign_c' to reach function 'reall_pca'?",
+    "Is it impossible for function 'realloc' to reach function 'main'?",
+    "Can function 'assign_c' eventually call function 'malloc'?",
+    "Is there a call path from function 'main' to function 'assign_c'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<ac->sz' is never executed?",
+    "Is the loop with condition 'i<ac->sz' always executed?",
+    "Is it possible that the loop with condition 'j<(*ac->c)[i].sz' is never executed?",
+    "Is the loop with condition 'j<(*ac->c)[i].sz' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<ac->sz' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<(*ac->c)[i].sz' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'c (line 12)' affect subsequent computations?",
+    "Is variable 'c (line 14)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'c (line 14)' live at the end of function 'reall_pca'?",
+    "Does variable 'i (line 22)' remain in use at the end of function 'prt_aca'?"
+  ],
+  "dead_code": [
+    "Is the statement '(*c->pca)[j] =(char)(j+65);' unreachable?",
+    "Can the program actually reach the statement: “void assign_c(ca_t *c)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'printf'?",
+    "Is it impossible for function 'strlen' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'letterComb'?",
+    "Is there a call path from function 'main' to function 'strlen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < alphaSize[arr[depth] - 1]' be skipped entirely?",
+    "Is the loop with condition 'i < alphaSize[arr[depth] - 1]' always executed?",
+    "Is it possible that the loop with condition 'j < tmpSize' is never executed?",
+    "Is the loop with condition 'j < tmpSize' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < alphaSize[arr[depth] - 1]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < tmpSize' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'alpha (line 4)' used after its definition?",
+    "Is variable 'alphaSize (line 15)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'res' live at the end of function 'letterComb'?",
+    "Does variable 'index' remain in use at the end of function 'letterComb'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int main()' be considered dead code?",
+    "Is this statement not dead: “for (int j = 0; j < tmpSize; j++)”?"
+  ]
+}

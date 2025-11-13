@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'deleteAtBegin' to reach function 'deleteAtEnd'?",
+    "Is it impossible for function 'deleteAtBegin' to reach function 'insertAtBegin'?",
+    "Can function 'deleteAtEnd' eventually call function 'printf'?",
+    "Is there a call path from function 'main' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'current->next != *headRef' is never executed?",
+    "Is the loop with condition 'current->next != *headRef' always executed?",
+    "Can the loop with condition 'current->next != *headRef' be skipped entirely?",
+    "Is the loop with condition 'current->next != *headRef' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'current->next != *headRef' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current->next != *headRef' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'data (line 4)' affect subsequent computations?",
+    "Is variable 'headRef (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'newNode (line 9)' live at the end of function 'insertAtEnd'?",
+    "Does variable 'data (line 4)' remain in use at the end of function 'insertAtEnd'?"
+  ],
+  "dead_code": [
+    "Is the statement 'struct Node *head = NULL;' unreachable?",
+    "Can the program actually reach the statement: “temp = current;”?"
+  ]
+}

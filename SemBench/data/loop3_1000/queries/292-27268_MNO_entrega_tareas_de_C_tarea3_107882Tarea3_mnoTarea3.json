@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'imprimirValores' to reach function 'main'?",
+    "Can function 'imprimirValores' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'imprimirValores'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<n' be skipped entirely?",
+    "Is the loop with condition 'i<n' always executed?",
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arreglo (line 5)' used after its definition?",
+    "Is variable 'arreglo2 (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'm (line 8)' remain in use at the end of function 'main'?",
+    "Does variable 'arreglo2' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for ( j = 0; j < m; j++){' unreachable?",
+    "Can the program actually reach the statement: “if(m==0){”?"
+  ]
+}

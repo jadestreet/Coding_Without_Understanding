@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'xinv' to reach function 'makesboxes'?",
+    "Is it impossible for function 'makeexplog' to reach function 'makesboxes'?",
+    "Can function 'main' eventually call function 'makesboxes'?",
+    "Is there a call path from function 'makeexplog' to function 'multiply'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 256' is never executed?",
+    "Is the loop with condition 'i < 256' always executed?",
+    "Can the loop with condition 'i < 256' be skipped entirely?",
+    "Is the loop with condition 'i < 256' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'exp (line 3)' used after its definition?",
+    "Does the value assigned to 'log (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'res' remain in use at the end of function 'multiply'?",
+    "Does variable 'b (line 9)' remain in use at the end of function 'multiply'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i, p;' unreachable?",
+    "Can the program actually reach the statement: “printf(\"{{%3d, %3d, %3d, %3d}}, \", r[0], r[1], r[2], r[3]);”?"
+  ]
+}

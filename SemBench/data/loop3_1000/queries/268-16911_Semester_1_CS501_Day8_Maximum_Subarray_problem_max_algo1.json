@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Can the loop with condition 'j < size' be skipped entirely?",
+    "Is the loop with condition 'j < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc' used after its definition?",
+    "Does the value assigned to 'argv' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'size' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'maxSum = sum;' unreachable?",
+    "Can the program actually reach the statement: “if(sum > maxSum){”?"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_isinf' to reach function 'main'?",
+    "Is it impossible for function '__builtin_isinf' to reach function '__builtin_inf'?",
+    "Can function 'main' eventually call function '__builtin_inf'?",
+    "Is there a call path from function 'main' to function 'link_error'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '0' is never executed?",
+    "Is the loop with condition '0' always executed?",
+    "Can the loop with condition '0' be skipped entirely?",
+    "Is the loop with condition '0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'foo (line 12)' affect subsequent computations?",
+    "Is variable 'foo (line 13)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'foo' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'TEST_ONE_PART_INF ((VAL1) * (VAL1));' unreachable?",
+    "Is this statement not dead: “} while (0)”?"
+  ]
+}

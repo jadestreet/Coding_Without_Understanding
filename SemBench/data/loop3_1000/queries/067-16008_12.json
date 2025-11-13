@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'factor_num' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'factor_num'?",
+    "Can function 'main' eventually call function 'triangle'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<=n' is never executed?",
+    "Is the loop with condition 'i<=n' always executed?",
+    "Is it possible that the loop with condition 'n%i==0' is never executed?",
+    "Is the loop with condition 'n%i==0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n%i==0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 2)' used after its definition?",
+    "Is variable 'i (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 4)' remain in use at the end of function 'factor_num'?",
+    "Does variable 'j' remain in use at the end of function 'factor_num'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return sum;' unreachable?",
+    "Is this statement not dead: “for (i=2; factor_num(triangle(i)) <= 500; i++);”?"
+  ]
+}

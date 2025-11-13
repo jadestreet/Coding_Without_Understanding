@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'foo_1_2_2_1_1_2_1_2_2' to reach function 'foo_2_2_1_2_2_1_1_1_2'?",
+    "Is it impossible for function 'foo_2_1_2_2_1_2_2_1_2' to reach function 'foo_2_2_1_2_2_1_2_1_2'?",
+    "Can function 'main' eventually call function 'getFunc'?",
+    "Is there a call path from function 'main' to function 'Fp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'I < 512' be skipped entirely?",
+    "Is the loop with condition 'I < 512' always executed?",
+    "Is it possible that the loop with condition 'J < 1000 - I' is never executed?",
+    "Is the loop with condition 'J < 1000 - I' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'I < 512' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'J < 1000 - I' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'CalleeAddrs (line 23)' used after its definition?",
+    "Is variable 'I (line 25)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'I (line 25)' remain in use at the end of function 'getFunc'?",
+    "Is variable 'J' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '#define DEF_256_FUNCS(x) DEF_128_FUNCS(x##_1) DEF_128_FUNCS(x##_2)' be considered dead code?",
+    "Can the program actually reach the statement: “#define FUNC_2_ADDRS(x) FUNC_ADDR(x##_1) FUNC_ADDR(x##_2)”?"
+  ]
+}

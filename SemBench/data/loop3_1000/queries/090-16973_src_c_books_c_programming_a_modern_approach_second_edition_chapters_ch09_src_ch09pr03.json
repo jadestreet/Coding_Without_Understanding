@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'print_array' to reach function 'gen_rand_walk'?",
+    "Is it impossible for function 'print_array' to reach function 'main'?",
+    "Can function 'gen_rand_walk' eventually call function 'rand'?",
+    "Is there a call path from function 'main' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 10' is never executed?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Can the loop with condition 'j < 10' be skipped entirely?",
+    "Is the loop with condition 'j < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'board (line 8)' affect subsequent computations?",
+    "Is variable 'x (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'right' live at the end of function 'gen_rand_walk'?",
+    "Does variable 'down' remain in use at the end of function 'gen_rand_walk'?"
+  ],
+  "dead_code": [
+    "Is the statement 'break;' unreachable?",
+    "Is this statement not dead: “printf(\"\\t\");”?"
+  ]
+}

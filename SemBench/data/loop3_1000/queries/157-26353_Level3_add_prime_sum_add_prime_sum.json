@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'ft_putnum' to reach function 'ft_is_prime'?",
+    "Is it impossible for function 'ft_is_prime' to reach function 'ft_putchar'?",
+    "Is there a call path from function 'main' to function 'ft_putnbr'?",
+    "Is there a call path from function 'main' to function 'add_prime_sum'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*ch' is never executed?",
+    "Is the loop with condition '*ch' always executed?",
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*ch' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'c (line 3)' affect subsequent computations?",
+    "Is variable 'c (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'c' live at the end of function 'ft_putchar'?",
+    "Does variable 'num (line 7)' remain in use at the end of function 'ft_putnbr'?"
+  ],
+  "dead_code": [
+    "Can the statement 'ft_putchar(num + '0');' be considered dead code?",
+    "Can the program actually reach the statement: “write(1, &c, 1);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_self' to reach function 'thread_start'?",
+    "Is it impossible for function 'printf' to reach function 'pthread_join'?",
+    "Is there a call path from function 'thread_sum' to function 'pthread_join'?",
+    "Is there a call path from function 'thread_start' to function 'pthread_self'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<array_size' be skipped entirely?",
+    "Is the loop with condition 'i<array_size' always executed?",
+    "Can the loop with condition 'j<10000' be skipped entirely?",
+    "Is the loop with condition 'j<10000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<array_size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<10000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arg (line 11)' used after its definition?",
+    "Does the value assigned to 'arg (line 12)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 's2' remain in use at the end of function 'thread_sum'?",
+    "Is variable 't2' live at the end of function 'thread_sum'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pthread_join(t1,&r1);' unreachable?",
+    "Can the program actually reach the statement: “void* thread_start(void *arg) {”?"
+  ]
+}

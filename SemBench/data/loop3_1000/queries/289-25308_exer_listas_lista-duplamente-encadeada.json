@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'excluiChave'?",
+    "Is it impossible for function 'malloc' to reach function 'free'?",
+    "Is it impossible for function 'malloc' to reach function 'imprimeLista'?",
+    "Is there a call path from function 'incluiCalda' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'pAux->prox != NULL' is never executed?",
+    "Is the loop with condition 'pAux->prox != NULL' always executed?",
+    "Is it possible that the loop with condition 'pAux->prox->numero != pChave' is never executed?",
+    "Is the loop with condition 'pAux->prox->numero != pChave' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'pAux->prox != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'pAux->prox->numero != pChave' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'pLista (line 15)' used after its definition?",
+    "Does the value assigned to 'pLista (line 16)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'pLista (line 15)' remain in use at the end of function 'vazia'?",
+    "Does variable 'pNovoNo (line 23)' remain in use at the end of function 'incluiCabeca'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (pAux->numero != pChave) {' unreachable?",
+    "Can the program actually reach the statement: “while (pAux != NULL) {”?"
+  ]
+}

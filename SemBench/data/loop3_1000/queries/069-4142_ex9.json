@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 2' is never executed?",
+    "Is the loop with condition 'i < 2' always executed?",
+    "Is it possible that the loop with condition 'chars[i][j]' is never executed?",
+    "Is the loop with condition 'chars[i][j]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'chars[i][j]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Does the value assigned to 'argv' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'argc' remain in use at the end of function 'main'?",
+    "Does variable 'i' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while(chars[i][j]) {' unreachable?",
+    "Is this statement not dead: “j++;”?"
+  ]
+}

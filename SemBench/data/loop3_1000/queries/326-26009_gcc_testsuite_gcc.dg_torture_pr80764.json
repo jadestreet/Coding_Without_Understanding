@@ -1,0 +1,19 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'fn1'?",
+    "Is it impossible for function 'fn1' to reach function 'main'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Does the value assigned to 'b (line 1)' affect subsequent computations?",
+    "Is variable 'd (line 1)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'p1' remain in use at the end of function 'fn1'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (; h;)' be considered dead code?",
+    "Is this statement not dead: “int main() { return fn1(); }”?"
+  ]
+}

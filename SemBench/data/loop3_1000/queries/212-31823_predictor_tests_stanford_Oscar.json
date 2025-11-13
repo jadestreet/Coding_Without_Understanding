@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'Uniform11' to reach function 'Min0'?",
+    "Is it impossible for function 'Oscar' to reach function 'Initrand'?",
+    "Is there a call path from function 'main' to function 'Printcomplex'?",
+    "Can function 'Exptab' eventually call function 'Cos'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= 10' be skipped entirely?",
+    "Is the loop with condition 'i <= 10' always executed?",
+    "Is it possible that the loop with condition 'i <= 25' is never executed?",
+    "Is the loop with condition 'i <= 25' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 25' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'power' remain in use at the end of function 'Cos'?",
+    "Is variable 'factor' live at the end of function 'Cos'?"
+  ],
+  "dead_code": [
+    "Is the statement '#define maxcells \t 18' unreachable?",
+    "Is this statement not dead: “do {”?"
+  ]
+}

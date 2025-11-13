@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'dumpCode' to reach function 'sleep'?",
+    "Is it impossible for function 'sleep' to reach function 'main'?",
+    "Can function 'main' eventually call function 'memcpy'?",
+    "Can function 'dumpCode' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < NUM_DUMPED_WORDS' be skipped entirely?",
+    "Is the loop with condition 'i < NUM_DUMPED_WORDS' always executed?",
+    "Can the loop with condition 'i < NUM_DUMPED_WORDS' be skipped entirely?",
+    "Is the loop with condition 'i < NUM_DUMPED_WORDS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < NUM_DUMPED_WORDS' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < NUM_DUMPED_WORDS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'done (line 6)' used after its definition?",
+    "Is variable 'codePC (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'pc' remain in use at the end of function 'dumpCode'?",
+    "Is variable 'i' live at the end of function 'dumpCode'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void dumpCode(int *pc, int *lr)' unreachable?",
+    "Can the program actually reach the statement: “memcpy(codeLRCache + START_LR_PAGE_OFFSET, codeLR, 4 * NUM_DUMPED_WORDS);”?"
+  ]
+}

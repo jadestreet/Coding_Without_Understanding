@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'is_bigendian' to reach function 'printbinary'?",
+    "Is it impossible for function 'printbinary' to reach function 'size_t_unit'?",
+    "Can function 'main' eventually call function 'is_bigendian'?",
+    "Can function 'main' eventually call function 'wordlength'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i >>= 1' be skipped entirely?",
+    "Is the loop with condition 'i >>= 1' always executed?",
+    "Can the loop with condition 'i < bits' be skipped entirely?",
+    "Is the loop with condition 'i < bits' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >>= 1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < bits' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'res (line 3)' affect subsequent computations?",
+    "Is variable 'c (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'c' live at the end of function 'size_t_unit'?",
+    "Does variable 'i (line 9)' remain in use at the end of function 'is_bigendian'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int wordlength(void) {' be considered dead code?",
+    "Is this statement not dead: “printbinary((int) -(((unsigned int) ~0) >> 1)-1);”?"
+  ]
+}

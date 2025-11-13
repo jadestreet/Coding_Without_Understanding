@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strcmp' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'strcmp'?",
+    "Can function 'main' eventually call function 'getchar_unlocked'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?",
+    "Is it possible that the loop with condition 'i<=n' is never executed?",
+    "Is the loop with condition 'i<=n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<=n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'tbp' remain in use at the end of function 'print_suffix'?",
+    "Is variable 'size' live at the end of function 'print_suffix'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"Occurence at indexes %d %d\\n\",start,end);' be considered dead code?",
+    "Can the program actually reach the statement: “i--;”?"
+  ]
+}

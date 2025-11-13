@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_join' to reach function 'copy_memory'?",
+    "Is it impossible for function 'copy_memory' to reach function 'foo'?",
+    "Can function 'foo' eventually call function 'copy_memory'?",
+    "Can function 'main' eventually call function 'pthread_join'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < ITERATIONS' be skipped entirely?",
+    "Is the loop with condition 'i < ITERATIONS' always executed?",
+    "Is it possible that the loop with condition 't<NUM_THREADS' is never executed?",
+    "Is the loop with condition 't<NUM_THREADS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < ITERATIONS' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 't<NUM_THREADS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'buffer (line 5)' affect subsequent computations?",
+    "Is variable 'buffer2 (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'copy_memory'?",
+    "Does variable 'src' remain in use at the end of function 'copy_memory'?"
+  ],
+  "dead_code": [
+    "Can the statement 'rc = pthread_create(&threads[t], NULL, foo, 0);' be considered dead code?",
+    "Is this statement not dead: “for(t=0;t<NUM_THREADS;t++){”?"
+  ]
+}

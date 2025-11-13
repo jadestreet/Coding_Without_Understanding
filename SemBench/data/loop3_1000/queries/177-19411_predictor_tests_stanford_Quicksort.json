@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'Quicksort' to reach function 'printf'?",
+    "Is it impossible for function 'Initarr' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'Quick'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= sortelements' is never executed?",
+    "Is the loop with condition 'i <= sortelements' always executed?",
+    "Is it possible that the loop with condition 'i < 5' is never executed?",
+    "Is the loop with condition 'i < 5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= sortelements' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'value' used after its definition?",
+    "Does the value assigned to 'fixed' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 63)' live at the end of function 'Initarr'?",
+    "Does variable 'temp' remain in use at the end of function 'Initarr'?"
+  ],
+  "dead_code": [
+    "Can the statement 'long temp;' be considered dead code?",
+    "Can the program actually reach the statement: “#define  quickbase \t1.92f”?"
+  ]
+}

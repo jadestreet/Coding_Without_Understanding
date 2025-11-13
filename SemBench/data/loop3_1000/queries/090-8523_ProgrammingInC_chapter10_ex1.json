@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'concat' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'concat'?",
+    "Can function 'main' eventually call function 'concat'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n1' is never executed?",
+    "Is the loop with condition 'i < n1' always executed?",
+    "Can the loop with condition 'j < n2' be skipped entirely?",
+    "Is the loop with condition 'j < n2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < n2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'result (line 3)' used after its definition?",
+    "Is variable 'str1 (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'str2 (line 3)' live at the end of function 'concat'?",
+    "Does variable 'n2 (line 3)' remain in use at the end of function 'concat'?"
+  ],
+  "dead_code": [
+    "Is the statement 'concat (s3, s1, 5, s2, 6);' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

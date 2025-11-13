@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'YinNum'?",
+    "Is it impossible for function 'YinNum' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'YinNum'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Can the loop with condition 'i <=60' be skipped entirely?",
+    "Is the loop with condition 'i <=60' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <=60' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 2)' affect subsequent computations?",
+    "Is variable 'tmp (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'YinNum'?",
+    "Is variable 'n' live at the end of function 'YinNum'?"
+  ],
+  "dead_code": [
+    "Can the statement 'Glen++;' be considered dead code?",
+    "Is this statement not dead: “else if(YinNum(i) > i)”?"
+  ]
+}

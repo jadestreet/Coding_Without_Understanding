@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'prn_tb' to function 'printf'?",
+    "Is it impossible for function 'atoi' to reach function 'prn_tb'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'k>=0' is never executed?",
+    "Is the loop with condition 'k>=0' always executed?",
+    "Is it possible that the loop with condition 'k>=0' is never executed?",
+    "Is the loop with condition 'k>=0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k>=0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k>=0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'HELP (line 3)' affect subsequent computations?",
+    "Is variable 'c1 (line 12)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'c2' live at the end of function 'prn_tb'?",
+    "Is variable 'k (line 14)' live at the end of function 'prn_tb'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"} {t%c\",c1);' unreachable?",
+    "Can the program actually reach the statement: “if(e!='c' || !edge )”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'pow'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<nx' be skipped entirely?",
+    "Is the loop with condition 'i<nx' always executed?",
+    "Can the loop with condition 'i<ny' be skipped entirely?",
+    "Is the loop with condition 'i<ny' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<nx' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<ny' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'nx (line 5)' affect subsequent computations?",
+    "Is variable 'ny (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'ny' live at the end of function 'main'?",
+    "Is variable 'un' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'v[i][j] = 2;' unreachable?",
+    "Is this statement not dead: “int count;”?"
+  ]
+}

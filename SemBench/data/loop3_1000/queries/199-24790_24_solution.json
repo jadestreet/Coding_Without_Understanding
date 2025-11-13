@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'factorial' to reach function 'cmpfunc'?",
+    "Is it impossible for function 'calloc' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'strlen'?",
+    "Can function 'string_printArray' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < UPPER_LIMIT' be skipped entirely?",
+    "Is the loop with condition 'i < UPPER_LIMIT' always executed?",
+    "Can the loop with condition 'i < length' be skipped entirely?",
+    "Is the loop with condition 'i < length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < UPPER_LIMIT' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's (line 6)' used after its definition?",
+    "Does the value assigned to 's (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 14)' remain in use at the end of function 'main'?",
+    "Is variable 'buffer (line 7)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'char* string_new(const char* s) {' be considered dead code?",
+    "Is this statement not dead: “char** anagram(char* s) {”?"
+  ]
+}

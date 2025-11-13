@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'myStrcmp' to reach function 'myStrcat'?",
+    "Is it impossible for function 'myStrcat' to reach function 'myStrcmp'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'myStrcpy'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '*strSrc != '\\0'' be skipped entirely?",
+    "Is the loop with condition '*strSrc != '\\0'' always executed?",
+    "Can the loop with condition 'n-- > 0' be skipped entirely?",
+    "Is the loop with condition 'n-- > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*strSrc != '\\0'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n-- > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'strDes (line 3)' affect subsequent computations?",
+    "Is variable 'strSrc (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'address (line 5)' remain in use at the end of function 'myStrcpy'?",
+    "Does variable 'strDes (line 3)' remain in use at the end of function 'myStrcpy'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (*str++ != '\\0') {' unreachable?",
+    "Can the program actually reach the statement: “int myStrcmp(const char *str1, const char *str2) {”?"
+  ]
+}

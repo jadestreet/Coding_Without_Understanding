@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'DeQueue'?",
+    "Is it impossible for function 'realloc' to reach function 'CreateQueue'?",
+    "Is there a call path from function 'ForEachQueue' to function 'func'?",
+    "Can function 'main' eventually call function 'GetLength'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i > 0' is never executed?",
+    "Is the loop with condition 'i > 0' always executed?",
+    "Can the loop with condition 'i < pQueue->len' be skipped entirely?",
+    "Is the loop with condition 'i < pQueue->len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < pQueue->len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'nLen (line 15)' used after its definition?",
+    "Is variable 'pQueue (line 16)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'pQueue (line 16)' remain in use at the end of function 'CreateQueue'?",
+    "Is variable 'nLen' live at the end of function 'CreateQueue'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pQueue->rear = (ElemType **) calloc(nLen, sizeof(ElemType **));' unreachable?",
+    "Is this statement not dead: “return pQueue->len - 1;”?"
+  ]
+}

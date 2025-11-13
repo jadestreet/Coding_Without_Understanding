@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'activate' to reach function 'new_Toggle'?",
+    "Is it impossible for function 'init_Toggle' to reach function 'free'?",
+    "Can function 'new_NthToggle' eventually call function 'init_Toggle'?",
+    "Is there a call path from function 'new_NthToggle' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<5' is never executed?",
+    "Is the loop with condition 'i<5' always executed?",
+    "Is it possible that the loop with condition 'i<n' is never executed?",
+    "Is the loop with condition 'i<n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's' used after its definition?",
+    "Is variable 'this (line 14)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'this (line 14)' remain in use at the end of function 'toggle_value'?",
+    "Does variable 'this (line 14)' remain in use at the end of function 'toggle_activate'?"
+  ],
+  "dead_code": [
+    "Is the statement '#ifdef SMALL_PROBLEM_SIZE' unreachable?",
+    "Can the program actually reach the statement: “Toggle *init_Toggle(Toggle *this, char start_state) {”?"
+  ]
+}

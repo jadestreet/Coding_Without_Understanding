@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'insert'?",
+    "Is it impossible for function 'display' to reach function 'selectionSort'?",
+    "Is there a call path from function 'main' to function 'insert'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'temp -> next' is never executed?",
+    "Is the loop with condition 'temp -> next' always executed?",
+    "Can the loop with condition 'temp' be skipped entirely?",
+    "Is the loop with condition 'temp' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'temp -> next' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'temp' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'start (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'temp (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'val' remain in use at the end of function 'insert'?",
+    "Does variable 'newNode' remain in use at the end of function 'insert'?"
+  ],
+  "dead_code": [
+    "Can the statement 'newNode = (node *)malloc(sizeof(node));' be considered dead code?",
+    "Is this statement not dead: “temp = temp -> next;”?"
+  ]
+}

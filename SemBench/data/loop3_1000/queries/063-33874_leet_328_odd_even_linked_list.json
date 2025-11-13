@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'oddEvenList'?",
+    "Is it impossible for function 'oddEvenList' to reach function 'main'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<3' be skipped entirely?",
+    "Is the loop with condition 'i<3' always executed?",
+    "Is it possible that the loop with condition 'p != NULL' is never executed?",
+    "Is the loop with condition 'p != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'head (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'head (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'q' remain in use at the end of function 'oddEvenList'?",
+    "Does variable 'odd' remain in use at the end of function 'oddEvenList'?"
+  ],
+  "dead_code": [
+    "Can the statement '|| head->next->next == NULL)' be considered dead code?",
+    "Is this statement not dead: “q = q->next;”?"
+  ]
+}

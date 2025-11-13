@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'compare_descend' to reach function 'compare_ascend'?",
+    "Is it impossible for function 'compare_descend' to reach function 'sort'?",
+    "Can function 'print_array' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Is it possible that the loop with condition 'j < size' is never executed?",
+    "Is the loop with condition 'j < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'one (line 3)' affect subsequent computations?",
+    "Is variable 'other (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'other (line 3)' remain in use at the end of function 'compare_ascend'?",
+    "Does variable 'one (line 3)' remain in use at the end of function 'compare_ascend'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int (*comparisons[])(int, int) = {compare_ascend, compare_descend};' unreachable?",
+    "Can the program actually reach the statement: “int main(int argc, char const *argv[]) {”?"
+  ]
+}

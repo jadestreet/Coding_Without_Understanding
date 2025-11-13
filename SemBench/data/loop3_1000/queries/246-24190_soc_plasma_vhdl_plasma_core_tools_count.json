@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'putchar' to reach function 'puts'?",
+    "Can function 'number_text' eventually call function 'itoa10'?",
+    "Is it impossible for function 'xtoa' to reach function 'number_text'?",
+    "Can function 'number_text' eventually call function 'putchar'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i >= 0' be skipped entirely?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Is it possible that the loop with condition 'i >= 0' is never executed?",
+    "Is the loop with condition 'i >= 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'value' affect subsequent computations?",
+    "Does the value assigned to 'string' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'num (line 10)' remain in use at the end of function 'xtoa'?",
+    "Does variable 'buf (line 12)' remain in use at the end of function 'xtoa'?"
+  ],
+  "dead_code": [
+    "Is the statement 'puts(\"million \");' unreachable?",
+    "Can the program actually reach the statement: “if(number >= 20)”?"
+  ]
+}

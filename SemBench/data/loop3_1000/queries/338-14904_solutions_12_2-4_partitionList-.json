@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'rand' to reach function 'print'?",
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Can function 'partition' eventually call function 'printf'?",
+    "Can function 'partition' eventually call function 'print'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<LENGTH' is never executed?",
+    "Is the loop with condition 'i<LENGTH' always executed?",
+    "Can the loop with condition 'current!=NULL' be skipped entirely?",
+    "Is the loop with condition 'current!=NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<LENGTH' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current!=NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'list (line 9)' used after its definition?",
+    "Does the value assigned to 'current (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'list (line 9)' remain in use at the end of function 'print'?",
+    "Is variable 'current (line 10)' live at the end of function 'print'?"
+  ],
+  "dead_code": [
+    "Is the statement 'print(list);' unreachable?",
+    "Can the program actually reach the statement: “previous->next=temp;”?"
+  ]
+}

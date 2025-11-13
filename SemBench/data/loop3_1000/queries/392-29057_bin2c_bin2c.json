@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fseek' to reach function 'puts'?",
+    "Is it impossible for function 'time' to reach function 'strcpy'?",
+    "Is there a call path from function 'main' to function 'strcpy'?",
+    "Is there a call path from function 'bin2c' to function 'fclose'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < read_byte' is never executed?",
+    "Is the loop with condition 'i < read_byte' always executed?",
+    "Can the loop with condition '*pp' be skipped entirely?",
+    "Is the loop with condition '*pp' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < read_byte' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*pp' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'in_path (line 20)' affect subsequent computations?",
+    "Does the value assigned to 'out_path (line 20)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'rawtime' live at the end of function 'bin2c'?",
+    "Does variable 'in_path (line 20)' remain in use at the end of function 'bin2c'?"
+  ],
+  "dead_code": [
+    "Is the statement 'char** \tpp = NULL;' unreachable?",
+    "Can the program actually reach the statement: “timeinfo = localtime ( &rawtime );”?"
+  ]
+}

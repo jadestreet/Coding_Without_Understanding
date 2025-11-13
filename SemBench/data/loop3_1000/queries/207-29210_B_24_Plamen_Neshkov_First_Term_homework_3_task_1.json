@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<=122' be skipped entirely?",
+    "Is the loop with condition 'i<=122' always executed?",
+    "Can the loop with condition 'i<=90' be skipped entirely?",
+    "Is the loop with condition 'i<=90' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=122' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<=90' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'x (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'x' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'x = i;' unreachable?",
+    "Is this statement not dead: “printf(\"%c - %d\\n\",x,i);”?"
+  ]
+}

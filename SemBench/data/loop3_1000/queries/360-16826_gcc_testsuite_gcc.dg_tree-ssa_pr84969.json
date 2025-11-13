@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_abort' to reach function '__builtin_malloc'?",
+    "Is there a call path from function 'foo' to function '__builtin_strlen'?",
+    "Is there a call path from function 'main' to function '__builtin_strlen'?",
+    "Is it impossible for function '__builtin_abort' to reach function '__builtin_strcmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < ndim' be skipped entirely?",
+    "Is the loop with condition 'i < ndim' always executed?",
+    "Is it possible that the loop with condition 'i < ndim - 1' is never executed?",
+    "Is the loop with condition 'i < ndim - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < ndim' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < ndim - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'values (line 3)' used after its definition?",
+    "Does the value assigned to 'ndim (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'retval' remain in use at the end of function 'foo'?",
+    "Does variable 'p' remain in use at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int k = 0;' unreachable?",
+    "Is this statement not dead: “for (i = ndim - 1; i >= 0; i--)”?"
+  ]
+}

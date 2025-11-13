@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'mydouble' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'mydouble'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<count' is never executed?",
+    "Is the loop with condition 'i<count' always executed?",
+    "Is it possible that the loop with condition 'i<len' is never executed?",
+    "Is the loop with condition 'i<len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 2)' used after its definition?",
+    "Is variable 'count (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 4)' live at the end of function 'mydouble'?",
+    "Does variable 'count' remain in use at the end of function 'mydouble'?"
+  ],
+  "dead_code": [
+    "Is the statement 'mydouble(a, len);' unreachable?",
+    "Can the program actually reach the statement: “printf(\"\\n\");”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'f3'?",
+    "Can function 'main' eventually call function 'f1'?",
+    "Is it impossible for function 'f2' to reach function 'f3'?",
+    "Is it impossible for function 'f4' to reach function 'f1'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'd < b' be skipped entirely?",
+    "Is the loop with condition 'd < b' always executed?",
+    "Can the loop with condition 'd < b' be skipped entirely?",
+    "Is the loop with condition 'd < b' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'd < b' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'd < b' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'u (line 2)' used after its definition?",
+    "Does the value assigned to 'v (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 5)' live at the end of function 'f1'?",
+    "Does variable 'd (line 7)' remain in use at the end of function 'f1'?"
+  ],
+  "dead_code": [
+    "Is the statement 'long d;' unreachable?",
+    "Is this statement not dead: “for (d1 = a1; d1 < b1; d1++)”?"
+  ]
+}

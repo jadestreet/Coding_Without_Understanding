@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fopen' to reach function 'createFiles'?",
+    "Is it impossible for function 'fprintf' to reach function 'fopen'?",
+    "Is there a call path from function 'main' to function 'snprintf'?",
+    "Can function 'main' eventually call function 'fopen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < count' is never executed?",
+    "Is the loop with condition 'i < count' always executed?",
+    "Is it possible that the loop with condition 'k < array_size' is never executed?",
+    "Is the loop with condition 'k < array_size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k < array_size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'count (line 2)' used after its definition?",
+    "Is variable 'array_size (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'fp' remain in use at the end of function 'createFiles'?",
+    "Is variable 'k' live at the end of function 'createFiles'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (i = 0; i < count; i++) {' unreachable?",
+    "Is this statement not dead: “fp = fopen(\"src/MainTest.java\", \"w\");”?"
+  ]
+}

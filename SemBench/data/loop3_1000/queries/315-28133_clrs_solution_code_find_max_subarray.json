@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'find_maximum_subarray_mixed'?",
+    "Is it impossible for function 'rand' to reach function 'time_add'?",
+    "Is it impossible for function 'find_maximum_subarray_mixed' to reach function 'init_data'?",
+    "Is there a call path from function 'init_data' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < high' be skipped entirely?",
+    "Is the loop with condition 'i < high' always executed?",
+    "Can the loop with condition 'j < high' be skipped entirely?",
+    "Is the loop with condition 'j < high' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < high' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < high' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'left (line 7)' affect subsequent computations?",
+    "Is variable 'right (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'high (line 11)' remain in use at the end of function 'find_maximum_subarray_brute'?",
+    "Is variable 'i (line 13)' live at the end of function 'find_maximum_subarray_brute'?"
+  ],
+  "dead_code": [
+    "Is the statement 'struct timespec ret = { 0, 0, };' unreachable?",
+    "Can the program actually reach the statement: “--ret.tv_sec;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'fprintf'?",
+    "Is there a call path from function 'main' to function 'fprintf'?",
+    "Is there a call path from function 'main' to function 'strlen'?",
+    "Is it impossible for function 'fprintf' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'p > path && p[-1] == '/'' be skipped entirely?",
+    "Is the loop with condition 'p > path && p[-1] == '/'' always executed?",
+    "Is it possible that the loop with condition 'p > path && p[-1] != '/'' is never executed?",
+    "Is the loop with condition 'p > path && p[-1] != '/'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'p > path && p[-1] == '/'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p > path && p[-1] != '/'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc (line 3)' used after its definition?",
+    "Does the value assigned to 'argv (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'path' live at the end of function 'main'?",
+    "Does variable 'p' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (p == path) {' unreachable?",
+    "Can the program actually reach the statement: “while (p > path && p[-1] == '/') p--;”?"
+  ]
+}

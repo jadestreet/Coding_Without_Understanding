@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'free' to reach function 'next_arr_seq'?",
+    "Is it impossible for function 'machine_next_step' to reach function 'calloc'?",
+    "Is there a call path from function 'main' to function 'next_arr_seq'?",
+    "Is there a call path from function 'main' to function 'match_brackets'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < desired_out_len' is never executed?",
+    "Is the loop with condition 'i < desired_out_len' always executed?",
+    "Is it possible that the loop with condition 'seq_len <= 9' is never executed?",
+    "Is the loop with condition 'seq_len <= 9' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < desired_out_len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'seq_len <= 9' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'SYMBOLS (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'MAXVAL (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'program (line 15)' live at the end of function 'main'?",
+    "Is variable 'tape (line 13)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'const char SYMBOLS[] = \"[].+-<>\";' unreachable?",
+    "Is this statement not dead: “return 0;”?"
+  ]
+}

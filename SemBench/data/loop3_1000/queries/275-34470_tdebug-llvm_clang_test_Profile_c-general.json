@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'conditional_operator' to reach function 'do_fallthrough'?",
+    "Is it impossible for function 'switches' to reach function 'static_func'?",
+    "Is there a call path from function 'main' to function 'static_func'?",
+    "Is there a call path from function 'main' to function 'big_switch'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 100' is never executed?",
+    "Is the loop with condition 'i < 100' always executed?",
+    "Is it possible that the loop with condition 'i < 100' is never executed?",
+    "Is the loop with condition 'i < 100' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 100' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 100' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'i (line 2)' used after its definition?",
+    "Is variable 'i (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 2)' live at the end of function 'simple_loops'?",
+    "Does variable 'i (line 2)' remain in use at the end of function 'conditionals'?"
+  ],
+  "dead_code": [
+    "Is the statement 'j++;' unreachable?",
+    "Is this statement not dead: “for (; (i % 2) || (i > 0); --i);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'rand'?",
+    "Is it impossible for function 'rand' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'length <= LENGTH' is never executed?",
+    "Is the loop with condition 'length <= LENGTH' always executed?",
+    "Can the loop with condition 'i < length' be skipped entirely?",
+    "Is the loop with condition 'i < length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'length <= LENGTH' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'b (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'bits2' remain in use at the end of function 'main'?",
+    "Does variable 'b' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'unsigned b = MIN(t1, t2),' be considered dead code?",
+    "Is this statement not dead: “unsigned t1 = rand() & (length - 1),”?"
+  ]
+}

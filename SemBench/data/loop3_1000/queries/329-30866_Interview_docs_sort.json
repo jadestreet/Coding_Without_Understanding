@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'swap' to reach function 'insertion_sort'?",
+    "Can function 'main' eventually call function 'merge_sort_helper'?",
+    "Is there a call path from function 'merge_sort' to function 'merge_sort_helper'?",
+    "Is it impossible for function 'quick_sort_helper' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Is it possible that the loop with condition 'i < length' is never executed?",
+    "Is the loop with condition 'i < length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arr (line 3)' used after its definition?",
+    "Does the value assigned to 'arr (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 11)' remain in use at the end of function 'main'?",
+    "Does variable 'a (line 9)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int mid;' unreachable?",
+    "Is this statement not dead: “if(left < right){”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'clock' to reach function 'malloc'?",
+    "Is it impossible for function 'rand' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'atoi'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'v (line 4)' used after its definition?",
+    "Is variable 'n (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 6)' remain in use at the end of function 'printvet'?",
+    "Is variable 'v (line 4)' live at the end of function 'printvet'?"
+  ],
+  "dead_code": [
+    "Can the statement 'r = rand()%n;' be considered dead code?",
+    "Is this statement not dead: “if (argc < 2){ printf (\"Entre com o tamanho do vetor\\n\"); return 1;}”?"
+  ]
+}

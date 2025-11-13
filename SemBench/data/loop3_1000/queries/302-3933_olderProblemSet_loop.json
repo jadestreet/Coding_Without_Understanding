@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'j < n' is never executed?",
+    "Is the loop with condition 'j < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'j (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'k' live at the end of function 'main'?",
+    "Does variable 'i' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'breakIt = 1;' unreachable?",
+    "Is this statement not dead: “count++;”?"
+  ]
+}

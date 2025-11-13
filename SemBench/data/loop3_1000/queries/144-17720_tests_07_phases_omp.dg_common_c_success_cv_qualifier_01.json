@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'f'?",
+    "Is it impossible for function 'f' to reach function 'main'?",
+    "Can function 'main' eventually call function '__assert_fail'?",
+    "Is it impossible for function '__assert_fail' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 1' be skipped entirely?",
+    "Is the loop with condition 'i < 1' always executed?",
+    "Can the loop with condition 'i < 1' be skipped entirely?",
+    "Is the loop with condition 'i < 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 7)' affect subsequent computations?",
+    "Is variable 'i (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'f'?",
+    "Is variable 'b' live at the end of function 'f'?"
+  ],
+  "dead_code": [
+    "Is the statement 'b = a;' unreachable?",
+    "Can the program actually reach the statement: “for (i = 0; i < 1; i++)”?"
+  ]
+}

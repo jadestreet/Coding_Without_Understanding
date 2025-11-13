@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'norep'?",
+    "Is it impossible for function 'rand' to reach function 'norep'?",
+    "Is there a call path from function 'norep' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'k<L_MAX' is never executed?",
+    "Is the loop with condition 'k<L_MAX' always executed?",
+    "Can the loop with condition 'j<N_SR' be skipped entirely?",
+    "Is the loop with condition 'j<N_SR' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k<L_MAX' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<N_SR' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'num (line 6)' used after its definition?",
+    "Does the value assigned to 'num (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'num (line 11)' live at the end of function 'main'?",
+    "Is variable 'num (line 18)' live at the end of function 'norep'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(num[i]==num[j])' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

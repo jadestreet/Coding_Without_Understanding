@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'trap' to reach function 'printf'?",
+    "Is it impossible for function 'trap' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'trap'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'left < right' be skipped entirely?",
+    "Is the loop with condition 'left < right' always executed?",
+    "Is it possible that the loop with condition 'left < right && height[left] < currentHeight' is never executed?",
+    "Is the loop with condition 'left < right && height[left] < currentHeight' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'left < right' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'left < right && height[left] < currentHeight' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'height (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'heightSize (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'right' live at the end of function 'trap'?",
+    "Does variable 'areaBar' remain in use at the end of function 'trap'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int arr4[] = {0, 2, 0};' be considered dead code?",
+    "Can the program actually reach the statement: “int right = heightSize - 1;”?"
+  ]
+}

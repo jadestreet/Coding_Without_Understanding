@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'printTree'?",
+    "Can function 'main' eventually call function 'printTree'?",
+    "Is there a call path from function 'printTree' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < height' be skipped entirely?",
+    "Is the loop with condition 'i < height' always executed?",
+    "Is it possible that the loop with condition 'j < height - row' is never executed?",
+    "Is the loop with condition 'j < height - row' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < height' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < height - row' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'height (line 2)' used after its definition?",
+    "Does the value assigned to 'row (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'row' live at the end of function 'printTree'?",
+    "Does variable 'i' remain in use at the end of function 'printTree'?"
+  ],
+  "dead_code": [
+    "Can the statement 'height = 4;' be considered dead code?",
+    "Is this statement not dead: “int height;”?"
+  ]
+}

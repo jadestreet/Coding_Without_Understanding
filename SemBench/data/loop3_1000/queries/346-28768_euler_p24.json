@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is it impossible for function 'printf' to reach function 'strcpy'?",
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Is there a call path from function 'main' to function 'strcpy'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i0<10' be skipped entirely?",
+    "Is the loop with condition 'i0<10' always executed?",
+    "Is it possible that the loop with condition 'i1<9' is never executed?",
+    "Is the loop with condition 'i1<9' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i0<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i1<9' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's (line 4)' affect subsequent computations?",
+    "Is variable 'p (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 's (line 4)' remain in use at the end of function 'set_space'?",
+    "Is variable 'c (line 4)' live at the end of function 'set_space'?"
+  ],
+  "dead_code": [
+    "Is the statement 'set_space(s, i2, '2');' unreachable?",
+    "Can the program actually reach the statement: “set_space(s, i1, '1');”?"
+  ]
+}

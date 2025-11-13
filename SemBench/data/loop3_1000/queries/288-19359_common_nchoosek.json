@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'choose'?",
+    "Can function 'combination' eventually call function 'choose'?",
+    "Is it impossible for function 'choose' to reach function 'main'?",
+    "Can function 'main' eventually call function 'combination'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < k-1' is never executed?",
+    "Is the loop with condition 'i < k-1' always executed?",
+    "Can the loop with condition 'p <= P' be skipped entirely?",
+    "Is the loop with condition 'p <= P' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < k-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p <= P' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'k (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'n (line 2)' live at the end of function 'choose'?",
+    "Is variable 'k (line 2)' live at the end of function 'choose'?"
+  ],
+  "dead_code": [
+    "Can the statement 'const unsigned n = 4, k = 2;' be considered dead code?",
+    "Is this statement not dead: “int main()”?"
+  ]
+}

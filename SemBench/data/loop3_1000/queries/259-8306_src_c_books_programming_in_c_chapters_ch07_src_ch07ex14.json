@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'displayMatrix' to reach function 'main'?",
+    "Is it impossible for function 'scalarMultiply' to reach function 'displayMatrix'?",
+    "Can function 'main' eventually call function 'displayMatrix'?",
+    "Can function 'main' eventually call function 'scalarMultiply'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'row < nRows' be skipped entirely?",
+    "Is the loop with condition 'row < nRows' always executed?",
+    "Is it possible that the loop with condition 'nCols < 5' is never executed?",
+    "Is the loop with condition 'nCols < 5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'row < nRows' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'nCols < 5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'nRows (line 3)' used after its definition?",
+    "Does the value assigned to 'nCols (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'martix' live at the end of function 'main'?",
+    "Does variable 'nCols (line 3)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int row, column;' be considered dead code?",
+    "Is this statement not dead: “void scalarMultiply(int nRows, int nCols, int matrix[nRows][nCols],”?"
+  ]
+}

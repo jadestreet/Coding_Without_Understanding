@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'shellsort'?",
+    "Is it impossible for function 'printf' to reach function 'shellsort'?",
+    "Is it impossible for function 'shellsort' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'gap > 0' be skipped entirely?",
+    "Is the loop with condition 'gap > 0' always executed?",
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'gap > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'v (line 2)' used after its definition?",
+    "Is variable 'n (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'gap' live at the end of function 'shellsort'?",
+    "Does variable 'n' remain in use at the end of function 'shellsort'?"
+  ],
+  "dead_code": [
+    "Is the statement 'v[j] = v[j+gap];' unreachable?",
+    "Is this statement not dead: “int i = 0;”?"
+  ]
+}

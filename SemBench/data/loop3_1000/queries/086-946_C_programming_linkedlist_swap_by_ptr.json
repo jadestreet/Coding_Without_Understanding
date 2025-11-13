@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'printList'?",
+    "Can function 'main' eventually call function 'printList'?",
+    "Is there a call path from function 'create' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'curr1!= x' be skipped entirely?",
+    "Is the loop with condition 'curr1!= x' always executed?",
+    "Is it possible that the loop with condition 'curr2!= y' is never executed?",
+    "Is the loop with condition 'curr2!= y' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'curr1!= x' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'curr2!= y' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'head (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'x (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'x' live at the end of function 'swapNodes'?",
+    "Does variable 'curr2' remain in use at the end of function 'swapNodes'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"\\n\");' be considered dead code?",
+    "Is this statement not dead: “head = curr2;”?"
+  ]
+}

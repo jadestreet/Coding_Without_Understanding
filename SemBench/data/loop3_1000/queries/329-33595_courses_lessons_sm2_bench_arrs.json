@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'grow_array_int_stack' to reach function 'init_llist_int_stack'?",
+    "Is it impossible for function 'realloc' to reach function 'pop_llist_int_stack'?",
+    "Is there a call path from function 'push_array_int_stack' to function 'realloc'?",
+    "Is there a call path from function 'grow_array_int_stack' to function 'realloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<1000000' be skipped entirely?",
+    "Is the loop with condition 'i<1000000' always executed?",
+    "Is it possible that the loop with condition 'i<1000000' is never executed?",
+    "Is the loop with condition 'i<1000000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<1000000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<1000000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'val (line 6)' affect subsequent computations?",
+    "Does the value assigned to 's (line 12)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 's (line 12)' remain in use at the end of function 'init_llist_int_stack'?",
+    "Does variable 's (line 12)' remain in use at the end of function 'deinit_llist_int_stack'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while(node!=NULL) {' unreachable?",
+    "Can the program actually reach the statement: “#endif”?"
+  ]
+}

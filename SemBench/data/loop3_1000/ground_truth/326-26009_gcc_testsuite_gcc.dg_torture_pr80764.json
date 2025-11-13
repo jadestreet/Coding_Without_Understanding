@@ -1,0 +1,19 @@
+{
+  "function_reachability": [
+    true,
+    false
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    true,
+    true
+  ],
+  "liveness": [
+    true
+  ],
+  "dead_code": [
+    false,
+    true
+  ]
+}

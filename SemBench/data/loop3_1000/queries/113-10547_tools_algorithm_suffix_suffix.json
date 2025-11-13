@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'suffix' to reach function 'calc'?",
+    "Is it impossible for function 'isempty' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'calc'?",
+    "Is there a call path from function 'main' to function 'init_stack'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*string != '\\0'' is never executed?",
+    "Is the loop with condition '*string != '\\0'' always executed?",
+    "Can the loop with condition 'ch != '('' be skipped entirely?",
+    "Is the loop with condition 'ch != '('' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*string != '\\0'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'ch != '('' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'string (line 3)' used after its definition?",
+    "Does the value assigned to 'S (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'S (line 9)' remain in use at the end of function 'init_stack'?",
+    "Is variable 'ch (line 13)' live at the end of function 'push'?"
+  ],
+  "dead_code": [
+    "Can the statement 'else' be considered dead code?",
+    "Can the program actually reach the statement: “int isempty(Stack *S)”?"
+  ]
+}

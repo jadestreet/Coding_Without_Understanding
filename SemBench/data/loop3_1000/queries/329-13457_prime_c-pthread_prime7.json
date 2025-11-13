@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'atol' to reach function 'main'?",
+    "Is it impossible for function 'atol' to reach function 'sem_init'?",
+    "Can function 'main' eventually call function 'sem_post'?",
+    "Can function 'main' eventually call function 'sem_wait'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<TMAX' is never executed?",
+    "Is the loop with condition 'i<TMAX' always executed?",
+    "Is it possible that the loop with condition 'i<TMAX' is never executed?",
+    "Is the loop with condition 'i<TMAX' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<TMAX' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<TMAX' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 15)' affect subsequent computations?",
+    "Does the value assigned to 'flag (line 16)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 26)' live at the end of function 'checkprime'?",
+    "Is variable 'i (line 27)' live at the end of function 'checkprime'?"
+  ],
+  "dead_code": [
+    "Is the statement 'struct _primelist *next;' unreachable?",
+    "Can the program actually reach the statement: “#endif”?"
+  ]
+}

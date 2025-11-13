@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'crc_init' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'crc_reflect'?",
+    "Is it impossible for function 'crc_reflect' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= 256' be skipped entirely?",
+    "Is the loop with condition 'i <= 256' always executed?",
+    "Can the loop with condition 'pos < 8' be skipped entirely?",
+    "Is the loop with condition 'pos < 8' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 256' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'pos < 8' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'crclookup (line 2)' used after its definition?",
+    "Does the value assigned to 'reflect (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 5)' live at the end of function 'crc_init'?",
+    "Is variable 'pos (line 5)' live at the end of function 'crc_init'?"
+  ],
+  "dead_code": [
+    "Can the statement 'reflect >>= 1;' be considered dead code?",
+    "Is this statement not dead: “unsigned long value = 0;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'KMP_match' to function 'strlen'?",
+    "Is it impossible for function 'compute_prefix_function' to reach function 'free'?",
+    "Can function 'KMP_match' eventually call function 'free'?",
+    "Is it impossible for function 'compute_prefix_function' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'q < m' is never executed?",
+    "Is the loop with condition 'q < m' always executed?",
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'q < m' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'pattern (line 4)' affect subsequent computations?",
+    "Is variable 'm (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'q (line 10)' remain in use at the end of function 'compute_prefix_function'?",
+    "Is variable 'm (line 6)' live at the end of function 'compute_prefix_function'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int *next = (int*)malloc(m*sizeof(int));' unreachable?",
+    "Is this statement not dead: “int q = 0;”?"
+  ]
+}

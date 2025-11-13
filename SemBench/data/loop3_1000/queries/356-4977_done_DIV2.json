@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'memset' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'memset'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= 1000000' is never executed?",
+    "Is the loop with condition 'i <= 1000000' always executed?",
+    "Can the loop with condition 'i <= 1000' be skipped entirely?",
+    "Is the loop with condition 'i <= 1000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 1000000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 1000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'd (line 3)' used after its definition?",
+    "Is variable 'b (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (j = i*2; j <= 1000000; j += i)' be considered dead code?",
+    "Is this statement not dead: “d[j]++;”?"
+  ]
+}

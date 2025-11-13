@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 't < N3' is never executed?",
+    "Is the loop with condition 't < N3' always executed?",
+    "Can the loop with condition 'i < M' be skipped entirely?",
+    "Is the loop with condition 'i < M' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 't < N3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < M' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'DX (line 5)' used after its definition?",
+    "Is variable 'DY (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 't' live at the end of function 'main'?",
+    "Is variable 'UOLD' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int TDTS8;' unreachable?",
+    "Can the program actually reach the statement: “UOLD[i][j] = U[i][j]”?"
+  ]
+}

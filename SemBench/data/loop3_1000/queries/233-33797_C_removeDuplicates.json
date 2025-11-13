@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'strcmp'?",
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Can function 'main' eventually call function 'strcmp'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '*p && (count[*p] >= 1 || count[*p] < 0)' be skipped entirely?",
+    "Is the loop with condition '*p && (count[*p] >= 1 || count[*p] < 0)' always executed?",
+    "Is it possible that the loop with condition '*w' is never executed?",
+    "Is the loop with condition '*w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*p && (count[*p] >= 1 || count[*p] < 0)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's (line 5)' affect subsequent computations?",
+    "Is variable 'result (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'p' remain in use at the end of function 'removeDuplicateLetters'?",
+    "Is variable 'n' live at the end of function 'removeDuplicateLetters'?"
+  ],
+  "dead_code": [
+    "Is the statement 'char* removeDuplicateLetters2(char *s) {' unreachable?",
+    "Can the program actually reach the statement: “*w = 0;”?"
+  ]
+}

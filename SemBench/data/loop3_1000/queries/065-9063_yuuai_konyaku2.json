@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < ARRAY_SIZE_MAX' is never executed?",
+    "Is the loop with condition 'i < ARRAY_SIZE_MAX' always executed?",
+    "Can the loop with condition 'n < ARRAY_SIZE_MAX / 2' be skipped entirely?",
+    "Is the loop with condition 'n < ARRAY_SIZE_MAX / 2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < ARRAY_SIZE_MAX' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n < ARRAY_SIZE_MAX / 2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 3)' affect subsequent computations?",
+    "Is variable 'ac' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'n2' live at the end of function 'main'?",
+    "Does variable 'i' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for( i = 2; i * n < ARRAY_SIZE_MAX; i++ )' unreachable?",
+    "Is this statement not dead: “printf( \"%d %d\\n\", n, n2 );”?"
+  ]
+}

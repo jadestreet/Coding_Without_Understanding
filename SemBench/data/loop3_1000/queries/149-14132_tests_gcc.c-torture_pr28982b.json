@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'bar' to reach function 'main'?",
+    "Is it impossible for function 'foo' to reach function 'main'?",
+    "Can function 'main' eventually call function 'bar'?",
+    "Can function 'main' eventually call function 'foo'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < NVARS' be skipped entirely?",
+    "Is the loop with condition 'i < NVARS' always executed?",
+    "Is it possible that the loop with condition 'i < NITER * NVARS' is never executed?",
+    "Is the loop with condition 'i < NITER * NVARS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < NVARS' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < NITER * NVARS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'incs (line 9)' affect subsequent computations?",
+    "Is variable 'ptrs (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 18)' remain in use at the end of function 'bar'?",
+    "Does variable 'ptr17' remain in use at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Can the statement '#define DECLAREF(INDEX) *ptr##INDEX = ptrs[INDEX], result##INDEX = 0' be considered dead code?",
+    "Can the program actually reach the statement: “#define NITER 4”?"
+  ]
+}

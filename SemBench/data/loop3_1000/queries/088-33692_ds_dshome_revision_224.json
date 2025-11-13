@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'popandtest' to reach function 'printf'?",
+    "Is it impossible for function 'pushandtest' to reach function 'init'?",
+    "Is there a call path from function 'main' to function 'popandtest'?",
+    "Can function 'main' eventually call function 'empty'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<30' is never executed?",
+    "Is the loop with condition 'i<30' always executed?",
+    "Is it possible that the loop with condition 'i<10' is never executed?",
+    "Is the loop with condition 'i<10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<30' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'st (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'st (line 7)' live at the end of function 'init'?",
+    "Is variable 'st (line 7)' live at the end of function 'push'?"
+  ],
+  "dead_code": [
+    "Is the statement '}else{' unreachable?",
+    "Can the program actually reach the statement: “if(empty(s)){”?"
+  ]
+}

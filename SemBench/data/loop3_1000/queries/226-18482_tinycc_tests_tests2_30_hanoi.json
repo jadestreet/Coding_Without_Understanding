@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'PrintAll' to reach function 'Hanoi'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'PrintAll' eventually call function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<N' be skipped entirely?",
+    "Is the loop with condition 'i<N' always executed?",
+    "Is it possible that the loop with condition 'i<N' is never executed?",
+    "Is the loop with condition 'i<N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'A (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'B (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 10)' remain in use at the end of function 'PrintAll'?",
+    "Does variable 'i (line 25)' remain in use at the end of function 'Move'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i;' unreachable?",
+    "Can the program actually reach the statement: “while (j<N && (dest[j])==0) j++;”?"
+  ]
+}

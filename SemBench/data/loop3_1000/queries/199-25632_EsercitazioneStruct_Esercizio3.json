@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'system' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'strcmp'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'system'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<maxclassi' is never executed?",
+    "Is the loop with condition 'i<maxclassi' always executed?",
+    "Can the loop with condition 'j<ScuolaLingue[i].numiscritti' be skipped entirely?",
+    "Is the loop with condition 'j<ScuolaLingue[i].numiscritti' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<maxclassi' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<ScuolaLingue[i].numiscritti' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ScuolaLingue (line 21)' affect subsequent computations?",
+    "Is variable 'i (line 28)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'linIng' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'char linIng[]=\"inglese\";' unreachable?",
+    "Can the program actually reach the statement: “{\"inglese\",1,2,\"maestr3\",\"innoi\",\"ldddd\",10,\"sssss\",\"ddddd\",10},”?"
+  ]
+}

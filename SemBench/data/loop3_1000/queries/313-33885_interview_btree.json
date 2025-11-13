@@ -1,0 +1,22 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'btree_preorder_path' to reach function 'btree_degenerate'?",
+    "Is it impossible for function 'btree_rebuild_by_preorder' to reach function 'move_value_uniform'?",
+    "Can function 'btree_rebuild_by_postorder' eventually call function 'malloc'?",
+    "Is there a call path from function 'btree_rebuild_by_preorder' to function 'malloc'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Does the value assigned to 'value (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'left (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 9)' remain in use at the end of function 'max'?",
+    "Is variable 'a (line 9)' live at the end of function 'max'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return root;' unreachable?",
+    "Is this statement not dead: “return;”?"
+  ]
+}

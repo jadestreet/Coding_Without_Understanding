@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'clean' to reach function 'atoi'?",
+    "Is it impossible for function 'atoi' to reach function 'clean'?",
+    "Is there a call path from function 'third' to function 'pass4'?",
+    "Can function 'third' eventually call function 'printSquare'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<L' is never executed?",
+    "Is the loop with condition 'i<L' always executed?",
+    "Is it possible that the loop with condition 'j<L' is never executed?",
+    "Is the loop with condition 'j<L' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<L' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<L' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'L (line 3)' used after its definition?",
+    "Is variable 'actualValue (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 17)' remain in use at the end of function 'printSquare'?",
+    "Does variable 'square (line 16)' remain in use at the end of function 'printSquare'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return;' be considered dead code?",
+    "Is this statement not dead: “square[i][j] = 0;”?"
+  ]
+}

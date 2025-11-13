@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'puts'?",
+    "Is it impossible for function 'icrc' to reach function 'main'?",
+    "Is it impossible for function 'icrc1' to reach function 'icrc'?",
+    "Can function 'main' eventually call function 'icrc1'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<8' is never executed?",
+    "Is the loop with condition 'i<8' always executed?",
+    "Can the loop with condition 'j<=255' be skipped entirely?",
+    "Is the loop with condition 'j<=255' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<8' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<=255' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'aa (line 6)' used after its definition?",
+    "Is variable 'crc (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'icrc1'?",
+    "Is variable 'onech' live at the end of function 'icrc1'?"
+  ],
+  "dead_code": [
+    "Can the statement '#ifdef SHORT_BENCH' be considered dead code?",
+    "Is this statement not dead: “init=1;”?"
+  ]
+}

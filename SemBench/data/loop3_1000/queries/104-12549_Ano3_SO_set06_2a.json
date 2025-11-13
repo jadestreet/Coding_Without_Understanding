@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'writerThread' to reach function 'releaseReadLock'?",
+    "Is it impossible for function 'main' to reach function 'aquireReadLock'?",
+    "Can function 'writerThread' eventually call function 'pthread_mutex_lock'?",
+    "Can function 'aquireWriteLock' eventually call function 'pthread_cond_wait'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'I < 50000000' be skipped entirely?",
+    "Is the loop with condition 'I < 50000000' always executed?",
+    "Is it possible that the loop with condition 'I < 50000000' is never executed?",
+    "Is the loop with condition 'I < 50000000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'I < 50000000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'I < 50000000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'Lock (line 12)' affect subsequent computations?",
+    "Does the value assigned to 'M (line 13)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'RawArg (line 35)' remain in use at the end of function 'readerThread'?",
+    "Is variable 'I (line 37)' live at the end of function 'readerThread'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int main() {' be considered dead code?",
+    "Is this statement not dead: “pthread_mutex_lock(&Lock.Mutex);”?"
+  ]
+}

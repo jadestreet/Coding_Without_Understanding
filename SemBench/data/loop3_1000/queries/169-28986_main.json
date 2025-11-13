@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'startBuildingFile' eventually call function 'malloc'?",
+    "Is it impossible for function 'localtime' to reach function 'getopt'?",
+    "Is it impossible for function 'strcpy' to reach function 'startBuildingFile'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'x<c' is never executed?",
+    "Is the loop with condition 'x<c' always executed?",
+    "Is it possible that the loop with condition 'x<w' is never executed?",
+    "Is the loop with condition 'x<w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'x<c' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'x<w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'size (line 13)' used after its definition?",
+    "Is variable 'cdt (line 14)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'timeinfo' remain in use at the end of function 'currdatetime'?",
+    "Does variable 'currDateTime' remain in use at the end of function 'currdatetime'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fprintf(file,\">AB000263\\n\");' unreachable?",
+    "Can the program actually reach the statement: “#endif”?"
+  ]
+}

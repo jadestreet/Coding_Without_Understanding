@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'formHeap' to reach function 'prims'?",
+    "Is it impossible for function 'heapify' to reach function 'formHeap'?",
+    "Is there a call path from function 'formHeap' to function 'heapify'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i>=1' is never executed?",
+    "Is the loop with condition 'i>=1' always executed?",
+    "Can the loop with condition 'i<=heapsize' be skipped entirely?",
+    "Is the loop with condition 'i<=heapsize' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i>=1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<=heapsize' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ptrarr (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'vis (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'weight' live at the end of function 'adjinsert'?",
+    "Is variable 'head' live at the end of function 'adjinsert'?"
+  ],
+  "dead_code": [
+    "Can the statement 'long long int i;' be considered dead code?",
+    "Can the program actually reach the statement: “adjinsert(&ptrarr[v1],v2,w);”?"
+  ]
+}

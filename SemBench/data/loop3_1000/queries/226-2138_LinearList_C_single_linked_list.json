@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'time' to reach function 'ClearList'?",
+    "Is it impossible for function 'srand' to reach function 'rand'?",
+    "Is there a call path from function 'ListInsert' to function 'malloc'?",
+    "Is there a call path from function 'CreateListTail' to function 'time'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<n' be skipped entirely?",
+    "Is the loop with condition 'i<n' always executed?",
+    "Can the loop with condition 'i<n' be skipped entirely?",
+    "Is the loop with condition 'i<n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'L (line 14)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 14)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'f' live at the end of function 'main'?",
+    "Does variable 'e (line 14)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'ElemType data;' unreachable?",
+    "Can the program actually reach the statement: “for (i=0; i<n; i++) {”?"
+  ]
+}

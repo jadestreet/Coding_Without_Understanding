@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'printArray' to function 'printf'?",
+    "Is it impossible for function 'mergeSort' to reach function 'printArray'?",
+    "Is it impossible for function 'printArray' to reach function 'merge'?",
+    "Can function 'main' eventually call function 'merge'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n1' is never executed?",
+    "Is the loop with condition 'i < n1' always executed?",
+    "Is it possible that the loop with condition 'j < n2' is never executed?",
+    "Is the loop with condition 'j < n2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < n2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arr (line 3)' used after its definition?",
+    "Is variable 'l (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'm' remain in use at the end of function 'merge'?",
+    "Is variable 'k' live at the end of function 'merge'?"
+  ],
+  "dead_code": [
+    "Is the statement 'k++;' unreachable?",
+    "Can the program actually reach the statement: “arr[k] = L[i];”?"
+  ]
+}

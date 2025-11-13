@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'i<25' be skipped entirely?",
+    "Is the loop with condition 'i<25' always executed?",
+    "Is it possible that the loop with condition 'j<50' is never executed?",
+    "Is the loop with condition 'j<50' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<25' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<50' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'sum (line 3)' used after its definition?",
+    "Is variable 'i (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'sum' remain in use at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while(sum < 100) {' unreachable?",
+    "Is this statement not dead: “sum = sum * 2;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'printData' eventually call function 'printf'?",
+    "Is it impossible for function 'sortData' to reach function 'printf'?",
+    "Is it impossible for function 'sortData' to reach function 'main'?",
+    "Can function 'main' eventually call function 'sortData'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<count' be skipped entirely?",
+    "Is the loop with condition 'i<count' always executed?",
+    "Can the loop with condition 'i<count-1' be skipped entirely?",
+    "Is the loop with condition 'i<count-1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<count-1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'data (line 9)' used after its definition?",
+    "Does the value assigned to 'pData (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'pData (line 10)' live at the end of function 'printData'?",
+    "Is variable 'count (line 10)' live at the end of function 'printData'?"
+  ],
+  "dead_code": [
+    "Can the statement 'minIdx = i;' be considered dead code?",
+    "Is this statement not dead: “printf(\"data[%d] = %d\\n\", i, pData[i]);”?"
+  ]
+}

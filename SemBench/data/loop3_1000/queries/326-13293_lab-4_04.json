@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'isSorted' to reach function 'max'?",
+    "Is it impossible for function 'isSorted' to reach function 'min'?",
+    "Is there a call path from function 'main' to function 'sum'?",
+    "Is there a call path from function 'main' to function 'toIndex'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<size' be skipped entirely?",
+    "Is the loop with condition 'i<size' always executed?",
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'sum (line 4)' used after its definition?",
+    "Does the value assigned to 't (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 't (line 4)' live at the end of function 'sum'?",
+    "Is variable 'sum' live at the end of function 'sum'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(t[i]<t[i-1]){' unreachable?",
+    "Can the program actually reach the statement: “int v =1;”?"
+  ]
+}

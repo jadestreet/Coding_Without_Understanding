@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'hash_hashable' to reach function 'equal_int'?",
+    "Is it impossible for function 'print_map' to reach function 'equal_hashable'?",
+    "Can function 'main' eventually call function 'make_hashable_int'?",
+    "Can function 'make_node' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<n' is never executed?",
+    "Is the loop with condition 'i<n' always executed?",
+    "Can the loop with condition 'i<map->n' be skipped entirely?",
+    "Is the loop with condition 'i<map->n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<map->n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 7)' affect subsequent computations?",
+    "Is variable 's (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 11)' live at the end of function 'make_int_value'?",
+    "Does variable 'value (line 13)' remain in use at the end of function 'make_int_value'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (*((int*)ip)==*((int*)jp)) {return 1;}' unreachable?",
+    "Is this statement not dead: “printf (\"next %p\\n\", node->next);”?"
+  ]
+}

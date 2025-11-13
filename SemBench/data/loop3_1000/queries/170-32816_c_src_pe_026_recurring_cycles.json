@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'atoi'?",
+    "Is it impossible for function 'atoi' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'fprintf'?",
+    "Is there a call path from function 'main' to function 'atoi'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Can the loop with condition 'i < position' be skipped entirely?",
+    "Is the loop with condition 'i < position' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < position' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc (line 4)' used after its definition?",
+    "Does the value assigned to 'argv (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'len' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (remainders[i] == rem)' be considered dead code?",
+    "Can the program actually reach the statement: “fprintf (stderr, \"usage: %s <N>\\n\", argv[0]);”?"
+  ]
+}

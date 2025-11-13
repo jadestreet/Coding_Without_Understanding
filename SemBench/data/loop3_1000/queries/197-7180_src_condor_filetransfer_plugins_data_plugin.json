@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strrchr' to reach function 'decode_block'?",
+    "Is it impossible for function 'fputs' to reach function 'strncpy'?",
+    "Is there a call path from function 'main' to function 'fopen'?",
+    "Is there a call path from function 'main' to function 'strncmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 4 && c && *c' be skipped entirely?",
+    "Is the loop with condition 'i < 4 && c && *c' always executed?",
+    "Can the loop with condition '!base64' be skipped entirely?",
+    "Is the loop with condition '!base64' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4 && c && *c' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '!base64' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'in (line 4)' used after its definition?",
+    "Is variable 'out (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'out (line 4)' live at the end of function 'decode_block'?",
+    "Is variable 'i' live at the end of function 'decode_block'?"
+  ],
+  "dead_code": [
+    "Can the statement '} else if(*c >= '0' && *c <= '9') {' be considered dead code?",
+    "Is this statement not dead: “break;”?"
+  ]
+}

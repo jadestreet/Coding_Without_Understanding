@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_unlock' to reach function '__assert_fail'?",
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'pthread_mutex_init'?",
+    "Can function 'main' eventually call function 'pthread_create'?",
+    "Can function 'main' eventually call function 'pthread_join'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 2' be skipped entirely?",
+    "Is the loop with condition 'i < 2' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'm (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'arg (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 11)' live at the end of function 'thread3'?",
+    "Is variable 'arg (line 9)' live at the end of function 'thread3'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (i % 2 == 0)' unreachable?",
+    "Can the program actually reach the statement: “ret = pthread_create (&th, 0, thread2, arg);”?"
+  ]
+}

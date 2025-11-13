@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'system' to reach function 'main'?",
+    "Is it impossible for function 'system' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'strlen'?",
+    "Is there a call path from function 'main' to function 'sleep'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < strlen(hi)' is never executed?",
+    "Is the loop with condition 'i < strlen(hi)' always executed?",
+    "Can the loop with condition 'j < (80-i)/2' be skipped entirely?",
+    "Is the loop with condition 'j < (80-i)/2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < strlen(hi)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < (80-i)/2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Does the value assigned to 'argv' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'argc' live at the end of function 'main'?",
+    "Does variable 'i' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (int i = 0; i < strlen(hi); i++) {' unreachable?",
+    "Is this statement not dead: “printf(\" \");”?"
+  ]
+}

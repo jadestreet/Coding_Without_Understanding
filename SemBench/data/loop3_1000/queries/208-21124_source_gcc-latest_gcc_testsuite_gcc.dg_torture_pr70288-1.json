@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'var23 <= -890798746' be skipped entirely?",
+    "Is the loop with condition 'var23 <= -890798746' always executed?",
+    "Can the loop with condition 'var22 <= -1141190829' be skipped entirely?",
+    "Is the loop with condition 'var22 <= -1141190829' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'var23 <= -890798746' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'var22 <= -1141190829' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'var6 (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'var6 (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'var14' remain in use at the end of function 'main'?",
+    "Is variable 'var22' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (s2_108 > s1_115) {' be considered dead code?",
+    "Is this statement not dead: “do {”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'fprintf'?",
+    "Is it impossible for function 'bar' to reach function 'fprintf'?",
+    "Is it impossible for function '__builtin_frame_address' to reach function '__builtin_return_address'?",
+    "Is there a call path from function 'main' to function '__builtin_frame_address'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 100' is never executed?",
+    "Is the loop with condition 'i < 100' always executed?",
+    "Can the loop with condition 'i < 100' be skipped entirely?",
+    "Is the loop with condition 'i < 100' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 100' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 100' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'address (line 2)' affect subsequent computations?",
+    "Is variable 'sizes (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'next_sp' live at the end of function 'get_stack_traces'?",
+    "Is variable 'result' live at the end of function 'get_stack_traces'?"
+  ],
+  "dead_code": [
+    "Is the statement 'sizes[n] = 0;' unreachable?",
+    "Can the program actually reach the statement: “return n;”?"
+  ]
+}

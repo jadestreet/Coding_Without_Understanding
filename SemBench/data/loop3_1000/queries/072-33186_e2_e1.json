@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<10' be skipped entirely?",
+    "Is the loop with condition 'i<10' always executed?",
+    "Is it possible that the loop with condition 'j<=i' is never executed?",
+    "Is the loop with condition 'j<=i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<=i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc' used after its definition?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'argc' live at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (i=1;i<10 ;i++ )' unreachable?",
+    "Is this statement not dead: “for (j=1;j<=i ;j++ ){”?"
+  ]
+}

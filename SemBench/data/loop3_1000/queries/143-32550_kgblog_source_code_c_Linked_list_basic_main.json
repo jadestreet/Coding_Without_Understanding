@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'create_node' to reach function 'main'?",
+    "Is it impossible for function 'append_node' to reach function 'create_node'?",
+    "Is there a call path from function 'main' to function 'create_list'?",
+    "Is there a call path from function 'main' to function 'remove_node'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'NULL != list->next' be skipped entirely?",
+    "Is the loop with condition 'NULL != list->next' always executed?",
+    "Can the loop with condition 'list != node' be skipped entirely?",
+    "Is the loop with condition 'list != node' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'NULL != list->next' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'list != node' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'node (line 3)' affect subsequent computations?",
+    "Is variable 'value (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'value' remain in use at the end of function 'create_node'?",
+    "Is variable 'node_d' live at the end of function 'create_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'struct node *list = NULL;' unreachable?",
+    "Can the program actually reach the statement: “list = remove_node(list, node_1);”?"
+  ]
+}

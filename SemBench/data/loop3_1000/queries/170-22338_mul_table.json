@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'reset' to reach function 'atoi'?",
+    "Is it impossible for function 'magenta' to reach function 'reset'?",
+    "Can function 'main' eventually call function 'reset'?",
+    "Can function 'reset' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= Twelve' be skipped entirely?",
+    "Is the loop with condition 'i <= Twelve' always executed?",
+    "Can the loop with condition 'i <= 16*cols-3' be skipped entirely?",
+    "Is the loop with condition 'i <= 16*cols-3' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= Twelve' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 16*cols-3' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc (line 9)' used after its definition?",
+    "Is variable 'argv (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'num' remain in use at the end of function 'main'?",
+    "Does variable 'k' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'switch(num++)' unreachable?",
+    "Can the program actually reach the statement: “printf(\"\\n\");”?"
+  ]
+}

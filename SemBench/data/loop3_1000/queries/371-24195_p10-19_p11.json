@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i1 < 20' be skipped entirely?",
+    "Is the loop with condition 'i1 < 20' always executed?",
+    "Is it possible that the loop with condition 'i2 < 17' is never executed?",
+    "Is the loop with condition 'i2 < 17' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i1 < 20' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i2 < 17' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arr01 (line 4)' used after its definition?",
+    "Is variable 'arr02 (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'arr04' live at the end of function 'main'?",
+    "Is variable 'arr13' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'arr[i2+2][i1] *' unreachable?",
+    "Is this statement not dead: “printf(\"diap: %d\\n\", diap);”?"
+  ]
+}

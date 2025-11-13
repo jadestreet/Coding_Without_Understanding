@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'f' to reach function 'printf'?",
+    "Is it impossible for function 'f' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 30' is never executed?",
+    "Is the loop with condition 'i < 30' always executed?",
+    "Can the loop with condition '' be skipped entirely?",
+    "Is the loop with condition '' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 30' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 2)' remain in use at the end of function 'f'?",
+    "Does variable 'i (line 2)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'do {' unreachable?",
+    "Can the program actually reach the statement: “printf(\"i = %d\\n\", i);”?"
+  ]
+}

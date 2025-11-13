@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'insert_by_index'?",
+    "Is it impossible for function 'print_list' to reach function 'free'?",
+    "Is there a call path from function 'main' to function 'free_list'?",
+    "Is there a call path from function 'make_something' to function 'make_node'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<index-1' be skipped entirely?",
+    "Is the loop with condition 'i<index-1' always executed?",
+    "Can the loop with condition 'current != NULL' be skipped entirely?",
+    "Is the loop with condition 'current != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<index-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'node (line 4)' affect subsequent computations?",
+    "Is variable 'val (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'node (line 4)' live at the end of function 'make_node'?",
+    "Is variable 'val (line 5)' live at the end of function 'make_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'Node *node = *head;' unreachable?",
+    "Can the program actually reach the statement: “if (index == 0) {”?"
+  ]
+}

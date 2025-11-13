@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'printVal' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'printAdd'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printVal'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<n' is never executed?",
+    "Is the loop with condition 'i<n' always executed?",
+    "Can the loop with condition 'i<len' be skipped entirely?",
+    "Is the loop with condition 'i<len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 5)' affect subsequent computations?",
+    "Is variable 'array2 (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'length' live at the end of function 'main'?",
+    "Is variable 'array2' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(j=0; j<wid; j++){' unreachable?",
+    "Can the program actually reach the statement: “if (wid == 0){”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fopen' to reach function 'decode'?",
+    "Is it impossible for function 'feof' to reach function 'atoi'?",
+    "Can function 'main' eventually call function 'ferror'?",
+    "Can function 'decode' eventually call function 'decodeblock'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 3' be skipped entirely?",
+    "Is the loop with condition 'i < 3' always executed?",
+    "Is it possible that the loop with condition 'i < 4' is never executed?",
+    "Is the loop with condition 'i < 4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'cb64 (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'cd64 (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'len (line 5)' remain in use at the end of function 'encodeblock'?",
+    "Does variable 'in (line 5)' remain in use at the end of function 'encodeblock'?"
+  ],
+  "dead_code": [
+    "Can the statement 'out[ 0 ] = (unsigned char ) (in[0] << 2 | in[1] >> 4);' be considered dead code?",
+    "Is this statement not dead: “char *msgs[ B64_MAX_MESSAGES ] = {”?"
+  ]
+}

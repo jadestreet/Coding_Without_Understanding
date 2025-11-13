@@ -1,0 +1,22 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'd += f[b] * a, f[b] = d % --g, d /= g--, --b' be skipped entirely?",
+    "Is the loop with condition 'd += f[b] * a, f[b] = d % --g, d /= g--, --b' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'd += f[b] * a, f[b] = d % --g, d /= g--, --b' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 2)' affect subsequent computations?",
+    "Is variable 'b (line 2)' used after its definition?"
+  ],
+  "liveness": [],
+  "dead_code": [
+    "Is the statement 'long a = 10000, b, c = 2800, d, e, f[2801], g;' unreachable?",
+    "Is this statement not dead: “for (; b - c;) {”?"
+  ]
+}

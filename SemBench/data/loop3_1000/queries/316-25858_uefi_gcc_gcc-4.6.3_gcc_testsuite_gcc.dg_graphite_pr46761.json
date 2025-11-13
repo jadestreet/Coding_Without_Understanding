@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_abort' to reach function 'main'?",
+    "Is there a call path from function 'main' to function '__builtin_abort'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arr (line 5)' used after its definition?",
+    "Is variable 'i (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'arr' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '__builtin_abort ();' unreachable?",
+    "Is this statement not dead: “if (arr[i] != i)”?"
+  ]
+}

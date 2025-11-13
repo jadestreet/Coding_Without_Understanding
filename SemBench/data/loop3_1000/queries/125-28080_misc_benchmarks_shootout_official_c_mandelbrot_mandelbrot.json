@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fputc' to reach function 'printf'?",
+    "Is it impossible for function 'atoi' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'fputc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'y<h' be skipped entirely?",
+    "Is the loop with condition 'y<h' always executed?",
+    "Is it possible that the loop with condition 'x<w' is never executed?",
+    "Is the loop with condition 'x<w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'y<h' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'x<w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'h (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'mask' live at the end of function 'main'?",
+    "Is variable 'Civ' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'i = 0;' unreachable?",
+    "Can the program actually reach the statement: “v2df Trv = { 0.0, 0.0 };”?"
+  ]
+}

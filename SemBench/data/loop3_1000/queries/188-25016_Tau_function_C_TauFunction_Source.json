@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'divisor_count' to reach function 'main'?",
+    "Is it impossible for function 'divisor_count' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'divisor_count'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'p * p <= n' is never executed?",
+    "Is the loop with condition 'p * p <= n' always executed?",
+    "Is it possible that the loop with condition 'n <= limit' is never executed?",
+    "Is the loop with condition 'n <= limit' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'p * p <= n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n <= limit' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'total (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'count' live at the end of function 'divisor_count'?",
+    "Is variable 'p' live at the end of function 'divisor_count'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return 0;' unreachable?",
+    "Can the program actually reach the statement: “for (unsigned int p = 3; p * p <= n; p += 2) {”?"
+  ]
+}

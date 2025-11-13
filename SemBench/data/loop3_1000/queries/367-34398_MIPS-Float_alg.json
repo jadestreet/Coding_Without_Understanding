@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'fSum' eventually call function 'packFloat'?",
+    "Is it impossible for function 'fSum' to reach function 'main'?",
+    "Is it impossible for function 'unpackFloat' to reach function 'fProd'?",
+    "Can function 'fProd' eventually call function 'absolute'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '(*magnitude & ~MAGNITUDE_MASK' be skipped entirely?",
+    "Is the loop with condition '(*magnitude & ~MAGNITUDE_MASK' always executed?",
+    "Can the loop with condition '*magnitude & (~MAGNITUDE_MASK << 1' be skipped entirely?",
+    "Is the loop with condition '*magnitude & (~MAGNITUDE_MASK << 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(*magnitude & ~MAGNITUDE_MASK' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*magnitude & (~MAGNITUDE_MASK << 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'x (line 8)' affect subsequent computations?",
+    "Is variable 'x (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'x' live at the end of function 'absolute'?",
+    "Does variable 'exponent (line 13)' remain in use at the end of function 'packFloat'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int cExp = bExp, cMag = aMag + bMag;' unreachable?",
+    "Can the program actually reach the statement: “void unpackFloat(float aV, int *exponent, int *magnitude) {”?"
+  ]
+}

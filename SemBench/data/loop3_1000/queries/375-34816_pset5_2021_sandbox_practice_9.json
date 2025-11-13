@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'FindNode' to reach function 'PrintList'?",
+    "Is it impossible for function 'InsertNode_Head' to reach function 'FreeNodes'?",
+    "Can function 'PrintList' eventually call function 'printf'?",
+    "Is there a call path from function 'main' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= 10' be skipped entirely?",
+    "Is the loop with condition 'i <= 10' always executed?",
+    "Can the loop with condition 'tmp != NULL' be skipped entirely?",
+    "Is the loop with condition 'tmp != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'tmp != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'value (line 5)' affect subsequent computations?",
+    "Is variable 'head (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'head (line 19)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'free(tmp);' be considered dead code?",
+    "Is this statement not dead: “printf(\"Found: %i\\n\", find->value);”?"
+  ]
+}

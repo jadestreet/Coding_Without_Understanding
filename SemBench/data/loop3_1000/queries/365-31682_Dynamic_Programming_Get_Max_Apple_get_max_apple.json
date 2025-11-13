@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'print_path' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'print_path'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= n' be skipped entirely?",
+    "Is the loop with condition 'i <= n' always executed?",
+    "Can the loop with condition 'i <= m' be skipped entirely?",
+    "Is the loop with condition 'i <= m' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= m' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'mx (line 3)' affect subsequent computations?",
+    "Does the value assigned to 's (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'q' live at the end of function 'max_apple'?",
+    "Does variable 'm (line 5)' remain in use at the end of function 'max_apple'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i, j;' unreachable?",
+    "Can the program actually reach the statement: “printf(\"a[%d][%d]   \", i-1, j-1);”?"
+  ]
+}

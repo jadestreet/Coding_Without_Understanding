@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<=M' is never executed?",
+    "Is the loop with condition 'i<=M' always executed?",
+    "Can the loop with condition 'j<=N' be skipped entirely?",
+    "Is the loop with condition 'j<=N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=M' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<=N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Does the value assigned to 'argv' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'optDelta' remain in use at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for( l=j-n; l<=j+n; l++ )' be considered dead code?",
+    "Is this statement not dead: “for( k=i-m; k<=i+m; k++ )”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printList' to reach function 'reverseBetween'?",
+    "Is it impossible for function 'malloc' to reach function 'initGlobalList'?",
+    "Is there a call path from function 'main' to function 'reverseBetween'?",
+    "Can function 'printList' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 5' be skipped entirely?",
+    "Is the loop with condition 'i < 5' always executed?",
+    "Can the loop with condition 'head' be skipped entirely?",
+    "Is the loop with condition 'head' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'head' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'head (line 8)' remain in use at the end of function 'printList'?",
+    "Is variable 'len' live at the end of function 'reverseBetween'?"
+  ],
+  "dead_code": [
+    "Can the statement 'struct ListNode *p;' be considered dead code?",
+    "Is this statement not dead: “int val[5] = {1,2,3,4,5};”?"
+  ]
+}

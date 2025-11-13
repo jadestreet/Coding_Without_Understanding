@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'MaxSubSequenceSum1' to reach function 'max'?",
+    "Is it impossible for function 'max' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'MaxSubSum'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Can the loop with condition 'j < N' be skipped entirely?",
+    "Is the loop with condition 'j < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'A (line 4)' used after its definition?",
+    "Does the value assigned to 'N (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'ThisSum (line 5)' live at the end of function 'MaxSubSequenceSum1'?",
+    "Is variable 'k' live at the end of function 'MaxSubSequenceSum1'?"
+  ],
+  "dead_code": [
+    "Can the statement 'else' be considered dead code?",
+    "Is this statement not dead: “if (RightBorderSum > MaxRightBorderSum) MaxRightBorderSum = RightBorderSum;”?"
+  ]
+}

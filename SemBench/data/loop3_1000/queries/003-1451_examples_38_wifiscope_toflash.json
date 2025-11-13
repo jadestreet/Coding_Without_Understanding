@@ -1,0 +1,27 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'fwrite'?",
+    "Is it impossible for function 'rewind' to reach function 'fclose'?",
+    "Is it impossible for function 'fopen' to reach function 'malloc'?",
+    "Can function 'merge_flash' eventually call function 'fopen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'j<33' is never executed?",
+    "Is the loop with condition 'j<33' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j<33' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'binfile (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'flashfile (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'flash_data' remain in use at the end of function 'merge_flash'?",
+    "Does variable 'len_write' remain in use at the end of function 'merge_flash'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"   Can't open '%s' for writing.\\n\", flashfile);' unreachable?",
+    "Can the program actually reach the statement: “flash_size = ftell(fflash);”?"
+  ]
+}

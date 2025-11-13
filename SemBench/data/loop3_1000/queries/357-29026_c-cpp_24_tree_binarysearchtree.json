@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'DestroyTree' to reach function 'FindMax'?",
+    "Is it impossible for function 'free' to reach function 'Find'?",
+    "Can function 'PreOrderTraverse' eventually call function 'printf'?",
+    "Is there a call path from function 'main' to function 'FindMax'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 15' is never executed?",
+    "Is the loop with condition 'i < 15' always executed?",
+    "Is it possible that the loop with condition 'p != NULL' is never executed?",
+    "Is the loop with condition 'p != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 15' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'T (line 14)' affect subsequent computations?",
+    "Does the value assigned to 'e (line 14)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'T (line 14)' remain in use at the end of function 'Insert'?",
+    "Is variable 'e (line 14)' live at the end of function 'Insert'?"
+  ],
+  "dead_code": [
+    "Is the statement 'typedef struct node {' unreachable?",
+    "Can the program actually reach the statement: “T = T->rchild;”?"
+  ]
+}

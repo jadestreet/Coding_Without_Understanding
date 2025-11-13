@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'argc < 6' be skipped entirely?",
+    "Is the loop with condition 'argc < 6' always executed?",
+    "Is it possible that the loop with condition 'argc < 12' is never executed?",
+    "Is the loop with condition 'argc < 12' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'argc < 6' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'argc < 12' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc (line 2)' used after its definition?",
+    "Is variable 'x (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'x' live at the end of function 'main'?",
+    "Does variable 'argc' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'x = 2;' be considered dead code?",
+    "Can the program actually reach the statement: “printf(\"9\");”?"
+  ]
+}

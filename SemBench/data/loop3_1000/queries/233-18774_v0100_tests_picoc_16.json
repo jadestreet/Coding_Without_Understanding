@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'x < 2' be skipped entirely?",
+    "Is the loop with condition 'x < 2' always executed?",
+    "Can the loop with condition 'y < 3' be skipped entirely?",
+    "Is the loop with condition 'y < 3' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'x < 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y < 3' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 4)' used after its definition?",
+    "Does the value assigned to 'y (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'z' live at the end of function 'main'?",
+    "Does variable 'x' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (x = 0; x < 2; x++)' unreachable?",
+    "Is this statement not dead: “for (y = 0; y < 3; y++)”?"
+  ]
+}

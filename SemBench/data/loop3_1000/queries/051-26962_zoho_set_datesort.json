@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sortday' to reach function 'sortMonth'?",
+    "Is there a call path from function 'main' to function 'sortMonth'?",
+    "Is it impossible for function 'sortMonth' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'sortday'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<10' be skipped entirely?",
+    "Is the loop with condition 'i<10' always executed?",
+    "Is it possible that the loop with condition 'i<31' is never executed?",
+    "Is the loop with condition 'i<31' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<31' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'val (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 18)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 18)' remain in use at the end of function 'sortday'?",
+    "Is variable 'count (line 20)' live at the end of function 'sortday'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int count[5000]={0};' unreachable?",
+    "Is this statement not dead: “void sort(){”?"
+  ]
+}

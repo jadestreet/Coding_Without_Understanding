@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'atoi' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'check_number'?",
+    "Is it impossible for function 'check_number' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'atoi'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'number /= 10' be skipped entirely?",
+    "Is the loop with condition 'number /= 10' always executed?",
+    "Can the loop with condition 'n' be skipped entirely?",
+    "Is the loop with condition 'n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'number /= 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'number (line 3)' affect subsequent computations?",
+    "Is variable 'n (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 6)' remain in use at the end of function 'check_number'?",
+    "Is variable 'n (line 3)' live at the end of function 'check_number'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (n) {' unreachable?",
+    "Can the program actually reach the statement: “int n = atoi(argv[1]), i = 0;”?"
+  ]
+}

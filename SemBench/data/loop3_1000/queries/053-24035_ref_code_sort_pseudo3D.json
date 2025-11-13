@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'fopen'?",
+    "Is it impossible for function 'fopen' to reach function 'help'?",
+    "Is it impossible for function 'fclose' to reach function 'strcmp'?",
+    "Can function 'main' eventually call function 'fread'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'jj<planes*planes2' be skipped entirely?",
+    "Is the loop with condition 'jj<planes*planes2' always executed?",
+    "Can the loop with condition 'i<planes' be skipped entirely?",
+    "Is the loop with condition 'i<planes' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'jj<planes*planes2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<planes' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 7)' affect subsequent computations?",
+    "Is variable 'argv (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'outflag' live at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '*outfile[MAX_PLANE];' unreachable?",
+    "Can the program actually reach the statement: “int l=0, ll=0;”?"
+  ]
+}

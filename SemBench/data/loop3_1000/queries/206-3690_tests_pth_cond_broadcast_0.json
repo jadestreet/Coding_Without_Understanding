@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_cond_wait' to reach function 'pthread_cond_broadcast'?",
+    "Is it impossible for function 'pthread_join' to reach function 'producer'?",
+    "Is there a call path from function 'producer' to function 'produce'?",
+    "Can function 'main' eventually call function 'pthread_create'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'm (line 5)' affect subsequent computations?",
+    "Is variable 'c (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'batch_id (line 8)' remain in use at the end of function 'produce'?",
+    "Does variable 'n_consumers (line 8)' remain in use at the end of function 'produce'?"
+  ],
+  "dead_code": [
+    "Is the statement 'long n           = (argc > 1 ? atoi(argv[1]) : 1000);' unreachable?",
+    "Can the program actually reach the statement: “(void)batch_id;”?"
+  ]
+}

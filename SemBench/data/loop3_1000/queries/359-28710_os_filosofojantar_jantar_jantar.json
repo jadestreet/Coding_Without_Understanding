@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'puts' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'ceia'?",
+    "Can function 'main' eventually call function 'puts'?",
+    "Is it impossible for function 'printf' to reach function 'ceia'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<N' be skipped entirely?",
+    "Is the loop with condition 'i<N' always executed?",
+    "Can the loop with condition 'i<N' be skipped entirely?",
+    "Is the loop with condition 'i<N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'jantar (line 10)' affect subsequent computations?",
+    "Is variable 'jantar (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'jantar (line 10)' remain in use at the end of function 'init'?",
+    "Is variable 'i (line 13)' live at the end of function 'init'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(jantar->filosofo[N-1]==0&&jantar->filosofo[1]==0){' unreachable?",
+    "Can the program actually reach the statement: “printf(\"jantar->filosodo[%i]\\n\", jantar->filosofo[i]);”?"
+  ]
+}

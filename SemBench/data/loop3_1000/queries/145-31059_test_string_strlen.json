@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__assert_fail' to reach function 'strlen'?",
+    "Is it impossible for function '__assert_fail' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'strlen'?",
+    "Is there a call path from function 'main' to function '__assert_fail'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'len<BUFLEN' be skipped entirely?",
+    "Is the loop with condition 'len<BUFLEN' always executed?",
+    "Can the loop with condition 'mask<(1u<<__WORDSIZE/8)' be skipped entirely?",
+    "Is the loop with condition 'mask<(1u<<__WORDSIZE/8)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'len<BUFLEN' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'mask<(1u<<__WORDSIZE/8)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'buf (line 6)' used after its definition?",
+    "Is variable 'buf (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'buf' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return 0;' unreachable?",
+    "Can the program actually reach the statement: “char\t\tbuf[BUFLEN + 1 + __WORDSIZE/8];”?"
+  ]
+}

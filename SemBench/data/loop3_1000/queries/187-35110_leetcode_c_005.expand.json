@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'longestPalindrome' to function 'strlen'?",
+    "Can function 'main' eventually call function 'memmove'?",
+    "Is it impossible for function 'strlen' to reach function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'strlen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 's[i] != '\\0'' is never executed?",
+    "Is the loop with condition 's[i] != '\\0'' always executed?",
+    "Can the loop with condition 's[k] == s[i]' be skipped entirely?",
+    "Is the loop with condition 's[k] == s[i]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 's[i] != '\\0'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 's[k] == s[i]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's (line 4)' used after its definition?",
+    "Does the value assigned to 'length (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'imax' remain in use at the end of function 'longestPalindrome'?",
+    "Does variable 'p' remain in use at the end of function 'longestPalindrome'?"
+  ],
+  "dead_code": [
+    "Can the statement 'tmax = k - j - 2;' be considered dead code?",
+    "Is this statement not dead: “k++;”?"
+  ]
+}

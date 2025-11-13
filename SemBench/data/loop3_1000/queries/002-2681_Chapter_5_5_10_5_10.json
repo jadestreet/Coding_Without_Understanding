@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pop' to reach function 'main'?",
+    "Is it impossible for function 'getop' to reach function 'push'?",
+    "Can function 'main' eventually call function 'atof'?",
+    "Can function 'main' eventually call function '__ctype_b_loc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'ar < argc' is never executed?",
+    "Is the loop with condition 'ar < argc' always executed?",
+    "Is it possible that the loop with condition '*tmp == ' ' || *tmp == '\\t'' is never executed?",
+    "Is the loop with condition '*tmp == ' ' || *tmp == '\\t'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'ar < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*tmp == ' ' || *tmp == '\\t'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 10)' affect subsequent computations?",
+    "Is variable 'argv (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'op2' remain in use at the end of function 'main'?",
+    "Does variable 'argc' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (op2 != 0.0)' be considered dead code?",
+    "Is this statement not dead: “tmp++;”?"
+  ]
+}

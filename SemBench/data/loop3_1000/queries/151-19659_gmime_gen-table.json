@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'header_remove_bits'?",
+    "Is it impossible for function 'header_init_bits' to reach function 'isascii'?",
+    "Is it impossible for function 'header_remove_bits' to reach function 'isascii'?",
+    "Is there a call path from function 'header_decode_init' to function 'header_remove_bits'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 256' be skipped entirely?",
+    "Is the loop with condition 'i < 256' always executed?",
+    "Can the loop with condition 'i < 256' be skipped entirely?",
+    "Is the loop with condition 'i < 256' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'gmime_special_table (line 16)' used after its definition?",
+    "Does the value assigned to 'gmime_special_table (line 31)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'vals (line 46)' live at the end of function 'header_remove_bits'?",
+    "Is variable 'inptr (line 48)' live at the end of function 'header_remove_bits'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf (\"#define CHARS_SPECIAL \\\"()<>@,;:\\\\\\\\\\\\\\\".[]\\\"\\n\");' unreachable?",
+    "Can the program actually reach the statement: “IS_LWSP\t\t= (1 << 1),”?"
+  ]
+}

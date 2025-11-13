@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fclose' to reach function 'fopen'?",
+    "Is it impossible for function 'fclose' to reach function 'fread'?",
+    "Is there a call path from function 'main' to function 'fclose'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<argc' is never executed?",
+    "Is the loop with condition 'i<argc' always executed?",
+    "Is it possible that the loop with condition 'j<r' is never executed?",
+    "Is the loop with condition 'j<r' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<r' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 3)' affect subsequent computations?",
+    "Is variable 'argv (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'argc' remain in use at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'c = 0;' unreachable?",
+    "Is this statement not dead: “while ((r = fread(buffer,1,BUFSIZE,fd)) > 0) {”?"
+  ]
+}

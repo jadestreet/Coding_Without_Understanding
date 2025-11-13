@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'f3' eventually call function '__builtin_abort'?",
+    "Is it impossible for function 'bar' to reach function 'f3'?",
+    "Is it impossible for function 'f2' to reach function 'f3'?",
+    "Is there a call path from function 'f1' to function 'bar'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 92' be skipped entirely?",
+    "Is the loop with condition 'i < 92' always executed?",
+    "Is it possible that the loop with condition 'i < 92' is never executed?",
+    "Is the loop with condition 'i < 92' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 92' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 92' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'cnt (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'x (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'x (line 3)' remain in use at the end of function 'bar'?",
+    "Does variable 'y' remain in use at the end of function 'bar'?"
+  ],
+  "dead_code": [
+    "Is the statement '__builtin_abort ();' unreachable?",
+    "Can the program actually reach the statement: “f2 (-__INT_MAX__ - 1);”?"
+  ]
+}

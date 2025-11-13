@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'fclose'?",
+    "Is it impossible for function 'fclose' to reach function 'process'?",
+    "Can function 'main' eventually call function 'getc'?",
+    "Is it impossible for function 'fclose' to reach function 'strcmp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition '(ch = getc(file' is never executed?",
+    "Is the loop with condition '(ch = getc(file' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(ch = getc(file' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'argv (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'file (line 5)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'process(file);' be considered dead code?",
+    "Is this statement not dead: “} else if ((file = fopen(argv[i], \"r\")) == NULL) {”?"
+  ]
+}

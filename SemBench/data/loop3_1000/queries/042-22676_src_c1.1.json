@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'mystrlen' to reach function 'printf'?",
+    "Is it impossible for function 'mystrlen' to reach function 'main'?",
+    "Can function 'reverse_str' eventually call function 'mystrlen'?",
+    "Can function 'main' eventually call function 'mystrlen'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'pos < len/2' is never executed?",
+    "Is the loop with condition 'pos < len/2' always executed?",
+    "Is it possible that the loop with condition 'i < argc' is never executed?",
+    "Is the loop with condition 'i < argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'pos < len/2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'inp (line 2)' used after its definition?",
+    "Does the value assigned to 'len (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'len (line 3)' live at the end of function 'mystrlen'?",
+    "Is variable 'inp (line 2)' live at the end of function 'mystrlen'?"
+  ],
+  "dead_code": [
+    "Can the statement 'inp[len-pos-1] = tmp;' be considered dead code?",
+    "Is this statement not dead: “tmp = inp[pos];”?"
+  ]
+}

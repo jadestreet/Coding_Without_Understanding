@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'lattice_combinatronics' to reach function 'printf'?",
+    "Is it impossible for function 'travel_grid' to reach function 'lattice_combinatronics'?",
+    "Is there a call path from function 'travel_grid' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'c < size' be skipped entirely?",
+    "Is the loop with condition 'c < size' always executed?",
+    "Can the loop with condition 'r < size' be skipped entirely?",
+    "Is the loop with condition 'r < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'size (line 2)' used after its definition?",
+    "Does the value assigned to 'grid (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'grid (line 2)' remain in use at the end of function 'lattice_paths'?",
+    "Does variable 'c (line 4)' remain in use at the end of function 'lattice_paths'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int size = 21;' be considered dead code?",
+    "Can the program actually reach the statement: “for (c = 1; c < size; c++) {”?"
+  ]
+}

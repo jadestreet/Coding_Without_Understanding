@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'sprintf' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'sprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '} else {\n    printf(\"cannot determine bits of (char) type: it seems to be %d bits but %ld bytes\\n\", char_bits, SIZEOF_CHAR)' is never executed?",
+    "Is the loop with condition '} else {\n    printf(\"cannot determine bits of (char) type: it seems to be %d bits but %ld bytes\\n\", char_bits, SIZEOF_CHAR)' always executed?",
+    "Is it possible that the loop with condition '} else {\n    printf(\"cannot determine bits of (short) type: it seems to be %d bits but %ld bytes\\n\", short_bits, SIZEOF_CHAR)' is never executed?",
+    "Is the loop with condition '} else {\n    printf(\"cannot determine bits of (short) type: it seems to be %d bits but %ld bytes\\n\", short_bits, SIZEOF_CHAR)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '} else {\n    printf(\"cannot determine bits of (char) type: it seems to be %d bits but %ld bytes\\n\", char_bits, SIZEOF_CHAR)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '} else {\n    printf(\"cannot determine bits of (short) type: it seems to be %d bits but %ld bytes\\n\", short_bits, SIZEOF_CHAR)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'hexpointer (line 20)' affect subsequent computations?",
+    "Does the value assigned to 'hexchar (line 21)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'hexshort' remain in use at the end of function 'main'?",
+    "Does variable 'hexchar' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"uses %dbit (%ld byte) for (void*) types\\n\", pointer_bits, SIZEOF_POINTER);' unreachable?",
+    "Can the program actually reach the statement: “printf(\"cannot determine bits of (int) type: it seems to be %d bits but %ld bytes\\n\", int_bits, SIZEOF_INT);”?"
+  ]
+}

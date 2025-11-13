@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'reverse' to reach function 'main'?",
+    "Can function 'main' eventually call function 'reverse'?",
+    "Is it impossible for function 'reverse' to reach function 'itob'?",
+    "Can function 'main' eventually call function 'itob'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'l < r' be skipped entirely?",
+    "Is the loop with condition 'l < r' always executed?",
+    "Is it possible that the loop with condition '(n /= b' is never executed?",
+    "Is the loop with condition '(n /= b' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'l < r' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(n /= b' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 2)' used after its definition?",
+    "Does the value assigned to 's (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'string' remain in use at the end of function 'main'?",
+    "Does variable 'n (line 2)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'reverse(s, i);' be considered dead code?",
+    "Can the program actually reach the statement: “char string[1000];”?"
+  ]
+}

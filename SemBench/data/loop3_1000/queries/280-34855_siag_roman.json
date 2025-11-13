@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'to_dec' eventually call function 'init_roman'?",
+    "Is it impossible for function 'init_roman' to reach function 'printf'?",
+    "Is it impossible for function 'to_rom' to reach function 'usage'?",
+    "Is there a call path from function 'to_dec' to function 'strlen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<argc' be skipped entirely?",
+    "Is the loop with condition 'i<argc' always executed?",
+    "Is it possible that the loop with condition 'i<=19' is never executed?",
+    "Is the loop with condition 'i<=19' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<=19' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'string (line 3)' used after its definition?",
+    "Is variable 'd (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'argc' live at the end of function 'main'?",
+    "Does variable 'i (line 18)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'static char roman[20][6]={\"\", \"I\", \"II\", \"III\", \"IV\", \"V\", \"VI\", \"VII\", \"VIII\", \"IX\",' unreachable?",
+    "Is this statement not dead: “int do_roman(char *from, char *to);”?"
+  ]
+}

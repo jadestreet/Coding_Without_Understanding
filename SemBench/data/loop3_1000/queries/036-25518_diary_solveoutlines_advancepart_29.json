@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'is_num_in_array'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'count_array_elements_times' eventually call function 'is_num_in_array'?",
+    "Is it impossible for function 'is_num_in_array' to reach function 'count_array_elements_times'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<size_p' be skipped entirely?",
+    "Is the loop with condition 'i<size_p' always executed?",
+    "Can the loop with condition 'i<size_p' be skipped entirely?",
+    "Is the loop with condition 'i<size_p' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size_p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<size_p' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'p (line 2)' affect subsequent computations?",
+    "Is variable 'size_p (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'array' remain in use at the end of function 'main'?",
+    "Is variable 'array_count' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int count_number_in_array(int *p,int array_size,int n)' be considered dead code?",
+    "Can the program actually reach the statement: “int array[6]={22,23,22,23,5,6};”?"
+  ]
+}

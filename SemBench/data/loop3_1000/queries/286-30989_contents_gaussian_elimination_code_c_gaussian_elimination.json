@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'gaussian_elimination' to reach function 'swap_rows'?",
+    "Is it impossible for function 'printf' to reach function 'gaussian_elimination'?",
+    "Can function 'main' eventually call function 'back_substitution'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'j < cols' is never executed?",
+    "Is the loop with condition 'j < cols' always executed?",
+    "Is it possible that the loop with condition 'col < cols - 1' is never executed?",
+    "Is the loop with condition 'col < cols - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j < cols' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'col < cols - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 4)' used after its definition?",
+    "Does the value assigned to 'i (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 4)' remain in use at the end of function 'swap_rows'?",
+    "Does variable 'pivot' remain in use at the end of function 'swap_rows'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pivot = i;' unreachable?",
+    "Can the program actually reach the statement: “printf(\"Gaussian elimination:\\n\");”?"
+  ]
+}

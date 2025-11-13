@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'fprintf'?",
+    "Can function 'main' eventually call function 'setlocale'?",
+    "Is it impossible for function 'fprintf' to reach function 'setlocale'?",
+    "Is there a call path from function 'main' to function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*tail' is never executed?",
+    "Is the loop with condition '*tail' always executed?",
+    "Can the loop with condition 'tail > str && tail[-1] == '/'' be skipped entirely?",
+    "Is the loop with condition 'tail > str && tail[-1] == '/'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*tail' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'tail > str && tail[-1] == '/'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 5)' affect subsequent computations?",
+    "Is variable 'argv (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'sfx' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'newtail = tail;' be considered dead code?",
+    "Is this statement not dead: “tail--;”?"
+  ]
+}

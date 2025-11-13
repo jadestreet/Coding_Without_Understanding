@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'quickSort' eventually call function 'printf'?",
+    "Is it impossible for function 'quickSort' to reach function 'main'?",
+    "Is it impossible for function 'partition' to reach function 'main'?",
+    "Can function 'quickSort' eventually call function 'partition'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < MAX' is never executed?",
+    "Is the loop with condition 'i < MAX' always executed?",
+    "Is it possible that the loop with condition 'i < MAX' is never executed?",
+    "Is the loop with condition 'i < MAX' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < MAX' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < MAX' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 't (line 5)' affect subsequent computations?",
+    "Is variable 't (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 12)' remain in use at the end of function 'main'?",
+    "Does variable 'number (line 10)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int number[MAX] = {0};' be considered dead code?",
+    "Can the program actually reach the statement: “#define MAX 10”?"
+  ]
+}

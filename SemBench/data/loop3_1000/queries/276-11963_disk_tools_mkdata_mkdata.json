@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fwrite' to reach function 'printf'?",
+    "Is it impossible for function 'sprintf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'fopen'?",
+    "Is there a call path from function 'main' to function 'fwrite'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'j < 12' be skipped entirely?",
+    "Is the loop with condition 'j < 12' always executed?",
+    "Can the loop with condition 'm < i' be skipped entirely?",
+    "Is the loop with condition 'm < i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j < 12' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'm < i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 5)' affect subsequent computations?",
+    "Is variable 'argv (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'm' remain in use at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return 1;' be considered dead code?",
+    "Is this statement not dead: “sprintf(buf, \"0x%06X\", i);”?"
+  ]
+}

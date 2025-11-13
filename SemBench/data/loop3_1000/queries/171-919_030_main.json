@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'ispower' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'POW'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<power' is never executed?",
+    "Is the loop with condition 'i<power' always executed?",
+    "Is it possible that the loop with condition 'i<1000000' is never executed?",
+    "Is the loop with condition 'i<1000000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<power' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<1000000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'digit (line 3)' used after its definition?",
+    "Is variable 'power (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'digit (line 3)' live at the end of function 'POW'?",
+    "Does variable 'ret' remain in use at the end of function 'POW'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return sum == numold;' be considered dead code?",
+    "Is this statement not dead: “while(num>=1)”?"
+  ]
+}

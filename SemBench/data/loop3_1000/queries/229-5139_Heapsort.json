@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'printList' to function 'printf'?",
+    "Can function 'main' eventually call function 'printList'?",
+    "Is it impossible for function 'swap' to reach function 'seep'?",
+    "Is it impossible for function 'swap' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < len' be skipped entirely?",
+    "Is the loop with condition 'i < len' always executed?",
+    "Can the loop with condition 'child <= end' be skipped entirely?",
+    "Is the loop with condition 'child <= end' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'child <= end' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'l (line 2)' remain in use at the end of function 'swap'?",
+    "Does variable 'b' remain in use at the end of function 'swap'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while(child <= end) {' be considered dead code?",
+    "Can the program actually reach the statement: “l[a] = l[b];”?"
+  ]
+}

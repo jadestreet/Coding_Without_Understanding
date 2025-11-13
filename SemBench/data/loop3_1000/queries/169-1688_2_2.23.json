@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'createLinklist'?",
+    "Is it impossible for function 'print' to reach function 'main'?",
+    "Is it impossible for function 'createLinklist' to reach function 'print'?",
+    "Is there a call path from function 'main' to function 'InsertUp'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<rand()%20' be skipped entirely?",
+    "Is the loop with condition 'i<rand()%20' always executed?",
+    "Is it possible that the loop with condition 'i<rand()%20' is never executed?",
+    "Is the loop with condition 'i<rand()%20' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<rand()%20' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<rand()%20' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'head (line 17)' used after its definition?",
+    "Does the value assigned to 'head (line 18)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'head' remain in use at the end of function 'createLinklist'?",
+    "Is variable 'list (line 21)' live at the end of function 'InsertUp'?"
+  ],
+  "dead_code": [
+    "Is the statement 'ListMerge(lista,listb,listc);' unreachable?",
+    "Can the program actually reach the statement: “A->next=NULL;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'gang' to reach function 'main'?",
+    "Is it impossible for function 'worker' to reach function 'gang'?",
+    "Is there a call path from function 'main' to function 'worker'?",
+    "Can function 'main' eventually call function 'close_enough'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'ix < N' be skipped entirely?",
+    "Is the loop with condition 'ix < N' always executed?",
+    "Can the loop with condition 'ix < N' be skipped entirely?",
+    "Is the loop with condition 'ix < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'ix < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'ix < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 6)' used after its definition?",
+    "Is variable 'b (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'close_enough'?",
+    "Does variable 'mag2_diff' remain in use at the end of function 'close_enough'?"
+  ],
+  "dead_code": [
+    "Is the statement 'tsum += ary[ix];' unreachable?",
+    "Is this statement not dead: “ary[ix] = frac + frac * 2.0j - 1.0j;”?"
+  ]
+}

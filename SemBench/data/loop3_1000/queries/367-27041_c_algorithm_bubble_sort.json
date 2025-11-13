@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'array_dump' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'array_dump'?",
+    "Is there a call path from function 'bubble_sort' to function 'swap'?",
+    "Is there a call path from function 'array_dump' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'ordered_index > 0' be skipped entirely?",
+    "Is the loop with condition 'ordered_index > 0' always executed?",
+    "Can the loop with condition 'element < ordered_index' be skipped entirely?",
+    "Is the loop with condition 'element < ordered_index' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'ordered_index > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'element < ordered_index' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 2)' affect subsequent computations?",
+    "Is variable 'array_length (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'array (line 2)' remain in use at the end of function 'main'?",
+    "Does variable 'array_length (line 2)' remain in use at the end of function 'bubble_sort'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (int index = 0; index < array_length; ++index) {' be considered dead code?",
+    "Is this statement not dead: “void array_dump(int array[], size_t array_length) {”?"
+  ]
+}

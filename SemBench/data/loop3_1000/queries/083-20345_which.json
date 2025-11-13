@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'getenv' to reach function 'main'?",
+    "Is it impossible for function 'getenv' to reach function 'memcpy'?",
+    "Can function 'main' eventually call function 'getenv'?",
+    "Can function 'main' eventually call function 'access'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'path[pathlen] != 0 && path[pathlen] != ':'' is never executed?",
+    "Is the loop with condition 'path[pathlen] != 0 && path[pathlen] != ':'' always executed?",
+    "Is it possible that the loop with condition '*path == ':'' is never executed?",
+    "Is the loop with condition '*path == ':'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'path[pathlen] != 0 && path[pathlen] != ':'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*path == ':'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 4)' affect subsequent computations?",
+    "Is variable 'argv (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'main'?",
+    "Does variable 'path' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'const char* path;' be considered dead code?",
+    "Can the program actually reach the statement: “;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'merge' to reach function 'display'?",
+    "Can function 'split' eventually call function 'merge'?",
+    "Is it impossible for function 'display' to reach function 'merge'?",
+    "Is there a call path from function 'split' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Can the loop with condition 'i <= mid && j <= end' be skipped entirely?",
+    "Is the loop with condition 'i <= mid && j <= end' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= mid && j <= end' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 2)' affect subsequent computations?",
+    "Is variable 'size (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 4)' live at the end of function 'display'?",
+    "Does variable 'arr (line 2)' remain in use at the end of function 'display'?"
+  ],
+  "dead_code": [
+    "Can the statement 'temp_index = start;' be considered dead code?",
+    "Can the program actually reach the statement: “temp[temp_index] = arr[i]<arr[j] ? arr[i++] : arr[j++];”?"
+  ]
+}

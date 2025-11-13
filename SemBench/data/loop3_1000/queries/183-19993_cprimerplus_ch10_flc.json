@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'sum'?",
+    "Is it impossible for function 'printf' to reach function 'sum2d'?",
+    "Is it impossible for function 'printf' to reach function 'sum'?",
+    "Is there a call path from function 'main' to function 'sum2d'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < n' be skipped entirely?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'r < rows' is never executed?",
+    "Is the loop with condition 'r < rows' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r < rows' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'ar (line 3)' used after its definition?",
+    "Is variable 'rows (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'total1' live at the end of function 'main'?",
+    "Does variable 'total3' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int\t\ttotal = 0;' be considered dead code?",
+    "Is this statement not dead: “printf(\"total2 = %d\\n\", total2);”?"
+  ]
+}

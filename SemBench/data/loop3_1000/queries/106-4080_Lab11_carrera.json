@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'rand' to reach function 'printf'?",
+    "Is it impossible for function 'srand' to reach function 'print_tablero'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'sleep'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < stop' be skipped entirely?",
+    "Is the loop with condition 'i < stop' always executed?",
+    "Can the loop with condition 'i < 70' be skipped entirely?",
+    "Is the loop with condition 'i < 70' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < stop' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 70' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 't (line 5)' used after its definition?",
+    "Does the value assigned to 'l (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 't (line 5)' remain in use at the end of function 'change_pos'?",
+    "Is variable 'tr' live at the end of function 'change_pos'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"-\");' unreachable?",
+    "Can the program actually reach the statement: “else if (lr >= 6 && lr <= 8)”?"
+  ]
+}

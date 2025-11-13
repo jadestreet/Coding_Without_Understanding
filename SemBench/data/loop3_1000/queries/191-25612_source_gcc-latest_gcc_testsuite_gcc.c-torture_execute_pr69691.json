@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_strchr' to reach function 'bar'?",
+    "Is it impossible for function '__builtin_printf' to reach function '__builtin_memcpy'?",
+    "Can function 'main' eventually call function 'asm'?",
+    "Is there a call path from function 'baz' to function 'foo'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*b' is never executed?",
+    "Is the loop with condition '*b' always executed?",
+    "Is it possible that the loop with condition 'z < l' is never executed?",
+    "Is the loop with condition 'z < l' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*b' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'z < l' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'u (line 1)' used after its definition?",
+    "Is variable 'v (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x (line 18)' remain in use at the end of function 'fn'?",
+    "Does variable 'x' remain in use at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Can the statement 'l = __builtin_strlen (x);' be considered dead code?",
+    "Is this statement not dead: “if (foo (a[z + 1]) <= 0)”?"
+  ]
+}

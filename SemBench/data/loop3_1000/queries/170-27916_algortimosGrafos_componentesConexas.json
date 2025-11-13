@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'iguales'?",
+    "Is it impossible for function 'subConj' to reach function 'iguales'?",
+    "Is there a call path from function 'unircjto' to function 'pertenece'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<=n' be skipped entirely?",
+    "Is the loop with condition 'i<=n' always executed?",
+    "Is it possible that the loop with condition 'j<=c[i].n' is never executed?",
+    "Is the loop with condition 'j<=c[i].n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<=c[i].n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Does the value assigned to 'v (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 20)' live at the end of function 'main'?",
+    "Does variable 'm' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'vertice w;' unreachable?",
+    "Can the program actually reach the statement: “void diferencia (_conjVertices a,_conjVertices b,_conjVertices *c){”?"
+  ]
+}

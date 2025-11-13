@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'poss_matches' to reach function 'randomize'?",
+    "Is it impossible for function 'floor' to reach function 'poss_matches'?",
+    "Is there a call path from function 'main' to function 'putchar'?",
+    "Is there a call path from function 'recursive_iterate' to function 'check_solution'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'line<9' is never executed?",
+    "Is the loop with condition 'line<9' always executed?",
+    "Can the loop with condition 'col<9' be skipped entirely?",
+    "Is the loop with condition 'col<9' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'line<9' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'col<9' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'board (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'line (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'board (line 8)' remain in use at the end of function 'print_board'?",
+    "Is variable 'col' live at the end of function 'print_board'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int pos = (i*9)+column;' unreachable?",
+    "Can the program actually reach the statement: “putchar('|');”?"
+  ]
+}

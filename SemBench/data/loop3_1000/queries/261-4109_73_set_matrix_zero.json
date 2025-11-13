@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'memset' to reach function 'main'?",
+    "Is it impossible for function 'setZeroes' to reach function 'main'?",
+    "Is there a call path from function 'setZeroes' to function 'memset'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < matrixColSize' is never executed?",
+    "Is the loop with condition 'i < matrixColSize' always executed?",
+    "Can the loop with condition 'i < matrixRowSize' be skipped entirely?",
+    "Is the loop with condition 'i < matrixRowSize' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < matrixColSize' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < matrixRowSize' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'matrix (line 2)' affect subsequent computations?",
+    "Is variable 'matrixRowSize (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'matrix' remain in use at the end of function 'setZeroes'?",
+    "Does variable 'i' remain in use at the end of function 'setZeroes'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (rowflag = 1, i = 0; i < matrixColSize; i++)' unreachable?",
+    "Is this statement not dead: “if (matrix[j][i] == 0) {”?"
+  ]
+}

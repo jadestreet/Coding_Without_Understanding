@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'tm' to reach function 'td'?",
+    "Is it impossible for function 'realloc' to reach function 'td'?",
+    "Can function 'main' eventually call function 'd'?",
+    "Can function 'sa' eventually call function 'realloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' be skipped entirely?",
+    "Is the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' always executed?",
+    "Can the loop with condition 'j<w' be skipped entirely?",
+    "Is the loop with condition 'j<w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'd'?",
+    "Does variable 'w' remain in use at the end of function 'd'?"
+  ],
+  "dead_code": [
+    "Can the statement 'sa(gr(2,1));' be considered dead code?",
+    "Can the program actually reach the statement: “\" $;{#} )k{ }  W{#} %J{ }  W{#} )h{ } $=#    {#}  *{ }  '#{ } $9{#} )m{ }  W{#} %J{ }  T{#} )p{ } $8#    {#}  *{ }  '#{ } $9{#} )\"”?"
+  ]
+}

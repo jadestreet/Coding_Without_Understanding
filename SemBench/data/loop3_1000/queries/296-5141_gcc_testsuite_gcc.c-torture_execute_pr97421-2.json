@@ -1,0 +1,27 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_abort' to reach function 'main'?",
+    "Can function 'main' eventually call function '__builtin_abort'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'a' is never executed?",
+    "Is the loop with condition 'a' always executed?",
+    "Can the loop with condition 'h <= 2' be skipped entirely?",
+    "Is the loop with condition 'h <= 2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'a' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'h <= 2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 1)' used after its definition?",
+    "Is variable 'b (line 1)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'h' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (h = 0; h <= 2; h++)' unreachable?",
+    "Is this statement not dead: “int h;”?"
+  ]
+}

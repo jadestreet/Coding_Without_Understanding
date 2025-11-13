@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < count' be skipped entirely?",
+    "Is the loop with condition 'i < count' always executed?",
+    "Is it possible that the loop with condition 'i < count' is never executed?",
+    "Is the loop with condition 'i < count' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc' used after its definition?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'ages' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"---\\n\");' be considered dead code?",
+    "Is this statement not dead: “printf(\"%s is %d years old.\\n\", *(cur_name + i), *(cur_age + i));”?"
+  ]
+}

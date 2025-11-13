@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fseeko' to reach function 'ftello'?",
+    "Is it impossible for function 'feof' to reach function 'fopen'?",
+    "Is there a call path from function 'main' to function 'fprintf'?",
+    "Can function 'main' eventually call function 'fread'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < moov_atom_size - 4' is never executed?",
+    "Is the loop with condition 'i < moov_atom_size - 4' always executed?",
+    "Can the loop with condition 'j < offset_count' be skipped entirely?",
+    "Is the loop with condition 'j < offset_count' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < moov_atom_size - 4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < offset_count' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 47)' affect subsequent computations?",
+    "Is variable 'argv (line 47)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'moov_atom_size' remain in use at the end of function 'main'?",
+    "Does variable 'moov_atom' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '#define ATOM_PREAMBLE_SIZE    8' be considered dead code?",
+    "Is this statement not dead: “goto error_out;”?"
+  ]
+}

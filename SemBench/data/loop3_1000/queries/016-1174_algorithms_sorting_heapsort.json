@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printArray'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'printArray' to reach function 'main'?",
+    "Can function 'main' eventually call function 'BuildHeap'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i >= 0' be skipped entirely?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Can the loop with condition 'i < LENGTH' be skipped entirely?",
+    "Is the loop with condition 'i < LENGTH' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < LENGTH' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'heapSize (line 7)' used after its definition?",
+    "Does the value assigned to 'A (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'largest' live at the end of function 'Heapify'?",
+    "Does variable 'i (line 8)' remain in use at the end of function 'Heapify'?"
+  ],
+  "dead_code": [
+    "Is the statement 'TM_PRINTF(\"%d \", array[i]);' unreachable?",
+    "Can the program actually reach the statement: “for(i = (LENGTH - 1) / 2; i >= 0; i--)”?"
+  ]
+}

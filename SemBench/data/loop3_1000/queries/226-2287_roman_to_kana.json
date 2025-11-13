@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'my_strlen_utf8_c' to reach function 'to_wide'?",
+    "Is it impossible for function 'free' to reach function 'my_strlen_utf8_c'?",
+    "Can function 'aeiou' eventually call function 'set'?",
+    "Is there a call path from function 'convert' to function 'AEIOU'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'del > 0' be skipped entirely?",
+    "Is the loop with condition 'del > 0' always executed?",
+    "Can the loop with condition 's[i]' be skipped entirely?",
+    "Is the loop with condition 's[i]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'del > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 's[i]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 's' remain in use at the end of function 'my_strlen_utf8_c'?",
+    "Is variable 'j' live at the end of function 'my_strlen_utf8_c'?"
+  ],
+  "dead_code": [
+    "Can the statement 'case 'b':' be considered dead code?",
+    "Can the program actually reach the statement: “0xffe383a6,”?"
+  ]
+}

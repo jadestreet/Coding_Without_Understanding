@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Is it impossible for function 'printf' to reach function 'free'?",
+    "Is there a call path from function 'main' to function 'free'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<N' be skipped entirely?",
+    "Is the loop with condition 'i<N' always executed?",
+    "Can the loop with condition 'i<N' be skipped entirely?",
+    "Is the loop with condition 'i<N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc' used after its definition?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'A' live at the end of function 'main'?",
+    "Does variable 'k' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for(int i=0; i<N; ++i){' be considered dead code?",
+    "Can the program actually reach the statement: “C[i] = (long_int *) malloc( N * sizeof(long_int *) );”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'quick_sort' to reach function 'threeSumClosest'?",
+    "Is there a call path from function 'main' to function 'threeSumClosest'?",
+    "Can function 'main' eventually call function 'quick_sort'?",
+    "Is it impossible for function 'quick_sort' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < numsSize - 2' is never executed?",
+    "Is the loop with condition 'i < numsSize - 2' always executed?",
+    "Is it possible that the loop with condition 'i < j' is never executed?",
+    "Is the loop with condition 'i < j' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < numsSize - 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < j' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 3)' affect subsequent computations?",
+    "Is variable 'left (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'right (line 3)' remain in use at the end of function 'quick_sort'?",
+    "Is variable 't' live at the end of function 'quick_sort'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (int i = 0; i < numsSize - 2; i++)' unreachable?",
+    "Can the program actually reach the statement: “int threeSumClosest(int* nums, int numsSize, int target)”?"
+  ]
+}

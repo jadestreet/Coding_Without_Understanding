@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'cmp'?",
+    "Is it impossible for function 'cmp' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < npentagons' is never executed?",
+    "Is the loop with condition 'i < npentagons' always executed?",
+    "Is it possible that the loop with condition 'i < npentagons' is never executed?",
+    "Is the loop with condition 'i < npentagons' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < npentagons' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < npentagons' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'pentagon (line 5)' affect subsequent computations?",
+    "Is variable 'a (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 7)' live at the end of function 'cmp'?",
+    "Is variable 'ua' live at the end of function 'cmp'?"
+  ],
+  "dead_code": [
+    "Can the statement 'else if (ua > ub) return 1;' be considered dead code?",
+    "Can the program actually reach the statement: “enum { npentagons = 10000 };”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'intcmp'?",
+    "Is it impossible for function 'realloc' to reach function 'malloc'?",
+    "Is there a call path from function 'main' to function 'add_ans'?",
+    "Can function 'fourSum' eventually call function 'realloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= (p - 1)' be skipped entirely?",
+    "Is the loop with condition 'i <= (p - 1)' always executed?",
+    "Is it possible that the loop with condition 'a3 < a4' is never executed?",
+    "Is the loop with condition 'a3 < a4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= (p - 1)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'a3 < a4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'res (line 3)' affect subsequent computations?",
+    "Is variable 'p (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'intcmp'?",
+    "Does variable 'a' remain in use at the end of function 'intcmp'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (i-- > 0)' unreachable?",
+    "Can the program actually reach the statement: “a3++;”?"
+  ]
+}

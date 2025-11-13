@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'expand' to reach function 'printf'?",
+    "Is there a call path from function 'expand' to function 'strchr'?",
+    "Is it impossible for function 'strchr' to reach function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 's[i]' be skipped entirely?",
+    "Is the loop with condition 's[i]' always executed?",
+    "Can the loop with condition 's2[i]' be skipped entirely?",
+    "Is the loop with condition 's2[i]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 's[i]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 's2[i]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's1 (line 3)' used after its definition?",
+    "Is variable 's2 (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 's' remain in use at the end of function 'main'?",
+    "Is variable 'result' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if ( s2[i+1] == '-' && s2[i+2] != '\\0' ) {' unreachable?",
+    "Is this statement not dead: “int j = 0;”?"
+  ]
+}

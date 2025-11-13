@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'calloc' to reach function 'main'?",
+    "Is it impossible for function 'isqrt' to reach function 'calloc'?",
+    "Can function 'main' eventually call function 'isqrt'?",
+    "Can function 'main' eventually call function 'initprimelist'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'base < MAX_N' be skipped entirely?",
+    "Is the loop with condition 'base < MAX_N' always executed?",
+    "Is it possible that the loop with condition 'i < arraysize' is never executed?",
+    "Is the loop with condition 'i < arraysize' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'base < MAX_N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < arraysize' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 6)' affect subsequent computations?",
+    "Is variable 'primelistcount (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'base' remain in use at the end of function 'main'?",
+    "Is variable 'i (line 13)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for( n = 2; n <= sqrt_llong_max; n++ ) {' unreachable?",
+    "Can the program actually reach the statement: “else”?"
+  ]
+}

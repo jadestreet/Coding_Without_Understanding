@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'usleep' to reach function 'read_msg'?",
+    "Is it impossible for function 'clock' to reach function 'usleep'?",
+    "Can function 'read_msg' eventually call function 'rand'?",
+    "Is there a call path from function 'send_msg' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'cnt < ENQUQUE_LEN' is never executed?",
+    "Is the loop with condition 'cnt < ENQUQUE_LEN' always executed?",
+    "Is it possible that the loop with condition 'cnt < DEQUQUE_LEN' is never executed?",
+    "Is the loop with condition 'cnt < DEQUQUE_LEN' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'cnt < ENQUQUE_LEN' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'cnt < DEQUQUE_LEN' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'queue_mutex (line 13)' used after its definition?",
+    "Does the value assigned to 'head (line 14)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'posi' remain in use at the end of function 'inc'?",
+    "Is variable 'cnt (line 28)' live at the end of function 'send_msg'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int fake_tid3 = 3;' be considered dead code?",
+    "Can the program actually reach the statement: “#define MAX_QUEUE_LEN 8”?"
+  ]
+}

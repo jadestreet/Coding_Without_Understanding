@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'insertion_sort' to reach function 'main'?",
+    "Can function 'insertion_sort' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < length' is never executed?",
+    "Is the loop with condition 'i < length' always executed?",
+    "Can the loop with condition 'i < length' be skipped entirely?",
+    "Is the loop with condition 'i < length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'length (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'key' remain in use at the end of function 'insertion_sort'?",
+    "Does variable 'length' remain in use at the end of function 'insertion_sort'?"
+  ],
+  "dead_code": [
+    "Is the statement 'while (j >= 0 & array[j] > key){' unreachable?",
+    "Is this statement not dead: “array[j+1] = key;”?"
+  ]
+}

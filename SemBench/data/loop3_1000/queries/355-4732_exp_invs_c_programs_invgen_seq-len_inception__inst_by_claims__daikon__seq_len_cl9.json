@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n0' is never executed?",
+    "Is the loop with condition 'i < n0' always executed?",
+    "Is it possible that the loop with condition 'i < n1' is never executed?",
+    "Is the loop with condition 'i < n1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n0 (line 3)' affect subsequent computations?",
+    "Is variable 'n1 (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'n0' remain in use at the end of function 'main'?",
+    "Does variable 'n2' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while( i < n2 ) {' be considered dead code?",
+    "Is this statement not dead: “i = 0;”?"
+  ]
+}

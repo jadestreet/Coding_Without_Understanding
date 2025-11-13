@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'insertQuotes' to reach function 'main'?",
+    "Can function 'main' eventually call function 'insertQuotes'?",
+    "Can function 'quotes' eventually call function 'insertQuotes'?",
+    "Is it impossible for function 'puts' to reach function 'quotes'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'k>end' is never executed?",
+    "Is the loop with condition 'k>end' always executed?",
+    "Is it possible that the loop with condition 'k > begin' is never executed?",
+    "Is the loop with condition 'k > begin' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k>end' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k > begin' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'begin (line 4)' affect subsequent computations?",
+    "Is variable 'end (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'end' remain in use at the end of function 'insertQuotes'?",
+    "Does variable 'k' remain in use at the end of function 'insertQuotes'?"
+  ],
+  "dead_code": [
+    "Can the statement 'n+=2;' be considered dead code?",
+    "Is this statement not dead: “if(str[i]!=' ') {”?"
+  ]
+}

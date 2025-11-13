@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'countingSort' to reach function 'square'?",
+    "Is it impossible for function 'printf' to reach function 'countingSort'?",
+    "Is there a call path from function 'main' to function 'memset'?",
+    "Can function 'countingSort' eventually call function 'printArray'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?",
+    "Can the loop with condition 'i<MAX' be skipped entirely?",
+    "Is the loop with condition 'i<MAX' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<MAX' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 8)' used after its definition?",
+    "Does the value assigned to 'size (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 10)' live at the end of function 'printArray'?",
+    "Does variable 'size (line 8)' remain in use at the end of function 'printArray'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void countingSort(int *a,int size)' be considered dead code?",
+    "Can the program actually reach the statement: “int count[MAX];”?"
+  ]
+}

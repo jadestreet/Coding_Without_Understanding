@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'free' to reach function 'printf'?",
+    "Is it impossible for function 'list_print' to reach function 'malloc'?",
+    "Can function 'list_delete' eventually call function 'free'?",
+    "Is there a call path from function 'list_insert' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'p' be skipped entirely?",
+    "Is the loop with condition 'p' always executed?",
+    "Is it possible that the loop with condition 'i > 0' is never executed?",
+    "Is the loop with condition 'i > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'val (line 7)' affect subsequent computations?",
+    "Is variable 'pos (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'pos' live at the end of function 'list_insert'?",
+    "Is variable 'val (line 7)' live at the end of function 'list_insert'?"
+  ],
+  "dead_code": [
+    "Can the statement 'list_t* list_insert(list_t* pos, int val) {' be considered dead code?",
+    "Is this statement not dead: “list_t* p = head;”?"
+  ]
+}

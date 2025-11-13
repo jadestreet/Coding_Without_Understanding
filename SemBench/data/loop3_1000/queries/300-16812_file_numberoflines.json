@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fclose' to reach function 'find_count_of_words'?",
+    "Is it impossible for function 'fopen' to reach function 'txt_file_wc'?",
+    "Is there a call path from function 'txt_file_wc' to function 'find_count_of_words'?",
+    "Is there a call path from function 'main' to function 'is_non_blank_line'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'str[i] != '\\0'' is never executed?",
+    "Is the loop with condition 'str[i] != '\\0'' always executed?",
+    "Is it possible that the loop with condition 'str[i] != '\\0'' is never executed?",
+    "Is the loop with condition 'str[i] != '\\0'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'str[i] != '\\0'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'str[i] != '\\0'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 4)' remain in use at the end of function 'is_non_blank_line'?",
+    "Does variable 'non_blank_chars' remain in use at the end of function 'is_non_blank_line'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fp = fopen(argv[1], \"r\");' unreachable?",
+    "Can the program actually reach the statement: “return times;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'multiply'?",
+    "Is it impossible for function 'subtract' to reach function 'fprintf'?",
+    "Can function 'perform_operation' eventually call function 'fprintf'?",
+    "Can function 'perform_operation' eventually call function 'free'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < number_of_operator_functions' be skipped entirely?",
+    "Is the loop with condition 'i < number_of_operator_functions' always executed?",
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < number_of_operator_functions' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'result (line 22)' used after its definition?",
+    "Is variable 'a (line 38)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 38)' remain in use at the end of function 'add'?",
+    "Does variable 'a (line 38)' remain in use at the end of function 'add'?"
+  ],
+  "dead_code": [
+    "Is the statement 'break;' unreachable?",
+    "Is this statement not dead: “{\"*\", multiply},”?"
+  ]
+}

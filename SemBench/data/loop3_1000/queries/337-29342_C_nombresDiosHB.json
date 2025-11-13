@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'element'?",
+    "Is it impossible for function 'element' to reach function 'clock'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'element' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'l<POS-1' be skipped entirely?",
+    "Is the loop with condition 'l<POS-1' always executed?",
+    "Is it possible that the loop with condition '(numOK) && (k<POS-MAXBLOCK)' is never executed?",
+    "Is the loop with condition '(numOK) && (k<POS-MAXBLOCK)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'l<POS-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(numOK) && (k<POS-MAXBLOCK)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'sum (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'sumOK (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'k' live at the end of function 'element'?",
+    "Is variable 'i' live at the end of function 'element'?"
+  ],
+  "dead_code": [
+    "Is the statement 'i++;' unreachable?",
+    "Can the program actually reach the statement: “if(numOK)”?"
+  ]
+}

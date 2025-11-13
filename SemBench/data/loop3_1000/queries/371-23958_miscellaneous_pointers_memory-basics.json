@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'realloc' to reach function 'printf'?",
+    "Is it impossible for function 'free' to reach function 'realloc'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Can function 'main' eventually call function 'free'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 3' be skipped entirely?",
+    "Is the loop with condition 'i < 3' always executed?",
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'int_pointer (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'int_pointer (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'int_array' live at the end of function 'main'?",
+    "Is variable 'int_pointer' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int_array = calloc(5, sizeof(int));' be considered dead code?",
+    "Is this statement not dead: “printf(\"\\nAnother way of printing the array: \\n\");”?"
+  ]
+}

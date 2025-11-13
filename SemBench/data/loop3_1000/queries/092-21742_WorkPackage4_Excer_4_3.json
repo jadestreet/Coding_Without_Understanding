@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'rand' to reach function 'time'?",
+    "Is it impossible for function 'clock' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printport'?",
+    "Can function 'main' eventually call function 'clock'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i< 10000000' is never executed?",
+    "Is the loop with condition 'i< 10000000' always executed?",
+    "Can the loop with condition 'j > -1' be skipped entirely?",
+    "Is the loop with condition 'j > -1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i< 10000000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j > -1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's (line 9)' affect subsequent computations?",
+    "Is variable 'nr (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'k (line 14)' live at the end of function 'main'?",
+    "Is variable 'port' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'k = inport<<1;' be considered dead code?",
+    "Can the program actually reach the statement: “printport( port);”?"
+  ]
+}

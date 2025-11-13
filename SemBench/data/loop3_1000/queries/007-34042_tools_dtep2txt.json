@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Is it impossible for function 'fopen' to reach function 'fprintf'?",
+    "Is there a call path from function 'main' to function 'fread'?",
+    "Is there a call path from function 'main' to function 'fopen'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'jlev < NLEV' be skipped entirely?",
+    "Is the loop with condition 'jlev < NLEV' always executed?",
+    "Is it possible that the loop with condition 'i < 9' is never executed?",
+    "Is the loop with condition 'i < 9' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'jlev < NLEV' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 9' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'DimX (line 4)' used after its definition?",
+    "Does the value assigned to 'DimY (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'jlev' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'DimT = DimX * DimY;' be considered dead code?",
+    "Is this statement not dead: “for (jlev = 0 ; jlev < NLEV ; ++jlev)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'free' to reach function 'search_hash_table'?",
+    "Is it impossible for function 'search_hash_table' to reach function 'search_hash_table_for'?",
+    "Can function 'main' eventually call function 'destroy_hash_table'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'void create_hash_table (hash_table ** t, const unsigned int size) {\n\tint i = 0' be skipped entirely?",
+    "Is the loop with condition 'void create_hash_table (hash_table ** t, const unsigned int size) {\n\tint i = 0' always executed?",
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'void create_hash_table (hash_table ** t, const unsigned int size) {\n\tint i = 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'size (line 5)' affect subsequent computations?",
+    "Does the value assigned to 't (line 12)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 't (line 12)' live at the end of function 'create_hash_table'?",
+    "Does variable 'i (line 18)' remain in use at the end of function 'create_hash_table'?"
+  ],
+  "dead_code": [
+    "Is the statement 'insert(table_1, 89);' unreachable?",
+    "Can the program actually reach the statement: “(t->slots)[slot_number] = malloc(sizeof(list_node));”?"
+  ]
+}

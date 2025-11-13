@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'swap' to reach function 'heapify'?",
+    "Is it impossible for function 'rand' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'heapify'?",
+    "Is there a call path from function 'print' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i >= 0' is never executed?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Is it possible that the loop with condition 'i >= 0' is never executed?",
+    "Is the loop with condition 'i >= 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'swap'?",
+    "Is variable 'c' live at the end of function 'swap'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int c = *a;' unreachable?",
+    "Is this statement not dead: “for (int i = tam/2-1; i >= 0; i--)”?"
+  ]
+}

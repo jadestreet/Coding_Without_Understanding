@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'merge' to reach function 'diziYaz'?",
+    "Is it impossible for function 'main' to reach function 'diziYaz'?",
+    "Is there a call path from function 'main' to function 'difftime'?",
+    "Can function 'mergeSort' eventually call function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'l < boyut' is never executed?",
+    "Is the loop with condition 'l < boyut' always executed?",
+    "Can the loop with condition 'i < boyut' be skipped entirely?",
+    "Is the loop with condition 'i < boyut' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'l < boyut' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < boyut' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'boyut (line 7)' used after its definition?",
+    "Is variable 'tur (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'l' live at the end of function 'diziYaz'?",
+    "Is variable 'dizi (line 10)' live at the end of function 'diziYaz'?"
+  ],
+  "dead_code": [
+    "Is the statement 'toplam_karsilastirma++;' unreachable?",
+    "Is this statement not dead: “while (j < sub2)”?"
+  ]
+}

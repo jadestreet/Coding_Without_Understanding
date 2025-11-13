@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'putchar'?",
+    "Is it impossible for function 'putchar' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*p' is never executed?",
+    "Is the loop with condition '*p' always executed?",
+    "Is it possible that the loop with condition '!((x >> --i' is never executed?",
+    "Is the loop with condition '!((x >> --i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '!((x >> --i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'argv (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'main'?",
+    "Is variable 'p' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (char *p = argv[1]; *p; p++) {' unreachable?",
+    "Can the program actually reach the statement: “while (!((x >> --i) & 1));”?"
+  ]
+}

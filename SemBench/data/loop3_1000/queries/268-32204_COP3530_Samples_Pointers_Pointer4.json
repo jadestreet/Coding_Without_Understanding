@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'getNums' to reach function 'main'?",
+    "Is it impossible for function 'getNums2' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Can function 'main' eventually call function 'getNums2'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<4' be skipped entirely?",
+    "Is the loop with condition 'i<4' always executed?",
+    "Can the loop with condition 'i<4' be skipped entirely?",
+    "Is the loop with condition 'i<4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'numbers (line 2)' used after its definition?",
+    "Does the value assigned to 'numbers (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 6)' remain in use at the end of function 'main'?",
+    "Is variable 'nums' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void getNums(int numbers[])' be considered dead code?",
+    "Is this statement not dead: “int *ptr;”?"
+  ]
+}

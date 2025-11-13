@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'det_by_minor' to reach function 'fabs'?",
+    "Is it impossible for function 'time_det_by_minor' to reach function 'main'?",
+    "Is there a call path from function 'time_det_by_minor' to function '__assert_fail'?",
+    "Is there a call path from function 'main' to function 'fabs'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'j < n' be skipped entirely?",
+    "Is the loop with condition 'j < n' always executed?",
+    "Can the loop with condition 'i < m' be skipped entirely?",
+    "Is the loop with condition 'i < m' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < m' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 12)' used after its definition?",
+    "Is variable 'm (line 13)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'm (line 13)' live at the end of function 'det_of_minor'?",
+    "Does variable 'c' remain in use at the end of function 'det_of_minor'?"
+  ],
+  "dead_code": [
+    "Is the statement '{\tbool flag;' unreachable?",
+    "Is this statement not dead: “repeat_det_by_minor(repeat, size);”?"
+  ]
+}

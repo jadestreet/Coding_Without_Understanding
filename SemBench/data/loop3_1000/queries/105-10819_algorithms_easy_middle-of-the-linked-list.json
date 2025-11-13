@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'middleNode'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'newNode' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'cur->next != NULL && cur->next->next != NULL' be skipped entirely?",
+    "Is the loop with condition 'cur->next != NULL && cur->next->next != NULL' always executed?",
+    "Is it possible that the loop with condition 'l2 != NULL' is never executed?",
+    "Is the loop with condition 'l2 != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'cur->next != NULL && cur->next->next != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'l2 != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'val (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'next (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'node' remain in use at the end of function 'newNode'?",
+    "Does variable 'val' remain in use at the end of function 'newNode'?"
+  ],
+  "dead_code": [
+    "Is the statement 'l1 = newNode(1, newNode(2, newNode(3, newNode(4, newNode(5, newNode(6, NULL))))));' unreachable?",
+    "Can the program actually reach the statement: “l1 = newNode(1, newNode(2, newNode(3, newNode(4, newNode(5, NULL)))));”?"
+  ]
+}

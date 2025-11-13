@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sp' to reach function 'd'?",
+    "Is it impossible for function 'gr' to reach function 'sa'?",
+    "Is there a call path from function 'main' to function 'realloc'?",
+    "Can function 'main' eventually call function 'gr'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' be skipped entirely?",
+    "Is the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' always executed?",
+    "Can the loop with condition 'j<w' be skipped entirely?",
+    "Is the loop with condition 'j<w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'h (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'h (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'd'?",
+    "Is variable 'w' live at the end of function 'd'?"
+  ],
+  "dead_code": [
+    "Is the statement 'gw(9,0,gr(9,0)+1);' unreachable?",
+    "Can the program actually reach the statement: “int64 sp(){if(!y)return 0;return s[--y];}”?"
+  ]
+}

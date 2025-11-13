@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'remove_by_value' to reach function 'malloc'?",
+    "Is it impossible for function 'pop' to reach function 'malloc'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'push'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'current != NULL' be skipped entirely?",
+    "Is the loop with condition 'current != NULL' always executed?",
+    "Can the loop with condition 'current != NULL' be skipped entirely?",
+    "Is the loop with condition 'current != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'node (line 3)' used after its definition?",
+    "Is variable 'val (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'node' live at the end of function 'make_node'?",
+    "Does variable 'val (line 4)' remain in use at the end of function 'make_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"%d \", current->val);' unreachable?",
+    "Can the program actually reach the statement: “*list = previous;”?"
+  ]
+}

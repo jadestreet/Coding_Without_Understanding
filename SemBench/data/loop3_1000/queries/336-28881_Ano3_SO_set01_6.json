@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'numberOfMonthsBetween' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'numberOfMonthsBetween'?",
+    "Is it impossible for function 'printf' to reach function 'numberOfMonthsBetween'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'Index < arrayCount(Months)' is never executed?",
+    "Is the loop with condition 'Index < arrayCount(Months)' always executed?",
+    "Is it possible that the loop with condition 'Index < arrayCount(Months)' is never executed?",
+    "Is the loop with condition 'Index < arrayCount(Months)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'Index < arrayCount(Months)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'Index < arrayCount(Months)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'Months (line 5)' used after its definition?",
+    "Does the value assigned to 'Month1 (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'Month2' live at the end of function 'numberOfMonthsBetween'?",
+    "Is variable 'Month1' live at the end of function 'numberOfMonthsBetween'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if(!FirstIs1 && strncasecmp(Month1, Months[Index], strlen(Month1)) == 0) {' be considered dead code?",
+    "Is this statement not dead: “FirstIs1 = 0;”?"
+  ]
+}

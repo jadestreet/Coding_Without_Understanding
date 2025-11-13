@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'removeBegin' to reach function 'malloc'?",
+    "Is it impossible for function 'removeBegin' to reach function 'insertBegin'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is there a call path from function 'freeList' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 't->next!=NULL' is never executed?",
+    "Is the loop with condition 't->next!=NULL' always executed?",
+    "Can the loop with condition 't !=NULL' be skipped entirely?",
+    "Is the loop with condition 't !=NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 't->next!=NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 't !=NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'value (line 4)' used after its definition?",
+    "Is variable 'n (line 13)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'n' remain in use at the end of function 'freeNode'?",
+    "Does variable 't (line 17)' remain in use at the end of function 'freeList'?"
+  ],
+  "dead_code": [
+    "Can the statement 'link insertEnd(link, int);' be considered dead code?",
+    "Is this statement not dead: “res->next=head;”?"
+  ]
+}

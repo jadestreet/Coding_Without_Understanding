@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'realpath' to reach function 'strcat'?",
+    "Is it impossible for function 'realpath' to reach function 'strcpy'?",
+    "Is there a call path from function 'main' to function 'parent_dir'?",
+    "Is there a call path from function 'main' to function 'realpath'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < parent_index' be skipped entirely?",
+    "Is the loop with condition 'i < parent_index' always executed?",
+    "Is it possible that the loop with condition 'i < argc' is never executed?",
+    "Is the loop with condition 'i < argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < parent_index' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'parent_dir (line 5)' used after its definition?",
+    "Is variable 'path (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'parent_dir' remain in use at the end of function 'parent_dir'?",
+    "Is variable 'path_index' live at the end of function 'parent_dir'?"
+  ],
+  "dead_code": [
+    "Is the statement 'accum = malloc(accum_len + line_len);' unreachable?",
+    "Can the program actually reach the statement: “char *accum;”?"
+  ]
+}

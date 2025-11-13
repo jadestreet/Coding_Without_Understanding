@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'hash_hashable' eventually call function 'hash'?",
+    "Is it impossible for function 'hash_hashable' to reach function 'prepend'?",
+    "Is it impossible for function 'equal_int' to reach function 'hash'?",
+    "Can function 'main' eventually call function 'list_lookup'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'node != NULL' is never executed?",
+    "Is the loop with condition 'node != NULL' always executed?",
+    "Is it possible that the loop with condition 'i<n' is never executed?",
+    "Is the loop with condition 'i<n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'node != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'i (line 7)' used after its definition?",
+    "Is variable 's (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 11)' remain in use at the end of function 'make_int_value'?",
+    "Is variable 'value (line 13)' live at the end of function 'make_int_value'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return *(int *)ip == *(int *)jp;' unreachable?",
+    "Is this statement not dead: “void print_list(Node *node)”?"
+  ]
+}

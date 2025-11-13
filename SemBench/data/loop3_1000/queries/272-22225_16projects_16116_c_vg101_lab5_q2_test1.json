@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'five'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'five'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<5' is never executed?",
+    "Is the loop with condition 'i<5' always executed?",
+    "Is it possible that the loop with condition 'j<5' is never executed?",
+    "Is the loop with condition 'j<5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 6)' used after its definition?",
+    "Is variable 'op (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 9)' live at the end of function 'main'?",
+    "Is variable 'op (line 7)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'five(op);' unreachable?",
+    "Is this statement not dead: “printf(\"%11.2d|-%p-|  \",*(*((int **)op+i)+j),(*((int **)op+i)+j));”?"
+  ]
+}

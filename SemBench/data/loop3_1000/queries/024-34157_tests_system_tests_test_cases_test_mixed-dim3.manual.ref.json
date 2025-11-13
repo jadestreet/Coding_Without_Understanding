@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'free' to reach function 'dump'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'kernel' to reach function 'malloc'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'z < N-1' is never executed?",
+    "Is the loop with condition 'z < N-1' always executed?",
+    "Is it possible that the loop with condition 'y < M-1' is never executed?",
+    "Is the loop with condition 'y < M-1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'z < N-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y < M-1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 6)' used after its definition?",
+    "Does the value assigned to 'x (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'g2 (line 9)' remain in use at the end of function 'kernel'?",
+    "Is variable 'x' live at the end of function 'kernel'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i;' unreachable?",
+    "Can the program actually reach the statement: “return;”?"
+  ]
+}

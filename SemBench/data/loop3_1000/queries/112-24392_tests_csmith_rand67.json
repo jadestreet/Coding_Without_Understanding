@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'crc32_8bytes' to reach function 'step_hash'?",
+    "Is it impossible for function 'platform_main_begin' to reach function 'func_1'?",
+    "Is there a call path from function 'func_1' to function 'crc32_8bytes'?",
+    "Can function 'main' eventually call function 'crc32_8bytes'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 256' be skipped entirely?",
+    "Is the loop with condition 'i < 256' always executed?",
+    "Is it possible that the loop with condition 'j > 0' is never executed?",
+    "Is the loop with condition 'j > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'print_hash_value (line 2)' used after its definition?",
+    "Does the value assigned to 'crc32_tab (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 13)' remain in use at the end of function 'crc32_gentab'?",
+    "Is variable 'poly' live at the end of function 'crc32_gentab'?"
+  ],
+  "dead_code": [
+    "Is the statement 'extern int strcmp ( char *, char *);' unreachable?",
+    "Is this statement not dead: “crc32_8bytes (unsigned val)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'csmith_compute_hash' to reach function 'func_1'?",
+    "Is there a call path from function 'func_1' to function 'csmith_compute_hash'?",
+    "Is it impossible for function 'printf' to reach function 'crc32_gentab'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 256' be skipped entirely?",
+    "Is the loop with condition 'i < 256' always executed?",
+    "Is it possible that the loop with condition 'j > 0' is never executed?",
+    "Is the loop with condition 'j > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 256' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'print_hash_value (line 2)' used after its definition?",
+    "Does the value assigned to 'crc32_tab (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 13)' live at the end of function 'crc32_gentab'?",
+    "Is variable 'poly' live at the end of function 'crc32_gentab'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int *l_6 = &l_5[2];' unreachable?",
+    "Is this statement not dead: “void step_hash(int stmt_id)”?"
+  ]
+}

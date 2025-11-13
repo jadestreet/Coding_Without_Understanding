@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'deallocate' to reach function 'summary'?",
+    "Is it impossible for function 'generate' to reach function 'deallocate'?",
+    "Is there a call path from function 'generate' to function 'rand'?",
+    "Can function 'main' eventually call function 'contains'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'values (line 9)' used after its definition?",
+    "Does the value assigned to 'want (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'sptr' remain in use at the end of function 'allocate'?",
+    "Is variable 'x' live at the end of function 'generate'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if ( a < min ) min = a;' unreachable?",
+    "Is this statement not dead: “return 1;”?"
+  ]
+}

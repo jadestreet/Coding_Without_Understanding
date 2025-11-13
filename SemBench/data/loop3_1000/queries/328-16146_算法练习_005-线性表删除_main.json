@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'ListDelete'?",
+    "Is it impossible for function 'printf' to reach function 'ListDelete'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 15' is never executed?",
+    "Is the loop with condition 'i < 15' always executed?",
+    "Can the loop with condition 'i < newList.length' be skipped entirely?",
+    "Is the loop with condition 'i < newList.length' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 15' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < newList.length' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'L (line 8)' affect subsequent computations?",
+    "Is variable 'i (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'list' remain in use at the end of function 'main'?",
+    "Is variable 'location' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int length;' unreachable?",
+    "Is this statement not dead: “return 0;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'save_data'?",
+    "Is it impossible for function 'free_memory' to reach function 'phi'?",
+    "Can function 'main' eventually call function 'fprintf'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < K' is never executed?",
+    "Is the loop with condition 'i < K' always executed?",
+    "Is it possible that the loop with condition 'm < M' is never executed?",
+    "Is the loop with condition 'm < M' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < K' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'm < M' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'RESULT (line 3)' used after its definition?",
+    "Is variable 'RESULT (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'k (line 31)' remain in use at the end of function 'main'?",
+    "Is variable 'm (line 31)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void free_memory() {' unreachable?",
+    "Can the program actually reach the statement: “return x * x;”?"
+  ]
+}

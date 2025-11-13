@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'comparator' to reach function 'main'?",
+    "Is it impossible for function 'comparator' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 3)' affect subsequent computations?",
+    "Is variable 'b (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 's' remain in use at the end of function 'comparator'?",
+    "Is variable 'f' live at the end of function 'comparator'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(a[i] > a[j])' unreachable?",
+    "Can the program actually reach the statement: “for (int j = i+1; j < size; ++j)”?"
+  ]
+}

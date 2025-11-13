@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'expand' to reach function 'zeroout'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'zeroout'?",
+    "Is there a call path from function 'main' to function 'expand'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '(c = in[i++]' be skipped entirely?",
+    "Is the loop with condition '(c = in[i++]' always executed?",
+    "Can the loop with condition 'start < (end - 1' be skipped entirely?",
+    "Is the loop with condition 'start < (end - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '(c = in[i++]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'start < (end - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'in (line 2)' affect subsequent computations?",
+    "Is variable 'out (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'testout' live at the end of function 'main'?",
+    "Is variable 'end' live at the end of function 'expand'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while (start < (end - 1))' be considered dead code?",
+    "Is this statement not dead: “start = in[i - 2];”?"
+  ]
+}

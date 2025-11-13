@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'printf'?",
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'list_add'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Can function 't_fun' eventually call function 'list_add'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<N' be skipped entirely?",
+    "Is the loop with condition 'i<N' always executed?",
+    "Is it possible that the loop with condition 'j<N' is never executed?",
+    "Is the loop with condition 'j<N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'x (line 9)' affect subsequent computations?",
+    "Does the value assigned to 'p (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'new'?",
+    "Is variable 'p (line 10)' live at the end of function 'new'?"
+  ],
+  "dead_code": [
+    "Can the statement 'struct s *p = malloc(sizeof(struct s));' be considered dead code?",
+    "Can the program actually reach the statement: “#define N 10”?"
+  ]
+}

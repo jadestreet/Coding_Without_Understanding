@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'dpd2bcd'?",
+    "Is it impossible for function 'dpd2bcd' to reach function 'unpack12'?",
+    "Is it impossible for function 'unpack12' to reach function 'unpack10'?",
+    "Can function 'main' eventually call function 'unpack12'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 10' is never executed?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Is it possible that the loop with condition 'i < 12' is never executed?",
+    "Is the loop with condition 'i < 12' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 12' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'dest (line 3)' used after its definition?",
+    "Is variable 'src (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'src (line 3)' remain in use at the end of function 'unpack10'?",
+    "Does variable 'dest (line 3)' remain in use at the end of function 'unpack10'?"
+  ],
+  "dead_code": [
+    "Is the statement 'unsigned int i, j;' unreachable?",
+    "Is this statement not dead: “printf(\"%u\", dpd[j]);”?"
+  ]
+}

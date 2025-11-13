@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printArray' to reach function 'mergeTwoSortedWithoutExtracSpace2'?",
+    "Is there a call path from function 'main' to function 'mergeTwoSortedWithoutExtracSpace2'?",
+    "Is there a call path from function 'mergeTwoSortedWithoutExtracSpace' to function 'printf'?",
+    "Is it impossible for function 'mergeTwoSortedWithoutExtracSpace2' to reach function 'mergeTwoSortedWithoutExtracSpace'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Is it possible that the loop with condition 'k > i' is never executed?",
+    "Is the loop with condition 'k > i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k > i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'data (line 3)' used after its definition?",
+    "Is variable 'size (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 5)' remain in use at the end of function 'printArray'?",
+    "Does variable 'data (line 3)' remain in use at the end of function 'printArray'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int k;' unreachable?",
+    "Can the program actually reach the statement: “pdata[j - 1] = temp;”?"
+  ]
+}

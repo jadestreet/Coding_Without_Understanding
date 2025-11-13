@@ -1,0 +1,24 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'cnt < 100' be skipped entirely?",
+    "Is the loop with condition 'cnt < 100' always executed?",
+    "Is it possible that the loop with condition 'cnt < 100' is never executed?",
+    "Is the loop with condition 'cnt < 100' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'cnt < 100' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'cnt < 100' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'cnt (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'cnt (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'cnt' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '++cnt;' unreachable?",
+    "Can the program actually reach the statement: “while(cnt < 100) {”?"
+  ]
+}

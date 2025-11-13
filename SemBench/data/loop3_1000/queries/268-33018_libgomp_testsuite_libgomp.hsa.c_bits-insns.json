@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_popcount' to reach function 'main'?",
+    "Is it impossible for function '__builtin_ctz' to reach function '__builtin_abort'?",
+    "Is there a call path from function 'main' to function '__builtin_ctz'?",
+    "Can function 'main' eventually call function '__builtin_parity'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arguments (line 5)' affect subsequent computations?",
+    "Is variable 'clrsb (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'ref_ffs' live at the end of function 'main'?",
+    "Is variable 'ref_clz' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'clrsb[i] = __builtin_clrsb (arguments[i]);' unreachable?",
+    "Can the program actually reach the statement: “#pragma omp target map(from:clz, ctz, ffs, parity, popcount)”?"
+  ]
+}

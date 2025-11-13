@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'x' to reach function 'sprintf'?",
+    "Can function 'main' eventually call function 'X'?",
+    "Is it impossible for function 'fclose' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'fread'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'o<4' is never executed?",
+    "Is the loop with condition 'o<4' always executed?",
+    "Can the loop with condition 'o<256' be skipped entirely?",
+    "Is the loop with condition 'o<256' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'o<4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'o<256' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'd (line 2)' used after its definition?",
+    "Does the value assigned to 'b (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'P' live at the end of function 'main'?",
+    "Is variable 'p' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '\"\"\t\t\t\t\t\t\t\"Ww|\"\\' be considered dead code?",
+    "Can the program actually reach the statement: “I[256],\t\t\tn,y,a,r,u,k,o”?"
+  ]
+}

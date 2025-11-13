@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'matrix_pin_down'?",
+    "Is it impossible for function 'matrix_pin_down' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < X*Y' is never executed?",
+    "Is the loop with condition 'i < X*Y' always executed?",
+    "Is it possible that the loop with condition 'i < Y*Z' is never executed?",
+    "Is the loop with condition 'i < Y*Z' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < X*Y' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < Y*Z' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'A (line 10)' affect subsequent computations?",
+    "Is variable 'B (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'C (line 10)' remain in use at the end of function 'matrix_pin_down'?",
+    "Is variable 'B (line 10)' live at the end of function 'matrix_pin_down'?"
+  ],
+  "dead_code": [
+    "Is the statement '#define X 150' unreachable?",
+    "Is this statement not dead: “static  int B[Y*Z] ;”?"
+  ]
+}

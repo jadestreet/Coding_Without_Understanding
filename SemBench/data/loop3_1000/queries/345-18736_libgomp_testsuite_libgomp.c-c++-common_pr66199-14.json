@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'f3' to reach function 'f2'?",
+    "Can function 'main' eventually call function '__builtin_abort'?",
+    "Is it impossible for function 'f2' to reach function 'f3'?",
+    "Can function 'main' eventually call function 'f2'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'd < b' is never executed?",
+    "Is the loop with condition 'd < b' always executed?",
+    "Can the loop with condition 'd1 < b1' be skipped entirely?",
+    "Is the loop with condition 'd1 < b1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'd < b' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'd1 < b1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'u (line 1)' affect subsequent computations?",
+    "Is variable 'v (line 1)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'f2'?",
+    "Is variable 'c' live at the end of function 'f2'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (d2 = a2; d2 < b2; d2++)' be considered dead code?",
+    "Is this statement not dead: “long d1, d2;”?"
+  ]
+}

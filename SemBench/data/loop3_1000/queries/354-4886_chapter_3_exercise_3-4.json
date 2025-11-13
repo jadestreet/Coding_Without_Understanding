@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'shortreverse'?",
+    "Is it impossible for function 'printf' to reach function 'myitoa'?",
+    "Is there a call path from function 'shortreverse' to function 'strlen'?",
+    "Can function 'main' eventually call function 'shortreverse'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < j' be skipped entirely?",
+    "Is the loop with condition 'i < j' always executed?",
+    "Can the loop with condition '(n /= 10' be skipped entirely?",
+    "Is the loop with condition '(n /= 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < j' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(n /= 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 4)' used after its definition?",
+    "Does the value assigned to 's (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'string1' remain in use at the end of function 'main'?",
+    "Does variable 'number' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 's[i++] = n % 10 + '0';' be considered dead code?",
+    "Is this statement not dead: “if (n == INT_MIN)”?"
+  ]
+}

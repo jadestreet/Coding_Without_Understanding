@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'vector_pop_back'?",
+    "Is it impossible for function 'vector_copy' to reach function 'vector_init'?",
+    "Is there a call path from function 'vector_destroy' to function 'free'?",
+    "Is there a call path from function 'main' to function 'vector_destroy'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < vector_get_size(vector)' is never executed?",
+    "Is the loop with condition 'i < vector_get_size(vector)' always executed?",
+    "Is it possible that the loop with condition 'i < vector_get_size(vector)' is never executed?",
+    "Is the loop with condition 'i < vector_get_size(vector)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < vector_get_size(vector)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < vector_get_size(vector)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'index (line 5)' used after its definition?",
+    "Does the value assigned to 'index (line 11)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 20)' remain in use at the end of function 'main'?",
+    "Does variable 'vector' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void vector_destroy(struct vector_t* v){' unreachable?",
+    "Can the program actually reach the statement: “printf(\"%d \", vector_at(vector_to, i));”?"
+  ]
+}

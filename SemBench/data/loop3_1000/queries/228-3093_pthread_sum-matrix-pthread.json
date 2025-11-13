@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'function_pthread'?",
+    "Is there a call path from function 'main' to function 'generateMatrix'?",
+    "Is it impossible for function 'pthread_mutex_lock' to reach function 'printMatrix'?",
+    "Is there a call path from function 'allocateMatrix' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < end_row' is never executed?",
+    "Is the loop with condition 'i < end_row' always executed?",
+    "Can the loop with condition 'j < matrix_size' be skipped entirely?",
+    "Is the loop with condition 'j < matrix_size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < end_row' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < matrix_size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'A (line 5)' used after its definition?",
+    "Does the value assigned to 'sum (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'elapsed' live at the end of function 'main'?",
+    "Is variable 'p_threads (line 37)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void generateMatrix(int ** mat, int matrix_size)' unreachable?",
+    "Can the program actually reach the statement: “void * function_pthread (void * arg)”?"
+  ]
+}

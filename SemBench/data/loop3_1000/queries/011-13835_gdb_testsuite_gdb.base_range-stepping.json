@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'func1'?",
+    "Is it impossible for function 'func1' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'a < 15' is never executed?",
+    "Is the loop with condition 'a < 15' always executed?",
+    "Can the loop with condition 'a < 65535 && c' be skipped entirely?",
+    "Is the loop with condition 'a < 65535 && c' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'a < 15' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'a < 65535 && c' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 2)' affect subsequent computations?",
+    "Is variable 'b (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 2)' remain in use at the end of function 'func1'?",
+    "Does variable 'a (line 2)' remain in use at the end of function 'func1'?"
+  ],
+  "dead_code": [
+    "Is the statement 'a = b + c + d * e - a;\t\t\t\t\\' unreachable?",
+    "Can the program actually reach the statement: “e = 10 + func1 (a + b, c * d);”?"
+  ]
+}

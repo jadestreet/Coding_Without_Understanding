@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= 3' is never executed?",
+    "Is the loop with condition 'i <= 3' always executed?",
+    "Is it possible that the loop with condition 'j <= 2 - i' is never executed?",
+    "Is the loop with condition 'j <= 2 - i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j <= 2 - i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?",
+    "Is variable 'j (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Is variable 'j' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (k = 0; k <= 2 * i; k++)' unreachable?",
+    "Is this statement not dead: “for(i = 0; i <= 2; i++)”?"
+  ]
+}

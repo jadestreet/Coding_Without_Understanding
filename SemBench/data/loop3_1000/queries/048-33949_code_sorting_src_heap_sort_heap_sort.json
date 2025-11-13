@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'heapSort' to function 'swap'?",
+    "Is there a call path from function 'createAndBuildHeap' to function 'malloc'?",
+    "Is it impossible for function 'printArray' to reach function 'malloc'?",
+    "Is it impossible for function 'maxHeapify' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i >= 0' be skipped entirely?",
+    "Is the loop with condition 'i >= 0' always executed?",
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'size (line 5)' used after its definition?",
+    "Does the value assigned to 'array (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 't' live at the end of function 'swap'?",
+    "Is variable 'b' live at the end of function 'swap'?"
+  ],
+  "dead_code": [
+    "Is the statement 'swap(&maxHeap->array[largest], &maxHeap->array[idx]);' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'multiply' to reach function 'main'?",
+    "Is it impossible for function 'main' to reach function 'multiply'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<DIM' is never executed?",
+    "Is the loop with condition 'i<DIM' always executed?",
+    "Is it possible that the loop with condition 'j<DIM' is never executed?",
+    "Is the loop with condition 'j<DIM' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<DIM' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<DIM' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 4)' used after its definition?",
+    "Is variable 'b (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'multiply'?",
+    "Does variable 'k' remain in use at the end of function 'multiply'?"
+  ],
+  "dead_code": [
+    "Is the statement 'real sum = 0.0;' unreachable?",
+    "Is this statement not dead: “int main() {”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'min' to reach function 'calloc'?",
+    "Is it impossible for function 'free' to reach function 'abs'?",
+    "Is there a call path from function 'main' to function 'atoi'?",
+    "Can function 'read_instructions' eventually call function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < inslen' is never executed?",
+    "Is the loop with condition 'i < inslen' always executed?",
+    "Can the loop with condition 'i < santas' be skipped entirely?",
+    "Is the loop with condition 'i < santas' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < inslen' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < santas' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Is variable 'b (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 4)' live at the end of function 'max'?",
+    "Does variable 'a (line 4)' remain in use at the end of function 'max'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int rows = y_off + abs(y_hi) + 1;' unreachable?",
+    "Can the program actually reach the statement: “int *map = calloc((cols + 1) * (rows + 1), sizeof(int));”?"
+  ]
+}

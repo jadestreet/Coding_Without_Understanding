@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'k<=19' be skipped entirely?",
+    "Is the loop with condition 'k<=19' always executed?",
+    "Is it possible that the loop with condition 'k<=30000' is never executed?",
+    "Is the loop with condition 'k<=30000' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k<=19' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k<=30000' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i' affect subsequent computations?",
+    "Is variable 'k (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'do {' unreachable?",
+    "Is this statement not dead: “} while (k<=30000); }”?"
+  ]
+}

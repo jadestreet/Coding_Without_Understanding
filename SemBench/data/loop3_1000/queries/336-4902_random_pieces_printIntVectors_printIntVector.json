@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'vprintl'?",
+    "Is it impossible for function 'vprintl' to reach function 'main'?",
+    "Can function 'vprint' eventually call function 'printf'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= 10' be skipped entirely?",
+    "Is the loop with condition 'i <= 10' always executed?",
+    "Is it possible that the loop with condition 'i <= 10' is never executed?",
+    "Is the loop with condition 'i <= 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'v (line 3)' used after its definition?",
+    "Is variable 'size (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 8)' remain in use at the end of function 'main'?",
+    "Is variable 'a' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf (\"%i%s\", v[ i ], (i != size -1) ? \", \" : \"]\" );' be considered dead code?",
+    "Is this statement not dead: “void vprint (int *v, const size_t size)”?"
+  ]
+}

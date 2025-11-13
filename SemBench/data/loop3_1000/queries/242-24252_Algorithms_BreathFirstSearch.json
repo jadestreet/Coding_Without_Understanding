@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'clock' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is it impossible for function 'breathFirstSearch' to reach function 'main'?",
+    "Is there a call path from function 'breathFirstSearch' to function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < zoneCount' be skipped entirely?",
+    "Is the loop with condition 'i < zoneCount' always executed?",
+    "Is it possible that the loop with condition 'i < MAX_CONNECTIONS && ((next = graph[zone * MAX_CONNECTIONS + i]) != -1)' is never executed?",
+    "Is the loop with condition 'i < MAX_CONNECTIONS && ((next = graph[zone * MAX_CONNECTIONS + i]) != -1)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < zoneCount' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < MAX_CONNECTIONS && ((next = graph[zone * MAX_CONNECTIONS + i]) != -1)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'graph (line 7)' used after its definition?",
+    "Is variable 'zoneCount (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'endZone' live at the end of function 'breathFirstSearch'?",
+    "Does variable 'startZone' remain in use at the end of function 'breathFirstSearch'?"
+  ],
+  "dead_code": [
+    "Can the statement 'temp2 = (short*)malloc(zoneCount * sizeof(short));' be considered dead code?",
+    "Can the program actually reach the statement: “temp1[0] = zone;”?"
+  ]
+}

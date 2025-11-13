@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'remove_end'?",
+    "Is it impossible for function 'strcpy' to reach function 'init_list'?",
+    "Can function 'main' eventually call function 'remove_beginning'?",
+    "Can function 'insert_beginning' eventually call function 'strcpy'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'newLast->next->next != NULL' be skipped entirely?",
+    "Is the loop with condition 'newLast->next->next != NULL' always executed?",
+    "Is it possible that the loop with condition 'startN != NULL' is never executed?",
+    "Is the loop with condition 'startN != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'newLast->next->next != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'startN != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'string (line 3)' used after its definition?",
+    "Does the value assigned to 'key (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'list (line 17)' remain in use at the end of function 'init_list'?",
+    "Does variable 'key (line 7)' remain in use at the end of function 'insert_end'?"
+  ],
+  "dead_code": [
+    "Is the statement 'list->first = NULL;' unreachable?",
+    "Is this statement not dead: “list->first = newN;”?"
+  ]
+}

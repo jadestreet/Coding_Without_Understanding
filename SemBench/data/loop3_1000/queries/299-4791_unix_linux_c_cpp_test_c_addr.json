@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'puts' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'puts'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < strlen(str)' is never executed?",
+    "Is the loop with condition 'i < strlen(str)' always executed?",
+    "Can the loop with condition 'i < strlen(str)' be skipped entirely?",
+    "Is the loop with condition 'i < strlen(str)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < strlen(str)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < strlen(str)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'addr (line 5)' used after its definition?",
+    "Does the value assigned to 'ddr_start (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'addr' remain in use at the end of function 'main'?",
+    "Is variable 'len' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"the address of *array1[%i] = %#x\\n\", i, (unsigned int) (&array1[i]));' unreachable?",
+    "Can the program actually reach the statement: “printf(\"the str_addr = %#x\\n\", (unsigned int) str_addr);”?"
+  ]
+}

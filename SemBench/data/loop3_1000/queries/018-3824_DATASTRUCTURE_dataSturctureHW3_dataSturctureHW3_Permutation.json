@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'puts' to reach function 'perm2'?",
+    "Is it impossible for function 'swap' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'puts'?",
+    "Can function 'perm2' eventually call function 'swap'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'pos<=endId' is never executed?",
+    "Is the loop with condition 'pos<=endId' always executed?",
+    "Is it possible that the loop with condition 'pos<=endId' is never executed?",
+    "Is the loop with condition 'pos<=endId' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'pos<=endId' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'pos<=endId' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ptr1 (line 2)' affect subsequent computations?",
+    "Is variable 'ptr2 (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'list3' remain in use at the end of function 'main'?",
+    "Does variable 'size' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for(pos = 0; pos<=endId;pos++){' be considered dead code?",
+    "Is this statement not dead: “return 0;”?"
+  ]
+}

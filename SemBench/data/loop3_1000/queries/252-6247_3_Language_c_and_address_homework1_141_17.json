@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'memset'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'memset' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<3' be skipped entirely?",
+    "Is the loop with condition 'i<3' always executed?",
+    "Is it possible that the loop with condition 'ri<=3' is never executed?",
+    "Is the loop with condition 'ri<=3' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'ri<=3' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'g (line 6)' used after its definition?",
+    "Does the value assigned to 'i (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'rnum' remain in use at the end of function 'main'?",
+    "Does variable 'g' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(ki=1;ki<=3;ki++){' unreachable?",
+    "Can the program actually reach the statement: “if(cnt==2){”?"
+  ]
+}

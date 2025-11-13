@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'dequeue' to reach function 'enqueue'?",
+    "Is it impossible for function 'dequeue' to reach function 'malloc'?",
+    "Is there a call path from function 'main' to function 'free'?",
+    "Is there a call path from function 'dequeue' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<=3' is never executed?",
+    "Is the loop with condition 'i<=3' always executed?",
+    "Is it possible that the loop with condition 'j<=1' is never executed?",
+    "Is the loop with condition 'j<=1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<=1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'head (line 8)' affect subsequent computations?",
+    "Does the value assigned to 'tail (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'val (line 9)' remain in use at the end of function 'enqueue'?",
+    "Is variable 'val (line 9)' live at the end of function 'dequeue'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if(tail == NULL){' be considered dead code?",
+    "Can the program actually reach the statement: “int value;”?"
+  ]
+}

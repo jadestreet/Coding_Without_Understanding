@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sem_destroy' to reach function 'sem_init'?",
+    "Can function 'TaskCode' eventually call function 'sem_wait'?",
+    "Is it impossible for function 'sem_unlink' to reach function 'TaskCode'?",
+    "Is there a call path from function 'TaskCode' to function 'sem_post'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<100000' be skipped entirely?",
+    "Is the loop with condition 'i<100000' always executed?",
+    "Is it possible that the loop with condition 'i<NUM_THREADS' is never executed?",
+    "Is the loop with condition 'i<NUM_THREADS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<100000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUM_THREADS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 8)' used after its definition?",
+    "Does the value assigned to 'mutex (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 13)' remain in use at the end of function 'TaskCode'?",
+    "Does variable 'argument' remain in use at the end of function 'TaskCode'?"
+  ],
+  "dead_code": [
+    "Can the statement 'void *TaskCode(void *argument)' be considered dead code?",
+    "Can the program actually reach the statement: “tid = *((int *) argument);”?"
+  ]
+}

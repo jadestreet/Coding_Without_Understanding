@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'pass<size' be skipped entirely?",
+    "Is the loop with condition 'pass<size' always executed?",
+    "Is it possible that the loop with condition 'comp<size-pass' is never executed?",
+    "Is the loop with condition 'comp<size-pass' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'pass<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'comp<size-pass' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Is variable 'size (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'comp' remain in use at the end of function 'main'?",
+    "Is variable 'size' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'temp=a[comp];' unreachable?",
+    "Is this statement not dead: “printf(\"%d \\n\",a[pass]);”?"
+  ]
+}

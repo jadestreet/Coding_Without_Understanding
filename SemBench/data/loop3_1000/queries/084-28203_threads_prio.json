@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'pthread_mutex_init'?",
+    "Is it impossible for function 'pthread_attr_setinheritsched' to reach function 'medprio'?",
+    "Is it impossible for function 'pthread_attr_setschedparam' to reach function 'pthread_attr_init'?",
+    "Can function 'lowprio' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<40000000' is never executed?",
+    "Is the loop with condition 'i<40000000' always executed?",
+    "Can the loop with condition 'i<100' be skipped entirely?",
+    "Is the loop with condition 'i<100' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<40000000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<100' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'mutex (line 3)' used after its definition?",
+    "Does the value assigned to 'null (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 6)' live at the end of function 'lowprio'?",
+    "Does variable 'null (line 4)' remain in use at the end of function 'lowprio'?"
+  ],
+  "dead_code": [
+    "Can the statement 'i++;' be considered dead code?",
+    "Is this statement not dead: “pthread_mutex_unlock(&mutex);”?"
+  ]
+}

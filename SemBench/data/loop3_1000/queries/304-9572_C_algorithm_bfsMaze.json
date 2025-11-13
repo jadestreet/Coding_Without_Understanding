@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'noEdge' to reach function 'bfsOut'?",
+    "Is there a call path from function 'mazeGenerator' to function 'system'?",
+    "Is it impossible for function 'flash' to reach function 'printMaze'?",
+    "Can function 'mazeGenerator' eventually call function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < row' is never executed?",
+    "Is the loop with condition 'i < row' always executed?",
+    "Is it possible that the loop with condition 'j < col' is never executed?",
+    "Is the loop with condition 'j < col' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < row' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < col' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'maze (line 12)' used after its definition?",
+    "Is variable 'row (line 12)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'col (line 12)' live at the end of function 'main'?",
+    "Does variable 'row (line 12)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'save[point] = now;' unreachable?",
+    "Is this statement not dead: “maze[startRow*col+startCol] = '.';”?"
+  ]
+}

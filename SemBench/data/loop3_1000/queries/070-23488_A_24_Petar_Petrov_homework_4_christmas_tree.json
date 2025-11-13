@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'christmas_tree'?",
+    "Is there a call path from function 'main' to function 'christmas_tree'?",
+    "Is it impossible for function 'christmas_tree' to reach function 'main'?",
+    "Is there a call path from function 'christmas_tree' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'counter <= height' is never executed?",
+    "Is the loop with condition 'counter <= height' always executed?",
+    "Can the loop with condition 'space_counter <= (height - counter)' be skipped entirely?",
+    "Is the loop with condition 'space_counter <= (height - counter)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'counter <= height' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'space_counter <= (height - counter)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'height (line 2)' used after its definition?",
+    "Is variable 'counter (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'symbol' live at the end of function 'christmas_tree'?",
+    "Does variable 'print_counter' remain in use at the end of function 'christmas_tree'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(print_counter = 1; print_counter <= (counter + counter-1); print_counter++)' unreachable?",
+    "Is this statement not dead: “printf(\"\\n\");”?"
+  ]
+}

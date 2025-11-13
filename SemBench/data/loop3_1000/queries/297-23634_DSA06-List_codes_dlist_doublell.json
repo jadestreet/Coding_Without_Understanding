@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'NewNode' to reach function 'InsertDlistTail'?",
+    "Is it impossible for function 'InsertDlistAfter' to reach function 'NewNode'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 3' be skipped entirely?",
+    "Is the loop with condition 'i < 3' always executed?",
+    "Is it possible that the loop with condition 'i < 4' is never executed?",
+    "Is the loop with condition 'i < 4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 3' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'data (line 5)' affect subsequent computations?",
+    "Is variable 'data (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'new (line 12)' remain in use at the end of function 'NewNode'?",
+    "Does variable 'data (line 5)' remain in use at the end of function 'NewNode'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void DeleteDlistNode(dlist *l, dlnode *t) {' unreachable?",
+    "Can the program actually reach the statement: “return new;”?"
+  ]
+}

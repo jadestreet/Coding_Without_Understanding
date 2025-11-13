@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'rand' to reach function 'main'?",
+    "Is it impossible for function 'rand' to reach function 'malloc'?",
+    "Can function 'main' eventually call function 'rpermute'?",
+    "Is there a call path from function 'rpermute' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'k < n' be skipped entirely?",
+    "Is the loop with condition 'k < n' always executed?",
+    "Can the loop with condition 'k > 0' be skipped entirely?",
+    "Is the loop with condition 'k > 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k > 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 3)' used after its definition?",
+    "Is variable 'a (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'k (line 5)' remain in use at the end of function 'rpermute'?",
+    "Is variable 'a (line 4)' live at the end of function 'rpermute'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"\\n\");' be considered dead code?",
+    "Is this statement not dead: “printf(\"%6d   \", a[k]);”?"
+  ]
+}

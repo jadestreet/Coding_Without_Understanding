@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'createMemory'?",
+    "Can function 'freeMemory' eventually call function 'free'?",
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Is there a call path from function 'createMemory' to function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 4' is never executed?",
+    "Is the loop with condition 'i < 4' always executed?",
+    "Can the loop with condition 'k < 4' be skipped entirely?",
+    "Is the loop with condition 'k < 4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k < 4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ptr (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'argc' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'k' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return 0;' be considered dead code?",
+    "Is this statement not dead: “printf(\"VALUE: %d, %d: %d\\n\", i,k, myInt[i] [k]);”?"
+  ]
+}

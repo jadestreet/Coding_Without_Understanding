@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'findMinIndex' to reach function 'printArray'?",
+    "Is there a call path from function 'main' to function 'printArray'?",
+    "Is it impossible for function 'printArray' to reach function 'main'?",
+    "Can function 'permuteHelp' eventually call function 'swap'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'ind <= last' be skipped entirely?",
+    "Is the loop with condition 'ind <= last' always executed?",
+    "Is it possible that the loop with condition 'ind < length - 1' is never executed?",
+    "Is the loop with condition 'ind < length - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'ind <= last' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'ind < length - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'first (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'ind (line 6)' live at the end of function 'findIndex'?",
+    "Is variable 'arr (line 4)' live at the end of function 'findIndex'?"
+  ],
+  "dead_code": [
+    "Is the statement 'arr[ind] = ind + 1;' unreachable?",
+    "Can the program actually reach the statement: “permuteHelp(arr, ind + 1, num);”?"
+  ]
+}

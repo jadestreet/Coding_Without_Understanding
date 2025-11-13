@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'rand' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<10' is never executed?",
+    "Is the loop with condition 'i<10' always executed?",
+    "Can the loop with condition 'j<10' be skipped entirely?",
+    "Is the loop with condition 'j<10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'file (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 't' remain in use at the end of function 'main'?",
+    "Does variable 'rig' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (t=0;t<100;t++){' unreachable?",
+    "Can the program actually reach the statement: “cento[cas1+contatore]=2;”?"
+  ]
+}

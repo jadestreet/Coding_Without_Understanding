@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'a < 10000' is never executed?",
+    "Is the loop with condition 'a < 10000' always executed?",
+    "Can the loop with condition 'd * d <= a' be skipped entirely?",
+    "Is the loop with condition 'd * d <= a' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'a < 10000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'd * d <= a' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Is variable 'argv' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'main'?",
+    "Does variable 'argc' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'db += d;' be considered dead code?",
+    "Is this statement not dead: “for (d = 1; d * d <= a; d++)”?"
+  ]
+}

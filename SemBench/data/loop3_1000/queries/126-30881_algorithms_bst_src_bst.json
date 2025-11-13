@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'find_and_search_r'?",
+    "Is it impossible for function 'find_and_search_iterative' to reach function 'remove_link'?",
+    "Can function 'delete_bugado' eventually call function 'successor'?",
+    "Can function 'main' eventually call function 'insert'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'y && x == y->right' be skipped entirely?",
+    "Is the loop with condition 'y && x == y->right' always executed?",
+    "Can the loop with condition 'y && x == y->left' be skipped entirely?",
+    "Is the loop with condition 'y && x == y->left' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'y && x == y->right' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y && x == y->left' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'parent (line 6)' used after its definition?",
+    "Is variable 'value (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'self (line 18)' remain in use at the end of function 'initialize_tree'?",
+    "Is variable 'value' live at the end of function 'alloc_new_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'y->right = z->right;' unreachable?",
+    "Is this statement not dead: “LOG(\"leaf count is %d\\n\", leaf_number(tree->root));”?"
+  ]
+}

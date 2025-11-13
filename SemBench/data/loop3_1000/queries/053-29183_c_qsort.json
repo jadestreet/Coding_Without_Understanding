@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'qsort' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'qsort'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 5' be skipped entirely?",
+    "Is the loop with condition 'i < 5' always executed?",
+    "Is it possible that the loop with condition 'A[i]<=x && i<j' is never executed?",
+    "Is the loop with condition 'A[i]<=x && i<j' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 5' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'A[i]<=x && i<j' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'A (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'm (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 't' remain in use at the end of function 'qsort'?",
+    "Is variable 'x' live at the end of function 'qsort'?"
+  ],
+  "dead_code": [
+    "Can the statement 'qsort(A, i+1, n);' be considered dead code?",
+    "Is this statement not dead: “} while (i<j);”?"
+  ]
+}

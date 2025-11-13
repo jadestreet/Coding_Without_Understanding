@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'main'?",
+    "Can function 'fun' eventually call function 'malloc'?",
+    "Is it impossible for function 'printf' to reach function 'fun'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<10' be skipped entirely?",
+    "Is the loop with condition 'i<10' always executed?",
+    "Is it possible that the loop with condition '*a!=0' is never executed?",
+    "Is the loop with condition '*a!=0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*a!=0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 3)' used after its definition?",
+    "Is variable 'b (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 3)' live at the end of function 'fun'?",
+    "Is variable 'qa' live at the end of function 'fun'?"
+  ],
+  "dead_code": [
+    "Can the statement 'pb=qb=headb=malloc(sizeof(struct number));' be considered dead code?",
+    "Can the program actually reach the statement: “pa=malloc(sizeof(struct number));”?"
+  ]
+}

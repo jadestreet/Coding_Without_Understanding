@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'func_ref'?",
+    "Is it impossible for function 'func_ref' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'func_test'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'j' be skipped entirely?",
+    "Is the loop with condition 'j' always executed?",
+    "Is it possible that the loop with condition 'j > 0L' is never executed?",
+    "Is the loop with condition 'j > 0L' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j > 0L' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'from (line 4)' used after its definition?",
+    "Does the value assigned to 'i (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 6)' remain in use at the end of function 'func_ref'?",
+    "Does variable 'j (line 6)' remain in use at the end of function 'func_ref'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return --i;' be considered dead code?",
+    "Is this statement not dead: “for (i = 1L; j; ++i)”?"
+  ]
+}

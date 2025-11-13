@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'test_func' to reach function 'test_func2'?",
+    "Is it impossible for function 'printf' to reach function 'test_func2'?",
+    "Is there a call path from function 'main' to function 'test_func'?",
+    "Is there a call path from function 'main' to function 'test_func2'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 3)' affect subsequent computations?",
+    "Is variable 'correct_val (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 8)' remain in use at the end of function 'main'?",
+    "Does variable 'ret' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '#pragma acc data copy(a)' be considered dead code?",
+    "Is this statement not dead: “char results[4] = {0};”?"
+  ]
+}

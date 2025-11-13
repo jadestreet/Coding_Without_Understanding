@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'addQ' to reach function 'map'?",
+    "Is it impossible for function 'BFS' to reach function 'addRoute'?",
+    "Can function 'main' eventually call function 'push'?",
+    "Can function 'pop' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<26' is never executed?",
+    "Is the loop with condition 'i<26' always executed?",
+    "Can the loop with condition 'i<26' be skipped entirely?",
+    "Is the loop with condition 'i<26' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<26' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<26' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'visited (line 21)' used after its definition?",
+    "Is variable 'adjMat (line 22)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'destC' remain in use at the end of function 'main'?",
+    "Is variable 'srcC' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '#include<string.h>' unreachable?",
+    "Is this statement not dead: “void BFS();”?"
+  ]
+}

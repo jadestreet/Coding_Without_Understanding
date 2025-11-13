@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<TAM' be skipped entirely?",
+    "Is the loop with condition 'i<TAM' always executed?",
+    "Is it possible that the loop with condition 'i<TAM' is never executed?",
+    "Is the loop with condition 'i<TAM' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<TAM' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<TAM' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'lista (line 4)' used after its definition?",
+    "Does the value assigned to 'temp (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'lista[j+1]=temp;' unreachable?",
+    "Can the program actually reach the statement: “lista[j]=lista[j+1];”?"
+  ]
+}

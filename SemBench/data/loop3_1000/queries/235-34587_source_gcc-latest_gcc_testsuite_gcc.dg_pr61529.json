@@ -1,0 +1,22 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'c < 5' is never executed?",
+    "Is the loop with condition 'c < 5' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c < 5' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 1)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'e' remain in use at the end of function 'main'?",
+    "Does variable 'd' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'd = 0;' unreachable?",
+    "Is this statement not dead: “for (; a < 1; a++)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'usage' to function 'printf'?",
+    "Is it impossible for function 'usage' to reach function 'main'?",
+    "Is it impossible for function 'fprintf' to reach function 'usage'?",
+    "Can function 'parse_options' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'next_opt != -1' is never executed?",
+    "Is the loop with condition 'next_opt != -1' always executed?",
+    "Can the loop with condition 'optind < argc' be skipped entirely?",
+    "Is the loop with condition 'optind < argc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'next_opt != -1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'optind < argc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'appname (line 13)' used after its definition?",
+    "Does the value assigned to 'appname (line 21)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'appname' remain in use at the end of function 'usage'?",
+    "Does variable 'long_options' remain in use at the end of function 'parse_options'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"digits occur in two different argv-elements.\\n\");' be considered dead code?",
+    "Is this statement not dead: “case '1':”?"
+  ]
+}

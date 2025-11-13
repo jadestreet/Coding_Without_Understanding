@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'arraylist_remove' to reach function 'arraylist_insert'?",
+    "Is it impossible for function 'arraylist_insert' to reach function 'printf'?",
+    "Can function 'main' eventually call function 'arraylist_head'?",
+    "Can function 'main' eventually call function 'arraylist_cons'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'k > l->n_elems - i - 1' is never executed?",
+    "Is the loop with condition 'k > l->n_elems - i - 1' always executed?",
+    "Can the loop with condition 'k < l->n_elems' be skipped entirely?",
+    "Is the loop with condition 'k < l->n_elems' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k > l->n_elems - i - 1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k < l->n_elems' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'l (line 11)' used after its definition?",
+    "Does the value assigned to 'l (line 12)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'l (line 11)' remain in use at the end of function 'arraylist_new'?",
+    "Is variable 'l (line 15)' live at the end of function 'arraylist_cons'?"
+  ],
+  "dead_code": [
+    "Can the statement 'return l;' be considered dead code?",
+    "Can the program actually reach the statement: “l->n_elems = 0;”?"
+  ]
+}

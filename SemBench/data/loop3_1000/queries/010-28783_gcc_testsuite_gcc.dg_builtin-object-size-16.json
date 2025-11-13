@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'test_structs' to reach function 'main'?",
+    "Is it impossible for function '__builtin_abort' to reach function '__builtin_object_size'?",
+    "Is there a call path from function 'main' to function 'test_structs'?",
+    "Can function 'test_structs' eventually call function '__builtin_printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '0' is never executed?",
+    "Is the loop with condition '0' always executed?",
+    "Can the loop with condition '0' be skipped entirely?",
+    "Is the loop with condition '0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'nfails (line 1)' used after its definition?",
+    "Does the value assigned to 'nfails (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'ps0' remain in use at the end of function 'test_structs'?",
+    "Does variable 'psx' remain in use at the end of function 'test_structs'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (bos (obj, type)\t!= size (obj, expect))\t\t\t\t\\' unreachable?",
+    "Can the program actually reach the statement: “T (     0,  F1  (0),      0,       0,   a1 + 2);”?"
+  ]
+}

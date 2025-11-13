@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'insert' to reach function 'memset'?",
+    "Is it impossible for function 'is_subset' to reach function 'main'?",
+    "Can function 'main' eventually call function 'memset'?",
+    "Can function 'is_subset' eventually call function 'search'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<m' be skipped entirely?",
+    "Is the loop with condition 'i<m' always executed?",
+    "Can the loop with condition 'i<n' be skipped entirely?",
+    "Is the loop with condition 'i<n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<m' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'hashTable (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'key (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'key (line 7)' live at the end of function 'insert'?",
+    "Does variable 'probe (line 9)' remain in use at the end of function 'insert'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"B je podmnozina A (spravne)\\n\");' unreachable?",
+    "Can the program actually reach the statement: “return 0;”?"
+  ]
+}

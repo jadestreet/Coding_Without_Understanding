@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strncmp' to reach function 'main'?",
+    "Is it impossible for function 'sprintf' to reach function 'malloc'?",
+    "Can function 'main' eventually call function 'fprintf'?",
+    "Can function 'main' eventually call function 'strncmp'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 10' is never executed?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Is it possible that the loop with condition 'i < 10' is never executed?",
+    "Is the loop with condition 'i < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'list (line 18)' affect subsequent computations?",
+    "Is variable 'b_count (line 25)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'list' live at the end of function 'foo'?",
+    "Is variable 'i (line 27)' live at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Is the statement 'g_count++;' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

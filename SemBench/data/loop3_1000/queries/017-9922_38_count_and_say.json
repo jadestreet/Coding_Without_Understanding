@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'countAndSay' eventually call function 'malloc'?",
+    "Is it impossible for function 'printf' to reach function 'atoi'?",
+    "Is it impossible for function 'malloc' to reach function 'countAndSay'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= n' is never executed?",
+    "Is the loop with condition 'i <= n' always executed?",
+    "Is it possible that the loop with condition 'prev[j] && prev[j] == prev[j-1]' is never executed?",
+    "Is the loop with condition 'prev[j] && prev[j] == prev[j-1]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'prev[j] && prev[j] == prev[j-1]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'res (line 3)' used after its definition?",
+    "Does the value assigned to 'p (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'c (line 5)' remain in use at the end of function 'add_one'?",
+    "Is variable 'k' live at the end of function 'countAndSay'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if ((p + 1) >= maxp) {' be considered dead code?",
+    "Can the program actually reach the statement: “static int p, maxp;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_join' to reach function 'printf'?",
+    "Is it impossible for function 'hello_world' to reach function 'pthread_join'?",
+    "Is there a call path from function 'hello_world' to function 'printf'?",
+    "Can function 'main' eventually call function 'pthread_join'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 2' be skipped entirely?",
+    "Is the loop with condition 'i < 2' always executed?",
+    "Can the loop with condition 'i < NUM_THREADS' be skipped entirely?",
+    "Is the loop with condition 'i < NUM_THREADS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < NUM_THREADS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'arg (line 4)' used after its definition?",
+    "Is variable 'thread_id (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'hello_world'?",
+    "Is variable 'thread_id' live at the end of function 'hello_world'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"Hello World from thread %ld\\n\", thread_id);' unreachable?",
+    "Is this statement not dead: “pthread_t thread_list[NUM_THREADS];”?"
+  ]
+}

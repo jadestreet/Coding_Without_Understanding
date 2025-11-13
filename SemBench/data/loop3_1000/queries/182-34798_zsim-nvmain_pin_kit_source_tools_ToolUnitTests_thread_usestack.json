@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'compar' to reach function 'random'?",
+    "Is it impossible for function 'random' to reach function 'thread'?",
+    "Is there a call path from function 'main' to function 'pthread_join'?",
+    "Is there a call path from function 'main' to function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < nelem/2' be skipped entirely?",
+    "Is the loop with condition 'i < nelem/2' always executed?",
+    "Is it possible that the loop with condition 'i < nelem' is never executed?",
+    "Is the loop with condition 'i < nelem' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < nelem/2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < nelem' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'total_compares (line 9)' used after its definition?",
+    "Does the value assigned to 'p (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'q' remain in use at the end of function 'compare_int'?",
+    "Is variable 'pi' live at the end of function 'compare_int'?"
+  ],
+  "dead_code": [
+    "Is the statement 'array[i] = left[il++];' unreachable?",
+    "Is this statement not dead: “void* thread(void *dummy)”?"
+  ]
+}

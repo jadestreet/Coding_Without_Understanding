@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pop' to reach function 'make_node'?",
+    "Is it impossible for function 'reverse' to reach function 'make_something'?",
+    "Is there a call path from function 'push' to function 'make_node'?",
+    "Can function 'insert_by_index' eventually call function 'push'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<index-1' is never executed?",
+    "Is the loop with condition 'i<index-1' always executed?",
+    "Can the loop with condition 'current != NULL' be skipped entirely?",
+    "Is the loop with condition 'current != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<index-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'node (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'val (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'node (line 4)' remain in use at the end of function 'make_node'?",
+    "Is variable 'val (line 5)' live at the end of function 'make_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'Node *node2 = make_node(2, NULL);' unreachable?",
+    "Can the program actually reach the statement: “if (index == 0) {”?"
+  ]
+}

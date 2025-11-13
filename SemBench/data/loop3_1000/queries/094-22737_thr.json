@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'free'?",
+    "Is it impossible for function 'malloc' to reach function 'find'?",
+    "Is it impossible for function 'printf' to reach function 'pthread_create'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'line = 0, -1 != getline(&line, &len, p' is never executed?",
+    "Is the loop with condition 'line = 0, -1 != getline(&line, &len, p' always executed?",
+    "Is it possible that the loop with condition 'lock(&TT.q' is never executed?",
+    "Is the loop with condition 'lock(&TT.q' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'line = 0, -1 != getline(&line, &len, p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'lock(&TT.q' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'line (line 8)' used after its definition?",
+    "Is variable 'TT (line 11)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'line' live at the end of function 'find'?",
+    "Does variable 'lines (line 13)' remain in use at the end of function 'find'?"
+  ],
+  "dead_code": [
+    "Can the statement 'char done;' be considered dead code?",
+    "Is this statement not dead: “lock(&TT.q);”?"
+  ]
+}

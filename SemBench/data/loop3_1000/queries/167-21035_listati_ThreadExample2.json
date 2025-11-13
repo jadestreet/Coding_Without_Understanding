@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'pthread_mutex_destroy' to reach function 'dotprod'?",
+    "Is it impossible for function 'free' to reach function 'pthread_mutex_lock'?",
+    "Is there a call path from function 'main' to function 'pthread_join'?",
+    "Can function 'dotprod' eventually call function 'pthread_mutex_unlock'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < end' is never executed?",
+    "Is the loop with condition 'i < end' always executed?",
+    "Can the loop with condition 'i<VECLEN*NUMTHREADS' be skipped entirely?",
+    "Is the loop with condition 'i<VECLEN*NUMTHREADS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < end' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<VECLEN*NUMTHREADS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'dotstr (line 12)' used after its definition?",
+    "Is variable 'callThd (line 13)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'end' live at the end of function 'dotprod'?",
+    "Does variable 'i (line 16)' remain in use at the end of function 'dotprod'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int status;' unreachable?",
+    "Can the program actually reach the statement: “pthread_mutex_lock (&mutexsum);”?"
+  ]
+}

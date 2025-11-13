@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'reconstructMatrix' eventually call function 'malloc'?",
+    "Is it impossible for function 'memset' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < colsumSize' be skipped entirely?",
+    "Is the loop with condition 'i < colsumSize' always executed?",
+    "Can the loop with condition 'j < colsumSize' be skipped entirely?",
+    "Is the loop with condition 'j < colsumSize' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < colsumSize' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < colsumSize' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'upper (line 4)' affect subsequent computations?",
+    "Is variable 'lower (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'returnColumnSizes (line 4)' remain in use at the end of function 'reconstructMatrix'?",
+    "Is variable 'lower (line 4)' live at the end of function 'reconstructMatrix'?"
+  ],
+  "dead_code": [
+    "Can the statement 'memset(arr[1], 0, sizeof(int)  * colsumSize);' be considered dead code?",
+    "Is this statement not dead: “arr[1][i] = 2;”?"
+  ]
+}

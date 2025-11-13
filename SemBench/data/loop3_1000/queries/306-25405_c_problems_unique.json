@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'brute_force' to reach function 'sort'?",
+    "Is it impossible for function 'debug_execution' to reach function 'brute_force'?",
+    "Can function 'hashmap' eventually call function 'memset'?",
+    "Can function 'debug_execution' eventually call function 'clock'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '0 != string[i]' is never executed?",
+    "Is the loop with condition '0 != string[i]' always executed?",
+    "Is it possible that the loop with condition '0 != string[j]' is never executed?",
+    "Is the loop with condition '0 != string[j]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '0 != string[i]' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '0 != string[j]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'string (line 5)' affect subsequent computations?",
+    "Is variable 'string (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'brute_force'?",
+    "Does variable 'string (line 5)' remain in use at the end of function 'brute_force'?"
+  ],
+  "dead_code": [
+    "Is the statement 'hashmap[index] = 1;' unreachable?",
+    "Can the program actually reach the statement: “return (*(char *)a - *(char *)b);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'merge_sort'?",
+    "Is it impossible for function 'merge' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'merge'?",
+    "Is it impossible for function 'printf' to reach function 'merge'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n1' is never executed?",
+    "Is the loop with condition 'i < n1' always executed?",
+    "Can the loop with condition 'i < n2' be skipped entirely?",
+    "Is the loop with condition 'i < n2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'A (line 2)' affect subsequent computations?",
+    "Is variable 'p (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'q (line 2)' live at the end of function 'merge'?",
+    "Does variable 'right' remain in use at the end of function 'merge'?"
+  ],
+  "dead_code": [
+    "Can the statement 'right[i] = A[q + i + 1];' be considered dead code?",
+    "Can the program actually reach the statement: “int i = 0;”?"
+  ]
+}

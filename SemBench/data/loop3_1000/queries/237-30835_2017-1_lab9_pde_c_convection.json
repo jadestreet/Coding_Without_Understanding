@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'print_u'?",
+    "Is it impossible for function 'copy' to reach function 'malloc'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is there a call path from function 'main' to function 'copy'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<n_t' is never executed?",
+    "Is the loop with condition 'i<n_t' always executed?",
+    "Can the loop with condition 'i<n_points' be skipped entirely?",
+    "Is the loop with condition 'i<n_points' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<n_t' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<n_points' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'u (line 4)' used after its definition?",
+    "Is variable 'n_points (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'u_present (line 6)' remain in use at the end of function 'main'?",
+    "Is variable 'i (line 19)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int n_x = 1000;' be considered dead code?",
+    "Can the program actually reach the statement: “void initial_condition(double *u, int n_points, double delta_x);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'christmastree'?",
+    "Is there a call path from function 'main' to function 'christmastree'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<=height' be skipped entirely?",
+    "Is the loop with condition 'i<=height' always executed?",
+    "Can the loop with condition 'k>0' be skipped entirely?",
+    "Is the loop with condition 'k>0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=height' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k>0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'height (line 2)' used after its definition?",
+    "Is variable 'i (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'stars' live at the end of function 'christmastree'?",
+    "Is variable 'k' live at the end of function 'christmastree'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int main()' unreachable?",
+    "Can the program actually reach the statement: “printf(\"\\n\");”?"
+  ]
+}

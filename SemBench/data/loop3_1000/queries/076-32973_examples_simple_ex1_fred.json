@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'debug_puts' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'debug_puts'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '*c' be skipped entirely?",
+    "Is the loop with condition '*c' always executed?",
+    "Is it possible that the loop with condition '(in_char = special_input_port' is never executed?",
+    "Is the loop with condition '(in_char = special_input_port' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*c' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(in_char = special_input_port' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'str (line 3)' used after its definition?",
+    "Does the value assigned to 'c (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'c' remain in use at the end of function 'debug_puts'?",
+    "Does variable 'str' remain in use at the end of function 'debug_puts'?"
+  ],
+  "dead_code": [
+    "Is the statement 'special_output_port = '\\n';' unreachable?",
+    "Can the program actually reach the statement: “special_output_port = *c;”?"
+  ]
+}

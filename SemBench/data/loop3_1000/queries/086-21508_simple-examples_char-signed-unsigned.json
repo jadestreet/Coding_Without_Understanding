@@ -1,0 +1,20 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Is variable 'signedH (line 16)' used after its definition?",
+    "Is variable 'unsignedH (line 17)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'signedTwoHund' remain in use at the end of function 'main'?",
+    "Is variable 'unsignedH' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'char plainH = 'H';' be considered dead code?",
+    "Is this statement not dead: “else”?"
+  ]
+}

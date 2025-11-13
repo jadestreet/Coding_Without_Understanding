@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'print_str' to reach function 'stringify_int'?",
+    "Is it impossible for function '__builtin_div' to reach function 'stringify_hex'?",
+    "Is there a call path from function 'main' to function 'print_int'?",
+    "Is there a call path from function 'main' to function 'print_str'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '' be skipped entirely?",
+    "Is the loop with condition '' always executed?",
+    "Can the loop with condition '' be skipped entirely?",
+    "Is the loop with condition '' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'q' remain in use at the end of function 'my_div'?",
+    "Does variable 'b (line 4)' remain in use at the end of function 'my_div'?"
+  ],
+  "dead_code": [
+    "Is the statement 'static void print_int(long v) {' unreachable?",
+    "Can the program actually reach the statement: “if (i == 0)”?"
+  ]
+}

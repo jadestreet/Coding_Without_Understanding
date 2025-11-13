@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fopen' to reach function 'ungetc'?",
+    "Is it impossible for function 'tolower' to reach function 'getword'?",
+    "Is there a call path from function 'doubleword' to function 'getc'?",
+    "Is there a call path from function 'getword' to function 'getc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < argc' is never executed?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition 'c != EOF && isspace(c)' is never executed?",
+    "Is the loop with condition 'c != EOF && isspace(c)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'c != EOF && isspace(c)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'rcsid' affect subsequent computations?",
+    "Does the value assigned to 'linenum (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 11)' live at the end of function 'main'?",
+    "Does variable 'fp (line 13)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for ( ; c != EOF && !isspace(c); c = getc(fp))' unreachable?",
+    "Can the program actually reach the statement: “int c;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'putchar'?",
+    "Is there a call path from function 'main' to function 'mat_add'?",
+    "Is it impossible for function 'mat_add' to reach function 'main'?",
+    "Is it impossible for function 'putchar' to reach function 'mat_add'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <2' be skipped entirely?",
+    "Is the loop with condition 'i <2' always executed?",
+    "Can the loop with condition 'j<3' be skipped entirely?",
+    "Is the loop with condition 'j<3' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<3' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'ma (line 2)' affect subsequent computations?",
+    "Is variable 'mb (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 4)' live at the end of function 'mat_add'?",
+    "Does variable 'j (line 4)' remain in use at the end of function 'mat_add'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i, j;' unreachable?",
+    "Is this statement not dead: “int mc[2][3] = { 0 };”?"
+  ]
+}

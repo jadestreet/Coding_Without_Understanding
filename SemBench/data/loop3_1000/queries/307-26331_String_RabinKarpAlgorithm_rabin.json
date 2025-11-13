@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'rabinStr'?",
+    "Is it impossible for function 'rabinStr' to reach function 'printf'?",
+    "Is it impossible for function 'strstr' to reach function 'hash_function'?",
+    "Is there a call path from function 'rabinStr' to function 'hash_function'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < len' be skipped entirely?",
+    "Is the loop with condition 'i < len' always executed?",
+    "Can the loop with condition 'i < (str_len - substr_len + 1)' be skipped entirely?",
+    "Is the loop with condition 'i < (str_len - substr_len + 1)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < (str_len - substr_len + 1)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'str (line 3)' used after its definition?",
+    "Does the value assigned to 'len (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'hash_function'?",
+    "Does variable 'h_count' remain in use at the end of function 'hash_function'?"
+  ],
+  "dead_code": [
+    "Can the statement 'char *ptr;' be considered dead code?",
+    "Can the program actually reach the statement: “int h_count = 0;”?"
+  ]
+}

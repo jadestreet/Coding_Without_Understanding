@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'solveMaze' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'solveMaze'?",
+    "Is it impossible for function 'printf' to reach function 'solveMaze'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<=m' is never executed?",
+    "Is the loop with condition 'i<=m' always executed?",
+    "Can the loop with condition 'j<=n' be skipped entirely?",
+    "Is the loop with condition 'j<=n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=m' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<=n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'maze (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'sol (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'm (line 3)' remain in use at the end of function 'solveMaze'?",
+    "Does variable 'maze (line 3)' remain in use at the end of function 'solveMaze'?"
+  ],
+  "dead_code": [
+    "Is the statement 'solveMaze(maze,sol,i,j-1,m,n,ways);' unreachable?",
+    "Can the program actually reach the statement: “if(i+1<=m && maze[i+1][j]!='X'){”?"
+  ]
+}

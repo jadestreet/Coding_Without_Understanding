@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__bswap_64' to reach function 'atoi'?",
+    "Is it impossible for function '__bswap_16' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function '__sysconf'?",
+    "Can function 'main' eventually call function '__assert_fail'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i > 0' be skipped entirely?",
+    "Is the loop with condition 'i > 0' always executed?",
+    "Can the loop with condition 'i < s_num_threads' be skipped entirely?",
+    "Is the loop with condition 'i < s_num_threads' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i > 0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < s_num_threads' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 's_num_threads (line 9)' used after its definition?",
+    "Does the value assigned to 's_num_iterations (line 10)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable '__bsx' remain in use at the end of function '__bswap_16'?",
+    "Is variable '__bsx' live at the end of function '__bswap_32'?"
+  ],
+  "dead_code": [
+    "Is the statement 's_num_threads = atoi(optarg);' unreachable?",
+    "Is this statement not dead: “break;”?"
+  ]
+}

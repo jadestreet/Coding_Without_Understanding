@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'puts' to reach function 'backwardtraverse'?",
+    "Is it impossible for function 'printf' to reach function 'backwardtraverse'?",
+    "Can function 'delete' eventually call function 'printf'?",
+    "Can function 'insert' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'temp1!=NULL' be skipped entirely?",
+    "Is the loop with condition 'temp1!=NULL' always executed?",
+    "Is it possible that the loop with condition 'current != NULL' is never executed?",
+    "Is the loop with condition 'current != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'temp1!=NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'data (line 4)' used after its definition?",
+    "Does the value assigned to 'a (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'xor'?",
+    "Does variable 'a' remain in use at the end of function 'xor'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(current==NULL){' unreachable?",
+    "Can the program actually reach the statement: “while(current != NULL){”?"
+  ]
+}

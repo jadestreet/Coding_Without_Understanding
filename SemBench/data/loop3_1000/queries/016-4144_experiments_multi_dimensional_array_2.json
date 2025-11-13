@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'putchar' to reach function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'print_array'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Can function 'print_array' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'element1 < DIM1' be skipped entirely?",
+    "Is the loop with condition 'element1 < DIM1' always executed?",
+    "Is it possible that the loop with condition 'array[element1][element2] != '\\0'' is never executed?",
+    "Is the loop with condition 'array[element1][element2] != '\\0'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'element1 < DIM1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'array[element1][element2] != '\\0'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'array (line 7)' used after its definition?",
+    "Is variable 'array (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'array (line 7)' remain in use at the end of function 'main'?",
+    "Does variable 'element1' remain in use at the end of function 'print_array'?"
+  ],
+  "dead_code": [
+    "Is the statement 'array[element++] += 5;' unreachable?",
+    "Can the program actually reach the statement: “int main(void) {”?"
+  ]
+}

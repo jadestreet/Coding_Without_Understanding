@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'add_freq_to_table' to reach function 'calc_fvco'?",
+    "Is it impossible for function 'free' to reach function 'calc_latency'?",
+    "Is there a call path from function 'main' to function 'free'?",
+    "Is there a call path from function 'main' to function 'add_freq_to_table'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'freq <= max' be skipped entirely?",
+    "Is the loop with condition 'freq <= max' always executed?",
+    "Can the loop with condition 'ext_div < 1024' be skipped entirely?",
+    "Is the loop with condition 'ext_div < 1024' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'freq <= max' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'ext_div < 1024' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'cntl0_init_base (line 9)' used after its definition?",
+    "Is variable 'od_base (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'f (line 19)' live at the end of function 'calc_fvco'?",
+    "Does variable 'n' remain in use at the end of function 'calc_fvco'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if((fout / (crystal / 1000)) != ((fout / crystal) * 1000))' unreachable?",
+    "Is this statement not dead: “for(m = 1; m < 512; m++){”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'sprintf' to reach function 'strlen'?",
+    "Is it impossible for function 'sprintf' to reach function 'is_palindrome'?",
+    "Can function 'main' eventually call function 'is_palindrome'?",
+    "Is there a call path from function 'main' to function 'sprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'm < 1000' is never executed?",
+    "Is the loop with condition 'm < 1000' always executed?",
+    "Can the loop with condition 'n <= m' be skipped entirely?",
+    "Is the loop with condition 'n <= m' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'm < 1000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'n <= m' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'n (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'largest (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'largest' live at the end of function 'main'?",
+    "Does variable 'n (line 4)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'char str[90];' be considered dead code?",
+    "Is this statement not dead: “int is_palindrome (unsigned int n) {”?"
+  ]
+}

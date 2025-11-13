@@ -1,0 +1,14 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [],
+  "liveness": [],
+  "dead_code": [
+    "Is the statement 'printf(\"%d bytes for long longs\\n\",sizeof(long long int));' unreachable?",
+    "Is this statement not dead: “printf(\"%d bytes for ints\\n\",sizeof(int));”?"
+  ]
+}

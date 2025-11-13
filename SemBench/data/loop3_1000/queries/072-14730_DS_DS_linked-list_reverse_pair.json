@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'iterativeReverse'?",
+    "Can function 'iterativeReverse' eventually call function 'printf'?",
+    "Is it impossible for function 'insert' to reach function 'reversePair'?",
+    "Can function 'insert' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'ptr -> next != NULL' be skipped entirely?",
+    "Is the loop with condition 'ptr -> next != NULL' always executed?",
+    "Is it possible that the loop with condition 'head != NULL' is never executed?",
+    "Is the loop with condition 'head != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'ptr -> next != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'head != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'data (line 4)' used after its definition?",
+    "Is variable 'head (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'newNode' remain in use at the end of function 'insert'?",
+    "Does variable 'head (line 7)' remain in use at the end of function 'insert'?"
+  ],
+  "dead_code": [
+    "Is the statement 'insert(&head , 5) ;' unreachable?",
+    "Is this statement not dead: “head = head -> next ;”?"
+  ]
+}

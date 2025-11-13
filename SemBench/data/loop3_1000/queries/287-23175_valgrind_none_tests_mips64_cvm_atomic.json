@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'copy_reg_val_double' to reach function 'init_reg_val_double'?",
+    "Is it impossible for function 'init_reg_val_double' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'reg_val_double (line 3)' used after its definition?",
+    "Is variable 'c (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 7)' remain in use at the end of function 'init_reg_val_double'?",
+    "Is variable 'c' live at the end of function 'init_reg_val_double'?"
+  ],
+  "dead_code": [
+    "Is the statement 'TEST1_32(\"lac\",i, reg_val_double_copy);' unreachable?",
+    "Is this statement not dead: “printf(\"%s :: offset: 0x%x, out: 0x%lx, result:0x%lx\\n\",  \\”?"
+  ]
+}

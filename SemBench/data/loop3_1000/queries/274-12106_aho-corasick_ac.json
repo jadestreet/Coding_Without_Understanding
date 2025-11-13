@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'make_fail' to reach function 'printf'?",
+    "Is it impossible for function 'get_child' to reach function 'printf'?",
+    "Can function 'ac' eventually call function 'add_word'?",
+    "Can function 'add_word' eventually call function 'get_child'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 4' is never executed?",
+    "Is the loop with condition 'i < 4' always executed?",
+    "Is it possible that the loop with condition 'child' is never executed?",
+    "Is the loop with condition 'child' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'child' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'elem (line 4)' used after its definition?",
+    "Does the value assigned to 'node (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'queue (line 22)' remain in use at the end of function 'queue_add'?",
+    "Does variable 'elem (line 24)' remain in use at the end of function 'queue_add'?"
+  ],
+  "dead_code": [
+    "Is the statement 'state = root;' unreachable?",
+    "Is this statement not dead: “return child;”?"
+  ]
+}

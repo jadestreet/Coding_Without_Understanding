@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'test_dist_t'?",
+    "Is it impossible for function 'test_dist_t' to reach function 'test_dist_x'?",
+    "Can function 'main' eventually call function 'test_dist_x'?",
+    "Can function 'test_dist_t' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'iz < lz' is never executed?",
+    "Is the loop with condition 'iz < lz' always executed?",
+    "Can the loop with condition 'iy < ly' be skipped entirely?",
+    "Is the loop with condition 'iy < ly' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'iz < lz' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'iy < ly' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array_t (line 26)' affect subsequent computations?",
+    "Is variable 'lst (line 26)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'lwt' remain in use at the end of function 'test_dist_t'?",
+    "Is variable 'ust (line 26)' live at the end of function 'test_dist_t'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(array_t[iz][iy][ix][it] != 1.0) err++;' unreachable?",
+    "Can the program actually reach the statement: “#pragma xmp shadow array_y[lsz:usz][lsy:usy][lsx:usx][lst:ust]”?"
+  ]
+}

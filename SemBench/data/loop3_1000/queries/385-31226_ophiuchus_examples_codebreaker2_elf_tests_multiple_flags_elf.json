@@ -1,0 +1,20 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [],
+  "dominators": [],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'argv (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'flag' remain in use at the end of function 'main'?",
+    "Is variable 'argv' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"Goodbye world!\\n\");' unreachable?",
+    "Can the program actually reach the statement: “case 'B':”?"
+  ]
+}

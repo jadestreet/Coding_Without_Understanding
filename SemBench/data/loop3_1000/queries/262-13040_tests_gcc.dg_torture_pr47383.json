@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'foo'?",
+    "Is it impossible for function 'foo' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'n < elems' is never executed?",
+    "Is the loop with condition 'n < elems' always executed?",
+    "Can the loop with condition 'heap_len >= 2' be skipped entirely?",
+    "Is the loop with condition 'heap_len >= 2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'n < elems' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'heap_len >= 2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'heap (line 1)' affect subsequent computations?",
+    "Does the value assigned to 'heap_len (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'm' remain in use at the end of function 'foo'?",
+    "Is variable 'elems' live at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Can the statement 'heap[--heap_max] = n;' be considered dead code?",
+    "Is this statement not dead: “m = heap[1];”?"
+  ]
+}

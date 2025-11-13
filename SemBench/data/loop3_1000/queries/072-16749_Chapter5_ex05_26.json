@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printFactors' to reach function 'isPerfect'?",
+    "Is it impossible for function 'isPerfect' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'isPerfect'?",
+    "Is there a call path from function 'printFactors' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'n<=100000' is never executed?",
+    "Is the loop with condition 'n<=100000' always executed?",
+    "Can the loop with condition 'sum < n' be skipped entirely?",
+    "Is the loop with condition 'sum < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'n<=100000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'sum < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 6)' used after its definition?",
+    "Does the value assigned to 'n (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'n (line 6)' live at the end of function 'main'?",
+    "Does variable 'i (line 16)' remain in use at the end of function 'printFactors'?"
+  ],
+  "dead_code": [
+    "Can the statement 'printf(\"= %d\\n\", n);' be considered dead code?",
+    "Is this statement not dead: “while(sum < n) {”?"
+  ]
+}

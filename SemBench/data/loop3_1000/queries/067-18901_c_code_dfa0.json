@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'list1' to reach function 'step'?",
+    "Is it impossible for function 'addstate' to reach function 'ismatch'?",
+    "Can function 'main' eventually call function 'ismatch'?",
+    "Is there a call path from function 'dstate' to function 'memmove'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '*p' is never executed?",
+    "Is the loop with condition '*p' always executed?",
+    "Is it possible that the loop with condition 'i<l->n' is never executed?",
+    "Is the loop with condition 'i<l->n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*p' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<l->n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 're (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'nalt (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'p (line 14)' live at the end of function 're2post'?",
+    "Does variable 'natom' remain in use at the end of function 're2post'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if(match(startdstate(start), argv[i]))' unreachable?",
+    "Can the program actually reach the statement: “e1 = pop();”?"
+  ]
+}

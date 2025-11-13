@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'heads' eventually call function 'rand'?",
+    "Can function 'main' eventually call function 'malloc'?",
+    "Is it impossible for function 'heads' to reach function 'malloc'?",
+    "Is it impossible for function 'atoi' to reach function 'rand'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'j <= N' is never executed?",
+    "Is the loop with condition 'j <= N' always executed?",
+    "Is it possible that the loop with condition 'i < M' is never executed?",
+    "Is the loop with condition 'i < M' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'j <= N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < M' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'argc' used after its definition?",
+    "Is variable 'argv (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'argc' live at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf (\"\\n\");' unreachable?",
+    "Can the program actually reach the statement: “int i, j, c;”?"
+  ]
+}

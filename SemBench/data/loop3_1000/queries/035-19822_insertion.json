@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'diziOlustur' to reach function 'time'?",
+    "Can function 'diziYaz' eventually call function 'printf'?",
+    "Is it impossible for function 'diziOlustur' to reach function 'main'?",
+    "Can function 'main' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'l < boyut' be skipped entirely?",
+    "Is the loop with condition 'l < boyut' always executed?",
+    "Is it possible that the loop with condition 'i < boyut' is never executed?",
+    "Is the loop with condition 'i < boyut' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'l < boyut' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < boyut' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'boyut (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'tur (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'l' live at the end of function 'diziYaz'?",
+    "Does variable 'dizi (line 7)' remain in use at the end of function 'diziYaz'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int main(){' unreachable?",
+    "Can the program actually reach the statement: “dizi[i] = (rand() % boyut);”?"
+  ]
+}

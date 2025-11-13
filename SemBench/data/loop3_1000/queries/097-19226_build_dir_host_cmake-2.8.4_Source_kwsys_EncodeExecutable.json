@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fclose' to reach function 'fprintf'?",
+    "Is it impossible for function 'fprintf' to reach function 'fopen'?",
+    "Can function 'main' eventually call function 'fopen'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < n-1' be skipped entirely?",
+    "Is the loop with condition 'i < n-1' always executed?",
+    "Can the loop with condition 'i < count' be skipped entirely?",
+    "Is the loop with condition 'i < count' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n-1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < count' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'argv (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'argc' remain in use at the end of function 'main'?",
+    "Is variable 'i' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fprintf(ofp, \"0x%02X};\\n\\n\", buffer[n-1]);' unreachable?",
+    "Can the program actually reach the statement: “return 2;”?"
+  ]
+}

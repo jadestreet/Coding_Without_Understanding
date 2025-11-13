@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'walk'?",
+    "Can function 'main' eventually call function 'ehValido'?",
+    "Is it impossible for function 'printf' to reach function 'printTabuleiro'?",
+    "Is it impossible for function 'printf' to reach function 'ehValido'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<MAX' is never executed?",
+    "Is the loop with condition 'i<MAX' always executed?",
+    "Can the loop with condition 'i<MAX' be skipped entirely?",
+    "Is the loop with condition 'i<MAX' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<MAX' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<MAX' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'labyrinth (line 11)' affect subsequent computations?",
+    "Does the value assigned to 'dirx (line 19)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'posx (line 22)' live at the end of function 'main'?",
+    "Is variable 'posy (line 22)' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int i;' be considered dead code?",
+    "Is this statement not dead: “int posx = initialx;”?"
+  ]
+}

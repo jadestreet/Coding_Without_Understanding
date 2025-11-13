@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'bubble_sort'?",
+    "Is there a call path from function 'print_range' to function 'printf'?",
+    "Is it impossible for function 'print_range' to reach function 'bubble_sort'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 2)' affect subsequent computations?",
+    "Is variable 'n (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'n (line 2)' live at the end of function 'print_range'?",
+    "Does variable 'array (line 2)' remain in use at the end of function 'print_range'?"
+  ],
+  "dead_code": [
+    "Is the statement 'print_range(array, N);' unreachable?",
+    "Can the program actually reach the statement: “void bubble_sort(int *array, size_t n) {”?"
+  ]
+}

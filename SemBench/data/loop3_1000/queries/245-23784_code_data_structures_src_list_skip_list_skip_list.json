@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'free' to reach function 'printf'?",
+    "Is it impossible for function 'skiplist_search' to reach function 'skiplist_node_free'?",
+    "Can function 'skiplist_node_free' eventually call function 'free'?",
+    "Is there a call path from function 'main' to function 'skiplist_node_free'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= SKIPLIST_MAX_LEVEL' be skipped entirely?",
+    "Is the loop with condition 'i <= SKIPLIST_MAX_LEVEL' always executed?",
+    "Can the loop with condition 'i >= 1' be skipped entirely?",
+    "Is the loop with condition 'i >= 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= SKIPLIST_MAX_LEVEL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i >= 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'key (line 6)' used after its definition?",
+    "Does the value assigned to 'value (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 16)' remain in use at the end of function 'skiplist_init'?",
+    "Is variable 'list (line 15)' live at the end of function 'skiplist_init'?"
+  ],
+  "dead_code": [
+    "Can the statement 'static void skiplist_dump(skiplist *list) {' be considered dead code?",
+    "Can the program actually reach the statement: “} else {”?"
+  ]
+}

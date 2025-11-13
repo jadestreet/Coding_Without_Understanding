@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__ctype_b_loc' to reach function 'fputc'?",
+    "Is it impossible for function 'fputc' to reach function 'fseek'?",
+    "Can function 'strnident' eventually call function 'fputc'?",
+    "Can function 'main' eventually call function '__ctype_b_loc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'arg < argc' be skipped entirely?",
+    "Is the loop with condition 'arg < argc' always executed?",
+    "Can the loop with condition '*src != 0' be skipped entirely?",
+    "Is the loop with condition '*src != 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'arg < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*src != 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'fout (line 4)' affect subsequent computations?",
+    "Is variable 'src (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 's' live at the end of function 'strnident'?",
+    "Is variable 'src' live at the end of function 'strnident'?"
+  ],
+  "dead_code": [
+    "Can the statement 'got_first = 1;' be considered dead code?",
+    "Is this statement not dead: “\"\\t.global \", alignment);”?"
+  ]
+}

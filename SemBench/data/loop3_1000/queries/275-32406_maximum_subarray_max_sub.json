@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'find_cross_max_sub' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is there a call path from function 'find_max_sub' to function 'find_cross_max_sub'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'l > begin - 1' be skipped entirely?",
+    "Is the loop with condition 'l > begin - 1' always executed?",
+    "Can the loop with condition 'r < end' be skipped entirely?",
+    "Is the loop with condition 'r < end' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'l > begin - 1' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r < end' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 2)' used after its definition?",
+    "Does the value assigned to 'a (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'end (line 8)' remain in use at the end of function 'find_cross_max_sub'?",
+    "Is variable 'sum' live at the end of function 'find_cross_max_sub'?"
+  ],
+  "dead_code": [
+    "Is the statement 'r_max_sum = sum;' unreachable?",
+    "Can the program actually reach the statement: “int find_max_sub ( int *base, size_t size, IndexTuple *ret ) {”?"
+  ]
+}

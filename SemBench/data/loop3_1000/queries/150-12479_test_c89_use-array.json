@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'output'?",
+    "Is it impossible for function 'get_food' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'inc'?",
+    "Can function 'main' eventually call function 'get_food'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < x' is never executed?",
+    "Is the loop with condition 'i < x' always executed?",
+    "Is it possible that the loop with condition 'j < y' is never executed?",
+    "Is the loop with condition 'j < y' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < x' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < y' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'one_two_array (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'data (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'x' live at the end of function 'test_data'?",
+    "Does variable 'i (line 18)' remain in use at the end of function 'test_data'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(i = 0; i < x; i++){' unreachable?",
+    "Is this statement not dead: “putchar(b[3]);”?"
+  ]
+}

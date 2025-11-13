@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'foo'?",
+    "Is it impossible for function 'foo' to reach function 'main'?",
+    "Is it impossible for function '__builtin_abort' to reach function 'foo'?",
+    "Can function 'main' eventually call function '__builtin_abort'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'out (line 3)' used after its definition?",
+    "Is variable 'in (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 5)' remain in use at the end of function 'foo'?",
+    "Does variable 'step' remain in use at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Can the statement 'if (out[i] != in[i])' be considered dead code?",
+    "Is this statement not dead: “in[i] = i * (i + 1);”?"
+  ]
+}

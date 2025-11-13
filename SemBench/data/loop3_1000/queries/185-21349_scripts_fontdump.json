@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fseek' to reach function 'main'?",
+    "Is it impossible for function 'fclose' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'fseek'?",
+    "Can function 'main' eventually call function 'strrchr'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition 'c != -1' is never executed?",
+    "Is the loop with condition 'c != -1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'c != -1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'fo (line 5)' affect subsequent computations?",
+    "Is variable 'fi (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'c' remain in use at the end of function 'hexdump'?",
+    "Does variable 'n' remain in use at the end of function 'hexdump'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (*p == '/' || *p == '.' || *p == '\\\\' || *p == '-')' unreachable?",
+    "Is this statement not dead: “int”?"
+  ]
+}

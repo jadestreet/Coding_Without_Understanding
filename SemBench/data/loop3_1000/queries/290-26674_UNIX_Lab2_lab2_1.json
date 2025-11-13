@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fprintf' to reach function 'threadedMergeSort'?",
+    "Is it impossible for function 'merge' to reach function 'pthread_mutex_unlock'?",
+    "Is there a call path from function 'main' to function 'srand'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?",
+    "Is it possible that the loop with condition 'i < n' is never executed?",
+    "Is the loop with condition 'i < n' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'vet (line 6)' used after its definition?",
+    "Is variable 'V (line 8)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'argc' remain in use at the end of function 'main'?",
+    "Does variable 'i (line 12)' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pthread_mutex_unlock(&V.mutex);' unreachable?",
+    "Is this statement not dead: “return -1;”?"
+  ]
+}

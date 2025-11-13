@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'parse' to reach function 'printf'?",
+    "Is it impossible for function 'exponentiation' to reach function 'length'?",
+    "Can function 'main' eventually call function 'parse'?",
+    "Is there a call path from function 'parse' to function 'exponentiation'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Is it possible that the loop with condition 'string[count++] != '\\0'' is never executed?",
+    "Is the loop with condition 'string[count++] != '\\0'' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'string[count++] != '\\0'' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'string (line 3)' used after its definition?",
+    "Is variable 'count (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'string' live at the end of function 'length'?",
+    "Is variable 'count' live at the end of function 'length'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int i;' be considered dead code?",
+    "Is this statement not dead: “int parse(char *number){”?"
+  ]
+}

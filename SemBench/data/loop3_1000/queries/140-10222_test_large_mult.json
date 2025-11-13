@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'bignum_mult' to reach function 'bignum_print'?",
+    "Can function 'bignum_free' eventually call function 'free'?",
+    "Is there a call path from function 'main' to function 'free'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i>=0' is never executed?",
+    "Is the loop with condition 'i>=0' always executed?",
+    "Can the loop with condition 'i < n2->len' be skipped entirely?",
+    "Is the loop with condition 'i < n2->len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i>=0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < n2->len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'bignum (line 4)' used after its definition?",
+    "Is variable 'len (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'len' live at the end of function 'bignum_alloc'?",
+    "Is variable 'num (line 6)' live at the end of function 'bignum_alloc'?"
+  ],
+  "dead_code": [
+    "Is the statement 'num /= 10;' unreachable?",
+    "Is this statement not dead: “bignum_print(num1);”?"
+  ]
+}

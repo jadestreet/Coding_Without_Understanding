@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'add_accessed' to function 'malloc'?",
+    "Is there a call path from function 'main' to function 'do_clone'?",
+    "Is it impossible for function 'free' to reach function 'malloc'?",
+    "Is it impossible for function 'malloc' to reach function 'do_clone'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < graph->neighborsCount' be skipped entirely?",
+    "Is the loop with condition 'i < graph->neighborsCount' always executed?",
+    "Can the loop with condition 't' be skipped entirely?",
+    "Is the loop with condition 't' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < graph->neighborsCount' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 't' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'label (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'head (line 12)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'label' live at the end of function 'is_accessed'?",
+    "Is variable 't' live at the end of function 'is_accessed'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while (head) {' be considered dead code?",
+    "Is this statement not dead: “head = t;”?"
+  ]
+}

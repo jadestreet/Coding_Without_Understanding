@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'print_bracket' to reach function 'memcpy'?",
+    "Is it impossible for function 'printf' to reach function 'matrix_chain'?",
+    "Is there a call path from function 'main' to function 'print_bracket'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= n' be skipped entirely?",
+    "Is the loop with condition 'i <= n' always executed?",
+    "Can the loop with condition 'r <= n - 1' be skipped entirely?",
+    "Is the loop with condition 'r <= n - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= n' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r <= n - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'm (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'p (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'p_temp' remain in use at the end of function 'main'?",
+    "Is variable 'i (line 21)' live at the end of function 'print_bracket'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int' be considered dead code?",
+    "Can the program actually reach the statement: “int m[MATRIX_SIZE][MATRIX_SIZE];”?"
+  ]
+}

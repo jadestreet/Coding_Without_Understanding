@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'convertToDecimal' to reach function 'malloc'?",
+    "Can function 'main' eventually call function 'concatenate_string'?",
+    "Is it impossible for function 'convertCharToNumber' to reach function 'getStringLength'?",
+    "Is there a call path from function 'convertCharNumberToInt' to function 'getStringLength'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<originalSize' is never executed?",
+    "Is the loop with condition 'i<originalSize' always executed?",
+    "Can the loop with condition 'i<addSize' be skipped entirely?",
+    "Is the loop with condition 'i<addSize' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<originalSize' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<addSize' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'string (line 3)' used after its definition?",
+    "Is variable 'string (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'destBase (line 7)' live at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'while (i <= exponent) {' be considered dead code?",
+    "Can the program actually reach the statement: “long number = 0;”?"
+  ]
+}

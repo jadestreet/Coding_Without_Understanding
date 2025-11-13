@@ -1,0 +1,27 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'heapify' to reach function 'insert'?",
+    "Is it impossible for function 'heapify' to reach function 'build_max_heap'?",
+    "Can function 'pop_heap_max' eventually call function 'heapify'?",
+    "Can function 'main' eventually call function 'insert'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i > 0 && array[i/2] < array[i]' be skipped entirely?",
+    "Is the loop with condition 'i > 0 && array[i/2] < array[i]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i > 0 && array[i/2] < array[i]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'array (line 2)' used after its definition?",
+    "Is variable 'heap_size (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'right' live at the end of function 'heapify'?",
+    "Does variable 'heap_size (line 2)' remain in use at the end of function 'heapify'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void heap_increase(int array[], int i, int key){' unreachable?",
+    "Can the program actually reach the statement: “return array[0];”?"
+  ]
+}

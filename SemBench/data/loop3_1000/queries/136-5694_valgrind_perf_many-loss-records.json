@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'malloc'?",
+    "Can function 'release' eventually call function 'free_chunks'?",
+    "Is it impossible for function 'release' to reach function 'call_stack'?",
+    "Is it impossible for function 'malloc' to reach function 'call_stack'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'f < malloc_fan' be skipped entirely?",
+    "Is the loop with condition 'f < malloc_fan' always executed?",
+    "Can the loop with condition 'd < malloc_depth' be skipped entirely?",
+    "Is the loop with condition 'd < malloc_depth' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'f < malloc_fan' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'd < malloc_depth' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'stack_fan_out (line 5)' affect subsequent computations?",
+    "Is variable 'stack_depth (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'mem (line 24)' remain in use at the end of function 'free_chunks'?",
+    "Is variable 'mem (line 33)' live at the end of function 'release'?"
+  ],
+  "dead_code": [
+    "Is the statement 'free_chunks ((&(*mem)->child));' unreachable?",
+    "Is this statement not dead: “blocknr++;”?"
+  ]
+}

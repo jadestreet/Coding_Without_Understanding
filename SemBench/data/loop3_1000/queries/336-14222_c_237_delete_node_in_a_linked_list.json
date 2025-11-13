@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'deleteNode' to reach function 'printList'?",
+    "Is it impossible for function 'printList' to reach function 'deleteNode'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'printList' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < len' be skipped entirely?",
+    "Is the loop with condition 'i < len' always executed?",
+    "Is it possible that the loop with condition 'i < 2' is never executed?",
+    "Is the loop with condition 'i < 2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'node (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'tmp (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'node (line 7)' remain in use at the end of function 'deleteNode'?",
+    "Does variable 'tmp (line 9)' remain in use at the end of function 'deleteNode'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return head;' unreachable?",
+    "Can the program actually reach the statement: “for (int i = 1; i < len; i++)”?"
+  ]
+}

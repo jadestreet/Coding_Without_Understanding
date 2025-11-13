@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'insertion_sort' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'insertion_sort'?",
+    "Can function 'main' eventually call function 'insertion_sort'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < arr_size' is never executed?",
+    "Is the loop with condition 'i < arr_size' always executed?",
+    "Is it possible that the loop with condition 'i < arr_size' is never executed?",
+    "Is the loop with condition 'i < arr_size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < arr_size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < arr_size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 2)' affect subsequent computations?",
+    "Is variable 'arr_size (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'key' live at the end of function 'insertion_sort'?",
+    "Does variable 'i (line 3)' remain in use at the end of function 'insertion_sort'?"
+  ],
+  "dead_code": [
+    "Is the statement 'insertion_sort(arr, arr_size);' unreachable?",
+    "Can the program actually reach the statement: “int i;”?"
+  ]
+}

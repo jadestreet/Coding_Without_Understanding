@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is there a call path from function 'main' to function 'puts'?",
+    "Is it impossible for function 'printf' to reach function 'puts'?",
+    "Is it impossible for function 'puts' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?",
+    "Can the loop with condition 'i < 10' be skipped entirely?",
+    "Is the loop with condition 'i < 10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 3)' affect subsequent computations?",
+    "Is variable 'i (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'k' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(int i = 0; i < 10; i++) {' unreachable?",
+    "Is this statement not dead: “puts(\"\");”?"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 400' be skipped entirely?",
+    "Is the loop with condition 'i < 400' always executed?",
+    "Can the loop with condition 'i < strlength' be skipped entirely?",
+    "Is the loop with condition 'i < strlength' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 400' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < strlength' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'str (line 3)' used after its definition?",
+    "Does the value assigned to 'sub1 (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'strlength' live at the end of function 'main'?",
+    "Does variable 'i' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for(i = 0, j= 0; i <  strlength && j < strlength; i++, j++){' be considered dead code?",
+    "Is this statement not dead: “int i, j;”?"
+  ]
+}

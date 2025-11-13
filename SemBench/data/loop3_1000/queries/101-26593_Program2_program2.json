@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'binaryPrinter'?",
+    "Is there a call path from function 'binaryTester' to function '__assert_fail'?",
+    "Is there a call path from function 'binaryArray' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'c>=0' is never executed?",
+    "Is the loop with condition 'c>=0' always executed?",
+    "Can the loop with condition 'i < size' be skipped entirely?",
+    "Is the loop with condition 'i < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c>=0' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 5)' used after its definition?",
+    "Does the value assigned to 'array (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'binaryArray'?",
+    "Does variable 'size (line 5)' remain in use at the end of function 'binaryArray'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"\\n\\n\");' unreachable?",
+    "Is this statement not dead: “int i;”?"
+  ]
+}

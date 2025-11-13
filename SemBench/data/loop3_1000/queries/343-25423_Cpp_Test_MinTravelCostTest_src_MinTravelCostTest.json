@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'reCalculate'?",
+    "Is it impossible for function 'printData' to reach function 'memcpy'?",
+    "Can function 'main' eventually call function 'reCalculate'?",
+    "Is there a call path from function 'main' to function 'printData'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < size' is never executed?",
+    "Is the loop with condition 'i < size' always executed?",
+    "Is it possible that the loop with condition 'j < size' is never executed?",
+    "Is the loop with condition 'j < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'pdata (line 6)' used after its definition?",
+    "Does the value assigned to 'size (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 8)' remain in use at the end of function 'printData'?",
+    "Is variable 'j (line 8)' live at the end of function 'printData'?"
+  ],
+  "dead_code": [
+    "Can the statement 'for (i = 0; i < size; i++)' be considered dead code?",
+    "Can the program actually reach the statement: “printf(\"  MAX\");”?"
+  ]
+}

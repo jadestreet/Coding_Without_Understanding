@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'findMinNumberInRotatedArray_improved'?",
+    "Is it impossible for function 'main' to reach function 'findMinNumberInRotatedArray'?",
+    "Is there a call path from function 'main' to function 'findMinNumberInRotatedArray_improved'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= high' be skipped entirely?",
+    "Is the loop with condition 'i <= high' always executed?",
+    "Can the loop with condition 'high - low > 1' be skipped entirely?",
+    "Is the loop with condition 'high - low > 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= high' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'high - low > 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'array (line 2)' affect subsequent computations?",
+    "Does the value assigned to 'low (line 2)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'high (line 2)' live at the end of function 'findMinNumberInRotatedArray'?",
+    "Is variable 'position (line 10)' live at the end of function 'findMinNumberInRotatedArray'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int low = 0;' unreachable?",
+    "Can the program actually reach the statement: “return high;”?"
+  ]
+}

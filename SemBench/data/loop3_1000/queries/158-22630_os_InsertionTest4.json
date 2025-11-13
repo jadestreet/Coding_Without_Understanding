@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<sizeof(m)/sizeof(int)' is never executed?",
+    "Is the loop with condition 'i<sizeof(m)/sizeof(int)' always executed?",
+    "Can the loop with condition 'i<sizeof(m)/sizeof(int)' be skipped entirely?",
+    "Is the loop with condition 'i<sizeof(m)/sizeof(int)' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<sizeof(m)/sizeof(int)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<sizeof(m)/sizeof(int)' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'm (line 4)' used after its definition?",
+    "Does the value assigned to 'i (line 5)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'min' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'm[k+1]=m[k];' unreachable?",
+    "Is this statement not dead: “while (k>=0 && m[k]>min)”?"
+  ]
+}

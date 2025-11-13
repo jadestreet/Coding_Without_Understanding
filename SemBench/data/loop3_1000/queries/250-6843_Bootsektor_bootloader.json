@@ -1,0 +1,24 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'video !=(char*)0xB8000' is never executed?",
+    "Is the loop with condition 'video !=(char*)0xB8000' always executed?",
+    "Can the loop with condition '*video' be skipped entirely?",
+    "Is the loop with condition '*video' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'video !=(char*)0xB8000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*video' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'video (line 1)' used after its definition?",
+    "Is variable 'hello (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'hello' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'video++;' unreachable?",
+    "Is this statement not dead: “*video=*hello;”?"
+  ]
+}

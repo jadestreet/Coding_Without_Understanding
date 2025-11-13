@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'add'?",
+    "Is it impossible for function 'main' to reach function 'orit'?",
+    "Can function 'foo' eventually call function '__builtin_abort'?",
+    "Can function 'main' eventually call function 'foo'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 128' is never executed?",
+    "Is the loop with condition 'i < 128' always executed?",
+    "Is it possible that the loop with condition 'i < 9' is never executed?",
+    "Is the loop with condition 'i < 9' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 128' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 9' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 't (line 1)' affect subsequent computations?",
+    "Is variable 't (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'add'?",
+    "Is variable 'y' live at the end of function 'add'?"
+  ],
+  "dead_code": [
+    "Is the statement '__builtin_abort ();' unreachable?",
+    "Is this statement not dead: “foo (&a[2], y, w, -1, 0);”?"
+  ]
+}

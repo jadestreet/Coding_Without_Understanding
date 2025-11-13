@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'free'?",
+    "Is it impossible for function 'free' to reach function 'merge'?",
+    "Is it impossible for function 'merge' to reach function 'mergeSort'?",
+    "Can function 'merge' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'k < tam' be skipped entirely?",
+    "Is the loop with condition 'k < tam' always executed?",
+    "Can the loop with condition 'i < tam' be skipped entirely?",
+    "Is the loop with condition 'i < tam' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k < tam' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < tam' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'vetor (line 5)' used after its definition?",
+    "Is variable 'tam (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'vetor (line 5)' remain in use at the end of function 'merge'?",
+    "Is variable 'metade (line 5)' live at the end of function 'merge'?"
+  ],
+  "dead_code": [
+    "Can the statement 'mergeSort(vetor, metade);' be considered dead code?",
+    "Is this statement not dead: “void mergeSort (int *vetor, int tam) {”?"
+  ]
+}

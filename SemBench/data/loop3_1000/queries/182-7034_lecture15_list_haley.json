@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'malloc'?",
+    "Is it impossible for function 'reverse' to reach function 'malloc'?",
+    "Can function 'pop' eventually call function 'free'?",
+    "Can function 'main' eventually call function 'reverse'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'current != NULL' is never executed?",
+    "Is the loop with condition 'current != NULL' always executed?",
+    "Can the loop with condition 'node != NULL && node->val != val' be skipped entirely?",
+    "Is the loop with condition 'node != NULL && node->val != val' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'current != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'node != NULL && node->val != val' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'node (line 3)' used after its definition?",
+    "Is variable 'val (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'node (line 3)' live at the end of function 'make_node'?",
+    "Does variable 'val (line 4)' remain in use at the end of function 'make_node'?"
+  ],
+  "dead_code": [
+    "Is the statement 'Node *current = *head;' unreachable?",
+    "Can the program actually reach the statement: “Node *next_node;”?"
+  ]
+}

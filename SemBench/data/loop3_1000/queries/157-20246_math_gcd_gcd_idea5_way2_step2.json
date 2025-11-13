@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'gcd'?",
+    "Can function 'main' eventually call function 'gcd'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<10' be skipped entirely?",
+    "Is the loop with condition 'i<10' always executed?",
+    "Is it possible that the loop with condition 'j<10' is never executed?",
+    "Is the loop with condition 'j<10' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<10' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 3)' used after its definition?",
+    "Does the value assigned to 'b (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'pow2d' live at the end of function 'gcd'?",
+    "Is variable 'b' live at the end of function 'gcd'?"
+  ],
+  "dead_code": [
+    "Can the statement 'else if(a>b) { a=((a-b)>>1);' be considered dead code?",
+    "Is this statement not dead: “d=d+1;”?"
+  ]
+}

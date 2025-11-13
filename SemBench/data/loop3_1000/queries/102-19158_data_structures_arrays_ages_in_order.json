@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'add_person'?",
+    "Is it impossible for function 'add_person' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'print_list'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < LIST_SIZE' is never executed?",
+    "Is the loop with condition 'i < LIST_SIZE' always executed?",
+    "Is it possible that the loop with condition 'r < list[i]' is never executed?",
+    "Is the loop with condition 'r < list[i]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < LIST_SIZE' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'r < list[i]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'test_result (line 3)' used after its definition?",
+    "Is variable 'list (line 19)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'list (line 19)' live at the end of function 'add_person'?",
+    "Is variable 'age' live at the end of function 'add_person'?"
+  ],
+  "dead_code": [
+    "Can the statement '0, 0, 0, 0, 0, 0, 0, 0, 0, 0,' be considered dead code?",
+    "Is this statement not dead: “void”?"
+  ]
+}

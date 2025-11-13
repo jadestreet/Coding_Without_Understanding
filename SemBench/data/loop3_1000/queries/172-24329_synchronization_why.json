@@ -1,0 +1,29 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'worker'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<50000' is never executed?",
+    "Is the loop with condition 'i<50000' always executed?",
+    "Can the loop with condition 'i<NUM_THREADS' be skipped entirely?",
+    "Is the loop with condition 'i<NUM_THREADS' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<50000' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i<NUM_THREADS' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'cnt (line 5)' used after its definition?",
+    "Does the value assigned to 'ptr' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'worker'?",
+    "Does variable 'ptr' remain in use at the end of function 'worker'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (i=0;i<NUM_THREADS;i++){' unreachable?",
+    "Can the program actually reach the statement: “int i,res;”?"
+  ]
+}

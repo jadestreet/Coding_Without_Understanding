@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'valor>=contador' be skipped entirely?",
+    "Is the loop with condition 'valor>=contador' always executed?",
+    "Can the loop with condition 'do-while' be skipped entirely?",
+    "Is the loop with condition 'do-while' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'valor>=contador' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'do-while' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'valor (line 5)' used after its definition?",
+    "Is variable 'contador (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'contador' remain in use at the end of function 'main'?",
+    "Is variable 'resultadoFatorial' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (contador>=0 && contador<=1) {' unreachable?",
+    "Is this statement not dead: “} else {”?"
+  ]
+}

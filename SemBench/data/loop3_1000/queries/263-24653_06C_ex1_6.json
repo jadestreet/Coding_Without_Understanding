@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i <= initialDivisor' is never executed?",
+    "Is the loop with condition 'i <= initialDivisor' always executed?",
+    "Can the loop with condition '1==1' be skipped entirely?",
+    "Is the loop with condition '1==1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= initialDivisor' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '1==1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'argc' affect subsequent computations?",
+    "Does the value assigned to 'argv' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'remainder' remain in use at the end of function 'main'?",
+    "Is variable 'argc' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement '} while (1==1);' unreachable?",
+    "Can the program actually reach the statement: “divisor = remainder;”?"
+  ]
+}

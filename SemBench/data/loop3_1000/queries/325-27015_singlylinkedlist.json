@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'addToEndOfList' to reach function 'iterateLinkedList'?",
+    "Is it impossible for function 'strcmp' to reach function 'strcpy'?",
+    "Is there a call path from function 'main' to function 'iterateLinkedList'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'employee != NULL' be skipped entirely?",
+    "Is the loop with condition 'employee != NULL' always executed?",
+    "Can the loop with condition 'iterator->next != NULL' be skipped entirely?",
+    "Is the loop with condition 'iterator->next != NULL' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'employee != NULL' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'iterator->next != NULL' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'newEmployeeAge (line 9)' used after its definition?",
+    "Is variable 'newEmployeeName (line 9)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'head (line 9)' live at the end of function 'main'?",
+    "Does variable 'newEmployeeName (line 9)' remain in use at the end of function 'addNewEmployee'?"
+  ],
+  "dead_code": [
+    "Is the statement 'struct Employee *iterator = *head;' unreachable?",
+    "Is this statement not dead: “struct Employee *head = NULL;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'print_matrix' to reach function 'main'?",
+    "Is it impossible for function 'create_matrix' to reach function 'strdup'?",
+    "Can function 'main' eventually call function 'print_matrix'?",
+    "Is there a call path from function 'main' to function 'fill_cost_path'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<size' is never executed?",
+    "Is the loop with condition 'i<size' always executed?",
+    "Is it possible that the loop with condition 'j<size' is never executed?",
+    "Is the loop with condition 'j<size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<size' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'size (line 6)' used after its definition?",
+    "Does the value assigned to 'mat (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 8)' live at the end of function 'create_matrix'?",
+    "Does variable 'mat (line 7)' remain in use at the end of function 'create_matrix'?"
+  ],
+  "dead_code": [
+    "Is the statement 'char **path_matrix;' unreachable?",
+    "Is this statement not dead: “snprintf(path, 32, \"%d, %d\", i-1, 0);”?"
+  ]
+}

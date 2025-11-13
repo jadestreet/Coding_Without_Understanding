@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'free' to reach function 'main'?",
+    "Can function 'main' eventually call function 'free'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'free' to reach function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'str[str_len] != '\\0'' be skipped entirely?",
+    "Is the loop with condition 'str[str_len] != '\\0'' always executed?",
+    "Is it possible that the loop with condition 'i < j' is never executed?",
+    "Is the loop with condition 'i < j' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'str[str_len] != '\\0'' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < j' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'str (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'tmp (line 7)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'str' remain in use at the end of function 'reverse'?",
+    "Does variable 'tmp' remain in use at the end of function 'reverse'?"
+  ],
+  "dead_code": [
+    "Can the statement 'int main(void)' be considered dead code?",
+    "Is this statement not dead: “str[i] = str[j];”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'partion' to reach function 'contain2'?",
+    "Is it impossible for function 'contain3' to reach function 'contain4'?",
+    "Is there a call path from function 'contain2' to function 'countSort'?",
+    "Can function 'main' eventually call function 'contain2'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < end' be skipped entirely?",
+    "Is the loop with condition 'i < end' always executed?",
+    "Can the loop with condition 'i < lenOld' be skipped entirely?",
+    "Is the loop with condition 'i < lenOld' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < end' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < lenOld' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'arr (line 6)' affect subsequent computations?",
+    "Does the value assigned to 'start (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'end (line 6)' live at the end of function 'partion1'?",
+    "Is variable 'i (line 9)' live at the end of function 'partion1'?"
+  ],
+  "dead_code": [
+    "Is the statement 'printf(\"%s not contain %s\\n\", stra, strc);' unreachable?",
+    "Is this statement not dead: “else”?"
+  ]
+}

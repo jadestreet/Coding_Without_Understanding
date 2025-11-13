@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'malloc' to reach function 'printf'?",
+    "Is it impossible for function 'malloc' to reach function 'show'?",
+    "Can function 'create_node' eventually call function 'malloc'?",
+    "Is there a call path from function 'main' to function 'polyadd'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'poly1->next && poly2->next' be skipped entirely?",
+    "Is the loop with condition 'poly1->next && poly2->next' always executed?",
+    "Can the loop with condition 'poly1->next || poly2->next' be skipped entirely?",
+    "Is the loop with condition 'poly1->next || poly2->next' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'poly1->next && poly2->next' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'poly1->next || poly2->next' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'x (line 9)' affect subsequent computations?",
+    "Does the value assigned to 'y (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'x' live at the end of function 'create_node'?",
+    "Is variable 'y' live at the end of function 'create_node'?"
+  ],
+  "dead_code": [
+    "Can the statement 'poly2 = poly2->next;' be considered dead code?",
+    "Is this statement not dead: “if(poly2->next)”?"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i <= 4' be skipped entirely?",
+    "Is the loop with condition 'i <= 4' always executed?",
+    "Is it possible that the loop with condition 'j <= 4' is never executed?",
+    "Is the loop with condition 'j <= 4' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i <= 4' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j <= 4' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'i (line 4)' used after its definition?",
+    "Is variable 'j (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'j' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(i = 1; i <= 4; i++)' unreachable?",
+    "Can the program actually reach the statement: “if(i != j && i != k && j != k)”?"
+  ]
+}

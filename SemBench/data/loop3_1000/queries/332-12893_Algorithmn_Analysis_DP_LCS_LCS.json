@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'printf_array'?",
+    "Is it impossible for function 'strlen' to reach function 'printf_array'?",
+    "Is there a call path from function 'main' to function 'PRINT_LCS'?",
+    "Is there a call path from function 'main' to function 'system'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'a <= i' be skipped entirely?",
+    "Is the loop with condition 'a <= i' always executed?",
+    "Can the loop with condition 'b <= j' be skipped entirely?",
+    "Is the loop with condition 'b <= j' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'a <= i' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'b <= j' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'c (line 11)' affect subsequent computations?",
+    "Does the value assigned to 'i (line 11)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'b (line 16)' remain in use at the end of function 'main'?",
+    "Is variable 'y_size' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'c[i][j] = c[i - 1][j - 1] + 1;' be considered dead code?",
+    "Is this statement not dead: “char case2_y[] = \"-MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCTLLAAQANKENSNESFISRLLAIVAG\";”?"
+  ]
+}

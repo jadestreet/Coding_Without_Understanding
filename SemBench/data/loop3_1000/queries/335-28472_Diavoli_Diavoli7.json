@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__ctype_b_loc' to reach function 'fclose'?",
+    "Is it impossible for function 'processline' to reach function 'lenalphacmp'?",
+    "Is there a call path from function 'lenalphacmp' to function 'strcmp'?",
+    "Can function 'addwordlen' eventually call function 'malloc'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition '*scan != NULL && ((cmpvalue = lenalphacmp(word, (*scan)->word)) > 0)' be skipped entirely?",
+    "Is the loop with condition '*scan != NULL && ((cmpvalue = lenalphacmp(word, (*scan)->word)) > 0)' always executed?",
+    "Can the loop with condition '*line != 0' be skipped entirely?",
+    "Is the loop with condition '*line != 0' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '*scan != NULL && ((cmpvalue = lenalphacmp(word, (*scan)->word)) > 0)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*line != 0' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'word (line 5)' used after its definition?",
+    "Is variable 'word (line 6)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 's2' live at the end of function 'lenalphacmp'?",
+    "Does variable 'rval' remain in use at the end of function 'lenalphacmp'?"
+  ],
+  "dead_code": [
+    "Is the statement 'wlist = addwordlen(thisword, line - thisword, wlist);' unreachable?",
+    "Is this statement not dead: “size_t linebuflen = 0;”?"
+  ]
+}

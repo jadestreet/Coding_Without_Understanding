@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'getchar_unlocked' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'get'?",
+    "Is there a call path from function 'main' to function 'getchar_unlocked'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'c <= 32' be skipped entirely?",
+    "Is the loop with condition 'c <= 32' always executed?",
+    "Can the loop with condition 'c > 32' be skipped entirely?",
+    "Is the loop with condition 'c > 32' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c <= 32' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'c > 32' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'res (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'c (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'res' remain in use at the end of function 'get'?",
+    "Does variable 'c' remain in use at the end of function 'get'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int best = 0, l = 0, sum = 0, i = 0;' unreachable?",
+    "Can the program actually reach the statement: “while (sum > M || sum < 0) {”?"
+  ]
+}

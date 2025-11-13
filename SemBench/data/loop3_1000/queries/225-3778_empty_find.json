@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'find_pattern' to function 'sprintf'?",
+    "Is it impossible for function 'strcpy' to reach function 'readdir'?",
+    "Is it impossible for function 'opendir' to reach function 'getopt_long_only'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition '( c = getopt_long_only (argc, argv, \"a:b:o\",\n                         long_options, &option_index' is never executed?",
+    "Is the loop with condition '( c = getopt_long_only (argc, argv, \"a:b:o\",\n                         long_options, &option_index' always executed?",
+    "Can the loop with condition 'dentry' be skipped entirely?",
+    "Is the loop with condition 'dentry' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition '( c = getopt_long_only (argc, argv, \"a:b:o\",\n                         long_options, &option_index' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'dentry' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'states (line 7)' affect subsequent computations?",
+    "Does the value assigned to 'states (line 12)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'long_options' live at the end of function 'main'?",
+    "Does variable 'argc' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int good = 0;' unreachable?",
+    "Is this statement not dead: “if ( fnmatch(states.cond[p], dentry->d_name, FNM_PERIOD) == 0  )”?"
+  ]
+}

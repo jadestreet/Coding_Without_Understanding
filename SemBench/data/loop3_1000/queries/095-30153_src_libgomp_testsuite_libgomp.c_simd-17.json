@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is there a call path from function 'main' to function '__builtin_abort'?",
+    "Can function 'main' eventually call function 'foo'?",
+    "Is it impossible for function 'foo' to reach function 'main'?",
+    "Is it impossible for function '__builtin_abort' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 64' is never executed?",
+    "Is the loop with condition 'i < 64' always executed?",
+    "Can the loop with condition 'i < 64' be skipped entirely?",
+    "Is the loop with condition 'i < 64' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 64' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 64' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'b (line 2)' used after its definition?",
+    "Is variable 'i (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 2)' remain in use at the end of function 'foo'?",
+    "Is variable 'b (line 2)' live at the end of function 'foo'?"
+  ],
+  "dead_code": [
+    "Is the statement 'foo (&b, &i, &j, 2);' unreachable?",
+    "Can the program actually reach the statement: “for (int j = 0; j < 8; j++)”?"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Can the loop with condition 'x < 10' be skipped entirely?",
+    "Is the loop with condition 'x < 10' always executed?",
+    "Can the loop with condition 'x < 20' be skipped entirely?",
+    "Is the loop with condition 'x < 20' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'x < 10' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'x < 20' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'x (line 4)' used after its definition?",
+    "Is variable 'x (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'x' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement 'do {' be considered dead code?",
+    "Is this statement not dead: “x = 0;”?"
+  ]
+}

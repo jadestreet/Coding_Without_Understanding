@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fprintf' to reach function 'main'?",
+    "Is it impossible for function 'fopen' to reach function 'fclose'?",
+    "Is there a call path from function 'main' to function 'fprintf'?",
+    "Can function 'main' eventually call function 'fclose'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'xt < 8' be skipped entirely?",
+    "Is the loop with condition 'xt < 8' always executed?",
+    "Can the loop with condition 'y<1024' be skipped entirely?",
+    "Is the loop with condition 'y<1024' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'xt < 8' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'y<1024' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'fp (line 5)' affect subsequent computations?",
+    "Does the value assigned to 'y (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'color' live at the end of function 'main'?",
+    "Does variable 'xt' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fprintf(fp, \"%c%c\", 0xE0, 0x7B);' unreachable?",
+    "Can the program actually reach the statement: “for(y=0; y<1024; y++)”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'merge' to reach function 'quickSort'?",
+    "Can function 'prints' eventually call function 'putc'?",
+    "Is it impossible for function 'bubbleSort' to reach function 'merge'?",
+    "Can function 'main' eventually call function 'prints'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'c != EOF && j <= strc' is never executed?",
+    "Is the loop with condition 'c != EOF && j <= strc' always executed?",
+    "Can the loop with condition 'i < strc' be skipped entirely?",
+    "Is the loop with condition 'i < strc' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c != EOF && j <= strc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < strc' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 5)' used after its definition?",
+    "Is variable 'b (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'b (line 5)' live at the end of function 'swap'?",
+    "Is variable 'a' live at the end of function 'swap'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (; *s != '\\n'; ++s)' unreachable?",
+    "Can the program actually reach the statement: “*b++ = *cur;”?"
+  ]
+}

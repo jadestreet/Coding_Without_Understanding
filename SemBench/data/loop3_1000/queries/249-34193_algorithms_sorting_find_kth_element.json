@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'find_kth_element_r' eventually call function 'swap'?",
+    "Is it impossible for function 'find_kth_element_nr' to reach function 'print_list'?",
+    "Is it impossible for function 'find_kth_element_r' to reach function 'rand'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'c < len' be skipped entirely?",
+    "Is the loop with condition 'c < len' always executed?",
+    "Is it possible that the loop with condition 'c < size' is never executed?",
+    "Is the loop with condition 'c < size' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c < len' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'c < size' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'l (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'low (line 3)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'k (line 8)' live at the end of function 'find_kth_element_r'?",
+    "Is variable 'high (line 8)' live at the end of function 'find_kth_element_r'?"
+  ],
+  "dead_code": [
+    "Is the statement 'middle = high;' unreachable?",
+    "Can the program actually reach the statement: “while (high > low) {”?"
+  ]
+}

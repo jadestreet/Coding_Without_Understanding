@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'unionL'?",
+    "Is it impossible for function 'ListInsert' to reach function 'main'?",
+    "Can function 'main' eventually call function 'InitList'?",
+    "Is there a call path from function 'main' to function 'ListInsert'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < L.length' be skipped entirely?",
+    "Is the loop with condition 'i < L.length' always executed?",
+    "Can the loop with condition 'k >= i - 1' be skipped entirely?",
+    "Is the loop with condition 'k >= i - 1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < L.length' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k >= i - 1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'c (line 12)' used after its definition?",
+    "Does the value assigned to 'c (line 13)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'c' remain in use at the end of function 'visit'?",
+    "Is variable 'L (line 20)' live at the end of function 'InitList'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (j = 1; j <= 10; j++)' unreachable?",
+    "Can the program actually reach the statement: “GetElem(L, 5, &e);”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strrchr' to reach function 'fseek'?",
+    "Is it impossible for function 'strcpy' to reach function 'fprintf'?",
+    "Can function 'main' eventually call function 'strrchr'?",
+    "Can function 'main' eventually call function 'fseek'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < argc' is never executed?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Is it possible that the loop with condition '*p' is never executed?",
+    "Is the loop with condition '*p' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*p' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'string (line 3)' affect subsequent computations?",
+    "Does the value assigned to 'zero (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'c' live at the end of function 'hexdump'?",
+    "Does variable 'n' remain in use at the end of function 'hexdump'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (strlen(basename) >= sizeof(filename))' unreachable?",
+    "Is this statement not dead: “n = 0;”?"
+  ]
+}

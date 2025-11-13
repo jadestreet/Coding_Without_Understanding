@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function '__assert_fail'?",
+    "Is it impossible for function 'randomUInt' to reach function 'maskmovq_mmx'?",
+    "Is there a call path from function 'maskmovdqu_sse' to function 'printf'?",
+    "Is it impossible for function 'printf' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 8' is never executed?",
+    "Is the loop with condition 'i < 8' always executed?",
+    "Can the loop with condition 'i < 8' be skipped entirely?",
+    "Is the loop with condition 'i < 8' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 8' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 8' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'n (line 8)' used after its definition?",
+    "Does the value assigned to 'n (line 9)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'n' live at the end of function 'randomUInt'?",
+    "Is variable 'regL (line 12)' live at the end of function 'maskmovq_mmx'?"
+  ],
+  "dead_code": [
+    "Is the statement 'UChar* regL = malloc(8);' unreachable?",
+    "Is this statement not dead: “printf(\"\\n\");”?"
+  ]
+}

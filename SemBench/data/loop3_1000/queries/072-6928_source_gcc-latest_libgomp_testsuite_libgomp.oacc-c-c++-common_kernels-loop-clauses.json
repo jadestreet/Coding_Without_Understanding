@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__assert_fail' to reach function 'main'?",
+    "Is it impossible for function 'check' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'check'?",
+    "Can function 'check' eventually call function '__assert_fail'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < N' be skipped entirely?",
+    "Is the loop with condition 'i < N' always executed?",
+    "Is it possible that the loop with condition 'i < N' is never executed?",
+    "Is the loop with condition 'i < N' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < N' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 4)' affect subsequent computations?",
+    "Does the value assigned to 'b (line 4)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 6)' remain in use at the end of function 'check'?",
+    "Is variable 'b (line 4)' live at the end of function 'check'?"
+  ],
+  "dead_code": [
+    "Can the statement '#pragma acc kernels pcopyout(a) present_or_copyin(b)' be considered dead code?",
+    "Can the program actually reach the statement: “for (i = 0; i < N; i++)”?"
+  ]
+}

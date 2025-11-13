@@ -1,0 +1,25 @@
+{
+  "function_reachability": [],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'a < 6' is never executed?",
+    "Is the loop with condition 'a < 6' always executed?",
+    "Can the loop with condition 'b < 6' be skipped entirely?",
+    "Is the loop with condition 'b < 6' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'a < 6' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'b < 6' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'a (line 2)' affect subsequent computations?",
+    "Is variable 'b (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'b' remain in use at the end of function 'main'?",
+    "Is variable 'c' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for(c = 0; c < 6; ++c) {' unreachable?",
+    "Is this statement not dead: “ERROR: goto ERROR;”?"
+  ]
+}

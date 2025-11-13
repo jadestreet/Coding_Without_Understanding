@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'SwapEndianness2' to reach function 'ftell'?",
+    "Is it impossible for function 'SwapEndianness2' to reach function 'SwapEndianness4'?",
+    "Can function 'ParseMidiFile' eventually call function 'free'?",
+    "Is there a call path from function 'main' to function 'fseek'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < length' is never executed?",
+    "Is the loop with condition 'i < length' always executed?",
+    "Is it possible that the loop with condition 'i < len' is never executed?",
+    "Is the loop with condition 'i < len' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < length' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < len' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'size' used after its definition?",
+    "Does the value assigned to 'ptr' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable '_dest' remain in use at the end of function '_memcpy'?",
+    "Does variable 'length' remain in use at the end of function '_memcpy'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return cursor - str;' unreachable?",
+    "Is this statement not dead: “if(key[i] == *cursor){”?"
+  ]
+}

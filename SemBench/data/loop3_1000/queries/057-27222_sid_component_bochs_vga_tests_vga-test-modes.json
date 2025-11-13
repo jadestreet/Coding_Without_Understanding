@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'write_port' to reach function 'read_port'?",
+    "Is it impossible for function 'read_port' to reach function 'printf'?",
+    "Is there a call path from function 'main' to function 'read_port'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 80 * HEIGHT * 2' be skipped entirely?",
+    "Is the loop with condition 'i < 80 * HEIGHT * 2' always executed?",
+    "Is it possible that the loop with condition 'i < 80 * 25 * 2' is never executed?",
+    "Is the loop with condition 'i < 80 * 25 * 2' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 80 * HEIGHT * 2' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 80 * 25 * 2' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'port_num (line 16)' affect subsequent computations?",
+    "Does the value assigned to 'val (line 16)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'old_misc_reg' live at the end of function 'main'?",
+    "Is variable 'old_vde_reg' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void read_port (char *port_num, char *val);' unreachable?",
+    "Can the program actually reach the statement: “vga_mem_mode_3[i] = 'a';”?"
+  ]
+}

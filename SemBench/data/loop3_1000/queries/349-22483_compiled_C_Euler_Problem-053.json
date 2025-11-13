@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'td' to reach function 'sr'?",
+    "Is it impossible for function 'gw' to reach function 'tm'?",
+    "Is there a call path from function 'main' to function 'realloc'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' is never executed?",
+    "Is the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' always executed?",
+    "Is it possible that the loop with condition 'j<w' is never executed?",
+    "Is the loop with condition 'j<w' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j<w' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'h (line 1)' used after its definition?",
+    "Is variable 'h (line 2)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'i' live at the end of function 'd'?",
+    "Is variable 'w' live at the end of function 'd'?"
+  ],
+  "dead_code": [
+    "Is the statement 'void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}' unreachable?",
+    "Can the program actually reach the statement: “_8:”?"
+  ]
+}

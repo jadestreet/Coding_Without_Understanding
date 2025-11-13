@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'smoothing' to reach function 'fread'?",
+    "Is it impossible for function 'fclose' to reach function 'fopen'?",
+    "Is there a call path from function 'main' to function 'fread'?",
+    "Is there a call path from function 'main' to function 'fclose'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 9' is never executed?",
+    "Is the loop with condition 'i < 9' always executed?",
+    "Is it possible that the loop with condition 'i < HEIGHT-1' is never executed?",
+    "Is the loop with condition 'i < HEIGHT-1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 9' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < HEIGHT-1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'px0 (line 5)' used after its definition?",
+    "Is variable 'px1 (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'px4' remain in use at the end of function 'smoothing'?",
+    "Is variable 'px7' live at the end of function 'smoothing'?"
+  ],
+  "dead_code": [
+    "Can the statement 'image_w[i][j] = image_smooth[2 * i][2 * j];' be considered dead code?",
+    "Can the program actually reach the statement: “unsigned char px3,unsigned char px4,unsigned char px5,”?"
+  ]
+}

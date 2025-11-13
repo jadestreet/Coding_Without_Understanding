@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'rand'?",
+    "Is it impossible for function 'printf' to reach function 'merge'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Can function 'main' eventually call function 'merge'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < LEN' is never executed?",
+    "Is the loop with condition 'i < LEN' always executed?",
+    "Can the loop with condition 'i < LEN' be skipped entirely?",
+    "Is the loop with condition 'i < LEN' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < LEN' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < LEN' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'v (line 5)' used after its definition?",
+    "Is variable 's (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i (line 10)' remain in use at the end of function 'main'?",
+    "Is variable 'ret' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'left[s1] = right[s2] = INT_MAX;' unreachable?",
+    "Can the program actually reach the statement: “s1 = m - s + 1;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function '__ctype_b_loc'?",
+    "Is it impossible for function 'printf' to reach function 'myatof'?",
+    "Is it impossible for function '__ctype_b_loc' to reach function 'main'?",
+    "Can function 'myatof' eventually call function '__ctype_b_loc'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'isspace(s[i])' is never executed?",
+    "Is the loop with condition 'isspace(s[i])' always executed?",
+    "Is it possible that the loop with condition 'isdigit(s[i])' is never executed?",
+    "Is the loop with condition 'isdigit(s[i])' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'isspace(s[i])' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'isdigit(s[i])' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 's (line 4)' affect subsequent computations?",
+    "Is variable 'val (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'power' remain in use at the end of function 'myatof'?",
+    "Does variable 'sign' remain in use at the end of function 'myatof'?"
+  ],
+  "dead_code": [
+    "Is the statement 'int i, sign;' unreachable?",
+    "Is this statement not dead: “double power2 = 1.0;”?"
+  ]
+}

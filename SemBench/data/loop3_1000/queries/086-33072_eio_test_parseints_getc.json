@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'main' eventually call function 'is_digit'?",
+    "Is it impossible for function 'getc' to reach function 'printf'?",
+    "Is it impossible for function 'ungetc' to reach function 'getc'?",
+    "Is there a call path from function 'fparse_lluint' to function 'is_digit'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'c != EOF && is_digit(c' is never executed?",
+    "Is the loop with condition 'c != EOF && is_digit(c' always executed?",
+    "Can the loop with condition '(c = getc(stdin' be skipped entirely?",
+    "Is the loop with condition '(c = getc(stdin' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'c != EOF && is_digit(c' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '(c = getc(stdin' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'c (line 2)' used after its definition?",
+    "Is variable 'c (line 3)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'c (line 2)' live at the end of function 'is_digit'?",
+    "Does variable 'v' remain in use at the end of function 'fparse_lluint'?"
+  ],
+  "dead_code": [
+    "Is the statement 'return 0;' unreachable?",
+    "Can the program actually reach the statement: “char c = getc(stdin);”?"
+  ]
+}

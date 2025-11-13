@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fputc' to reach function 'strrchr'?",
+    "Is it impossible for function 'fgetc' to reach function 'strlen'?",
+    "Is there a call path from function 'main' to function 'fopen'?",
+    "Can function 'main' eventually call function 'fprintf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < argc' be skipped entirely?",
+    "Is the loop with condition 'i < argc' always executed?",
+    "Can the loop with condition '*p' be skipped entirely?",
+    "Is the loop with condition '*p' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < argc' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '*p' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'p (line 5)' affect subsequent computations?",
+    "Is variable 'p (line 7)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'p' remain in use at the end of function 'clean'?",
+    "Is variable 'fi' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'bol = 0;' unreachable?",
+    "Is this statement not dead: “switch (c)”?"
+  ]
+}

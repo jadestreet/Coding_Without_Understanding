@@ -1,0 +1,28 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__builtin_abort' to reach function 'main'?",
+    "Can function 'main' eventually call function '__builtin_abort'?"
+  ],
+  "loop_reachability": [
+    "Is it possible that the loop with condition 'i < 64' is never executed?",
+    "Is the loop with condition 'i < 64' always executed?",
+    "Is it possible that the loop with condition 'i < 64' is never executed?",
+    "Is the loop with condition 'i < 64' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 64' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < 64' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'b (line 4)' affect subsequent computations?",
+    "Is variable 'c (line 4)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Is variable 'b' live at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'b = b + 2;' unreachable?",
+    "Can the program actually reach the statement: “if (c || b != 7 + 64 * 2)”?"
+  ]
+}

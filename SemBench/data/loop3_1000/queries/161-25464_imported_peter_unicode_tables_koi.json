@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function '__errno_location' to reach function 'fopen'?",
+    "Is there a call path from function 'main' to function 'fprintf'?",
+    "Is it impossible for function 'strerror' to reach function 'fprintf'?",
+    "Can function 'main' eventually call function '__errno_location'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < FILES' be skipped entirely?",
+    "Is the loop with condition 'i < FILES' always executed?",
+    "Can the loop with condition 'j < 16' be skipped entirely?",
+    "Is the loop with condition 'j < 16' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < FILES' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'j < 16' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'filename (line 7)' used after its definition?",
+    "Does the value assigned to 'data (line 8)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'i' remain in use at the end of function 'main'?",
+    "Does variable 'j' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Can the statement '};' be considered dead code?",
+    "Can the program actually reach the statement: “char filename[10];”?"
+  ]
+}

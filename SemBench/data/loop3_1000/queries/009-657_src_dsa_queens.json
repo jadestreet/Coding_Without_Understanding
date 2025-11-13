@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fputs' to reach function 'free_stack'?",
+    "Is it impossible for function 'empty' to reach function 'free_stack'?",
+    "Is there a call path from function 'main' to function 'fputs'?",
+    "Is there a call path from function 'queens' to function 'init_stack'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'size(s' be skipped entirely?",
+    "Is the loop with condition 'size(s' always executed?",
+    "Can the loop with condition '!empty(s' be skipped entirely?",
+    "Is the loop with condition '!empty(s' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'size(s' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '!empty(s' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'q1 (line 12)' used after its definition?",
+    "Is variable 'q2 (line 12)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'q (line 38)' remain in use at the end of function 'queens'?",
+    "Is variable 'p' live at the end of function 'queens'?"
+  ],
+  "dead_code": [
+    "Can the statement 'stack *s = (stack *)malloc(sizeof(stack));' be considered dead code?",
+    "Can the program actually reach the statement: “while (index < size(s))”?"
+  ]
+}

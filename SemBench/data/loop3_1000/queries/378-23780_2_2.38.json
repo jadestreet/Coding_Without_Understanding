@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'printf' to reach function 'print'?",
+    "Is it impossible for function 'print' to reach function 'malloc'?",
+    "Can function 'main' eventually call function 'print'?",
+    "Can function 'main' eventually call function 'printf'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<=20' be skipped entirely?",
+    "Is the loop with condition 'i<=20' always executed?",
+    "Can the loop with condition 'p!=list&k<i' be skipped entirely?",
+    "Is the loop with condition 'p!=list&k<i' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<=20' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'p!=list&k<i' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'list (line 18)' used after its definition?",
+    "Does the value assigned to 'head (line 20)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'head' remain in use at the end of function 'create'?",
+    "Does variable 'list (line 18)' remain in use at the end of function 'insert'?"
+  ],
+  "dead_code": [
+    "Is the statement 'pre=p; p=p->next;k++;' unreachable?",
+    "Is this statement not dead: “if(p==list)return 0;”?"
+  ]
+}

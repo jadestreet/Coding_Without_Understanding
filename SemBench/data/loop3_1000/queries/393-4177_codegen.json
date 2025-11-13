@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Can function 'str2upper' eventually call function 'strdup'?",
+    "Is it impossible for function 'print_block' to reach function 'ctime'?",
+    "Is it impossible for function 'printf' to reach function 'print_block'?",
+    "Is there a call path from function 'main' to function 'print_block'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i<strlen(upper)' be skipped entirely?",
+    "Is the loop with condition 'i<strlen(upper)' always executed?",
+    "Is it possible that the loop with condition 'funcs[i]' is never executed?",
+    "Is the loop with condition 'funcs[i]' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i<strlen(upper)' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'funcs[i]' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'funcs (line 6)' used after its definition?",
+    "Does the value assigned to 'incs (line 39)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Does variable 'lower' remain in use at the end of function 'str2upper'?",
+    "Does variable 'upper' remain in use at the end of function 'str2upper'?"
+  ],
+  "dead_code": [
+    "Is the statement '\"cursor_pop\",' unreachable?",
+    "Can the program actually reach the statement: “(void)argc;”?"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'fn1' to reach function 'fn2'?",
+    "Can function 'main' eventually call function 'fn1'?",
+    "Can function 'fn2' eventually call function 'fn1'?",
+    "Is it impossible for function 'fn1' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'k < 6' be skipped entirely?",
+    "Is the loop with condition 'k < 6' always executed?",
+    "Can the loop with condition '1' be skipped entirely?",
+    "Is the loop with condition '1' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'k < 6' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition '1' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'a (line 1)' used after its definition?",
+    "Is variable 'b (line 1)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'p' live at the end of function 'fn1'?",
+    "Is variable 'k' live at the end of function 'fn2'?"
+  ],
+  "dead_code": [
+    "Is the statement 'fn1 (0);' unreachable?",
+    "Can the program actually reach the statement: “static void fn2 ()”?"
+  ]
+}

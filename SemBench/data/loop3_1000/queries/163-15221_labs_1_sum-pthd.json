@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'main' to reach function 'worker'?",
+    "Can function 'worker' eventually call function 'compute'?",
+    "Is there a call path from function 'worker' to function 'pthread_mutex_lock'?",
+    "Is it impossible for function 'pthread_mutex_unlock' to reach function 'main'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < high' be skipped entirely?",
+    "Is the loop with condition 'i < high' always executed?",
+    "Is it possible that the loop with condition 'k<P' is never executed?",
+    "Is the loop with condition 'k<P' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < high' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'k<P' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Is variable 'sum (line 5)' used after its definition?",
+    "Does the value assigned to 'sumLock (line 6)' affect subsequent computations?"
+  ],
+  "liveness": [
+    "Is variable 'i (line 7)' live at the end of function 'compute'?",
+    "Is variable 'high' live at the end of function 'worker'?"
+  ],
+  "dead_code": [
+    "Can the statement 'pthread_mutex_unlock(&sumLock);' be considered dead code?",
+    "Is this statement not dead: “pthread_mutex_lock(&sumLock);”?"
+  ]
+}

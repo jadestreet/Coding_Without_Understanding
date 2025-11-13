@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'Union' to reach function 'malloc'?",
+    "Is it impossible for function 'createGraph' to reach function 'myComp'?",
+    "Is there a call path from function 'main' to function 'malloc'?",
+    "Is there a call path from function 'main' to function 'find'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'v < V' be skipped entirely?",
+    "Is the loop with condition 'v < V' always executed?",
+    "Can the loop with condition 'i < e' be skipped entirely?",
+    "Is the loop with condition 'i < e' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'v < V' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'i < e' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'V (line 10)' affect subsequent computations?",
+    "Is variable 'E (line 10)' used after its definition?"
+  ],
+  "liveness": [
+    "Does variable 'V (line 13)' remain in use at the end of function 'createGraph'?",
+    "Does variable 'graph (line 15)' remain in use at the end of function 'createGraph'?"
+  ],
+  "dead_code": [
+    "Is the statement 'for (i = 0; i < e; ++i)' unreachable?",
+    "Is this statement not dead: “return graph;”?"
+  ]
+}

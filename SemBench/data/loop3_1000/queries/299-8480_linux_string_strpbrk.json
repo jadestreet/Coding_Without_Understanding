@@ -1,0 +1,30 @@
+{
+  "function_reachability": [
+    "Is it impossible for function 'strspn' to reach function 'main'?",
+    "Is it impossible for function 'printf' to reach function 'main'?",
+    "Is there a call path from function 'main' to function 'printf'?",
+    "Is there a call path from function 'main' to function 'strspn'?"
+  ],
+  "loop_reachability": [
+    "Can the loop with condition 'i < 20' be skipped entirely?",
+    "Is the loop with condition 'i < 20' always executed?",
+    "Can the loop with condition 'str && *str' be skipped entirely?",
+    "Is the loop with condition 'str && *str' always executed?"
+  ],
+  "dominators": [
+    "Is there at least one path that reaches the body of the loop with condition 'i < 20' without passing through its header block?",
+    "Is there at least one path that reaches the body of the loop with condition 'str && *str' without passing through its header block?"
+  ],
+  "data_dependency": [
+    "Does the value assigned to 'i (line 4)' affect subsequent computations?",
+    "Is variable 'str1 (line 5)' used after its definition?"
+  ],
+  "liveness": [
+    "Is variable 'str2' live at the end of function 'main'?",
+    "Does variable 'index' remain in use at the end of function 'main'?"
+  ],
+  "dead_code": [
+    "Is the statement 'if (ret) {' unreachable?",
+    "Can the program actually reach the statement: “for (; i < len; ++i) {”?"
+  ]
+}
