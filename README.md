@@ -1,5 +1,6 @@
 # SemBench: Coding without Understanding
-This repository includes the data and script of this project. After downloading the repository and setting up the environment, enter this directory by ```cd SemBench```.
+This repository includes the data and script of this project. After downloading the repository and setting up the environment, enter this directory by ```cd Coding_Without_Understanding
+```.
 ## file execution
 This folder contains files from the data collection stage. To view and execute the script, enter this directory by ```cd file_execution```.
 ### Data
@@ -171,7 +172,7 @@ Generates scatter plots of SemBench categories vs HumanEval/MBPP.
 **Sample command**
 ```python Figure4/Figure4.py```
 
-### result analysis script 4: correlation_analysis\compute_correlations.py
+### result analysis script 4: SemBench\correlation_analysis\compute_correlations.py
 Computes Spearman correlation between SemBench and benchmark results.
 
 **Arguments**
@@ -188,5 +189,6 @@ Computes Spearman correlation between SemBench and benchmark results.
 Background queries.
 2. script\util.py
 Utility functions for the four main scripts.
+
 
 
